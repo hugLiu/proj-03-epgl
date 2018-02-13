@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Map Type="StyleType">
+	
+	<!--专业对象定义-->
+	<StyleType>
+		<ShapeStyle FeatureName="居民地">
+		  <Child TypeID="1" FeatureName="符号" ClassName="符号" />
+		  <Child TypeID="6" FeatureName="地名" ClassName="文字" />
+		</ShapeStyle>
+		
+		<ShapeStyle FeatureName="交通">
+		  <Child TypeID="2" FeatureName="路线" ClassName="线" />
+		  <Child TypeID="42" FeatureName="路名" ClassName="跟随文字" />
+		</ShapeStyle>
+		
+		<ShapeStyle FeatureName="线状水系">
+		  <Child TypeID="2" FeatureName="河流" ClassName="线" />
+		  <Child TypeID="42" FeatureName="河流名" ClassName="跟随文字" />
+		</ShapeStyle>
+		
+		<ShapeStyle FeatureName="面状水系">
+		  <Child TypeID="3" FeatureName="湖面" ClassName="面" />		  
+		  <Child TypeID="42" FeatureName="湖名" ClassName="跟随文字" />
+		</ShapeStyle>
+		
+		<ShapeStyle FeatureName="境界">
+		  <Child TypeID="2" FeatureName="界限" ClassName="线" />
+		  <Child TypeID="6" FeatureName="界名" ClassName="文字" />
+		</ShapeStyle>
+		
+		<ShapeStyle FeatureName="特殊地物">
+		  <Child TypeID="1" FeatureName="符号" ClassName="符号" />
+		  <Child TypeID="6" FeatureName="地名" ClassName="文字" />
+		</ShapeStyle>
+		
+		<ShapeStyle FeatureName="构造边界">
+		  <Child TypeID="2" FeatureName="边界" ClassName="线" />
+		</ShapeStyle>
+
+		<ShapeStyle FeatureName="断层线">
+		  <Child TypeID="2" FeatureName="断层线" ClassName="线" />
+		  <Child TypeID="6" FeatureName="断距" ClassName="文字" />	
+		</ShapeStyle>
+
+		<ShapeStyle FeatureName="等值线">
+		  <Child TypeID="2" FeatureName="等值线" ClassName="线" />
+		  <Child TypeID="6" FeatureName="高程值" ClassName="文字" />	
+		</ShapeStyle>
+
+		<ShapeStyle FeatureName="地层界线">
+		  <Child TypeID="2" FeatureName="地层线" ClassName="线" />
+		</ShapeStyle>
+
+		<ShapeStyle FeatureName="有利区">
+		  <Child TypeID="3" FeatureName="区块" ClassName="面" />		  
+		  <Child TypeID="6" FeatureName="标注" ClassName="跟随文字" />
+		</ShapeStyle>
+
+		<ShapeStyle FeatureName="油气储量">
+		  <Child TypeID="3" FeatureName="区块" ClassName="面" />		  
+		  <Child TypeID="6" FeatureName="标注" ClassName="跟随文字" />
+		</ShapeStyle>
+		
+		<ShapeStyle TypeID="11" FeatureName="井位">
+		  <Child TypeID="1" FeatureName="井口" ClassName="点" />
+		  <Child TypeID="1" FeatureName="井底" ClassName="点" />
+		  <Child TypeID="6" FeatureName="井名" ClassName="文字" />
+		</ShapeStyle>
+
+		<ShapeStyle FeatureName="地震工区">
+		  <Child TypeID="3" FeatureName="区块" ClassName="面" />		  
+		  <Child TypeID="6" FeatureName="标注" ClassName="跟随文字" />
+		</ShapeStyle>
+
+		<ShapeStyle FeatureName="非地震工区">
+		  <Child TypeID="3" FeatureName="区块" ClassName="面" />		  
+		  <Child TypeID="6" FeatureName="标注" ClassName="跟随文字" />
+		</ShapeStyle>
+
+		<ShapeStyle FeatureName="矿权管理线">
+		  <Child TypeID="3" FeatureName="区块" ClassName="面" />		  
+		  <Child TypeID="6" FeatureName="标注" ClassName="跟随文字" />
+		</ShapeStyle>
+
+	</StyleType>
+		
+	<!--除 符号(1)、文字(6)、矩形(4) 以外的基础图元定义-->
+	<ShapeType>
+		<Shape TypeID="2" FeatureName="线" ClassName="jgPolyline" />
+		<Shape TypeID="3" FeatureName="面" ClassName="jgPolygon" />
+		<Shape TypeID="5" FeatureName="圆/扇形" ClassName="jgEllipse" />
+	</ShapeType>
+		
+</Map>

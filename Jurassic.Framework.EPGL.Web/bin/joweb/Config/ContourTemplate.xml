@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GeoMap>
+	<ColorBand>
+    <Item Pos="0" Color="R=255,G=0,B=0"></Item>
+    <Item Pos="1" Color="R=0,G=0,B=255"></Item>
+	</ColorBand>
+  <ContorLines>
+    <StartValue round="2" step="50"></StartValue>
+    <Label step="2"></Label>
+    <font Height="-15" Width="14" Escapement="0" Orientation="0" Weight="700" Italic="255" Underline="0" StrikeOut="0" CharSet="134" OutPrecision="3" ClipPrecision="2" Quality="1" PitchAndFamily="49" FaceName="幼圆"/>
+  </ContorLines>
+</GeoMap>

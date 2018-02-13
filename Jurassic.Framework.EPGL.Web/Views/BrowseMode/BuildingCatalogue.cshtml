@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="~/Content/EPGL/css/pages/browsemode/chinaz.css" rel="stylesheet" />
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">
+    <div class="wrapper">
+        <div class="history">
+            <div class="start-history">
+                <p class="cc_history">目录</p>
+                <!--<p class="next_history">Table of Contents</p>-->
+                <div class="history_left">
+                    <!-- ko foreach: dataLeft -->
+                    <p class="history_L">
+                        <span class="history_left_span" style="font-size: 42px; font-weight: 600;"></span>
+                        <b class="history_left_b">
+                            <span class="history_l_text">
+                                <a data-bind="attr: { href:'javascript:parent.setPage('+ index+')'},text:name"></a>
+                            </span>
+                        </b>
+                    </p>
+                    <!-- /ko -->
+                </div>
+                <div class="history-img">
+                    <img class="history_img" src="~/Content/EPGL/img/shared/history.png" />
+                </div>
+                <div class="history_right">
+                    <!-- ko foreach: dataRight -->
+                    <p class="history_R">
+                        <span class="history_right_span"></span>
+                        <b class="history_right_b">
+                            <span class="history_r_text">
+                                <a data-bind="attr: { href:'javascript:parent.setPage('+ index+')'},text:name"></a>
+                            </span>
+                        </b>
+                    </p>
+                    <!-- /ko -->
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script src="~/Content/EPGL/js/core/jquery-2.1.4.min.js"></script>
+    <script src="~/Content/EPGL/js/core/knockout-3.0.0.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jquery-slidy/jquery.slidy.js"></script>
+    <!-- jquery.linq -->
+    <script src="~/Content/EPGL/js/plugins/linq.js_ver2.2.0.2/linq.min.js"></script>
+    <script>
+
+
+    var initAnimate=function(){
+        //因为knockout的dom是后来才渲染上的，所以每次都要重新取一下
+        var item = $(".history_L");
+        var items = $(".history_R");
+        $(item[0]).animate({ marginRight: '0px' }, '50', 'swing');
+        $(item[1]).animate({ marginRight: '0px' }, '50', 'swing');
+        $(items[0]).animate({ marginLeft: '0px' }, '50', 'swing');
+        $(items[1]).animate({ marginLeft: '0px' }, '50', 'swing');
+    };
+
+    $(window).scroll(function () {
+        var windowHeight = $(window).height();
+        var Scroll = $(document).scrollTop();
+        var msg = $(".history-img");
+        var item = $(".history_L");
+        var items = $(".history_R");
+        if ((msg.offset().top - Scroll - windowHeight) <= 0) {
+            msg.fadeIn(1500);
+        }
+        for (var i = 0; i < item.length; i++) {
+            if (i < 2) continue;
+            if (($(item[i]).offset().top - Scroll - windowHeight) <= -100) {
+                $(item[i]).animate({ marginRight: '0px' }, '50', 'swing');
+            }
+        }
+        for (var i = 0; i < items.length; i++) {
+            if (i < 2) continue;
+            if (($(items[i]).offset().top - Scroll - windowHeight) <= -100) {
+                $(items[i]).animate({ marginLeft: '0px' }, '50', 'swing');
+            }
+        }
+    });
+
+    /*
+    *目录model
+    */
+    var ViewModel = function () {
+        var self = this;
+        self.dataLeft = ko.observableArray();
+        self.dataRight = ko.observableArray();
+    };
+
+    $(document).ready(function () {
+        var currentModel = new ViewModel();
+        ko.applyBindings(currentModel);
+
+        var data = @Html.Raw(ViewBag.BuildingCatalogueData);
+        currentModel.dataLeft(data.dataLeft);
+        currentModel.dataRight(data.dataRight);
+        
+        initAnimate();
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1461 @@
+﻿<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<DataTables>
+	<DataTable TableName="WELL_STRATUM" Name="地层" Columns="4">
+		<Column ColumnName="STRATUM_DEPTH">
+			<ColumnCaption>深度</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="STRATUM_NAME">
+      <ColumnCaption>地层名</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>65</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="FORM_AGE">
+      <ColumnCaption>地质年代</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>90</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>Y</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="STRATUM_TYPE">
+			<ColumnCaption>接触关系</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>ComboBox</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>80</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+      <Values>
+        <value>整合</value>
+        <value>不整合</value>
+        <value>假整合</value>
+      </Values>
+    </Column>
+    <Column ColumnName="DOMINANT_LITHOLOGY">
+      <ColumnCaption>主岩性</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>80</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>Y</ColumnIsReadOnly>
+		</Column>
+  </DataTable>
+  <DataTable TableName="WELL_SEDIMENTARYFACIES" Name="沉积相.相" Columns="3">
+    <Column ColumnName="ID">
+      <ColumnCaption>相编号</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>53</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>Y</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="THINCKESS">
+      <ColumnCaption>厚度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>60</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>N</ColumnVisible>
+      <ColumnIsReadOnly>Y</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="INTERPRETATION">
+      <ColumnCaption>相名称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="WELL_SEDIMENTARYFACIES" Name="沉积相.亚相" Columns="3">
+    <Column ColumnName="ID">
+      <ColumnCaption>相编号</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>53</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>Y</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="THINCKESS">
+      <ColumnCaption>厚度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>60</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>N</ColumnVisible>
+      <ColumnIsReadOnly>Y</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="INTERPRETATION">
+      <ColumnCaption>亚相名称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="Phase">
+      <ColumnCaption>相名称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="WELL_SEDIMENTARYFACIES" Name="沉积相.微相" Columns="3">
+    <Column ColumnName="ID">
+      <ColumnCaption>相编号</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>53</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>Y</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="THINCKESS">
+      <ColumnCaption>厚度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>60</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>N</ColumnVisible>
+      <ColumnIsReadOnly>Y</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="INTERPRETATION">
+      <ColumnCaption>微相名称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="SubFacies">
+      <ColumnCaption>亚相名称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="Phase">
+      <ColumnCaption>相名称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+	<DataTable TableName="PoreAssemblageType" Name="孔隙组合类型" Columns="2">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>深度</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="PORE_ASSEMBLAGE_TYPE">
+      <ColumnCaption>组合类型</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="RockTexture" Name="岩石结构" Columns="2">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>深度</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="ROCK_TEXTURE">
+			<ColumnCaption>岩石结构</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>120</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="Wettability" Name="润湿性" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="WETTABILITY">
+			<ColumnCaption>润湿性</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>120</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="AcidSensitivity" Name="酸敏性" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="ACID_SENSITIVITY">
+			<ColumnCaption>酸敏性</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>120</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="AlkaliSensitivity" Name="碱敏性" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="ALKALI_SENSITIVITY">
+			<ColumnCaption>碱敏性</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>120</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="SaltSensitivity" Name="盐敏性" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="SALT_SENSITIVITY">
+			<ColumnCaption>盐敏性</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>120</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="WaterSensitivity" Name="水敏性" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="WATER_SENSITIVITY">
+			<ColumnCaption>水敏性</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>120</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="SpeedSensitivity" Name="速敏性" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="SPEED_SENSITIVITY">
+			<ColumnCaption>速敏性</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>120</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="WELL_RESERVOIR" Name="储层评价" Columns="3">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>顶深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="BASE_DEPTH">
+			<ColumnCaption>底深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="INTERPRETATION">
+      <ColumnCaption>解释结论</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>830</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="LITHOLOGY_FACIES" Name="岩石相" Columns="3">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>顶深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="BASE_DEPTH">
+			<ColumnCaption>底深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="LAYERNAME">
+      <ColumnCaption>层名</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="FACIES_CODE">
+			<ColumnCaption>岩石相编码</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="ROCK_CORE_DESC" Name="岩心描述" Columns="3">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>顶深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="BASE_DEPTH">
+			<ColumnCaption>底深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="DESCRIPTION">
+      <ColumnCaption>描述</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>830</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="Bedding" Name="沉积层理、构造" Columns="2">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>深度</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BEDDINGNAME">
+      <ColumnCaption>层理、构造</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="Container" Name="含有物" Columns="2">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>深度</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="CONTAINER">
+      <ColumnCaption>含有物</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="DrillOSWData" Name="油气水显示" Columns="2">
+		<Column ColumnName="DEPTH">
+			<ColumnCaption>深度</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="OWC">
+      <ColumnCaption>油气水显示</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+			<Values>
+				<value>槽面油花</value>
+				<value>槽面气泡</value>
+				<value>钻井液气侵</value>
+				<value>钻井液水侵</value>
+				<value>二氧化碳气侵</value>
+				<value>硫化氢气侵</value>
+				<value>钻井液带出油流</value>
+				<value>井涌气</value>
+				<value>井涌油</value>
+				<value>井涌水</value>
+				<value>喷气</value>
+				<value>喷油</value>
+				<value>喷水</value>
+				<value>喷油气</value>
+				<value>喷气水</value>
+				<value>喷油水</value>
+				<value>喷油气水</value>
+				<value>井漏</value>
+				<value>放空</value>
+				<value>起下钻</value>
+				<value>换钻头</value>
+				<value>蹩钻</value>
+				<value>跳钻</value>
+				<value>地面油苗</value>
+				<value>地面气苗</value>
+				<value>沥青</value>
+				<value>地面油气苗</value>
+			</Values>
+		</Column>
+	</DataTable>
+	<DataTable TableName="WELL_CYCLE" Name="旋回" Columns="3">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>深度</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="INTERPRETATION">
+			<ColumnCaption>结论</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+      <Values>
+        <value>上旋</value>
+        <value>夹击</value>
+        <value>下旋</value>
+      </Values>
+    </Column>
+  </DataTable>
+  <DataTable TableName="WELL_LITHOLOGY" Name="岩性剖面" Columns="6">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>顶深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="BASE_DEPTH">
+			<ColumnCaption>底深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="COLORNAME">
+      <ColumnCaption>颜色名称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>35</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="COLOR">
+			<ColumnCaption>颜色代码</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>35</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="OILLEVEL">
+      <ColumnCaption>含油性</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>39</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="LITHOLOGY">
+			<ColumnCaption>岩性名称</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>89</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="LITHOLOGYNAME">
+			<ColumnCaption>岩性全称</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>148</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnUserDefined>Y</ColumnUserDefined>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="WELL_INTERPRETATION" Name="油气综合解释" Columns="4">
+    <Column ColumnName="INTERPRETATION_ID">
+      <ColumnCaption>解释层名</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>100</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>顶深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="BASE_DEPTH">
+			<ColumnCaption>底深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="THICKNESS">
+      <ColumnCaption>厚度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>Y</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="FORMATION">
+			<ColumnCaption>所属地层</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>Y</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="INTERPRETATION">
+      <ColumnCaption>解释结论</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>100</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="WELL_IMAGE" Name="图片" Columns="3">
+		<Column ColumnName="DEPTH">
+			<ColumnCaption>深度</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="REMARK">
+			<ColumnCaption>注释</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="IMAGE_DATA">
+      <ColumnCaption>图像</ColumnCaption>
+      <ColumnDataType>System.Object</ColumnDataType>
+      <ColumnType>System.Object</ColumnType>
+      <ColumnWidth>100</ColumnWidth>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>N</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="IMAGE_BUTTON">
+			<ColumnCaption>图像</ColumnCaption>
+			<ColumnDataType>BUTTON</ColumnDataType>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnType>BUTTON</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+
+	</DataTable>
+	<DataTable TableName="RockSegment" Name="取心次数、心长、进尺、收获率%" Columns="4">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>顶深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BASE_DEPTH">
+      <ColumnCaption>底深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="ROCKLENGTH">
+			<ColumnCaption>心长</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>80</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="SAMPLETIMES">
+      <ColumnCaption>取心次数</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>80</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="WellRock" Name="常规取心" Columns="4">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>顶深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BASE_DEPTH">
+      <ColumnCaption>底深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="COREID">
+			<ColumnCaption>取心次数</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>35</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="SideRock" Name="井壁取心" Columns="4">
+    <Column ColumnName="DEPTH">
+      <ColumnCaption>顶深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="COLORNAME">
+			<ColumnCaption>颜色名称</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>35</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="COLOR">
+			<ColumnCaption>颜色</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>35</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="OILLEVEL">
+      <ColumnCaption>含油性</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>39</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="LITHOLOGY">
+			<ColumnCaption>岩性</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>89</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="LITHOLOGYNAME">
+      <ColumnCaption>岩性全称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>148</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnUserDefined>Y</ColumnUserDefined>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="WellSampleAnalRock" Name="常规取心" Columns="4">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>顶深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BASE_DEPTH">
+      <ColumnCaption>底深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="COREID">
+			<ColumnCaption>取心次数</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>35</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+	
+    </Column>
+<Column ColumnName="SampleEdit">
+			<ColumnCaption>编辑样品</ColumnCaption>
+			<ColumnDataType>BUTTON</ColumnDataType>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnType>BUTTON</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+    <Column ColumnName="ROCKTESTPOSITION">
+      <ColumnCaption>样品位置</ColumnCaption>
+      <ColumnDataType>System.Object</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>N</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="RockSpeciment" Name="样品位置" Columns="9">
+		<Column ColumnName="DEPTH">
+			<ColumnCaption>深度</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="COREID">
+			<ColumnCaption>岩样编号</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="NO">
+      <ColumnCaption>测试编号</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="SAMPLEID">
+			<ColumnCaption>样品号</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="POROSITY">
+      <ColumnCaption>孔隙度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="KVENT">
+			<ColumnCaption>渗透率</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="OII_SAT">
+      <ColumnCaption>含油饱和度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="GRAIN_DENSITYGRAIN">
+			<ColumnCaption>颗粒密度</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="CARBONATE_CONTENT">
+      <ColumnCaption>碳酸盐含量</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="TestOil" Name="试油结论" Columns="7">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>顶深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BASE_DEPTH">
+      <ColumnCaption>底深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="CLASS">
+			<ColumnCaption>油层、水层</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="METHOD">
+			<ColumnCaption>方式</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="OILPERDAY">
+			<ColumnCaption>日产油</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>120</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="GASPERDAY">
+      <ColumnCaption>日产气</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>120</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="WATERPERDAY">
+			<ColumnCaption>日产水</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>Y</ColumnAllowDBNull>
+			<ColumnWidth>120</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="Abrasion" Name="磨损面位置" Columns="1">
+    <Column ColumnName="DEPTH">
+      <ColumnCaption>顶深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="FireHoleData" Name="射孔" Columns="2">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>顶深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BASE_DEPTH">
+      <ColumnCaption>底深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+	<DataTable TableName="DrillingCoringData" Name="钻井取心" Columns="2">
+		<Column ColumnName="TOP_DEPTH">
+			<ColumnCaption>顶深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+		<Column ColumnName="BASE_DEPTH">
+			<ColumnCaption>底深</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>79</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+		</Column>
+	</DataTable>
+  <DataTable TableName="JiYaChangDu" Name="挤压长度" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>顶深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BASE_DEPTH">
+      <ColumnCaption>底深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="JiYaChangDu">
+      <ColumnCaption>挤压长度</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>100</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="LieFengMiaoShu" Name="裂缝描述" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>顶深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BASE_DEPTH">
+      <ColumnCaption>底深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="LieFengMiaoShu">
+      <ColumnCaption>裂缝描述</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>100</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="KongDongMiaoShu" Name="孔洞描述" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>顶深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BASE_DEPTH">
+      <ColumnCaption>底深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="KongDongMiaoShu">
+      <ColumnCaption>孔洞描述</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>100</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="WLLayerText" Name="层文本道" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>顶深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BASE_DEPTH">
+      <ColumnCaption>底深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="Text">
+      <ColumnCaption>文本</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>100</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="WLPointText" Name="点文本道" Columns="2">
+    <Column ColumnName="DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="Text">
+      <ColumnCaption>文本</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>100</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="WLLayerSymbol" Name="层符号道" Columns="2">
+    <Column ColumnName="TOP_DEPTH">
+      <ColumnCaption>顶深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="BASE_DEPTH">
+      <ColumnCaption>底深</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="SymbolName">
+      <ColumnCaption>符号名称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>100</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+  <DataTable TableName="WLPointSymbol" Name="点符号道" Columns="2">
+    <Column ColumnName="DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="SymbolName">
+      <ColumnCaption>符号名称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>100</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable> 
+  <DataTable TableName="WELL_FAULT" Name="断层" Columns="2">
+    <Column ColumnName="DEPTH">
+      <ColumnCaption>深度</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>N</ColumnAllowDBNull>
+      <ColumnWidth>79</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+    <Column ColumnName="FaultName">
+      <ColumnCaption>断层名称</ColumnCaption>
+      <ColumnDataType>System.String</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>80</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>   
+    <Column ColumnName="FaultType">
+			<ColumnCaption>断层类型</ColumnCaption>
+			<ColumnDataType>System.String</ColumnDataType>
+			<ColumnType>ComboBox</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>80</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+      <Values>
+        <value>正断层</value>
+        <value>逆断层</value>
+        <value>冲断层</value>
+        <value>左旋</value>
+        <value>右旋</value>
+      </Values>
+    </Column>
+    <Column ColumnName="FaultOffset">
+      <ColumnCaption>断距</ColumnCaption>
+      <ColumnDataType>System.Double</ColumnDataType>
+      <ColumnType>Text</ColumnType>
+      <ColumnAllowDBNull>Y</ColumnAllowDBNull>
+      <ColumnWidth>50</ColumnWidth>
+      <ColumnPK>N</ColumnPK>
+      <ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+    </Column>
+  </DataTable>
+</DataTables>

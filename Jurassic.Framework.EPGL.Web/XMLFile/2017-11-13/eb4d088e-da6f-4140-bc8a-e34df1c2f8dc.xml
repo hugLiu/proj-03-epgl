@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FeatureCollection id="c4f1cf6a-7cf5-454f-9363-f7cbb96e7d90" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name=" " schemaLocation="http://www.jurassic.com.cn/3gx 3GX.Data.Feature.GeoMap.xsd" xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.jurassic.com.cn/3gx">
+  <CRS codeSpace="china">地理坐标(经纬度)</CRS>
+</FeatureCollection>

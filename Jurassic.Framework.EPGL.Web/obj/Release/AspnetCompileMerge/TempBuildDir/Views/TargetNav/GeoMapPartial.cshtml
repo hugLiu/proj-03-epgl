@@ -1,0 +1,133 @@
+﻿<div style="height: 100%; width: 100%;position: relative;" id="geoMapPane">
+    <!-- BEGIN HEADER SEARCH BOX -->
+    <div style="position: absolute; top: 20px; left: 10px;" id="leftToolPane">
+        <div class="form-inline" style="position: relative;">            
+            <div class="form-group">
+                <label class="sr-only" for="txtKeyword">搜索关键字</label>
+                <div class="input-group">
+                    <input id="txtKeyword" name="txtKeyword" type="text" class="form-control" style="width: 280px;" placeholder="输入搜索目标关键字" data-toggle="collapse" data-target="#historyCollapse" data-parent="#leftToolPane" aria-expanded="false" aria-controls="historyCollapse">
+                    <div class="input-group-btn">
+                        <select class="form-control" id="searchType" style="width: 75px;position: relative; z-index: 2; margin-right: -5px;" data-bind="value:selectedSearchType">
+                            <option value="0">目标</option>
+                            <option value="1">图件</option>
+                        </select>
+                        <button id="btnFindElement" class="btn btn-default btn-gray" data-original-title="目标关键字搜索" data-container="body" data-placement="left">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>                 
+                </div>
+            </div>
+            <iframe scrolling=no allowTransparency="true" style="position: absolute; z-index: 0; width:100%; height: 100%; top: 0; left: 0; border: none;"></iframe>
+        </div>
+        <div class="collapse" style="width: 370px;position: relative;" id="historyCollapse" aria-labelledby="historyCollapse">
+            <!--ko ifnot: isSearchClick-->
+            <div style="padding: 10px; margin-top: 3px;z-index:3;position:relative;"><h4>搜索热词</h4>
+            </div>
+            <ul id="hotSearchsLink" class="list-group" data-bind="foreach:{data:hotSearchs,as:'hotSearch'}" style="max-height:500px;overflow: auto;z-index: 3;position: relative;">
+                <li class="list-group-item" style="display: inline-block; width: 118px; margin-right: -5px; border: none; padding-top: 5px; padding-bottom: 5px;"><a data-bind="text:hotSearch.ElementName,click:$parent.hotSearchClick"></a></li>
+            </ul>
+            <!--/ko-->
+            <!-- ko if: isSearchClick -->
+            <!--ko if:isSearchLoading-->
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+            <!--/ko-->
+            <!--ko ifnot:isSearchLoading-->
+            <div data-bind="foreach:{data:searchResults,as:'searchResult'}" style="max-height:500px;overflow: auto;z-index: 3;position: relative;margin-top: 3px;">
+                <div style="padding:5px 10px; margin-top: 3px;"><a data-bind="text:searchResult.BONAME,click: $parent.searchResultClick"></a></div>
+                <div data-bind="foreach:{data:searchResult.BOPropertySet,as:'property'}" style="margin:3px;padding: 3px;border:solid #bdb7b7 1px;">
+                    <!--ko if:!($parents[1].searchDisplayProperties()[searchResult.BOTNAME])||($parents[1].searchDisplayProperties()[searchResult.BOTNAME]&&$parents[1].searchDisplayProperties()[searchResult.BOTNAME].indexOf(property.Key)>-1)-->
+                    <label data-bind="text:property.Key+'&#58;'"></label>
+                    <span data-bind="text:property.Value" style="padding: 6px 12px 6px 6px ;"></span>
+                    <!--/ko-->
+                </div>
+            </div>
+            <!--/ko-->
+            <!--/ko-->
+            <iframe scrolling=no allowTransparency="true" style="position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; left: 0; border: none;"></iframe>
+        </div>
+    </div>
+    <!-- END HEADER SEARCH BOX -->
+    <div style="width: 100%; height: 100%; padding: 5px 0;">
+        <OBJECT ID="joGIS1" CLASSID="clsid:D2546426-13FD-4018-85F1-F5BD61147C8F" CODEBASE="JoWeb.ocx＃version=1,0,0,1" style="height: 100%; width: 100%; background-color:rgba(242, 242, 243, 1);" ALIGN=center HSPACE=0 VSPACE=0 wmode="Opaque">
+            <PARAM NAME="_Version" VALUE="65536">
+            <PARAM NAME="_ExtentX" VALUE="20000">
+            <PARAM NAME="_ExtentY" VALUE="15000">
+            <PARAM NAME="_StockProps" VALUE="0">
+            <PARAM NAME="WMODE" VALUE="transparent">
+        </OBJECT>
+    </div>
+    <div class="ol-unselectable ol-control" aria-label="map tool" role="group" id="tool_pane" style="z-index: 2; top: calc(100% - 268px); left: calc(100% - 40px);">
+        <button type="button" title="选取" id="btn_select" style="position:relative; z-index: 2;"><i class="fa fa-mouse-pointer fa-fw"></i></button>
+        <button type="button" title="拉框放大" id="btn_box_zoomin" style="position:relative; z-index: 2;"><i class="fa fa-plus-square-o fa-fw"></i></button>
+        <button type="button" title="拉框缩小" id="btn_box_zoomout" style="position:relative; z-index: 2;"><i class="fa fa-minus-square-o fa-fw"></i></button>
+        <button type="button" title="移动" id="btn_move" style="position:relative; z-index: 2;"><i class="fa fa-hand-paper-o fa-fw"></i></button>
+        <button type="button" title="还原" id="btn_reset" style="position:relative; z-index: 2;"><i class="fa fa-undo fa-fw"></i></button>
+        <button type="button" title="放大" id="btn_zoomin" style="position:relative; z-index: 2;"><i class="fa fa-plus fa-fw"></i></button>
+        <button type="button" title="缩小" id="btn_zoomout" style="position:relative; z-index: 2;"><i class="fa fa-minus fa-fw"></i></button>
+        <iframe id="iframe_tool" scrolling=no allowTransparency="true" style='background-color: transparent; position: absolute; z-index: 0; width: 100%; height: 100%; top: 0; left: 0; border: none;'></iframe>
+    </div>
+
+    <div class="ol-scale-line ol-unselectable" style="z-index: 1;">
+        <div class="ol-scale-line-inner" style="width: 115px;" data-bind="text:currentMapScale"></div>
+        <iframe scrolling=no allowTransparency="true" style='background-color: transparent; position: absolute; z-index: 0; width: 100%; height: 100%; top: 0; left: 0; border: none;'></iframe>
+    </div>
+    @*图元弹出层*@
+    <div id="toolTipDiv" style="position: absolute;min-height: 85px; width: 320px; padding: 5px; border: 1px;" data-bind="visible: toolTipVisible,style:{left:toolTipX,top:toolTipY}">
+        <!--ko if:currentNodeLevel()==2||currentNodeLevel()==3-->
+        <img id="contentImg" style="height: 70px; width: 70px; float: left;" data-bind="attr:{src:primitiveThumb}" />
+        <!--ko if:isCanNav-->
+        <a id="contentName" style="z-index: 2; position: relative;" data-bind="text:primitiveName,click: navigateTo"></a>
+        <!--/ko-->
+        <!--ko ifnot:isCanNav-->
+        <span style="z-index: 2; position: relative;" data-bind="text:primitiveName"></span>
+        <!--/ko-->
+        <p id="contenDescribe" style="margin-bottom: 0;" data-bind="text:primitiveDescribe"></p>
+        <!--/ko-->
+        <!--ko if:currentNodeLevel()==4-->
+        <div class="form-inline" style="z-index: 2; position: relative;">
+            <!--ko if:isPropertyLoading-->
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+            <!--/ko-->
+            <div data-bind="foreach:{data:primitiveProperties,as:'property'}">
+                <!--ko if:($parent.displayProperties().indexOf(property.CAPTION)>-1)-->
+                <div class="form-group">
+                    <label data-bind="text:property.CAPTION+'&#58;'"></label>
+                    <!--ko if:(property.CAPTION==reservoirProperty[0])-->
+                    <a data-bind="text:property.VALUE,click: $parent.navigateTo"></a>
+                    <!--/ko-->
+                    <!--ko ifnot:(property.CAPTION==reservoirProperty[0])-->
+                    <span data-bind="text:property.VALUE" style="padding: 6px 12px;"></span>
+                    <!--/ko-->
+                </div>
+                <!--/ko-->
+            </div>
+        </div>         
+        <!--/ko-->
+        <!--ko if:currentNodeLevel()==5-->
+        <div class="form-inline" style="z-index: 2; position: relative;">
+            <!--ko if:isPropertyLoading-->
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+            <!--/ko-->
+            <div data-bind="foreach:{data:primitiveProperties,as:'property'}">               
+                <!--ko if:($parent.displayProperties().indexOf(property.CAPTION)>-1)-->
+                <div class="form-group">
+                    <label data-bind="text:property.CAPTION+'&#58;'"></label>
+                    <span data-bind="text:property.VALUE" style="padding: 6px 12px;"></span>
+                    
+                    <!--ko if:(property.CAPTION==wellProperty[0])-->
+    <a data-bind="text:property.VALUE,click: $parent.navigateTo"></a>
+    <!--/ko-->
+    <!--ko ifnot:(property.CAPTION==wellProperty[0])-->
+    <span data-bind="text:property.VALUE" style="padding: 6px 12px;"></span>
+    <!--/ko-->
+                </div>
+                <!--/ko-->
+            </div>
+        </div>
+        <!--/ko-->
+        <iframe scrolling=no allowTransparency="true" style="position: absolute; z-index: 0; width: 100%; height: 100%; top: 0;left:0;"></iframe>
+    </div>
+</div>

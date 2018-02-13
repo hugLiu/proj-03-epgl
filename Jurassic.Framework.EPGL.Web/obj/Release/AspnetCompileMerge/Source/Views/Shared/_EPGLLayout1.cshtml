@@ -1,0 +1,164 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    @*<meta charset="utf-8" />*@
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="~/Content/EPGL/css/core/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/core/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/core/font-awesome-ie7.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/core/animate.css" rel="stylesheet" />
+
+    <link href="~/Content/EPGL/css/plugins/toastr/toastr.min.css" rel="stylesheet" />
+
+    <link href="~/Content/EPGL/css/shared/style.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/shared/layout.css" rel="stylesheet" />
+    <style type="text/css">
+        .body-content {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .menu-main {
+            z-index: 7;
+            position: absolute;
+            top: 15px;
+            right: 10px;            
+        }
+       .menu-main .menu-trigger {            
+            position: relative;
+            z-index: 2;
+            /*display: inline-block;*/
+            /*height: 50px;
+            width: 50px;*/
+            -moz-border-radius: 50%; /* Firefox */
+            -webkit-border-radius: 50%; /* Safari 和 Chrome */
+            border-radius: 50%; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+        }
+
+      .menu-main .popover {
+          max-width: 300px;
+          width: 300px;
+      }
+      
+      .popover-content {
+          padding: 0;
+      }
+      .submenu {
+          margin-bottom: 0;
+      }
+      .submenu-item {
+          padding-left: 45px;
+      }
+    </style>
+    @RenderSection("css", false)
+
+</head>
+
+<body class="gray-bg top-navigation pace-done">
+<div class="body-content">
+    <div class="menu-main" id="menu-main">
+        @* 使用js加载popover的时候不能使用data-toggle="popover"属性*@
+        <a tabindex="0" class="menu-trigger" id="menu_trigger">
+            @*<img src="~/Content/EPGL/img/shared/logo-small.png" height="100%" width="100%"/>*@
+            <i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i>
+        </a>
+        <iframe scrolling=no allowTransparency="true" style="background-color: transparent; position: absolute; z-index: 0; width: 100%; height: 100%; top: 0; left: 0; border: none; "></iframe>
+    </div>   
+    @RenderBody()
+    
+</div>
+
+
+
+<!-- 全局js -->
+    <script src="~/Content/EPGL/js/core/jquery-2.1.4.min.js"></script>
+    <script src="~/Content/EPGL/js/core/knockout-3.4.2.js"></script>
+    <script src="~/Content/EPGL/js/core/bootstrap.js"></script>
+    <!--toastr-->
+    <script src="~/Content/EPGL/js/plugins/toastr/toastr.min.js"></script>
+
+<!-- 自定义js -->
+<script src="~/Content/EPGL/js/shared/app.js"></script>
+<script src="~/Content/EPGL/js/shared/content.js"></script>
+<script src="~/Content/EPGL/js/shared/jsTools.js"></script>
+<script src="~/Content/EPGL/js/shared/global.js"></script>
+<script src="~/Content/EPGL/js/shared/GUID.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        var userName = "";
+        $.ajax({
+            url: "/Default/GetUserName",
+            type: "post",
+            async: false,
+            success: function (data) {
+                userName = data;
+            }
+        });
+
+        //TODO 只有当前有登陆用户的时候才会有退出账号文字
+        $("#menu_trigger").popover({
+            trigger: "manual",
+             placement: "bottom",
+             template: '<div class="popover" role="tooltip"><div class="arrow"><iframe scrolling=no allowTransparency="true" style="background-color: transparent; position: absolute; z-index: 0; width: 22px; height: 11px;; top: 0; left: -11px;border:1px solid transparent;border-top:0;"></iframe></div><div class="popover-title" style="position:relative;z-index:2;"></div><div class="popover-content" style="position:relative;z-index:2;"></div>' +
+                 '<iframe scrolling=no allowTransparency="true" style="background-color: transparent; position: absolute; z-index: 0; width: 100%; height: 100%; top: 1px; left: 0;border:none;"></iframe></div>',
+             html: true,
+             title: '<i class="fa fa-user-circle-o fa-4x fa-pull-left" aria-hidden="true"></i><h4>' + userName + '</h4><p>中石油新疆油田开发规划研究所</p>',
+             content: '<div class="list-group">'+
+							'<a class="list-group-item" href="/EPGL/Index"><i class="fa fa-home fa-fw"></i>&nbsp;首页</a>' +
+                            '<a class="list-group-item" href="/Search/Index"><i class="fa fa-search fa-fw"></i>&nbsp;图件搜索</a>' +
+                            '<a class="list-group-item" href="#collapseOneMenu"  data-toggle="collapse" aria-expanded="false"><i class="fa fa-eye fa-fw"></i>&nbsp;场景浏览<span class="caret pull-right"></span></a>' +
+                            '<div id="collapseOneMenu" class="panel-collapse collapse">'+
+                                '<div class="list-group submenu">' +
+                                    '<a href="/BookData/YT_Single(201612)/default.html" target="_blank" class="list-group-item submenu-item"><i class="fa fa-book"></i>&nbsp;油田开发图册</a>' +
+								    '<a href="/BookData/ZD(2017)/default.html" target="_blank" class="list-group-item submenu-item"><i class="fa fa-address-book"></i>&nbsp;指导意见图册</a>' +
+								    '<a href="/BookData/CG(2016)/default.html" target="_blank" class="list-group-item submenu-item"><i class="fa fa-building"></i>&nbsp;实施成果图册</a>' +
+                                '</div>' +
+                            '</div>'+
+                            '<a class="list-group-item" href="#collapseTwoMenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-map fa-fw"></i>&nbsp;成图<span class="caret pull-right"></span></a>' +
+                            '<div id="collapseTwoMenu" class="panel-collapse collapse">' +
+							    '<ul class="list-group submenu">' +
+                                    '<a href="/FlexDraw/QuickDraw" class="list-group-item submenu-item"><i class="fa fa-mail-forward"></i>&nbsp;一键成图</a>' +
+								    '<a href="/FlexDraw/AddProject" class="list-group-item submenu-item"><i class="fa fa-object-ungroup"></i>&nbsp;投影叠加</a>' +
+								    '<a href="/FlexDraw/DataDraw" class="list-group-item submenu-item"><i class="fa fa-file-image-o"></i>&nbsp;数图成图</a>' +
+							    '</ul>' +
+                            '</div>' +
+                            '<a class="list-group-item" href="/Statistics/Index"><i class="fa fa-bar-chart fa-fw"></i>&nbsp;统计信息</a>' +
+                             '<a class="list-group-item" href="/MySpace/Index"><i class="fa fa-user-plus fa-fw"></i>&nbsp;个人中心</a>' +
+                             '<a class="help-block pull-right" href="/Account/Logout">退出账号</a>' +
+						'</div>'
+                        
+        }).on('mouseenter', function () {
+            $("#menu_trigger").popover("show");
+        }).on('shown.bs.popover', function () {
+            $(".menu-main .collapse").on("show.bs.collapse", function () {
+                $(".menu-main .collapse").collapse("hide");
+            });            
+        });
+        
+        $(document).on("mouseleave", "#menu-main", function () {
+            $("#menu_trigger").popover("hide");
+        });
+        //解决popover隐藏之后需要点击两次才会出现的错误
+        $(document).on("hidden.bs.popover", function (e) {
+            $(e.target).data("bs.popover").inState = { click: false, hover: false, focus: false }
+        });
+    });
+    
+</script>
+
+<!--页面级脚本-->
+@RenderSection("script", false)
+</body>
+</html>

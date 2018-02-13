@@ -1,0 +1,449 @@
+﻿
+@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = "~/Views/Shared/_EPGLLayout.cshtml";
+}
+@section css{
+    <link href="~/Content/EPGL/css/plugins/jsTree/style.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/plugins/jqGrid-master/ui.jqgrid.min.css" rel="stylesheet" />
+    <!--bootstrap datetimepicker-->
+    <link href="~/Content/EPGL/css/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <!--bootstrap colorpicker-->
+    <link href="~/Content/EPGL/css/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet" />
+    <style type="text/css">
+        .dataDrawContent {
+            height: 100%;
+            width: 100%;
+        }
+
+        .drawContent {
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+
+        #contentLeft {
+            width: 220px;
+        }
+        /*注意box-sizing的值*/
+        .left-tab-content, .center-tab-content {
+            height: calc(100% - 52px);
+            height: -moz-calc(100% - 52px);
+            height: -webkit-calc(100% - 52px);
+            width: 100%;
+        }
+
+        #contentCenter {
+            width: calc(100% - 340px);
+            width: -moz-calc(100% - 340px);
+            width: -webkit-calc(100% - 340px);
+        }
+
+        .drawForm {
+            height: 60px;
+            width: 100%;
+            padding: 10px;
+            border: 2px solid rgba(220, 220, 220, 1);
+        }
+
+        #mapName_original {
+            width: 515px;
+        }
+
+        #mapName_new {
+            width: 515px;
+        }
+
+        #newMap_name {
+            margin-left: 10%;
+        }
+
+        #contentCenter_middle {
+            height: calc(100% - 60px);
+            height: -moz-calc(100% - 60px);
+            height: -webkit-calc(100% - 60px);
+            width: 100%;
+        }
+
+        #contentRight {
+            width: 110px;
+            padding-top: 80px;
+        }
+
+        #mapNames {
+            width: calc(100% - 52px);
+            width: -moz-calc(100% - 52px);
+            width: -webkit-calc(100% - 52px);
+        }
+
+        .name-group {
+            width: 100%;
+        }
+
+        .tab-pane {
+            width: 100%;
+            height: 100%;
+        }
+
+        .popover {
+            max-width: 700px;
+        }
+
+        .colorpicker {
+            z-index: 100009;
+        }
+        /*bootstrap apinner*/
+        .spinner input {
+            text-align: right;
+        }
+
+        .input-group-btn-vertical {
+            position: relative;
+            white-space: nowrap;
+            width: 1%;
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+            .input-group-btn-vertical > .btn {
+                display: block;
+                float: none;
+                width: 100%;
+                max-width: 100%;
+                padding: 8px;
+                margin-left: -1px;
+                position: relative;
+                border-radius: 0;
+            }
+
+                .input-group-btn-vertical > .btn:first-child {
+                    border-top-right-radius: 4px;
+                }
+
+                .input-group-btn-vertical > .btn:last-child {
+                    margin-top: -2px;
+                    border-bottom-right-radius: 4px;
+                }
+
+            .input-group-btn-vertical i {
+                position: absolute;
+                top: 0;
+                left: 4px;
+            }
+
+        #gbox_mapLayer_table {
+            height: 100%;
+        }
+
+        #gview_mapLayer_table {
+            height: calc(100% - 20px);
+        }
+    </style>
+
+}
+<div class="dataDrawContent">
+    <div id="contentLeft" class="drawContent">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#mapTarget" aria-controls="mapTarget" role="tab" data-toggle="tab">目标导航</a></li>
+            <li role="presentation"><a href="#mapLayer" aria-control="mapLayer" role="tab" data-toggle="tab">图层列表</a></li>
+        </ul>
+        <div class="tab-content left-tab-content">
+            <div id="mapTarget" role="tabpanel" class="tab-pane active">
+                <div id="mapTarget_tree" style="width:100%;height:100%;overflow: auto;"></div>
+            </div>
+            <div id="mapLayer" role="tabpanel" class="tab-pane">
+                <table id="mapLayer_table" style="width:100%;height:100%;"></table>
+            </div>
+        </div>
+    </div>
+    <div id="contentCenter" class="drawContent">
+        <div id="contentCenter_top" class="form-inline drawForm">
+            <!--ko if:isOriginalMap-->
+            <div class="form-group">
+                <label for="mapType">图件类型：</label>
+                <select class="form-control" id="mapType" style="width: 180px;" data-bind="options:availableMapTypes,value:currentMapType,optionsCaption: '请选择...',event:{change:function(){updateMapItem('mapType');}}"></select>
+            </div>
+            <div class="form-group">
+                <label for="mapName_original">图件名称：</label>
+                <select class="form-control" id="mapName_original" data-bind="options:availaleMapNames,value:currentMapName,optionsText:'name',optionsCaption: '请选择...',event:{change:function(){updateMapItem('mapName');}}"></select>
+            </div>
+            <!--/ko-->
+            <!--ko ifnot:isOriginalMap-->
+            <div class="form-group" id="newMap_name">
+                <label for="mapName_new">图件名称：</label>
+                <input class="form-control" id="mapName_new" data-bind="value:currentMapName().name,event:{change:function(){updateMapItem('newMapName');}}" />
+            </div>
+            <!--/ko-->
+        </div>
+        <div id="contentCenter_middle">
+            <ul class="nav nav-tabs" role="tablist" data-bind="foreach:mapTabItems">
+                <li role="presentation" style="position: relative;" data-bind="css:{active:isActive},attr:{'data-index':index}">
+                    <a href="#geoMap" aria-control="geoMap" role="tab" data-toggle="tab" data-bind="text:title,click:$parent.changeTab"></a>
+                    <button type="button" class="close" style="position: absolute; top: 2px; right: 6px;" aria-label="Close" data-bind="if:index()>0,click:$parent.closeTab"><span aria-hidden="true">&times;</span></button>
+                </li>
+            </ul>
+            <div class="tab-content center-tab-content">
+                <div id="geoMap" class="tab-pane active" role="tabpanel">
+                    <OBJECT ID="joGIS1" CLASSID="clsid:D2546426-13FD-4018-85F1-F5BD61147C8F" CODEBASE="JoWeb.ocx＃version=1,0,0,1" style="height: 100%; width: 100%;" ALIGN=center HSPACE=0 VSPACE=0 wmode="Opaque">
+                        <PARAM NAME="_Version" VALUE="65536">
+                        <PARAM NAME="_ExtentX" VALUE="20000">
+                        <PARAM NAME="_ExtentY" VALUE="15000">
+                        <PARAM NAME="_StockProps" VALUE="0">
+                        <PARAM NAME="WMODE" VALUE="transparent">
+                    </OBJECT>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contentRight" class="drawContent">
+        <ul class="list-group" id="group">
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_select"><i class="fa fa-mouse-pointer"></i>&nbsp;选取</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_zoomin"><i class="fa fa-plus-square-o"></i>&nbsp;拉框放大</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_zoomout"><i class="fa fa-minus-square-o"></i>&nbsp;拉框缩小</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_move"><i class="fa fa-hand-paper-o"></i>&nbsp;移动</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_reset"><i class="fa fa-circle-o-notch"></i>&nbsp;复位</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_clean"><i class="fa fa-eraser"></i>&nbsp;清除选择</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_refresh" data-bind="css:isCanAddTab()?'btn':'btn disabled',click:addTab" style="padding: 0;"><i class="fa fa-refresh"></i>&nbsp;更新</a></li>
+            <li class="list-group-item" style="z-index: 3;" id="status_popover"><a id="tool_status" data-bind="css:isOriginalMap()?'btn disabled':'btn'" style="padding: 0;"><i class="fa fa-pie-chart"></i>&nbsp;现状</a></li>
+            <li class="list-group-item" style="z-index: 3;" id="curve_popover"><a id="tool_curve" data-bind="css:isOriginalMap()?'btn disabled':'btn'" style="padding: 0;"><i class="fa fa-bar-chart"></i>&nbsp;曲线</a></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"><a id="save_new" data-bind="css:isOriginalMap()?'btn disabled':'btn'" style="padding: 0;"><i class="fa fa-floppy-o"></i>&nbsp;保存</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="status_content" class="hide">
+    <div>
+        <div style="display:inline-block;width:181px;vertical-align:top;">
+            <div class="form-group">
+                <label for="wellType">井型：</label>
+                <select class="form-control" id="wellType">
+                    <option selected="selected" value="oilwell">采油井</option>
+                    <option value="gaswell">采气井</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dataType">数据类型：</label>
+                <select class="form-control" id="dataType">
+                    <option value="J,K,L" selected="selected">日产图</option>
+                    <option value="J,K,L">累产图</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>日期：</label>
+                <div class="input-group date" id="specifiedDate">
+                    <input class="form-control" type="text" value="">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="dataSouce">数据源：</label>
+                <select multiple class="form-control" id="dataSouce">
+                    <option value="0" selected="selected">采油</option>
+                    <option value="1" selected="selected">采气</option>
+                    <option value="2" selected="selected">注水</option>
+                </select>
+            </div>
+        </div>
+        <div style="display:inline-block;width:200px;vertical-align:top;">
+            <div class="form-group">
+                <label for="patternType">图型：</label>
+                <select class="form-control" id="patternType">
+                    <optgroup label="柱状专题图">
+                        <option value="0">堆积柱状图</option>
+                        <option value="1">横排柱状图</option>
+                    </optgroup>
+                    <optgroup label="饼状专题图">
+                        <option selected="selected" value="2">全饼图</option>
+                        <option value="3">上饼图</option>
+                        <option value="4">下饼图</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>颜色设置：</label>
+                <div id="oilColor" class="input-group colorpicker-component">
+                    <input type="text" value="rgb(255,0,0)" class="form-control" />
+                    <span class="input-group-addon"><i>油</i></span>
+                </div>
+                <div id="gasColor" class="input-group colorpicker-component">
+                    <input type="text" value="rgb(255,255,0)" class="form-control" />
+                    <span class="input-group-addon"><i>气</i></span>
+                </div>
+                <div id="waterColor" class="input-group colorpicker-component">
+                    <input type="text" value="rgb(0,0,255)" class="form-control" />
+                    <span class="input-group-addon"><i>水</i></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>显示系数设置：</label>
+                <div class="input-group spinner">
+                    <span class="input-group-addon">油</span>
+                    <input id="oilDisPar" type="text" value="1" class="form-control" />
+                    <div class="input-group-btn-vertical">
+                        <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                        <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                    </div>
+                </div>
+                <div class="input-group spinner">
+                    <span class="input-group-addon">气</span>
+                    <input id="gasDispPar" type="text" value="1" class="form-control" />
+                    <div class="input-group-btn-vertical">
+                        <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                        <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                    </div>
+                </div>
+                <div class="input-group spinner">
+                    <span class="input-group-addon">水</span>
+                    <input id="waterDispPar" type="text" value="1" class="form-control" />
+                    <div class="input-group-btn-vertical">
+                        <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                        <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:right;margin:10px 0;">
+        <button type="button" class="btn btn-primary" id="tool_status_ok">确定</button>
+        <button type="button" class="btn btn-default" id="tool_status_cancel">取消</button>
+    </div>
+</div>
+<div id="curve_content" class="hide">
+    <div>
+        <div style="display:inline-block;width:300px;vertical-align:top;">
+            <div class="form-group">
+                <label>数据源：</label>
+                <select multiple class="form-control" size="8" id="curveDataSource">
+                    <option value="0" selected="selected">总井数</option>
+                    <option value="1" selected="selected">开井数</option>
+                    <option value="2" disabled="disabled">静压</option>
+                    <option value="3" disabled="disabled">流压</option>
+                    <option value="4">总日产油</option>
+                    <option value="5">总日注水</option>
+                    <option value="6">综合含水</option>
+                    <option value="7">单井平均日产油</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>时间范围：</label>
+                <div class="input-group">
+                    <span class="input-group-addon">从</span>
+                    <div class="input-group date" id="fromDate">
+                        <input class="form-control" type="text" value="">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">到</span>
+                    <div class="input-group date" id="toDate">
+                        <input class="form-control" type="text" value="">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display:inline-block;width:300px;vertical-align:top;">
+            <div class="form-group">
+                <label>颜色设置：</label>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:123px;">总井数</span>
+                    <div id="totalWellCount" class="input-group colorpicker-component" title="总井数">
+                        <input type="text" value="#c23531" class="form-control" />
+                        <span class="input-group-addon" style="border-left:1px;"><i></i></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:123px;">开井数</span>
+                    <div id="openWellCount" class="input-group colorpicker-component" title="开井数">
+                        <input type="text" value="#2f4554" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:123px;">静压</span>
+                    <div id="staticPressure" class="input-group colorpicker-component" title="静压">
+                        <input type="text" value="#61a0a8" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:123px;">流压</span>
+                    <div id="flowPressure" class="input-group colorpicker-component" title="流压">
+                        <input type="text" value="#d48265" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:123px;">总日产油</span>
+                    <div id="totalDailyOil" class="input-group colorpicker-component" title="总日产油">
+                        <input type="text" value="#91c7ae" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:123px;">总日注水</span>
+                    <div id="totalDailyWater" class="input-group colorpicker-component" title="总日注水">
+                        <input type="text" value="#749f83" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:123px;">综合含水</span>
+                    <div id="integratedWater" class="input-group colorpicker-component" title="综合含水">
+                        <input type="text" value="#ca8622" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" style="width:123px;">单井平均日产油</span>
+                    <div id="avgDailyOilPerWell" class="input-group colorpicker-component" title="单井平均日产油">
+                        <input type="text" value="#bda29a" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: right;margin:30px 0;">
+        <button type="button" class="btn btn-primary" id="tool_curve_ok" data-toggle="modal" data-target="#curve_modal">生成曲线</button>
+        <button type="button" class="btn btn-default" id="tool_curve_cancel">取消</button>
+    </div>
+</div>
+<div class="modal fade" id="curve_modal" tabindex="-1" role="dialog" aria-labelledby="curveModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="curveModalLabel">开发曲线</h4>
+            </div>
+            <div class="modal-body">
+                <div id="curve_pane" style="height: 500px; width: 868px;"></div>
+            </div>
+        </div>
+    </div>
+    <iframe scrolling=no allowTransparency="true" style='background-color: transparent; position: absolute; z-index: 0; width: 100%; height: 100%; top: 0; left: 0; border: none;'></iframe>
+</div>
+
+@section script{
+    <script src="~/Content/EPGL/js/plugins/linq.js_ver2.2.0.2/linq.min.js"></script>
+
+    <script src="~/Content/EPGL/js/plugins/jsTree/jstree.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jqGrid-master/jquery.jqgrid.min.js"></script>
+
+    <!--echart-->
+    <script src="~/Content/EPGL/js/plugins/echarts-3.6.0/echarts.js"></script>
+    <!--bootstrap datetimepicker-->
+    <script src="~/Content/EPGL/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <!--bootstrap colorpicker-->
+    <script src="~/Content/EPGL/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+
+    <script language="vbscript" src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-vbfunction.vbs" type="text/vbscript"></script>
+    <script src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-frame.js"></script>
+
+
+    <script src="~/DemoData/bookdata/chartdata.js"></script>
+    <script src="~/DemoData/json/data-tragets.js"></script>
+    <script src="~/Content/EPGL/js/pages/flexdraw/dataDraw.js"></script>
+}

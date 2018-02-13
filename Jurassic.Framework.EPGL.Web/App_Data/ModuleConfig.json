@@ -1,0 +1,51 @@
+[
+  {
+    "modelName": "ptrender",
+    "key": "/render/pt",
+    "modelUrl": "../Components/CellRender/GtPTRender.vue",
+    "childsModel": [
+      {
+        "modelName": "rich",
+        "key": "html,htm,txt,ppt,pptx,xls,xlsx,doc,docx,pdf",
+        "modelUrl": "../Components/FormatCom/gtrich.vue"
+      },
+      {
+        "modelName": "img",
+        "key": "jpg,png,jpeg,gif,tif,bmp,tiff,ico",
+        "modelUrl": "../Components/FormatCom/gtimg.vue"
+      },
+      {
+        "modelName": "gdb",
+        "key": "gdb",
+        "modelUrl": "../Components/FormatCom/GtGdb.vue"
+      },
+      {
+        "modelName": "chart",
+        "key": "chart",
+        "modelUrl": "../Components/FormatCom/gtechart.vue"
+      },
+      {
+        "modelName": "dataset",
+        "key": "dataset",
+        "modelUrl": "../Components/FormatCom/gtdataset.vue"
+      },
+      {
+        "modelName": "noresults",
+        "key": "default,unknown",
+        "modelUrl": "../Components/FormatCom/GtNoResults.vue"
+      }
+    ]
+  },
+		{"modelName":"ptlistrender","key":"/render/ptlist","modelUrl":"../Components/CellRender/GTPTListRender.vue","childsModel":[
+      {
+        "modelName": "searchlist",
+        "key": "search",
+        "modelUrl": "../Components/PTList/ptlist.vue'"
+      }
+		]},
+  {
+    "modelName": "urlrender",
+    "key": "default",
+    "modelUrl": "../Components/CellRender/GtUrlRender.vue"
+  }
+]

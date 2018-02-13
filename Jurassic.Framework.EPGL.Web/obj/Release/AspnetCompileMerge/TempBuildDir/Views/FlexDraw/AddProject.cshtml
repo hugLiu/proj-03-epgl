@@ -1,0 +1,389 @@
+﻿
+@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = "~/Views/Shared/_EPGLLayout.cshtml";
+}
+@section css{
+    <link href="~/Content/EPGL/css/plugins/jsTree/style.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/plugins/jqGrid-master/ui.jqgrid.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/plugins/fileinput/fileinput.css" rel="stylesheet" />
+    <style type="text/css">
+        .addProjectContent {
+            height: 100%;
+            width: 100%;
+        }
+
+        .addContent {
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+
+        #contentLeft {
+            width: 220px;
+        }
+        /*注意box-sizing的值*/
+        .left-tab-content, .center-tab-content {
+            height: calc(100% - 52px);
+            height: -moz-calc(100% - 52px);
+            height: -webkit-calc(100% - 52px);
+            width: 100%;
+        }
+
+        #contentCenter {
+            width: calc(100% - 340px);
+            width: -moz-calc(100% - 340px);
+            width: -webkit-calc(100% - 340px);
+        }
+
+        #contentCenter_top {
+            height: 60px;
+            width: 100%;
+            padding: 10px;
+            border: 2px solid rgba(220, 220, 220, 1);
+        }
+
+        #contentCenter_middle {
+            height: calc(100% - 60px);
+            height: -moz-calc(100% - 60px);
+            height: -webkit-calc(100% - 60px);
+            width: 100%;
+        }
+
+        #contentRight {
+            width: 110px;
+            padding-top: 80px;
+        }
+        #contentRight ul li>a{
+            padding:0;
+        }
+
+        #mapNames {
+            width: calc(100% - 52px);
+            width: -moz-calc(100% - 52px);
+            width: -webkit-calc(100% - 52px);
+        }
+
+        #mapName_new {
+            width: calc(100% - 121px);
+            width: -moz-calc(100% - 121px);
+            width: -webkit-calc(100% - 121px);
+        }
+
+        .name-group {
+            width: 100%;
+        }
+
+        .tab-pane {
+            width: 100%;
+            height: 100%;
+        }
+
+        #tool_data .file-input .hidden-xs, .glyphicon-folder-open {
+            color: #337ab7;
+        }
+
+        #gbox_mapLayer_table {
+            height: 100%;
+        }
+
+        #gview_mapLayer_table {
+            height: calc(100% - 20px);
+        }
+        .popover{
+            max-width:800px;
+        }
+        .form-fix{
+            padding:5px;
+        }
+        .lable-width-2 {
+            width:113px;
+        }
+        .lable-width-4{
+            width:30px;
+        }
+        .lable-width-3{
+            width:85px;
+        }
+         .select-width-4{
+            width:159.5px !important;
+        }
+        .select-width-3{
+            width:170px !important;
+        }
+        .select-width-2{
+            width:271.5px !important;
+        }
+        .popover hr{
+            border:1px dashed rgb(186, 181, 181);
+            margin:5px 0;
+        }
+    </style>
+}
+<div class="addProjectContent">
+    <div id="contentLeft" class="addContent">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active" id="nav-1"><a href="#mapTarget" aria-controls="mapTarget" role="tab" data-toggle="tab">目标导航</a></li>
+            <li role="presentation" id="nav-2"><a href="#mapLayer" aria-control="mapLayer" role="tab" data-toggle="tab">图层列表</a></li>
+        </ul>
+        <div class="tab-content left-tab-content">
+            <div id="mapTarget" role="tabpanel" class="tab-pane active">
+                <div id="mapTarget_tree" style="width:100%;height:100%;overflow: auto;"></div>
+            </div>
+            <div id="mapLayer" role="tabpanel" class="tab-pane">
+                <table id="mapLayer_table" style="width:100%;height:100%;"></table>
+            </div>
+        </div>
+    </div>
+
+    <div id="contentCenter" class="addContent">
+        <div id="contentCenter_top" class="form-inline">
+            <!--ko if:isOriginalMap-->
+            <div class="form-group name-group">
+                <label for="mapNames">图名：</label>
+                <select class="form-control" id="mapNames" data-bind="options:availaleMapNames,value:currentMapName,optionsText:'name',optionsCaption: '请选择...',event:{change:updateMapName}"></select>
+            </div>
+            <!--/ko-->
+            <!--ko ifnot:isOriginalMap-->
+            <div class="form-group" id="newMap_name" style="width:100%">
+                <label for="mapName_new">新图件名称：</label>
+                <input class="form-control" id="mapName_new" data-bind="value:currentNewMapName" />
+            </div>
+            <!--/ko-->
+        </div>
+        <div id="contentCenter_middle">
+            <ul class="nav nav-tabs" role="tablist" data-bind="foreach:mapTabItems">
+                <li role="presentation" style="position: relative;" data-bind="css:{active:isActive},attr:{'data-index':index}">
+                    <a href="#geoMap" aria-control="geoMap" role="tab" data-toggle="tab" data-bind="text:title,click:$parent.changeTab"></a>
+                    <button type="button" class="close" style="position: absolute; top: 2px; right: 6px;" aria-label="Close" data-bind="if:index()>0,click:$parent.closeTab"><span aria-hidden="true">&times;</span></button>
+                </li>
+            </ul>
+            <div class="tab-content center-tab-content">
+                <div id="geoMap" class="tab-pane active" role="tabpanel">
+                    <OBJECT ID="joGIS1" CLASSID="clsid:D2546426-13FD-4018-85F1-F5BD61147C8F" CODEBASE="JoWeb.ocx＃version=1,0,0,1" style="height: 100%; width: 100%;" ALIGN=center HSPACE=0 VSPACE=0 wmode="Opaque">
+                        <PARAM NAME="_Version" VALUE="65536">
+                        <PARAM NAME="_ExtentX" VALUE="20000">
+                        <PARAM NAME="_ExtentY" VALUE="15000">
+                        <PARAM NAME="_StockProps" VALUE="0">
+                        <PARAM NAME="WMODE" VALUE="transparent">
+                    </OBJECT>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contentRight" class="addContent">
+        <ul class="list-group" id="tool_group">
+            <li class="list-group-item"><a id="tool_select" class="btn disabled"><i class="fa fa-mouse-pointer"></i>&nbsp;选取</a></li>
+            <li class="list-group-item"><a id="tool_zoomin" class="btn disabled"><i class="fa fa-plus-square-o"></i>&nbsp;拉框放大</a></li>
+            <li class="list-group-item"><a id="tool_zoomout" class="btn disabled"><i class="fa fa-minus-square-o"></i>&nbsp;拉框缩小</a></li>
+            <li class="list-group-item"><a id="tool_move" class="btn disabled"><i class="fa fa-hand-paper-o"></i>&nbsp;移动</a></li>
+            <li class="list-group-item"><a id="tool_reset" class="btn disabled"><i class="fa fa-circle-o-notch"></i>&nbsp;复位</a></li>
+            <li class="list-group-item" id="well_popover"><a id="tool_well" class="btn disabled"><i class="fa fa-bullseye"></i>&nbsp;井位投影</a></li>
+            <li class="list-group-item"><a id="tool_area" class="btn disabled"><i class="fa fa-area-chart"></i>&nbsp;面积投影</a></li>
+            <li class="list-group-item"><a id="tool_data" class="btn disabled"><input id="file-input" name="file-input" type="file" class="file-loading" accept=".gdbx"></a></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"><a id="save_new" class="btn disabled"><i class="fa fa-floppy-o"></i>&nbsp;保存</a></li>
+        </ul>
+    </div>
+    <div id="well_content" class="hide">
+        <div style="width:550px;">
+            <div>
+                <div style="display:inline-block;width:150px;"><h4>井位投影</h4></div> 
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label>井型：</label>
+                    <select class="form-control" style="width:220px;" data-placeholder="选择井型..." tabindex="1" reservoir data-bind="options: availaleWellTypes,value: currentWellType,optionsCaption: '选择井型...',event:{change:function(){return updateWell('wellType')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label>井类别：</label>
+                    <select class="form-control" style="width:220px;" data-placeholder="选择井类别..." tabindex="2" reservoir data-bind="options: availaleWellBlocks,value: currentWellBlock, optionsCaption: '选择井类别...',event:{change:function(){return updateWell('wellBlock')}}"></select>
+                </div>
+            </div>
+            <div style="text-align:right;margin:10px 0;">
+                <button id="well_sure" class="btn btn-primary">确定</button>
+                <button id="well_cancel" class="btn btn-default">取消</button>
+            </div>
+        </div>        
+    </div> 
+    <div id="area_content" class="hide">
+        <div style="width:800px;">
+            <div>
+                <div style="display:inline-block;width:150px;"><h4>面积投影</h4></div>
+            </div>
+            <hr/>
+            <div class="form-inline form-fix">
+                <div class="form-group">
+                    <label class="lable-width-3">区带：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择区带..." tabindex="1" reservoir data-bind="options: zone,value: currentZone, optionsCaption: '选择区带...',event:{change:function(){return advanceSelectChanged('qd')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">二级构造：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择二级构造..." tabindex="2" reservoir data-bind="options: secondaryStructure,value: currentSecondaryStructure, optionsCaption: '选择二级构造...',event:{change:function(){return advanceSelectChanged('yt')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">油田：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择油田..." tabindex="3" reservoir data-bind="options: oilfield,value: currentOilfield, optionsCaption: '选择油田...',event:{change:function(){return advanceSelectChanged('yc')}}"></select>
+                </div>
+            </div>
+            <div class="form-inline form-fix">
+                <div class="form-group">
+                    <label class="lable-width-3">井区块：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择井区块..." tabindex="4" reservoir data-bind="options: wellBlocks,value: currentWellBlocks, optionsCaption: '选择井区块...'"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">层位：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择层位..." tabindex="5" reservoir data-bind="options: horizon,value: currentHorizon, optionsCaption: '选择层位...'"></select>
+                </div>
+            </div>
+            <hr/>
+            <div class="form-inline form-fix">
+                <div class="form-group">
+                    <label class="lable-width-4">界：</label>
+                    <select class="form-control select-width-4" data-placeholder="选择界..." tabindex="1" reservoir data-bind="options: sector,value: currentSector, optionsCaption: '选择界...',event:{change:function(){return advanceSelectChanged('qd')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-4">系：</label>
+                    <select class="form-control select-width-4" data-placeholder="选择系..." tabindex="2" reservoir data-bind="options: series,value: currentSeries, optionsCaption: '选择系...',event:{change:function(){return advanceSelectChanged('yt')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-4">统：</label>
+                    <select class="form-control select-width-4" data-placeholder="选择统..." tabindex="3" reservoir data-bind="options: gather,value: currentGather, optionsCaption: '选择统...',event:{change:function(){return advanceSelectChanged('yc')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-4">组：</label>
+                    <select class="form-control select-width-4" data-placeholder="选择组..." tabindex="4" reservoir data-bind="options: formation,value: currentFormation, optionsCaption: '选择组...'"></select>
+                </div>
+            </div>
+            <hr/>
+            <div class="form-inline form-fix">
+                <div class="form-group">
+                    <label class="lable-width-3">上报年度：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择上报年度..." tabindex="1" reservoir data-bind="options: annualReporting,value: currentAnnualReporting, optionsCaption: '选择上报年度...',event:{change:function(){return advanceSelectChanged('qd')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">归属单位：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择归属单位..." tabindex="2" reservoir data-bind="options: manageUnits,value: currentManageUnit, optionsCaption: '选择归属单位...',event:{change:function(){return advanceSelectChanged('yt')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">管理方式：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择管理方式..." tabindex="3" reservoir data-bind="options: manageMode,value: currentManageMode, optionsCaption: '选择管理方式...',event:{change:function(){return advanceSelectChanged('yc')}}"></select>
+                </div>
+            </div>
+            <div class="form-inline form-fix">
+                <div class="form-group">
+                    <label class="lable-width-3">储量类型：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择储量类型..." tabindex="4" reservoir data-bind="options: storageType,value: currentStorageType, optionsCaption: '选择储量类型...'"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">储量类别：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择储量类别..." tabindex="5" reservoir data-bind="options: storageCategories,value: currentStorageCategory, optionsCaption: '选择储量类别...'"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">储量来源：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择储量来源..." tabindex="6" reservoir data-bind="options: storageSource,value: currentStorageSource, optionsCaption: '选择储量来源...',event:{change:function(){return advanceSelectChanged('x')}}"></select>
+                </div>
+            </div>
+            <div class="form-inline form-fix">
+                <div class="form-group">
+                    <label class="lable-width-3">油气藏类型：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择油气藏类型..." tabindex="7" reservoir data-bind="options: reservoirType,value: currentReservoirType, optionsCaption: '选择油气藏类型...',event:{change:function(){return advanceSelectChanged('t')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">储层物性：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择储层物性..." tabindex="8" reservoir data-bind="options: reservoirPhysical,value: currentReservoirPhysical, optionsCaption: '选择储层物性...',event:{change:function(){return advanceSelectChanged('z')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">储层岩性：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择储层岩性..." tabindex="9" reservoir data-bind="options: reservoirLithology,value: currentReservoirLithology, optionsCaption: '选择储层岩性...',event:{change:function(){return advanceSelectChanged('d')}}"></select>
+                </div>
+            </div>
+            <div class="form-inline form-fix">
+                <div class="form-group">
+                    <label class="lable-width-3">岩性细分：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择岩性细分..." tabindex="10" reservoir data-bind="options: subdivisionLithology,value: currentSubdivisionLithology, optionsCaption: '选择岩性细分...'"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">储量丰度：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择储量丰度..." tabindex="11" reservoir data-bind="options: reservesAbundance,value: currentReservesAbundance, optionsCaption: '选择储量丰度...',event:{change:function(){return advanceSelectChanged('x')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">资源类型：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择资源类型..." tabindex="12" reservoir data-bind="options: crudeTypes,value: currentCrudeType, optionsCaption: '选择资源类型...',event:{change:function(){return advanceSelectChanged('t')}}"></select>
+                </div>
+            </div>
+            <div class="form-inline form-fix">
+                <div class="form-group">
+                    <label class="lable-width-3">原油密度：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择原油密度..." tabindex="13" reservoir data-bind="options: crudeDensity,value: currentCrudeDensity, optionsCaption: '选择原油密度...',event:{change:function(){return advanceSelectChanged('z')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">边底水情况：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择边底水情况..." tabindex="14" reservoir data-bind="options: edgeBottomWater,value: currentEdgeBottomWater, optionsCaption: '选择边底水情况...',event:{change:function(){return advanceSelectChanged('d')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">驱动类型：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择驱动类型..." tabindex="15" reservoir data-bind="options: driveTypes,value: currentDriveTypes, optionsCaption: '选择驱动类型...'"></select>
+                </div>
+            </div>
+            <div class="form-inline form-fix">
+                <div class="form-group">
+                    <label class="lable-width-3">储集类型：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择储集类型..." tabindex="16" reservoir data-bind="options: saveType,value: currentSaveType, optionsCaption: '选择储集类型...',event:{change:function(){return advanceSelectChanged('x')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">胶结类型：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择胶结类型..." tabindex="17" reservoir data-bind="options: cementationTypes,value: currentCementationType, optionsCaption: '选择胶结类型...',event:{change:function(){return advanceSelectChanged('t')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-3">埋藏深度：</label>
+                    <select class="form-control select-width-3" data-placeholder="选择埋藏深度..." tabindex="18" reservoir data-bind="options: burialDepth,value: currentBurialDepth, optionsCaption: '选择驱动类型...'"></select>
+                </div>
+            </div>
+            <div class="form-inline form-fix">
+                <div class="form-group">
+                    <label class="lable-width-2">储层非均质程度：</label>
+                    <select class="form-control select-width-2" data-placeholder="选择储层非均质程度..." tabindex="19" reservoir data-bind="options: heterogeneousDegree,value: currentHeterogeneous, optionsCaption: '选择储层非均质程度...',event:{change:function(){return advanceSelectChanged('z')}}"></select>
+                </div>
+                <div class="form-group">
+                    <label class="lable-width-2">地层压力：</label>
+                    <select class="form-control select-width-2" data-placeholder="选择地层压力..." tabindex="20" reservoir data-bind="options: formationPressure,value: currentFormationPressure, optionsCaption: '选择地层压力...',event:{change:function(){return advanceSelectChanged('d')}}"></select>
+                </div>
+            </div>
+            <hr/>
+            <div style="text-align:right;margin:10px 5px;">
+                <button id="area_sure" class="btn btn-primary" style="position:relative;z-index: 5;">确定</button>
+                <button id="area_cancel" class="btn btn-default" style="position:relative;z-index: 5;">取消</button>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+
+@section script{
+
+    <script src="~/Content/EPGL/js/plugins/fileinput/fileinput.js" charset="gbk"></script>
+<script src="~/Content/EPGL/js/plugins/fileinput/locales/zh.js"></script>
+
+    <script src="~/Content/EPGL/js/plugins/jsTree/jstree.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jqGrid-master/jquery.jqgrid.min.js"></script>
+    <!-- jquery.linq -->
+    <script src="~/Content/EPGL/js/plugins/linq.js_ver2.2.0.2/linq.min.js"></script>
+
+    <script language="vbscript" src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-vbfunction.vbs" type="text/vbscript"></script>
+    <script src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-frame.js"></script>
+
+    <script type="text/javascript">
+        $.jgrid.defaults.responsive = true;
+        $.jgrid.defaults.styleUI = 'Bootstrap';
+        $.jgrid.no_legacy_api = true;
+
+        $.fn.fileinputLocales['zh'].browseLabel = "数据投影";
+    </script>
+
+    <script src="~/DemoData/json/data-tragets.js"></script>
+    <script src="~/Content/EPGL/js/pages/flexdraw/addProject.js"></script>
+}

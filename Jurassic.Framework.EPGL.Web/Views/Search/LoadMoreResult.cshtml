@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = "LoadMoreResult";
+}
+
+<div name="loadMoreBlock1" class="cbp-loadMore-block1" style="display: none;">
+    <!-- ko foreach: loadMoreList -->
+    <div data-bind="attr:{class:'cbp-item '+productTypeId}">
+        <div class="cbp-caption">
+            <div class="cbp-caption-defaultWrap">
+                <img data-bind="attr:{src:'data:image/png;base64,'+thumb}" />
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                        <a class="btn btn-success btn-sm" data-bind="click:$parent.openDetailPage">
+                            <i class="fa fa-file-o"></i>打开
+                        </a>
+                        <a class="btn btn-danger btn-sm" style="margin-left: 5px;" data-bind="click: $parent.collectFavorite">
+                            <i class="fa fa-heart"></i>收藏
+                        </a>
+                        <a class="cbp-lightbox cbp-l-caption-buttonRight btn btn-primary btn-sm" data-bind="attr:{href:'data:image/png;base64,'+thumb,'data-title':previewTitleDsc}">
+                            <i class="fa fa-tripadvisor"></i>预览
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cbp-l-grid-projects-title uppercase text-center uppercase text-center tooltips" data-bind="attr:{'data-original-title':title},text:title"></div>
+        <div class="cbp-l-grid-projects-desc uppercase text-center uppercase text-center" data-bind="text:titleDesc"></div>
+    </div>
+    <!-- /ko -->
+</div>
+
+<div id="loadMoreBlock2" style="display: none;"></div>
+    <!-- 全局js -->
+<script src="~/Content/EPGL/js/core/jquery-2.1.4.min.js"></script>
+<script src="~/Content/EPGL/js/core/knockout-3.0.0.js"></script>
+<script src="~/Content/EPGL/js/core/bootstrap.min.js"></script>
+<script>
+    var loadMoreViewModel=function() {
+        //搜索
+        self.searchResult = function (type) {
+            
+
+            var param = self.searchParamObj();
+            var paramJson = null;
+
+            if (type === "loadmore") {
+                //页数+1
+                var previousSize = self.fromSize();
+                self.fromSize(previousSize + self.sizeOfResult());
+                param.pager.from = self.fromSize();
+                paramJson = JSON.stringify(param);
+            } 
+
+            $.ajax({
+                url: global_api_url + "/SearchService/Match",
+                async: false,
+                type: "post",
+                contentType: 'application/json',
+                data: paramJson,
+                success: function (result) {
+                    var queryresult = [];
+                    var count = result.count;
+                    var data = result.metadatas;
+
+                    for (var i = 0; i < data.length; i++) {
+                        var item = data[i];
+                        var temp = {
+                            iiid: item.iiid,
+                            title: "",
+                            sourceUrl: "",
+                            thumb: "",
+                            author: "",
+                            createDate: item.indexeddate,
+                            productType: "",
+                            productTypeId: "*"
+                        };
+
+                        if (item.thumbnail) {
+                            temp.thumb = item.thumbnail;
+                        }
+                        if (item.source && item.source.url) {
+                            temp.sourceUrl = item.source.url;
+                        }
+                        if (item.dc && item.dc.title) {
+                            for (var k = 0; k < item.dc.title.length; k++) {
+                                var title = item.dc.title[k];
+                                if (title.type === "Formal") {
+                                    temp.title = title.text;
+                                }
+                            }
+                        }
+                        if (item.dc && item.dc.contributor) {
+                            for (var j = 0; j < item.dc.contributor.length; j++) {
+                                var contributor = item.dc.contributor[j];
+                                if (contributor.type === "Author") {
+                                    temp.author = contributor.name;
+                                }
+                            }
+                        }
+                        if (item.ep && item.ep.producttype) {
+                            temp.productType = item.ep.producttype;
+                            if (!productTypeIds[temp.productType]) {
+                                productTypeIds[temp.productType] = Math.random().toString(36)
+                                    .substr(2);
+                                temp.productTypeId = productTypeIds[temp.productType];
+                                //更新分类
+                                self.classificationList.push(temp);
+                            } else {
+                                temp.productTypeId = productTypeIds[temp.productType];
+                            }
+
+                        }
+
+                        temp.titleDesc = "制图人：" + temp.author + " / 入库日期：" + temp.createDate;
+
+                        temp.previewTitleDsc = data.name + "<br>制图人：" + data.author;
+
+                        queryresult.push(temp);
+                        //更新结果
+                        self.loadMoreList.push(temp);
+
+                    }
+
+                    // init cubeportfolio结果显示区域
+
+                    var block2 = $("#loadMoreBlock2");
+                    if (self.fromSize() + self.sizeOfResult() >= count) {
+                        block2.removeClass('cbp-loadMore-block2');
+                    } else {
+                        block2.addClass('cbp-loadMore-block2');
+                    }
+
+
+                },
+                error: function (result) {
+
+
+                }
+            });
+        };
+    }
+    $(document).ready(function () {
+        var param = JSON.parse(@ViewBag.SearchParamJson);
+
+    });
+</script>

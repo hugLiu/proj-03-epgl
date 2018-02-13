@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FeatureCollection id="ID_0" name="井位" xsi:schemaLocation="http://www.jurassic.com.cn/3gx 3GX.Data.Feature.GeoMap.xsd" xmlns="http://www.jurassic.com.cn/3gx" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<CRS codeSpace="china">地理坐标(经纬度)</CRS>
+	<GF id="bo-1" shape_id="" type="井位" class="">
+    <Name>1031</Name>
+		<Title>1031</Title>
+		<PropertySets>
+			<PropertySet name="专题数据">
+				<P n="AMOUNT_OIL" t="decimal" r="eq">4.367816092</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">2.8169014085</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">1.8390804598</P>
+			</PropertySet>
+		</PropertySets>
+  <SubFeatures/>
+		<Shapes>
+			<Shape name="井口">
+				<gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+					<gml:pos>45.897809 85.477153</gml:pos>
+				</gml:Point>
+			</Shape> 
+		</Shapes>
+	</GF>
+</FeatureCollection>

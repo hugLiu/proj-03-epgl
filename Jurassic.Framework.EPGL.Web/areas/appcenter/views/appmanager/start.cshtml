@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = Html.Str("Application+Manager+HomePage");
+    var functionCount = AppManager.Instance.FunctionManager.Count;
+    var usersCount = AppManager.Instance.UserManager.Count;
+    var rolesCount = AppManager.Instance.RoleManager.Count;
+}
+<div class="frame-fit">
+    <h2>
+        @Html.Str("System+Status", "系统+概况")
+    </h2>
+    <h4>
+        @Html.Str("System+InitFinishedAndRuningPerfect", "+已完成初始化并正常运行。")
+    </h4>
+    <p>
+        @Html.Str("System+Functions+Count")：<b>@functionCount</b><br />
+        @Html.Str("System+Roles+Count")：<b>@rolesCount</b><br />
+        @Html.Str("System+Users+Count")：<b>@usersCount</b>
+    </p>
+    <p class="alert-danger">
+        @Html.Str("ReInit+ReGenerateFunctions_DontDeleteRolesAndUsers", "重新初始化+将会重新生成所有的功能项，但不会删除已有的角色和用户。")<br />
+        @Html.JAuthLink(Html.Str("ReInit"), "ReStart", htmlAttributes: new { @class = "btn btn-default", target = "_self", onclick = "return confirm(JStr.ConfirmReInit)" })
+    </p>
+    <p class="alert-danger">
+        @Html.Str("ClearAllCacheFiles", "清除系统自动生成的文件,完成此操作后，系统需要重新启动才能正常运行。")<br />
+        @Html.JAuthLink(Html.Str("ClearCacheFiles"), "ClearCacheFiles", htmlAttributes: new { @class = "btn btn-default frame-submit mini-button" })
+    </p>
+</div>
+<script type="text/javascript">
+    mini.parse();
+
+    $.regButton({
+        text: '@Html.Str("ClearCacheFiles")',
+        beforeSubmit: function (ajax) {
+            ajax.url = '@Url.Action("ClearCacheFiles")';
+        }
+    });
+</script>

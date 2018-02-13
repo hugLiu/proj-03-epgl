@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "LaySelTarget";
+    Layout = "~/Views/Shared/_WindowLayout.cshtml";
+}
+<div class="wrapper wrapper-content animated fadeInRight" style="padding: 5px 5px;">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="form-group">
+                <label>工区范围： </label>
+                <div class="input-group" style="width: 100%; padding: 5px 5px 5px 5px;">
+                    <select data-placeholder="选择盆地..." class="chosen-select" tabindex="1" cascade target typeid="pd" typename="盆地" level=1 parentsel="#"></select>
+                </div>
+                <div class="input-group" style="width: 100%; padding: 5px 5px 5px 5px;">
+                    <select data-placeholder="选择区带..." class="chosen-select" tabindex="2" cascade target typeid="qd" typename="区带" level=2 parentsel="pd"></select>
+                </div>
+                <div class="input-group" style="width: 100%; padding: 5px 5px 5px 5px;">
+                    <select data-placeholder="选择油田..." class="chosen-select" tabindex="3" cascade target typeid="yt" typename="油田" level=3 parentsel="qd"></select>
+                </div>
+                <div class="input-group" style="width: 100%; padding: 5px 5px 5px 5px;">
+                    <select data-placeholder="选择油藏..." class="chosen-select" tabindex="4" cascade target typeid="yc" typename="油藏" level=4 parentsel="yt"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>图件分类： </label>
+
+                <div class="input-group" style="width: 100%; padding: 5px 5px 5px 5px;">
+                    <select id="lsGdbType" data-placeholder="图件分类..." class="chosen-select" tabindex="5" gdbtype></select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section script
+{
+<script src="~/DemoData/json/data-tragets.js"></script>
+<script src="~/DemoData/json/data-tragets-layertypes.js"></script>
+<script src="~/DemoData/json/data-thumb.js"></script>
+<script src="~/Content/EPGL/js/pages/flexdraw/laySelTarget.js"></script>
+}
+
+

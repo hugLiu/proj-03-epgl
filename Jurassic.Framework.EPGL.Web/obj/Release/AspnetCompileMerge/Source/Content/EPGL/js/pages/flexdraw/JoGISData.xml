@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- 
+坐标系统类型说明:
+	COORD_TYPE	= 1:	经纬度坐标
+	COORD_TYPE	= 2:	高斯六度带坐标(未支持)
+	COORD_TYPE	= 3:	高斯三度带坐标(未支持)
+	COORD_TYPE	= 4:	其它投影坐标(不作转换)
+
+文字标注位置说明：
+	POSITION	= -1:	不标注
+	POSITION	= 0:	中心标注
+	POSITION	= 1:	上标注
+	POSITION	= 2:	下标注
+	POSITION	= 3:	左标注
+	POSITION	= 4:	右标注
+
+文字标注风格说明
+	FontStyle = 0:  	正常字体
+	FontStyle = 1:		粗体
+	FontStyle = 2:		斜体
+	FontStyle = 4:		下划线
+	FontStyle = 8:		删除线
+
+线型说明：
+	line-type	= 0:	不绘制
+	line-type	= 1:	点线
+	line-type	= 2:	虚线
+	line-type	= 3:	大虚线
+	line-type	= 4:	实线
+	line-type	= 8:	点化线
+	line-type	= 99:	点线(工区边界线)
+
+填充类型说明：
+	fill-type	= -1:	不填充
+	fill-type	= 1:	符号填充
+	fill-type	= 2:	颜色填充
+	fill-type	= 3:	模式填充
+
+填充模式说明：
+	fill-mode	= 0:	水平线填充
+	fill-mode	= 1:	垂直线填充
+	fill-mode	= 2:	右斜线填充
+	fill-mode	= 3:	左斜线填充
+	fill-mode	= 4:	十字线填充
+	fill-mode	= 4:	斜十字填充
+
+图元属性说明：
+	visible		= 0/1:	图元加载后是否显示
+	flash		= 0/1:	图元加载后是否闪烁
+/-->
+
+<JrscGIS_DATA>
+  <LAYER_SCHEME>
+    <LAYER_ID>井别</LAYER_ID>
+    <LAYER_TITLE>井别</LAYER_TITLE>
+    <OBJECT_TYPE>"E_WELL"</OBJECT_TYPE>
+    <LINK_TABLE>
+      <FIELD name = "GEOCODE" unique = "1" title = "1"/>
+      <FIELD name = "VAL" unique = "0" />
+      <FIELD name = "REF" />
+    </LINK_TABLE>
+    <COORD_TYPE>1</COORD_TYPE>
+    <LAYER_STYLE>
+      <SYMBOL_STYLE symbol = "SY2510005" width ="7" height ="7" color="0x0" angle = "0" />
+      <LABEL_STYLE position = "4" name = "宋体" style = "0" size = "4" color = "0xFF0000" />
+      <LINE_STYLE type = "4" width ="0.1" repeat-size ="10" color="0xFF0000" />
+      <FILL_STYLE type = "-1" mode = "0" forecolor = "0x0000FF" bkcolor = "FFFFFF" />
+    </LAYER_STYLE>
+  </LAYER_SCHEME>
+
+  <LAYER_DATA>
+    <TEXT_DATA title = "Label标注串..." geoname = "label" subgraph = "1" visible = "1">
+      <LINKINFO GEOCODE="注1" VAL="100" REF="1" />
+      <STYLE>
+        <LABEL_STYLE angle = "30" position = "0" size = "4" color = "0xFF0000" />
+      </STYLE>
+      <POINTS>
+        <POINT x="117.8215" y = "39.1851" />
+      </POINTS>
+    </TEXT_DATA>
+    <POINT_DATA geoname = "point" subgraph = "1" visible = "1" flash = "0" >
+      <LINKINFO GEOCODE="蔡1" VAL="90" REF="1" />
+      <STYLE>
+        <SYMBOL_STYLE symbol = "SY2510001" width ="7" height ="7" color="0xFF0000" angle = "0" />
+        <LABEL_STYLE position = "4" size = "4" color = "0xFF0000" />
+      </STYLE>
+      <POINTS>
+        <POINT x="117.8215" y = "39.1851" />
+        <POINT x="117.9215" y = "39.2851" />
+      </POINTS>
+    </POINT_DATA>
+    <POINT_DATA geoname = "point" subgraph = "1">
+      <LINKINFO GEOCODE="封参1" VAL="70" REF="2"/>
+      <POINTS>
+        <POINT x="118.155" y = "39.279" />
+      </POINTS>
+    </POINT_DATA>
+    <POINT_DATA geoname = "point" subgraph = "1">
+      <LINKINFO GEOCODE="塘参1" VAL="85" REF="3"/>
+      <POINTS>
+        <POINT x="117.9208" y = "39.2098" />
+      </POINTS>
+    </POINT_DATA>
+
+    <LINE_DATA geoname = "Line" subgraph = "1">
+      <STYLE>
+        <LINE_STYLE type = "4" width ="0.1" repeat-size ="10" color="0xFF0000" />
+        <LABEL_STYLE position = "4" size = "4" color = "0xFF0000" />
+      </STYLE>
+      <LINKINFO GEOCODE="72106" VAL="200" REF="4"/>
+      <POINTS>
+        <POINT x="117.656058" y = "38.985199" />
+        <POINT x="117.654515" y = "38.979326" />
+        <POINT x="117.660899" y = "38.003133" />
+      </POINTS>
+    </LINE_DATA>
+    <LINE_DATA geoname = "Line" subgraph = "1">
+      <LINKINFO GEOCODE="7323.6" VAL="180" REF="5"/>
+      <POINTS>
+        <POINT x="117.404203" y = "38.120184" />
+        <POINT x="117.473580" y = "38.119917" />
+        <POINT x="117.542963" y = "38.119612" />
+        <POINT x="117.650487" y = "38.119061" />
+        <POINT x="117.685175" y = "38.118862" />
+      </POINTS>
+    </LINE_DATA>
+
+    <POLYGON_DATA geoname = "Region" subgraph = "3">
+      <STYLE>
+        <LINE_STYLE type = "99" width ="0.1" repeat-size ="10" color="0x7FFF00" />
+        <SYMBOL_STYLE symbol = "SY2510001" width ="7" height ="7" color="0xFF0000" angle = "0" />
+        <FILL_STYLE type = "-1" mode = "0" forecolor = "0x0000FF" bkcolor = "FFFFFF" />
+        <LABEL_STYLE position = "0" size = "4" color = "0xFF0000" />
+      </STYLE>
+      <LINKINFO GEOCODE="TK-3" VAL="20x20" REF="6"/>
+      <POINTS>
+        <POINT x="117.500000" y = "39.416667" />
+        <POINT x="117.916667" y = "39.416667" />
+        <POINT x="117.916667" y = "39.333333" />
+        <POINT x="118.083333" y = "39.333333" />
+        <POINT x="118.083333" y = "39.2" />
+        <POINT x="118.066667" y = "39.2" />
+        <POINT x="118.066667" y = "39.066667" />
+        <POINT x="117.9" y = "39.066667" />
+        <POINT x="117.9" y = "38.916667" />
+        <POINT x="117.5" y = "38.916667" />
+        <POINT x="117.5" y = "39.416667" />
+      </POINTS>
+      <POINTS>
+        <POINT x="117.641667" y="39.083333" />
+        <POINT x="117.641667" y="39.016667" />
+        <POINT x="117.625" y="39.016667" />
+        <POINT x="117.625"  y = "39" />
+        <POINT x="117.629167" y = "39" />
+        <POINT x="117.629167" y="38.979167" />
+        <POINT x="117.645833" y="38.979167" />
+        <POINT x="117.645833" y="38.975" />
+        <POINT x="117.65" y="38.975" />
+        <POINT x="117.65" y="38.970833" />
+        <POINT x="117.658333" y="38.970833" />
+        <POINT x="117.658333" y="38.966667" />
+        <POINT x="117.666667" y="38.966667" />
+        <POINT x="117.666667" y="38.958333" />
+        <POINT x="117.708333" y="38.958333" />
+        <POINT x="117.708333" y="38.995833" />
+        <POINT x="117.725" y="38.995833" />
+        <POINT x="117.725" y="39.008333" />
+        <POINT x="117.675" y="39.008333" />
+        <POINT x="117.675" y="39.033333" />
+        <POINT x="117.683333" y="39.033333" />
+        <POINT x="117.683333" y="39.083333" />
+        <POINT x="117.641667" y="39.083333" />
+      </POINTS>
+      <POINTS>
+        <POINT x="117.583333" y="38.966667" />
+        <POINT x="117.583333" y="38.95" />
+        <POINT x="117.5875" y="38.95" />
+        <POINT x="117.5875" y="38.945833" />
+        <POINT x="117.591667" y="38.945833" />
+        <POINT x="117.591667" y="38.929167" />
+        <POINT x="117.6125" y="38.929167" />
+        <POINT x="117.6125" y="38.925" />
+        <POINT x="117.658333" y="38.925" />
+        <POINT x="117.658333" y="38.941667" />
+        <POINT x="117.6375" y="38.941667" />
+        <POINT x="117.6375" y="38.95" />
+        <POINT x="117.620833" y="38.95" />
+        <POINT x="117.620833" y="38.9625" />
+        <POINT x="117.616667" y="38.9625" />
+        <POINT x="117.616667" y="38.966667" />
+        <POINT x="117.583333" y="38.966667" />
+      </POINTS>
+    </POLYGON_DATA>
+
+  </LAYER_DATA>
+</JrscGIS_DATA>

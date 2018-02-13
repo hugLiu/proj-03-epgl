@@ -1,0 +1,3724 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FeatureCollection id="11a7086d-c4b4-4db3-99e5-3fe80371b65e" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name=" " schemaLocation="http://www.jurassic.com.cn/3gx 3GX.Data.Feature.GeoMap.xsd" xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.jurassic.com.cn/3gx">
+  <CRS codeSpace="china">地理坐标(经纬度)</CRS>
+  <GF class="" id="1237" bot="" type="井位">
+    <Name>1237</Name>
+    <Title>1237</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0124</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">24</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.916149 85.455251</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1238" bot="" type="井位">
+    <Name>1238</Name>
+    <Title>1238</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0101</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">16</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.917578 85.468234</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="百56" bot="" type="井位">
+    <Name>百56</Name>
+    <Title>百56</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0359</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.933443 85.460132</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1239" bot="" type="井位">
+    <Name>1239</Name>
+    <Title>1239</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0182</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">33</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.930693 85.465757</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1128" bot="" type="井位">
+    <Name>1128</Name>
+    <Title>1128</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0082</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">9</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.928994 85.443538</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1210" bot="" type="井位">
+    <Name>1210</Name>
+    <Title>1210</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.612911 84.959794</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1159" bot="" type="井位">
+    <Name>1159</Name>
+    <Title>1159</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.903545 85.454241</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1165" bot="" type="井位">
+    <Name>1165</Name>
+    <Title>1165</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">8</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0464</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">14</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.935539 85.465216</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1096" bot="" type="井位">
+    <Name>1096</Name>
+    <Title>1096</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0194</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.936342 85.4757</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1034" bot="" type="井位">
+    <Name>1034</Name>
+    <Title>1034</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0001</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.915293 85.473899</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1349" bot="" type="井位">
+    <Name>1349</Name>
+    <Title>1349</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.920864 85.453781</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1129" bot="" type="井位">
+    <Name>1129</Name>
+    <Title>1129</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">7</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0304</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">7</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.933412 85.445998</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1134" bot="" type="井位">
+    <Name>1134</Name>
+    <Title>1134</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0069</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.935536 85.461514</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1245" bot="" type="井位">
+    <Name>1245</Name>
+    <Title>1245</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">7</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0175</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.934433 85.446794</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1127" bot="" type="井位">
+    <Name>1127</Name>
+    <Title>1127</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0158</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.924715 85.443106</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1241" bot="" type="井位">
+    <Name>1241</Name>
+    <Title>1241</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0795</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">20</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.913112 85.443984</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1125" bot="" type="井位">
+    <Name>1125</Name>
+    <Title>1125</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0747</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">39</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.914958 85.44454</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1243" bot="" type="井位">
+    <Name>1243</Name>
+    <Title>1243</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0681</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">14</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.921917 85.442412</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1126" bot="" type="井位">
+    <Name>1126</Name>
+    <Title>1126</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0452</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.921043 85.443788</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1246" bot="" type="井位">
+    <Name>1246</Name>
+    <Title>1246</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">8</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0204</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">18</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.934853 85.451286</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1247" bot="" type="井位">
+    <Name>1247</Name>
+    <Title>1247</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0294</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">38</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.936485 85.459175</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1132" bot="" type="井位">
+    <Name>1132</Name>
+    <Title>1132</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0411</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">31</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.933706 85.455189</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="bw1" bot="" type="井位">
+    <Name>bw1</Name>
+    <Title>bw1</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">15</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.975166 85.532944</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="百24" bot="" type="井位">
+    <Name>百24</Name>
+    <Title>百24</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.925517 85.484774</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="百29" bot="" type="井位">
+    <Name>百29</Name>
+    <Title>百29</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.904806 85.459192</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1248" bot="" type="井位">
+    <Name>1248</Name>
+    <Title>1248</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0236</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">25</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.932164 85.467018</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1244" bot="" type="井位">
+    <Name>1244</Name>
+    <Title>1244</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0545</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.925858 85.442298</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1242" bot="" type="井位">
+    <Name>1242</Name>
+    <Title>1242</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0556</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">9</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.917923 85.442655</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1083A" bot="" type="井位">
+    <Name>1083A</Name>
+    <Title>1083A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.927552 85.45015</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1137" bot="" type="井位">
+    <Name>1137</Name>
+    <Title>1137</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0159</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">21</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.924444 85.449826</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1254" bot="" type="井位">
+    <Name>1254</Name>
+    <Title>1254</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0185</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">10</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.909398 85.454454</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1259" bot="" type="井位">
+    <Name>1259</Name>
+    <Title>1259</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0622</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">14</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.931695 85.452591</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1149" bot="" type="井位">
+    <Name>1149</Name>
+    <Title>1149</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0210</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">35</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.922151 85.463832</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1142" bot="" type="井位">
+    <Name>1142</Name>
+    <Title>1142</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0059</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">47</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.916629 85.457435</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1138" bot="" type="井位">
+    <Name>1138</Name>
+    <Title>1138</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0483</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">22</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.929796 85.449564</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1150" bot="" type="井位">
+    <Name>1150</Name>
+    <Title>1150</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0177</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">24</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.925441 85.462477</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1258" bot="" type="井位">
+    <Name>1258</Name>
+    <Title>1258</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0171</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">16</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.926934 85.452506</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1147" bot="" type="井位">
+    <Name>1147</Name>
+    <Title>1147</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0060</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">12</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.912989 85.46413</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1112A" bot="" type="井位">
+    <Name>1112A</Name>
+    <Title>1112A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.1130</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">27</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.918991 85.443057</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1272" bot="" type="井位">
+    <Name>1272</Name>
+    <Title>1272</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0040</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.922293 85.476781</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1278" bot="" type="井位">
+    <Name>1278</Name>
+    <Title>1278</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.932625 85.489012</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1270" bot="" type="井位">
+    <Name>1270</Name>
+    <Title>1270</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0068</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">20</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.923608 85.471081</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1276" bot="" type="井位">
+    <Name>1276</Name>
+    <Title>1276</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0008</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">8</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.930997 85.48212</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1162" bot="" type="井位">
+    <Name>1162</Name>
+    <Title>1162</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">7</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0267</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">7</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.935841 85.453426</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1046A" bot="" type="井位">
+    <Name>1046A</Name>
+    <Title>1046A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">7</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0002</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">8</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.933137 85.480302</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1109" bot="" type="井位">
+    <Name>1109</Name>
+    <Title>1109</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0007</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.901371 85.442665</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1222" bot="" type="井位">
+    <Name>1222</Name>
+    <Title>1222</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.907636 85.459909</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1111" bot="" type="井位">
+    <Name>1111</Name>
+    <Title>1111</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.921706 85.441389</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1214" bot="" type="井位">
+    <Name>1214</Name>
+    <Title>1214</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0010</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">7</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.906502 85.447156</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1101" bot="" type="井位">
+    <Name>1101</Name>
+    <Title>1101</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.930306 85.446152</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="bw7" bot="" type="井位">
+    <Name>bw7</Name>
+    <Title>bw7</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0111</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.908387 85.463814</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1228" bot="" type="井位">
+    <Name>1228</Name>
+    <Title>1228</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0337</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">13</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.917144 85.464542</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1112" bot="" type="井位">
+    <Name>1112</Name>
+    <Title>1112</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0920</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">18</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.917429 85.442103</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1225" bot="" type="井位">
+    <Name>1225</Name>
+    <Title>1225</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0141</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">36</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.929625 85.456335</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1093" bot="" type="井位">
+    <Name>1093</Name>
+    <Title>1093</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.932359 85.448712</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1115" bot="" type="井位">
+    <Name>1115</Name>
+    <Title>1115</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0026</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">11</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.904466 85.444219</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1110" bot="" type="井位">
+    <Name>1110</Name>
+    <Title>1110</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0022</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.926719 85.44107</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1114" bot="" type="井位">
+    <Name>1114</Name>
+    <Title>1114</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0020</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">13</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.908633 85.443928</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1235" bot="" type="井位">
+    <Name>1235</Name>
+    <Title>1235</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0001</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">13</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.931319 85.475297</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1218" bot="" type="井位">
+    <Name>1218</Name>
+    <Title>1218</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.928181 85.444125</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1219" bot="" type="井位">
+    <Name>1219</Name>
+    <Title>1219</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0024</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.932193 85.443382</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1234" bot="" type="井位">
+    <Name>1234</Name>
+    <Title>1234</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0042</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.926827 85.476641</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="百41" bot="" type="井位">
+    <Name>百41</Name>
+    <Title>百41</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0255</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">5</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.928934 85.450519</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1078" bot="" type="井位">
+    <Name>1078</Name>
+    <Title>1078</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.943158 85.496741</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1205" bot="" type="井位">
+    <Name>1205</Name>
+    <Title>1205</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">10</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0218</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.905973 85.44255</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1207" bot="" type="井位">
+    <Name>1207</Name>
+    <Title>1207</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0531</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.914997 85.440895</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="bw14" bot="" type="井位">
+    <Name>bw14</Name>
+    <Title>bw14</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.923615 85.472052</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1257" bot="" type="井位">
+    <Name>1257</Name>
+    <Title>1257</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0830</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">15</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.923327 85.453248</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1135" bot="" type="井位">
+    <Name>1135</Name>
+    <Title>1135</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.911499 85.453172</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1148" bot="" type="井位">
+    <Name>1148</Name>
+    <Title>1148</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0436</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">26</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.917015 85.463747</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1155" bot="" type="井位">
+    <Name>1155</Name>
+    <Title>1155</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">16</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.922353 85.475753</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1256" bot="" type="井位">
+    <Name>1256</Name>
+    <Title>1256</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0055</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">14</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.918531 85.453089</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1157" bot="" type="井位">
+    <Name>1157</Name>
+    <Title>1157</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">5</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0008</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">11</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.930845 85.476443</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1154" bot="" type="井位">
+    <Name>1154</Name>
+    <Title>1154</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.930311 85.468678</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1166" bot="" type="井位">
+    <Name>1166</Name>
+    <Title>1166</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0303</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">17</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.935387 85.472411</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1163" bot="" type="井位">
+    <Name>1163</Name>
+    <Title>1163</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0209</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.936764 85.459784</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1280" bot="" type="井位">
+    <Name>1280</Name>
+    <Title>1280</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.931081 85.445676</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1164" bot="" type="井位">
+    <Name>1164</Name>
+    <Title>1164</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0368</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">19</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.933647 85.461871</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1167" bot="" type="井位">
+    <Name>1167</Name>
+    <Title>1167</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">30</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.1544</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">8</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.933056 85.468894</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1235A" bot="" type="井位">
+    <Name>1235A</Name>
+    <Title>1235A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.931872 85.475658</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1205A" bot="" type="井位">
+    <Name>1205A</Name>
+    <Title>1205A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0054</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.905812 85.444306</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1240" bot="" type="井位">
+    <Name>1240</Name>
+    <Title>1240</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.908989 85.444978</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1250" bot="" type="井位">
+    <Name>1250</Name>
+    <Title>1250</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0213</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">16</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.917995 85.447075</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1277" bot="" type="井位">
+    <Name>1277</Name>
+    <Title>1277</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0278</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">29</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.927409 85.48895</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1104A" bot="" type="井位">
+    <Name>1104A</Name>
+    <Title>1104A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0209</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">8</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.921992 85.446953</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1143" bot="" type="井位">
+    <Name>1143</Name>
+    <Title>1143</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.92081 85.455589</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1263" bot="" type="井位">
+    <Name>1263</Name>
+    <Title>1263</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0309</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">16</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.918276 85.459314</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1139" bot="" type="井位">
+    <Name>1139</Name>
+    <Title>1139</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0211</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.906133 85.45464</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1274" bot="" type="井位">
+    <Name>1274</Name>
+    <Title>1274</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0225</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">19</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.931509 85.472088</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1267" bot="" type="井位">
+    <Name>1267</Name>
+    <Title>1267</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0176</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">26</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.923267 85.466639</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1252" bot="" type="井位">
+    <Name>1252</Name>
+    <Title>1252</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0136</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.92595 85.445956</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1275" bot="" type="井位">
+    <Name>1275</Name>
+    <Title>1275</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">22</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.927468 85.481617</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1265" bot="" type="井位">
+    <Name>1265</Name>
+    <Title>1265</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0019</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.928664 85.459658</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1144" bot="" type="井位">
+    <Name>1144</Name>
+    <Title>1144</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0884</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">12</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.924741 85.457073</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1266" bot="" type="井位">
+    <Name>1266</Name>
+    <Title>1266</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0267</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">13</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.92076 85.467776</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1021A" bot="" type="井位">
+    <Name>1021A</Name>
+    <Title>1021A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.913893 85.448911</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1153" bot="" type="井位">
+    <Name>1153</Name>
+    <Title>1153</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0108</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">12</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.92713 85.47017</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1255" bot="" type="井位">
+    <Name>1255</Name>
+    <Title>1255</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">5</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0448</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">12</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.914157 85.453513</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1249" bot="" type="井位">
+    <Name>1249</Name>
+    <Title>1249</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0395</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.908128 85.45054</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1156" bot="" type="井位">
+    <Name>1156</Name>
+    <Title>1156</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.926342 85.475753</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1140" bot="" type="井位">
+    <Name>1140</Name>
+    <Title>1140</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.90745 85.460708</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1260" bot="" type="井位">
+    <Name>1260</Name>
+    <Title>1260</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0309</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.936854 85.454492</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1146" bot="" type="井位">
+    <Name>1146</Name>
+    <Title>1146</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0178</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">10</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.908353 85.465208</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1273" bot="" type="井位">
+    <Name>1273</Name>
+    <Title>1273</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0244</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">33</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.925254 85.473743</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1268" bot="" type="井位">
+    <Name>1268</Name>
+    <Title>1268</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0091</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">22</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.927764 85.465343</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1151" bot="" type="井位">
+    <Name>1151</Name>
+    <Title>1151</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0253</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">29</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.930858 85.46264</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1261" bot="" type="井位">
+    <Name>1261</Name>
+    <Title>1261</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.911494 85.462181</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1145" bot="" type="井位">
+    <Name>1145</Name>
+    <Title>1145</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0082</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">25</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.930203 85.45808</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1262" bot="" type="井位">
+    <Name>1262</Name>
+    <Title>1262</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0032</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">13</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.915129 85.460698</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1141" bot="" type="井位">
+    <Name>1141</Name>
+    <Title>1141</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.9112 85.457854</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="百30" bot="" type="井位">
+    <Name>百30</Name>
+    <Title>百30</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0001</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.929514 85.475974</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="百22" bot="" type="井位">
+    <Name>百22</Name>
+    <Title>百22</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0037</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.904979 85.474366</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="百25" bot="" type="井位">
+    <Name>百25</Name>
+    <Title>百25</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.935072 85.497699</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="270A" bot="" type="井位">
+    <Name>270A</Name>
+    <Title>270A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.897308 85.457764</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1012" bot="" type="井位">
+    <Name>1012</Name>
+    <Title>1012</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.896853 85.464311</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1003A" bot="" type="井位">
+    <Name>1003A</Name>
+    <Title>1003A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.891974 85.459441</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1022A" bot="" type="井位">
+    <Name>1022A</Name>
+    <Title>1022A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.898089 85.470064</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1065" bot="" type="井位">
+    <Name>1065</Name>
+    <Title>1065</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0705</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">34</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.912079 85.487019</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1105" bot="" type="井位">
+    <Name>1105</Name>
+    <Title>1105</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0441</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">40</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.900601 85.450971</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1213" bot="" type="井位">
+    <Name>1213</Name>
+    <Title>1213</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.898311 85.448689</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1116" bot="" type="井位">
+    <Name>1116</Name>
+    <Title>1116</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0011</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">30</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.90051 85.444602</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1028" bot="" type="井位">
+    <Name>1028</Name>
+    <Title>1028</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0134</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">33</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.923924 85.466671</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1044" bot="" type="井位">
+    <Name>1044</Name>
+    <Title>1044</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0017</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">20</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.924875 85.479474</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1025" bot="" type="井位">
+    <Name>1025</Name>
+    <Title>1025</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0198</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">13</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.91052 85.468777</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1026" bot="" type="井位">
+    <Name>1026</Name>
+    <Title>1026</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.915091 85.468024</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1041" bot="" type="井位">
+    <Name>1041</Name>
+    <Title>1041</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0001</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.911581 85.48144</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1049" bot="" type="井位">
+    <Name>1049</Name>
+    <Title>1049</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0071</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">5</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.912887 85.486604</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1004" bot="" type="井位">
+    <Name>1004</Name>
+    <Title>1004</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.90084 85.457369</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1023" bot="" type="井位">
+    <Name>1023</Name>
+    <Title>1023</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0018</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">15</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.9146 85.461609</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1019" bot="" type="井位">
+    <Name>1019</Name>
+    <Title>1019</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.927872 85.459811</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1009" bot="" type="井位">
+    <Name>1009</Name>
+    <Title>1009</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">8</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0484</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.927422 85.453306</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1014" bot="" type="井位">
+    <Name>1014</Name>
+    <Title>1014</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0072</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">15</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.905802 85.464601</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1043" bot="" type="井位">
+    <Name>1043</Name>
+    <Title>1043</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.920435 85.480057</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1055" bot="" type="井位">
+    <Name>1055</Name>
+    <Title>1055</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0184</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">16</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.925849 85.492274</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1036" bot="" type="井位">
+    <Name>1036</Name>
+    <Title>1036</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.924396 85.473108</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1030" bot="" type="井位">
+    <Name>1030</Name>
+    <Title>1030</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0260</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">15</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.932876 85.465472</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1024" bot="" type="井位">
+    <Name>1024</Name>
+    <Title>1024</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0005</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.901695 85.470156</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1048" bot="" type="井位">
+    <Name>1048</Name>
+    <Title>1048</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.912004 85.487917</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1046" bot="" type="井位">
+    <Name>1046</Name>
+    <Title>1046</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0255</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.933801 85.478305</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="百27" bot="" type="井位">
+    <Name>百27</Name>
+    <Title>百27</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.936089 85.510803</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1077" bot="" type="井位">
+    <Name>1077</Name>
+    <Title>1077</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.943772 85.502595</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1076" bot="" type="井位">
+    <Name>1076</Name>
+    <Title>1076</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.939584 85.503188</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1430" bot="" type="井位">
+    <Name>1430</Name>
+    <Title>1430</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0190</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">14</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.899009 85.454302</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1113A" bot="" type="井位">
+    <Name>1113A</Name>
+    <Title>1113A</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.911836 85.444269</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="T1169" bot="" type="井位">
+    <Name>T1169</Name>
+    <Title>T1169</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0031</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">32</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.906937 85.456061</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="T1281" bot="" type="井位">
+    <Name>T1281</Name>
+    <Title>T1281</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0171</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">11</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.92524 85.45362</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="T1174" bot="" type="井位">
+    <Name>T1174</Name>
+    <Title>T1174</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0398</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">26</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.922793 85.470668</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="T1172" bot="" type="井位">
+    <Name>T1172</Name>
+    <Title>T1172</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.922865 85.469816</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="b1829" bot="" type="井位">
+    <Name>b1829</Name>
+    <Title>b1829</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0082</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">9</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.944217 85.41055</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1119" bot="" type="井位">
+    <Name>1119</Name>
+    <Title>1119</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.887507 85.448166</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1108" bot="" type="井位">
+    <Name>1108</Name>
+    <Title>1108</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0016</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">11</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.887823 85.4538</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1106" bot="" type="井位">
+    <Name>1106</Name>
+    <Title>1106</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0687</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">25</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.896815 85.451794</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1220" bot="" type="井位">
+    <Name>1220</Name>
+    <Title>1220</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.899039 85.459961</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1042" bot="" type="井位">
+    <Name>1042</Name>
+    <Title>1042</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0002</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.916125 85.480462</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1057" bot="" type="井位">
+    <Name>1057</Name>
+    <Title>1057</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0094</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.934624 85.491324</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1052" bot="" type="井位">
+    <Name>1052</Name>
+    <Title>1052</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0035</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">16</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.934271 85.485963</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1056" bot="" type="井位">
+    <Name>1056</Name>
+    <Title>1056</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0099</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.930323 85.491682</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1070" bot="" type="井位">
+    <Name>1070</Name>
+    <Title>1070</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0159</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.926269 85.49877</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1058" bot="" type="井位">
+    <Name>1058</Name>
+    <Title>1058</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">12</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0388</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">29</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.931139 85.453188</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1072" bot="" type="井位">
+    <Name>1072</Name>
+    <Title>1072</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.939111 85.497192</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1090" bot="" type="井位">
+    <Name>1090</Name>
+    <Title>1090</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0199</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.936209 85.481294</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1059" bot="" type="井位">
+    <Name>1059</Name>
+    <Title>1059</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0171</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">14</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.920511 85.449499</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1061" bot="" type="井位">
+    <Name>1061</Name>
+    <Title>1061</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.911478 85.451781</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1062" bot="" type="井位">
+    <Name>1062</Name>
+    <Title>1062</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">5</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0266</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.906514 85.453629</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1091" bot="" type="井位">
+    <Name>1091</Name>
+    <Title>1091</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0210</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">12</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.935583 85.468056</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1067" bot="" type="井位">
+    <Name>1067</Name>
+    <Title>1067</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0543</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">60</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.92404 85.449222</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1103" bot="" type="井位">
+    <Name>1103</Name>
+    <Title>1103</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.923718 85.443986</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1092" bot="" type="井位">
+    <Name>1092</Name>
+    <Title>1092</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0354</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">13</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.934861 85.462036</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1047" bot="" type="井位">
+    <Name>1047</Name>
+    <Title>1047</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0574</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">5</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.905905 85.449215</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1113" bot="" type="井位">
+    <Name>1113</Name>
+    <Title>1113</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.912989 85.442967</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1063" bot="" type="井位">
+    <Name>1063</Name>
+    <Title>1063</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0422</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">12</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.912961 85.485706</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1204" bot="" type="井位">
+    <Name>1204</Name>
+    <Title>1204</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0328</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.897479 85.443999</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1203" bot="" type="井位">
+    <Name>1203</Name>
+    <Title>1203</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">21</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0491</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">15</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.893377 85.444835</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1202" bot="" type="井位">
+    <Name>1202</Name>
+    <Title>1202</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">3</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0010</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.888934 85.445873</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1211" bot="" type="井位">
+    <Name>1211</Name>
+    <Title>1211</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0002</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">6</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.889428 85.450715</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1122" bot="" type="井位">
+    <Name>1122</Name>
+    <Title>1122</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.878618 85.44962</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1120" bot="" type="井位">
+    <Name>1120</Name>
+    <Title>1120</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.883015 85.448766</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1118" bot="" type="井位">
+    <Name>1118</Name>
+    <Title>1118</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0013</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">17</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.891848 85.446845</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="bw18" bot="" type="井位">
+    <Name>bw18</Name>
+    <Title>bw18</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.928861 85.453617</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1158" bot="" type="井位">
+    <Name>1158</Name>
+    <Title>1158</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0551</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">71</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.894714 85.458911</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1279" bot="" type="井位">
+    <Name>1279</Name>
+    <Title>1279</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0398</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.890367 85.454667</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1160" bot="" type="井位">
+    <Name>1160</Name>
+    <Title>1160</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">2</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0128</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">4</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.895718 85.446972</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1161" bot="" type="井位">
+    <Name>1161</Name>
+    <Title>1161</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.899065 85.44717</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="T1171" bot="" type="井位">
+    <Name>T1171</Name>
+    <Title>T1171</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">1</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0.0698</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">26</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.892539 85.455594</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="T1282" bot="" type="井位">
+    <Name>T1282</Name>
+    <Title>T1282</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.892766 85.446714</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="T1283" bot="" type="井位">
+    <Name>T1283</Name>
+    <Title>T1283</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0</P>
+        <P n="AMOUNT_INWATER" t="decimal" r="eq">0</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.896178 85.452236</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+</FeatureCollection>

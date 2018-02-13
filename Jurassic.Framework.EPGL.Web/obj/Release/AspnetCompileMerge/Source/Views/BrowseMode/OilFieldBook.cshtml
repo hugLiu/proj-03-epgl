@@ -1,0 +1,547 @@
+﻿
+@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = "~/Views/Shared/_EPGLLayout.cshtml";
+}
+
+@section css{
+    
+    <link href="~/Content/EPGL/css/pages/browsemode/style.css" rel="stylesheet" />
+<style type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow: auto !important;
+    }
+    #fb7-ajax {
+        height: 100%;
+    }
+</style> 
+}
+<!-- BEGIN FLIPBOOK STRUCTURE -->   
+<div data-template="true" data-cat="book7" id="fb7-ajax">
+
+
+    <!-- BEGIN HTML BOOK -->
+    <div data-current="book7" class="fb7" id="fb7">
+
+        <!-- preloader -->
+        <div class="fb7-preloader">
+            <div id="wBall_1" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_2" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_3" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_4" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_5" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+        </div>
+
+        <!-- background for book -->
+        <div class="fb7-bcg-book"></div>
+
+        <!-- BEGIN CONTAINER BOOK -->
+        <div id="fb7-container-book">
+
+            <!-- BEGIN deep linking -->
+            <section id="fb7-deeplinking">
+                <ul data-bind="foreach:pages">
+                    <li data-bind="attr:{'data-address':$index>0?'page'+$data+'-page'+($data+1):'page'+$data,'data-page':$data}"></li>
+                </ul>
+            </section>
+            <!-- END deep linking -->
+            <!-- BEGIN ABOUT -->
+            <section id="fb7-about">
+                <h1 style="text-shadow: 5px 5px 5px black"> <strong>前言</strong></h1>
+                <h1 style="text-shadow: 5px 5px 5px black">新疆油田分公司<strong>开发图册</strong></h1>
+                <p style="font-size: 20px;color: #355b71;font-weight: bold;text-indent: 2em;text-shadow: 1px 1px 1px black">
+                    新疆油田位于我国西北部新疆维吾尔自治区，准格尔盆地。1955年10月29日，克拉玛依地区1号井喷出高产油气流，发现了克拉玛依油田，是新中国成立后发现的第一个大油田；1960年，克拉玛依油田生产原油164万吨，占全国当年原油产量的40%，成为大庆油田发现前全国量大的石油生产基地。40多年来，以克拉玛依油田为主，相继开发建设了百口泉、夏子街、彩南及石西等32个油气田。
+                </p>
+                <div style="text-align: center">
+                    <img src="images/logo-small.png" />
+                    <h1 style="text-align: center; margin-top:15px;text-shadow: 5px 5px 5px black">
+                        <strong>新疆油田分公司勘探开发研究院规划所</strong>
+                    </h1>
+                    <h3 style="text-align: center;text-shadow: 5px 5px 5px black">2016年12月</h3>
+                </div>
+            </section>
+            <!-- END ABOUT -->
+            <!-- BEGIN PAGES -->
+        <div id="fb7-book">
+            
+
+            <!-- BEGIN PAGE 1 图册封面-->
+            <div style="background-image: url('../../Content/EPGL/img/shared/index.jpg');" class="fb7-noshadow">
+
+                <!-- begin container page book -->
+                <div class="fb7-cont-page-book">
+
+                    <!-- description for page -->
+                    <div class="fb7-page-book">
+
+                    </div>
+                </div>
+                <!-- end container page book -->
+
+            </div>
+            <!-- END PAGE 1 -->
+
+
+            <!-- BEGIN PAGE 2 油田目录-->
+            <div>
+                <!-- begin container page book -->
+                <div class="fb7-cont-page-book">
+
+                    <!-- description for page -->
+                    <div class="fb7-page-book">
+                        <iframe id="page-2-content" src="" width="100%" height="100%"  frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                    </div>
+                    <!-- begin number page -->
+                    <div class="fb7-meta">
+                        <span class="fb7-num">2</span>
+                    </div>
+                    <!-- end number page -->
+                </div>
+                <!-- end container page book -->
+            </div>
+            <!-- END PAGE 2 -->
+
+
+            <!-- ko foreach: { data: oilFields, as: 'oilField', afterRender: changeCurrentPageIndex } -->
+            <!-- BEGIN PAGE 3 油田封面-->
+            <div data-bind="style:{'background-image':'url('+oilField.coverUrl+')'},attr:{id:oilField.year+'_'+oilField.name+'_'+(currentPageIndex+1)+'_cover'}">
+                <!-- begin container page book -->
+                <div class="fb7-cont-page-book">
+                    <!-- description for page-->
+                    <div class="fb7-page-book">
+                    </div>
+                    <!-- begin number page -->
+                    <div class="fb7-meta">
+                        <span class="fb7-num" data-bind="text:currentPageIndex+1"></span>
+                    </div>
+                    <!-- end number page -->
+                </div>
+                <!-- end container page book -->
+            </div>
+            <!-- END PAGE 3 -->
+
+            <!-- BEGIN PAGE 4-5 油田内容-->
+            <!-- ko foreach: { data: contentPages, as: 'contentPage', afterRender: changeCurrentPageIndex } -->
+            <div>
+                <!-- begin container page book -->
+                <div class="fb7-cont-page-book">
+                    <!-- description for page -->
+                    <div class="fb7-page-book">
+                        <iframe id="page-6-content" class="content-frame" width="100%" height="100%" data-bind="attr:{src:'/BrowseMode/OilFieldContent?oilFieldName='+oilField.name+'&index='+$data}" frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                    </div>
+                    <!-- begin number page -->
+                    <div class="fb7-meta">
+                        <span class="fb7-num" data-bind="text:currentPageIndex+2"></span>
+                    </div>
+                    <!-- end number page -->
+                </div>
+                <!-- end container page book -->
+            </div>
+            <!-- /ko -->
+            <!-- END PAGE 4-5 -->
+
+
+            <!-- BEGIN PAGE 10 油藏目录-->
+            <div>
+
+                <!-- begin container page book -->
+                <div class="fb7-cont-page-book">
+
+                    <!-- description for page -->
+                    <div class="fb7-page-book">
+                        <iframe data-bind="attr:{id:oilField.name+'_'+(currentPageIndex+2)+'_rescatalogue'}" src="" class="content-frame" width="100%" height="100%"  frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                    </div>
+                    <!-- begin number page -->
+                    <div class="fb7-meta">
+
+                        <span class="fb7-num" data-bind="text:currentPageIndex+2"></span>
+
+                    </div>
+                    <!-- end number page -->
+
+                </div>
+                <!-- end container page book -->
+
+            </div>
+            <!-- END PAGE 10 -->
+            <!-- ko foreach:{ data: oilReservoirs, as: 'oilReservoir', afterRender: changeCurrentPageIndex }-->
+            <!-- BEGIN PAGE 11 油藏封面-->
+            <div data-bind="style:{'background-image':'url('+oilReservoir.resCoverUrl+')'},attr:{id:oilField.name+'_'+oilReservoir.resName+'_'+(currentPageIndex+3)+'_rescover'}">
+
+                <!-- begin container page book -->
+                <div class="fb7-cont-page-book">
+                    <!-- description for page -->
+                    <div class="fb7-page-book">
+                    </div>
+                    <!-- begin number page -->
+                    <div class="fb7-meta">
+                        <span class="fb7-num" data-bind="text:currentPageIndex+3"></span>
+                    </div>
+                    <!-- end number page -->
+                </div>
+                <!-- end container page book -->
+            </div>
+            <!-- END PAGE 11 -->
+            <!-- ko foreach:{ data: resContentPages, as: 'resContentPage', afterRender: changeCurrentPageIndex }-->
+            <!-- BEGIN PAGE 油藏内容-->
+            <div>
+
+                <!-- begin container page book -->
+                <div class="fb7-cont-page-book">
+
+                    <!-- description for page -->
+                    <div class="fb7-page-book" style="top: 10px;">
+                        <h2 style="margin-top: 0px; margin-bottom: 0px;" data-bind="text:oilReservoir.resName"></h2>
+                        <hr>
+                        <iframe id="page-12-content" class="content-frame" width="100%" height="100%" data-bind="attr:{src:'/BrowseMode/OilReservoirContent?oilFieldName='+oilField.name+'&oilReservoirName='+oilReservoir.resName+'&index='+$data}" frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                    </div>
+                    <!-- begin number page -->
+                    <div class="fb7-meta">
+
+                        <span class="fb7-num" data-bind="text:currentPageIndex+4"></span>
+
+                    </div>
+                    <!-- end number page -->
+
+                </div>
+                <!-- end container page book -->
+
+            </div>
+            <!-- END PAGE -->
+            <!-- /ko -->
+            <!-- /ko -->
+            <!-- /ko -->
+            <!-- END PAGE -->
+
+            <!-- BEGIN PAGE 末页 -->
+            <div>
+
+                <!-- begin container page book -->
+                <div class="fb7-cont-page-book">
+
+                    <!-- description for page-->
+                    <div class="fb7-page-book">
+                        <div style="text-align: center">
+                            <img src="~/Content/EPGL/img/shared/end.jpg" style="width: 700px"/>
+                            <p></p>
+                            <h5 style="float: right; padding-right: 50px;">&nbsp;制作单位：新疆油田分公司勘探开发研究院规划所 & 侏罗纪软件新疆分公司</h5>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- end container page book -->
+
+            </div>
+            <!-- END PAGE  -->
+
+
+
+        </div>
+            <!-- END PAGES -->
+            <!-- arrows -->
+            <a class="fb7-nav-arrow prev"></a>
+            <a class="fb7-nav-arrow next"></a>
+
+            <!-- shadow -->
+            <div class="fb7-shadow"></div>
+
+        </div>
+        <!-- END CONTAINER BOOK -->
+        <!-- BEGIN FOOTER -->
+        <div id="fb7-footer">
+
+            <div class="fb7-bcg-tools"></div>
+            
+            <div class="fb7-menu" id="fb7-logo"></div>
+
+            <div class="fb7-menu" id="fb7-center">
+                <ul>
+
+                    <!-- margin left -->
+                    <li></li>
+
+                    <!-- icon download -->
+                    <!--<li>
+                        <a title="Pdf File Or Zip" class="fb7-download" href="img/file.pdf"></a>
+                    </li>-->
+                    <!-- icon_zoom_in -->
+                    <li>
+                        <a title="放大" class="fb7-zoom-in"></a>
+                    </li>
+
+
+                    <!-- icon_zoom_out -->
+                    <li>
+                        <a title="缩小" class="fb7-zoom-out"></a>
+                    </li>
+
+
+                    <!-- icon_zoom_auto -->
+                    <li>
+                        <a title="适应屏幕" class="fb7-zoom-auto"></a>
+                    </li>
+
+
+                    <!-- icon_zoom_original -->
+                    <li>
+                        <a title="实际尺寸" class="fb7-zoom-original"></a>
+                    </li>
+
+
+                    <!-- icon_allpages -->
+                    <li>
+                        <a title="图册缩略" class="fb7-show-all"></a>
+                    </li>
+
+
+                    <!-- icon_home -->
+                    <li>
+                        <a title="回到封面" class="fb7-home"></a>
+                    </li>
+
+                    <!-- icon fullscreen -->
+                    <li>
+                        <a title="全屏切换" class="fb7-fullscreen"></a>
+                    </li>
+
+                    <!-- margin right -->
+                    <li></li>
+
+                </ul>
+            </div>
+
+            <div class="fb7-menu" id="fb7-right">
+                <ul>
+                    <!-- icon page manager -->
+                    <li class="fb7-goto">
+                        <label for="fb7-page-number" id="fb7-label-page-number"></label>
+                        <input type="text" id="fb7-page-number">
+                        <button type="button">转到</button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- END FOOTER -->
+        <!-- BEGIN THUMBS -->
+        <div id="fb7-all-pages" class="fb7-overlay">
+
+            <section class="fb7-container-pages">
+
+                <div id="fb7-menu-holder">
+
+                    <ul id="fb7-slider">
+
+                        <!-- PAGE 1 - THUMB -->
+                        <li class="1">
+                            <img alt="" src="images/1_.jpg">
+                        </li>
+
+                        <!-- PAGE 2 - THUMB -->
+                        <li class="2">
+                            <img alt="" src="images/2_.jpg">
+                        </li>
+
+                        <!-- PAGE 3 - THUMB -->
+                        <li class="3">
+                            <img alt="" src="images/3_.jpg">
+                        </li>
+
+                        <!-- PAGE 4-5 - THUMB -->
+                        <li class="5">
+                            <img alt="" src="images/4_5_.jpg">
+                        </li>
+
+                        <!-- PAGE 6 - THUMB -->
+                        <li class="6">
+                            <img alt="" src="images/6_.jpg">
+                        </li>
+
+                        <!-- PAGE 7 - THUMB -->
+                        <li class="7">
+                            <img alt="" src="images/7_.jpg">
+                        </li>
+
+                        <!-- PAGE 8 - THUMB -->
+                        <li class="8">
+                            <img alt="" src="images/8_.jpg">
+                        </li>
+
+                        <!-- PAGE 9 - THUMB -->
+                        <li class="9">
+                            <img alt="" src="images/9_.jpg">
+                        </li>
+
+                        <!-- PAGE 10S - THUMB -->
+                        <li class="10">
+                            <img alt="" src="images/end_.jpg">
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+        </div>
+        <!-- END THUMBS -->
+    </div>
+    <!-- END HTML BOOK -->
+
+
+</div>
+<!-- END FLIPBOOK STRUCTURE --> 
+<div class="hidden-Bigimg">
+    <img src="" alt="" />
+</div>
+
+@section script{
+
+    <script src="~/Content/EPGL/js/plugins/turn/turn.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jquery-fullscreen/jquery.fullscreen.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jquery-address/jquery.address-1.6.min.js"></script>
+    <script src="~/Content/EPGL/js/pages/browsemode/onload.js"></script>
+<script src="~/DemoData/bookdata/bookdata.js"></script>
+    <script>
+        $('#fb7-ajax').data('config',
+        {
+            "page_width": "1000",
+            "page_height": "700",
+            "go_to_page": "Page",
+            "gotopage_width": "45",
+            "zoom_double_click": "1",
+            "zoom_step": "0.06",
+            "tooltip_visible": "true",
+            "toolbar_visible": "true",
+            "deeplinking_enabled": "true",
+            "double_click_enabled": "true",
+            "rtl": "false"
+        });
+
+        var oilFieldImgUrl = "/Content/EPGL/img/pages/browsemode/oilfield/";
+        var reservoirImgUrl = "/Content/EPGL/img/pages/browsemode/oilfield/reservoir/";
+
+        var currentPageIndex = 2;
+        var oilFieldCovers = [];
+
+        var OilField = function (year, name, coverUrl, contentPages, oilReservoirs) {
+            this.year = year;
+            this.name = name; //油田名称
+            this.coverUrl = oilFieldImgUrl+coverUrl; //油田封面图片
+            this.contentPages = contentPages;
+            this.oilReservoirs = oilReservoirs;
+            this.changeCurrentPageIndex = function () {
+                currentPageIndex++;
+            }
+        };
+
+
+        var OilReservoir = function (name, resCoverUrl, resContentPages) {
+            this.resName = name;
+            this.resCoverUrl = reservoirImgUrl+resCoverUrl;
+            this.resContentPages = resContentPages;
+            this.changeCurrentPageIndex = function () {
+                currentPageIndex++;
+            }
+        }
+
+
+        var BookViewModel = function() {
+            var self = this;
+
+            self.oilFields = ko.observableArray();
+
+            self.pages = ko.observableArray();
+
+                self.changeCurrentPageIndex = function () {
+                    currentPageIndex += 2;
+                }
+        };
+
+        $(document).ready(function () {
+
+            var currentModel = new BookViewModel();
+
+            ko.applyBindings(currentModel);
+
+            
+            //todo
+            for (var q in bookData) {
+                var oilField = bookData[q];
+                var oilReservoirs = [];
+                if (oilField.hasOwnProperty('oilReservoirs')) {                    
+                    for (var p in oilField.oilReservoirs) {
+                        var item = oilField.oilReservoirs[p];
+                        var oilReservoir = new OilReservoir(item.resName, item.resCoverUrl, [1, 2, 3, 4, 5]);
+                        oilReservoirs.push(oilReservoir);
+                    }
+                }              
+                currentModel.oilFields.push(new OilField(oilField.year, oilField.name, oilField.coverUrl, [1, 2, 3, 4], oilReservoirs));
+            }
+
+
+
+            //for (var q = 0; q < bookData.length; q++) {
+            //    var oilField = bookData[q];
+            //    var oilReservoirs = [];
+            //    for (var p = 0; p < oilField.oilReservoirs.length; p++) {
+            //        var oilReservoir = new OilReservoir(oilField.oilReservoirs[p].resName, oilField.oilReservoirs[p].resContentPages, [1, 2, 3, 4, 5]);
+            //        oilReservoirs.push(oilReservoir);
+            //    }
+            //    currentModel.oilFields.push(new OilField(oilField.year, oilField.name, oilField.coverUrl, [1, 2, 3, 4], oilReservoirs));
+            //}
+
+            //这里当前页数加1，因为最后一页没有更新currentPageIndex的值
+            for (var i=1;i<currentPageIndex+1;i++) {
+                currentModel.pages.push(i);
+            }
+
+            //添加油田目录页面
+            var covers = $("[id$='_cover']");
+            for (var j = 0; j < covers.length; j++) {
+                var data = $(covers[j]).attr("id").split("_");
+                oilFieldCovers.push({ year: data[0], name: data[1], pageIndex: data[2] });
+
+                var resData = $("[id^='" + data[1] + "_'][id$='_rescover']");
+                var resCovers = [];
+                for (var k = 0; k < resData.length; k++) {
+                    var res = $(resData[k]).attr("id").split("_");
+                    //这里的pageIndex是油藏封面的页数
+                    resCovers.push({name:res[1],pageIndex:res[2]});
+                }
+
+                
+                var resCatalogue = $("[id^='" + data[1] + "'][id$='_rescatalogue']");
+                //当前油藏目录所在页数
+                var resCatalogueIndex = resCatalogue.attr("id").split("_")[1];
+                resCatalogue.attr("src", "/BrowseMode/OilReservoirCatalogue?data=" + JSON.stringify(resCovers) + "&pageIndex=" + resCatalogueIndex);
+            }
+
+            $("#page-2-content").attr("src", "/BrowseMode/OilFieldCatalogue?data=" + JSON.stringify(oilFieldCovers));
+        });
+
+        //点击放大图片消失
+        $('.hidden-Bigimg').on('click',function() {
+            $('.hidden-Bigimg').css('display', 'none');
+        });
+</script>
+}
+

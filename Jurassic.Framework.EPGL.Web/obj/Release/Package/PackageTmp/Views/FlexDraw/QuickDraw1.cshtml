@@ -1,0 +1,186 @@
+﻿
+@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = "~/Views/Shared/_EPGLLayout.cshtml";
+}
+@section css{
+    <link href="~/Content/EPGL/css/plugins/jsTree/style.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/plugins/jqGrid-master/ui.jqgrid.min.css" rel="stylesheet" />
+    <style type="text/css">
+        .quickDrawContent {
+            height: 100%;
+            width: 100%;
+        }
+
+        .drawContent {
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+
+        .drawForm {
+            padding: 6.5px;
+            border: 2px solid rgba(220, 220, 220, 1);
+        }
+
+        .drawList {
+            padding-top: 60px;
+            border: 2px solid rgba(220, 220, 220, 1);
+        }
+
+        #contentLeft {
+            width: 200px;
+        }
+
+        #contentRight {
+            width: 110px;
+        }
+
+        #contentCenter {
+            width: calc(100% - 320px);
+        }
+
+        #geoMapPane {
+            width: 100%;
+            height: calc(100% - 52px);
+        }
+
+        #geoMap {
+            width: 100%;
+            height: 100%;
+        }
+
+        #contentCenter_middle {
+            height: calc(100% - 102px);
+            height: -moz-calc(100% - 102px);
+            height: -webkit-calc(100% - 102px);
+        }
+
+        #mapName_original {
+            width: 500px;
+        }
+
+        #mapName_new {
+            width: 515px;
+        }
+
+        #newMap_name {
+            margin-left: 232px;
+        }
+
+        #gbox_mapLayer_table {
+            height: 100%;
+        }
+
+        #gview_mapLayer_table {
+            height: calc(100% - 20px);
+        }
+
+        .left-tab-content {
+            height: calc(100% - 52px);
+            height: -moz-calc(100% - 52px);
+            height: -webkit-calc(100% - 52px);
+            width: 100%;
+        }
+    </style>
+}
+<div class="quickDrawContent">
+    <div id="contentLeft" class="drawContent">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#mapTarget" aria-controls="mapTarget" role="tab" data-toggle="tab">目标导航</a></li>
+            <li role="presentation"><a href="#mapLayer" aria-control="mapLayer" role="tab" data-toggle="tab">图层列表</a></li>
+        </ul>
+        <div class="tab-content left-tab-content">
+            <div id="mapTarget" role="tabpanel" class="tab-pane active" style="height:100%">
+                <div id="mapTarget_tree" style="width:100%;height:100%;overflow: auto;"></div>
+            </div>
+            <div id="mapLayer" role="tabpanel" class="tab-pane">
+                <table id="mapLayer_table" style="width:100%;height:100%;"></table>
+            </div>
+        </div>
+    </div>
+    <div id="contentCenter" class="drawContent">
+        <div id="contentCenter_top" class="form-inline drawForm">
+            <div class="form-group">
+                <div data-bind="visible:isOriginalMap()==false">
+                    <label for="mapType">图件类型：</label>
+                    <select class="form-control" id="mapType2" data-bind="options:availableMapTypes2,value:currentMapType2,optionsCaption: '请选择...',event:{change:function(){updateMapItem('mapType2');}}"></select>
+                    <label for="mapScale">比例尺：</label>
+                    <select class="form-control" id="mapScale" data-bind="options:availaleMapScale,value:currentMapScale,optionsCaption: '请选择...',event:{change:function(){updateMapItem('mapScale');}}"></select>
+                    <label for="mapName_new">图件名称：</label>
+                    <input class="form-control" id="mapName_new" data-bind="value:currentNewMapName" />
+                </div>
+                <div data-bind="visible:isOriginalMap">
+                    <label for="mapType">图件类型：</label>
+                    <select class="form-control" id="mapType" style="width: 180px;" data-bind="options:availableMapTypes,value:currentMapType,optionsCaption: '请选择...',event:{change:function(){updateMapItem('mapType');}}"></select>
+                    <label for="mapName_original">图件名称：</label>
+                    <select class="form-control" id="mapName_original" data-bind="options:availaleMapNames,value:currentMapName,optionsText:'name',optionsCaption: '请选择...',event:{change:function(){updateMapItem('mapName');}}"></select>
+                </div>
+            </div>
+        </div>
+        <div id="contentCenter_middle">
+            <ul class="nav nav-tabs" role="tablist" data-bind="foreach:mapTabItems">
+                <li role="presentation" style="position: relative;" data-bind="css:{active:isActive},attr:{'data-index':index}">
+                    <a href="#geoMap" aria-control="geoMap" role="tab" data-toggle="tab" data-bind="text:title,click:$parent.changeTab"></a>
+                    <button type="button" class="close" style="position: absolute; top: 2px; right: 6px;" aria-label="Close" data-bind="if:index()>0,click:$parent.closeTab"><span aria-hidden="true">&times;</span></button>
+                </li>
+            </ul>
+            <div class="tab-content center-tab-content" id="geoMapPane">
+                <div id="geoMap" class="tab-pane active" role="tabpanel">
+                    <OBJECT ID="joGIS1" CLASSID="clsid:D2546426-13FD-4018-85F1-F5BD61147C8F" CODEBASE="JoWeb.ocx＃version=1,0,0,1" style="height: 100%; width: 100%;" ALIGN=center HSPACE=0 VSPACE=0 wmode="Opaque">
+                        <PARAM NAME="_Version" VALUE="65536">
+                        <PARAM NAME="_ExtentX" VALUE="20000">
+                        <PARAM NAME="_ExtentY" VALUE="15000">
+                        <PARAM NAME="_StockProps" VALUE="0">
+                        <PARAM NAME="WMODE" VALUE="transparent">
+                    </OBJECT>
+                </div>
+            </div>
+        </div>
+        <div id="contentCenter_bottom" class="form-inline drawForm" data-bind="visible:isOriginalMap">
+            <div class="form-group">
+                <label for="pointLeft">X左：</label>
+                <input type="number" id="pointLeft" class="form-control" data-bind="value:currentPointLeft,event:{change:function(){updateMapItem('pointLeft');}}" />
+            </div>
+            <div class="form-group">
+                <label for="pointBottom">Y底：</label>
+                <input type="number" id="pointBottom" class="form-control" data-bind="value:currentPointBottom,event:{change:function(){updateMapItem('pointBottom');}}" />
+            </div>
+            <div class="form-group">
+                <label for="pointRight">X右：</label>
+                <input type="number" id="pointRight" class="form-control" data-bind="value:currentPointRight,event:{change:function(){updateMapItem('pointRight');}}" />
+            </div>
+            <div class="form-group">
+                <label for="pointTop">Y顶：</label>
+                <input type="number" id="pointTop" class="form-control" data-bind="value:currentPointTop,event:{change:function(){updateMapItem('pointTop');}}" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" data-bind="click:refresh">刷新</button>
+            </div>
+        </div>
+    </div>
+    <div id="contentRight" class="drawContent drawList" style="position:relative">
+        <ul class="list-group" id="group">
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_select" data-bind="css:isRMap()&&isOriginalMap()?'btn':'btn disabled'"><i class="fa fa-mouse-pointer"></i>&nbsp;选取</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_zoomin" data-bind="css:isRMap()&&isOriginalMap()?'btn':'btn disabled'"><i class="fa fa-plus-square-o"></i>&nbsp;拉框放大</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_zoomout" data-bind="css:isRMap()&&isOriginalMap()?'btn':'btn disabled'"><i class="fa fa-minus-square-o"></i>&nbsp;拉框缩小</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_move" data-bind="css:isRMap()&&isOriginalMap()?'btn':'btn disabled'"><i class="fa fa-hand-paper-o"></i>&nbsp;移动</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_reset" data-bind="css:isRMap()&&isOriginalMap()?'btn':'btn disabled'"><i class="fa fa-circle-o-notch"></i>&nbsp;复位</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_cut" data-bind="css:isRMap()&&isOriginalMap()?'btn':'btn disabled'"><i class="fa  fa-scissors"></i>&nbsp;截取</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_new" data-bind="css:isRMap()&&isOriginalMap()?'btn':'btn disabled'"><i class="fa fa-check"></i>&nbsp;确定</a></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="tool_clean" data-bind="css:isRMap()&&isOriginalMap()?'btn':'btn disabled'"><i class="fa fa-eraser"></i>&nbsp;清除选择</a></li>
+            <li class="list-group-item" style="z-index: 3;"></li>
+            <li class="list-group-item" style="z-index: 3;"><a id="save_new" data-bind="css:isOriginalMap()?'btn disabled':'btn'"><i class="fa fa-floppy-o"></i>&nbsp;保存</a></li>
+        </ul>
+    </div>
+</div>
+
+@section script{
+    <script src="~/Content/EPGL/js/plugins/jsTree/jstree.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jqGrid-master/jquery.jqgrid.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/linq.js_ver2.2.0.2/linq.min.js"></script>
+    <script language="vbscript" src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-vbfunction.vbs" type="text/vbscript"></script>
+    <script src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-frame.js"></script>
+    <script src="~/DemoData/json/data-tragets.js"></script>
+    <script src="~/Content/EPGL/js/pages/flexdraw/quickdraw1.js"></script>
+}

@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台-油田图册";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- content type -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+
+    <!-- add css -->
+    <link href="~/Content/EPGL/css/plugins/jquery.easyListSplitter/style.css" rel="stylesheet" />
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: auto !important;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="sample">
+    <h1 style="text-align:center">油藏目录</h1>
+    <ul id="rescatalog" data-bind="foreach:rescatalog">
+        <li><a data-bind="attr:{href:'javascript:parent.setPage('+pageIndex+')',id:pageIndex+'_rescatalog'},text:($index()+1)+'.'+name,css:{active:currentPageIndex==(pageIndex-1)}"></a></li>
+    </ul>
+</div>
+
+    <script src="~/Content/EPGL/js/core/jquery-2.1.4.min.js"></script>
+<script src="~/Content/EPGL/js/core/knockout-3.0.0.js"></script>
+<script src="~/Content/EPGL/js/plugins/jquery.easyListSplitter/jquery.easyListSplitter.js"></script>
+<script type="text/javascript">
+
+    var currentPageIndex =@ViewBag.ResPageIndex;
+    var ViewModel = function () {
+        var self = this;
+        self.rescatalog = ko.observableArray();
+    }
+    $(document).ready(function () {
+        var currentModel = new ViewModel();
+        ko.applyBindings(currentModel);
+
+        currentModel.rescatalog(@Html.Raw(ViewBag.ResCatalogueData));
+
+        $('#rescatalog').easyListSplitter({
+            colNumber: 4 // Insert here the number of columns you want. Consider that the plugin will create the number of cols requested only if there are enough items in the list.
+        });
+    });
+</script>
+</body>
+</html>

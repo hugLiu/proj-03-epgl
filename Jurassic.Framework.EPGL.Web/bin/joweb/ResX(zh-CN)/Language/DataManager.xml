@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--数据管理语言配置文件（简体中文）-->
+<!--所有界面控件上的文字通过加载此文件显示-->
+<Language>
+  <form name="frmMain" text="数据管理">
+    <control name="tlsMain" text="toolStrip1">
+      <subcontrol name="tBtnExit" text="退出"/>
+    </control>
+  </form>
+  <form name="frmXData" text="数据">
+    <control name="panel1" text="">
+      <subcontrol name="label1" text="第:"/>
+      <subcontrol name="label2" text="总记录:"/>
+      <subcontrol name="label3" text="每页:"/>
+      <subcontrol name="label4" text="总页数:"/>
+    </control>
+    <control name="tlsXData" text="toolStrip1">
+      <subcontrol name="tBtnSave" text="保存"/>
+      <subcontrol name="tBtnAdd" text="增加"/>
+      <subcontrol name="tBtnDel" text="删除"/>
+      <subcontrol name="tBtnImport" text="导入"/>
+      <subcontrol name="tBtnExport" text="导出"/>
+      <subcontrol name="tBtnCurveEdit" text="编辑曲线"/>
+      <subcontrol name="tBtnNull" text="无效值"/>
+      <subcontrol name="tBtnQuery" text="查询"/>
+      <subcontrol name="tbnAllData" text="刷新"/>
+    </control>
+  </form>
+  <form name="WellCurvePointEdit" text="曲线编辑">
+    <control name="tlsPoints" text="toolStrip1">
+      <subcontrol name="tBtnAdd" text="增加点"/>
+      <subcontrol name="tBtnDel" text="删除点"/>
+      <subcontrol name="tBtnExport" text="导出曲线"/>
+    </control>
+    <control name="panBtn" text="">
+      <subcontrol name="btnOK" text="确定"/>
+      <subcontrol name="btnCancel" text="取消"/>
+    </control>
+  </form>
+  <form name="frmMDI" text="确定(&amp;O)">
+    <control name="btnCancel" text="取消(&amp;C)"/>
+  </form>
+  <form name="frmQuery" text="查询">
+    <control name="tlsQuery" text="toolStrip1">
+      <subcontrol name="tBtnInsert" text="插入"/>
+      <subcontrol name="tBtnDel" text="删除"/>
+      <subcontrol name="tBtnClear" text="清空"/>
+    </control>
+    <control name="btnQuery" text="查询(&amp;Q)"/>
+    <control name="btnCancel" text="取消(&amp;C)"/>
+  </form>
+  <form name="WellCurvePointEdit" text="曲线编辑">
+    <control name="btn_export" text="导出"/>
+    <control name="确定" text="btnOK"/>
+    <control name="btnCancel" text="取消"/>
+  </form>
+  <form name="WellImageEdit" text="图片编辑">
+    <control name="label1" text="图片文件"/>
+    <control name="label2" text="深度(m)"/>
+    <control name="label4" text="类型"/>
+    <control name="btnZoomOut" text="放大"/>
+    <control name="btnZoomIn" text="缩小"/>
+    <control name="btnOK" text="确定"/>
+    <control name="btnCancel" text="取消"/>
+  </form>
+  <form name="frmImage" text="查看图像">
+    <control name="lblDepth" text="深度"/>
+    <control name="lblFile" text="文件"/>
+    <control name="btnOK" text="确定(&amp;O)"/>
+    <control name="btnCancel" text="取消(&amp;C)"/>
+  </form>
+  <form name="frmNullValue" text="无效值设置">
+    <control name="grpNull" text="无效值"/>
+    <control name="btnOK" text="确定(&amp;O)"/>
+    <control name="btnCancel" text="取消(&amp;C)"/>
+  </form>
+  <form name="SaveAllDlg" text="提示">
+    <control name="btnYes" text="是(&amp;Y)"/>
+    <control name="btnNo" text="否(&amp;N)"/>
+    <control name="btnCancel" text="取消(&amp;C)"/>
+    <control name="cbSave" text="批量保存"/>
+    <control name="label1" text="数据更改没有保存！是否需要保存？"/>
+  </form>
+  <!--*******************提示内容与某些固定显示内容：**********************
+  // text属性为空的id为未使用的id，可以添加使用
+  // 本文件应随着显示界面的更新及时更新
+  *************************************************************************-->
+  <MSGbox id="001" text="提示"/>
+  <MSGbox id="002" text="工区"/>
+  <MSGbox id="003" text="图片文件"/><!--ImgFrame添加图片，打开文件的窗口-->
+  <MSGbox id="004" text=""/>
+  <MSGbox id="005" text=""/>
+  <MSGbox id="006" text="井"/>
+  <MSGbox id="007" text="剖面线"/>
+  <MSGbox id="008" text="井位数据"/>
+  <MSGbox id="009" text=""/>
+  <!--↓frmQuery↓-->
+  <MSGbox id="010" text="属性"/>
+  <MSGbox id="011" text="运算符"/>
+  <MSGbox id="012" text="属性值"/>
+  <MSGbox id="013" text="关系"/>
+  <MSGbox id="014" text="并且"/>
+  <MSGbox id="015" text="或者"/>
+  <MSGbox id="016" text="无效属性值"/>
+  <MSGbox id="017" text="缺少连接关系"/>
+  <!--*************************************************************-->
+  <MSGbox id="1001" text="未能找到指定的文件"/>
+  <MSGbox id="1002" text="请选择一个图片"/>
+  <MSGbox id="1003" text="确认删除？"/>
+  <MSGbox id="1004" text="该行存在错误信息数据!"/>
+  <MSGbox id="1005" text="设置值不在列表的合理值范围中!"/>
+  <MSGbox id="1006" text="该行存在错误信息数据！"/>
+  <MSGbox id="1007" text="左右括号不匹配，请检查"/>
+  <MSGbox id="1008" text="没有符合条件的数据，请重新设置查询条件"/>
+  <MSGbox id="1009" text="数据查询失败，请检查查询条件"/>
+  <MSGbox id="1010" text="您确定要删除选中的数据吗？"/>
+  <MSGbox id="1011" text="深度"/>
+  <MSGbox id="1012" text=""/>
+  <MSGbox id="1013" text="曲线点数据不能为空"/>
+  <MSGbox id="1014" text="数据重复或者值不正确"/>
+  <MSGbox id="1015" text="保存成功。"/>
+  <MSGbox id="1016" text="保存失败。"/>
+  <MSGbox id="1017" text="更改的数据没有保存！是否需要保存？"/>
+  <MSGbox id="1018" text="导入成功。"/>
+  <MSGbox id="1019" text="导入失败！"/>
+  <MSGbox id="1020" text="导出成功。"/>
+  <MSGbox id="1021" text="导出失败"/>
+  <MSGbox id="1022" text="Microsoft Office Excel 工作簿(*.xls)|*.xls"/>
+  <MSGbox id="1023" text="无法创建Excel对象，可能您的电脑未安装Excel"/>
+  <MSGbox id="1024" text="导出文件时出错,文件可能正被打开！\n"/>
+  <!--↓SingleWellDataAdapter_XML.cs↓-->
+  <MSGbox id="1025" text="深度,"/>
+  <MSGbox id="1026" text="井斜"/>
+  <MSGbox id="1027" text="方位角,"/>
+  <MSGbox id="1028" text="倾角,"/>
+  <MSGbox id="1029" text=""/>
+  <!--SingleWellDataAdapter_XML.cs-->
+  <MSGbox id="1030" text="数据未指定专业类型，或者对应专业类型找不到专业图层，写入失败！"/>
+  <MSGbox id="" text=""/>
+</Language>

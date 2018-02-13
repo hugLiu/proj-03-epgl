@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+-->
+<!--本文件是平台主控程序的配置文件，请勿随便更改，可能会导致程序加载或运行错误。
+-->
+<GeoMap>
+	<Root IDName="Main">
+		<Item IDName="系统\r\n资源"/>
+		<Item IDName="工区\r\n管理"/>
+		<Item IDName="工区\r\n资源"/>
+		<Item IDName="工区\r\n图件"/>
+		<Item IDName="应用\r\n管理"/>
+	</Root>
+	<Root IDName="0">
+		<Item IDName="图式标准"/>
+		<Item IDName="图类模板"/>
+	</Root>
+	<Root IDName="0,0">
+		<Item IDName="新建子分级"/>
+		<Item IDName="导入"/>
+		<Item IDName="删除"/>
+		<Item IDName="编辑"/>
+	</Root>
+	<Root IDName="1">
+		<Item IDName="工区列表"/>
+		<Item IDName="详细信息"/>
+	</Root>
+	<Root IDName="1,0">
+		<Item IDName="新建工区"/>
+		<Item IDName="导入工区"/>
+		<Item IDName="导入图册"/>
+		<Item IDName="编辑工区"/>
+		<Item IDName="移除工区"/>
+		<Item IDName="激活工区"/>
+		<Item IDName="取消激活"/>
+		<Item IDName="备份工区"/>
+		<Item IDName="恢复工区"/>
+	</Root>
+	<Root IDName="2">
+		<Item IDName="图件模板"/>
+		<Item IDName="工区底图"/>
+		<Item IDName="公共图层"/>
+		<Item IDName="工区数据"/>
+	</Root>
+	<Root IDName="2,0">
+		<Item IDName="新建子分级"/>
+		<Item IDName="导入"/>
+		<Item IDName="删除"/>
+		<Item IDName="编辑"/>
+	</Root>
+	<Root IDName="3">
+		<Item IDName="平面图"/>
+		<Item IDName="等值图"/>
+		<Item IDName="单井图"/>
+		<Item IDName="剖面图"/>
+		<Item IDName="搜索"/>
+	</Root>
+	<Root IDName="3,0">
+		<Item IDName="新建子分级"/>
+		<Item IDName="导入"/>
+		<Item IDName="删除"/>
+		<Item IDName="新建"/>
+		<Item IDName="编辑"/>
+	</Root>
+	<Root IDName="3,4">
+		<Item IDName="打开"/>
+	</Root>
+	<Root IDName="4">
+		<Item IDName="外部程序" />
+	</Root>
+	<Root IDName="4,0">
+		<Item IDName="注册"/>
+		<Item IDName="注销"/>
+		<Item IDName="运行"/>
+	</Root>	
+	<Root IDName="Sys">
+		<Item IDName="程序菜单"/>
+		<Item IDName="工区导航"/>
+		<Item IDName="系统设置"/>
+		<Item IDName="在线用户"/>
+	</Root>
+</GeoMap>

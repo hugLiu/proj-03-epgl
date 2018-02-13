@@ -1,0 +1,39 @@
+* {
+    font-family: Microsoft YaHei;
+}
+.sample{margin-top:20px;padding:10px 10px 0 10px}
+.sample h1{margin:0;padding:0 0 20px 0;font-size:32px}
+.sample h2{margin:0;padding:10px 0 5px 0;font-size:18px;clear:both}
+.sample p{font-size:14px;line-height:170%;margin-bottom:30px;clear:both}
+.sample ul,.sample ol{padding:0;margin:0;font-size:14px}
+
+.sample ul,.sample ol{
+list-style-type:none;
+background:url(images/dotted.gif) 0 0 repeat-x;
+width:200px;
+float:left;
+margin:0 10px 30px 0
+}
+.sample li{
+background:url(images/dotted.gif) bottom left repeat-x;
+width:200px;
+float:left;
+padding:0
+}
+.sample li a{
+padding:8px 20px 8px 0;
+width:180px;
+float:left;
+background:url(images/arrow-right.gif) right 12px no-repeat;
+text-decoration:none;
+color:#294f88
+}
+.sample li a:hover{color:#ff9900;background-image:url(images/arrow-right-dark.gif)}
+.sample .active {
+font-size:16px;
+font-weight:bold;
+color:#ff3300;
+}
+.sample .active:hover {
+color:#ff9900;
+}

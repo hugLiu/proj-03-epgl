@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--按条件筛选树结构-->
+<!--此配置文件为平面图数据导入时，选择专业名称服务-->
+<TypeFilter>
+	<DataItem ID = "1" Text = "井位数据">
+      <!--井位根据“井类型”作为专业名称，不考虑类型筛选！-->
+    </DataItem>
+    <DataItem ID = "2" Text = "离散点数据">
+      <!--离散点数据暂无专业名称分类，不考虑类型筛选！-->
+    </DataItem>
+    <DataItem ID = "3" Text = "油气水柱子">
+      <!--非专业图元，无专业名称，不考虑类型筛选！-->
+    </DataItem>
+    <DataItem ID = "4" Text = "数据十字">
+      <!--非专业图元，无专业名称，不考虑类型筛选！-->
+    </DataItem>
+    <DataItem ID = "5" Text = "符号">
+      <!--符号图元以“符号类型”作为专业名称，不考虑类型筛选！-->
+    </DataItem>
+    <DataItem ID = "6" Text = "地名">
+      <!--地名图元以“符号类型”作为专业名称，不考虑类型筛选！-->
+    </DataItem>
+    <DataItem ID = "7" Text = "文字">
+       <!--非专业图元，无专业名称，不考虑类型筛选！-->
+    </DataItem>
+    <DataItem ID = "8" Text = "曲线">
+      <FilterItem filter = "|地理信息.境界" />
+      <FilterItem filter = "|地理信息.交通线" />
+      <FilterItem filter = "|地理信息.线状水系" />
+      <FilterItem filter = "|地理信息.线状地物" />
+      <FilterItem filter = "|勘探工程信息.实测地层剖面" />
+      <FilterItem filter = "|勘探工程信息.非地震物化探测线" />
+      <FilterItem filter = "|地质信息.构造分区" />
+      <FilterItem filter = "|地质信息.裂缝线" />
+      <FilterItem filter = "|地质信息.地层界线" />
+      <FilterItem filter = "|地质信息.地层接触关系" />
+      <FilterItem filter = "|地质信息.剖面位置线" />
+      <FilterItem filter = "|地质信息.矿物分区线" />
+      <FilterItem filter = "|地质信息.砂体边界线" />
+      <FilterItem filter = "|地质信息.岩体边界线" />
+      <FilterItem filter = "|地质信息.地层产状" />
+      <FilterItem filter = "|油气信息.油气水边界" />
+      <FilterItem filter = "|开发生产信息.油井含水分布线" />
+      <FilterItem filter = "|地面工程信息.集输管线" />
+      <FilterItem filter = "|其他.拼图线" />
+    </DataItem>
+    <DataItem ID = "9" Text = "等值线">
+      <FilterItem filter = "|地理信息.海岸线" />
+      <FilterItem filter = "|勘探工程信息.地震属性" />
+      <FilterItem filter = "|勘探工程信息.反射层时间" />
+      <FilterItem filter = "|地质信息.构造深度" />
+      <FilterItem filter = "|地质信息.埋深等值线" />
+      <FilterItem filter = "|地质信息.地层分布" />
+      <FilterItem filter = "|地质信息.砂岩含量" />      
+      <FilterItem filter = "|油气信息.烃源岩等值线" />
+      <FilterItem filter = "|油气信息.有机质丰度" />
+      <FilterItem filter = "|油气信息.温差特性" />
+      <FilterItem filter = "|油气信息.储层物性" />
+      <FilterItem filter = "|油气信息.储层非均质性" />
+      <FilterItem filter = "|油气信息.盖层厚度" />
+      <FilterItem filter = "|油气信息.过剩压力" />
+      <FilterItem filter = "|开发生产信息.地层系数等值线" />
+      <FilterItem filter = "|开发生产信息.试采初期产能等值线" />
+      <FilterItem filter = "|开发生产信息.油井含水等值线" />
+      <FilterItem filter = "|开发生产信息.油层压力等值线" /> 
+    </DataItem>
+    <DataItem ID = "10" Text = "断层线">
+      <FilterItem filter = "|地质信息.断层" />
+    </DataItem>
+    <DataItem ID = "11" Text = "边界">
+       <!--非专业图元，无专业名称，不考虑类型筛选！-->
+    </DataItem>
+    <DataItem ID = "12" Text = "地震工区">
+      <FilterItem filter = "|勘探工程信息.地震工区" />
+    </DataItem>
+    <DataItem ID = "13" Text = "地震测线">
+      <FilterItem filter = "|勘探工程信息.地震测线" />   
+    </DataItem>
+    <DataItem ID = "14" Text = "面">
+      <FilterItem filter = "|地理信息.面状水系"/> 
+      <FilterItem filter = "|地理信息.面状地物"/> 
+      <FilterItem filter = "|矿权信息.矿权区"/> 
+      <FilterItem filter = "|勘探工程信息.地震相" />
+      <FilterItem filter = "|勘探工程信息.地震资料品质区" />
+      <FilterItem filter = "|勘探工程信息.非地震工区" />
+      <FilterItem filter = "|勘探工程信息.勘探目标（项目工区）" />
+      <FilterItem filter = "|地质信息.构造分区" />
+      <FilterItem filter = "|地质信息.裂缝预测" />
+      <FilterItem filter = "|地质信息.裂缝发育带" />
+      <FilterItem filter = "|地质信息.地层年代" />
+      <FilterItem filter = "|地质信息.岩相古地理" />
+      <FilterItem filter = "|地质信息.鲕滩分布带" />
+      <FilterItem filter = "|地质信息.沉积相" />
+      <FilterItem filter = "|地质信息.岩性分布" />
+      <FilterItem filter = "|地质信息.成岩相带" />
+      <FilterItem filter = "|地质信息.圈闭" />
+      <FilterItem filter = "|油气信息.储层分类" />
+      <FilterItem filter = "|油气信息.储量类型" />
+      <FilterItem filter = "|油气信息.储量级别" />
+      <FilterItem filter = "|油气信息.储量分类" />
+      <FilterItem filter = "|油气信息.油气资源量" />
+      <FilterItem filter = "|油气信息.油气藏类型" />
+      <FilterItem filter = "|油气信息.含油气面积" />
+      <FilterItem filter = "|开发生产信息.面状开发动态信息" />
+    </DataItem>
+</TypeFilter>

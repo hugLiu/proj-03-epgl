@@ -1,0 +1,883 @@
+﻿@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = "~/Views/Shared/_EPGLLayout.cshtml";
+}
+
+@section css{
+    <link href="~/Content/EPGL/css/plugins/jsTree/style.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/plugins/jqGrid-master/ui.jqgrid.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/plugins/ol3.20.1/ol.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/shared/ogis/ogis.css" rel="stylesheet" />
+
+    <link href="~/Content/EPGL/css/plugins/fileinput/fileinput.css" rel="stylesheet" />
+    <!--kendo-->
+    <link href="~/Content/EPGL/css/plugins/kendo/kendo.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/plugins/kendo/kendo.common-bootstrap.min.css" rel="stylesheet" />
+    <!--bootstrap-colorpicker-->
+    <link href="~/Content/EPGL/css/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+            .tooltip {
+                position: relative;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 4px;
+                color: white;
+                padding: 4px 8px;
+                opacity: 0.7;
+                white-space: nowrap;
+            }
+
+            .tooltip-measure {
+                opacity: 1;
+                font-weight: bold;
+            }
+
+            .tooltip-static {
+                background-color: #ffcc33;
+                color: black;
+                border: 1px solid white;
+            }
+
+                .tooltip-measure:before,
+                .tooltip-static:before {
+                    border-top: 6px solid rgba(0, 0, 0, 0.5);
+                    border-right: 6px solid transparent;
+                    border-left: 6px solid transparent;
+                    content: "";
+                    position: absolute;
+                    bottom: -6px;
+                    margin-left: -7px;
+                    left: 50%;
+                }
+
+                .tooltip-static:before {
+                    border-top-color: #ffcc33;
+                }
+
+            k-animation-container, .k-animation-container *,
+            .k-animation-container :after, .k-block .k-header,
+            .k-list-container,
+            .k-widget, .k-widget *,
+            .k-widget :before {
+                -webkit-box-sizing: border-box !important;
+                box-sizing: border-box !important;
+            }
+
+            #horizontal {
+                /*height: calc(100% - 60px);*/
+                width: 100%;
+            }
+
+            #left-pane {
+                width: 270px;
+                height: 100%;
+            }
+
+            #right-pane {
+                width: 220px;
+                height: 100%;
+            }
+
+            .pane-content {
+                height: 100%;
+                width: 100%;
+            }
+
+            .right-content {
+                height: calc(100% - 51px);
+                height: -moz-calc(100% - 51px);
+                height: -webkit-calc(100% - 51px);
+                width: 100%;
+            }
+
+            .tab-pane {
+                width: 100%;
+                height: 100%;
+            }
+
+            #map_relevant {
+                overflow: auto;
+            }
+
+            #maps {
+                height: 100%;
+                width: 100%;
+                position: relative;
+            }
+
+            #mapType-wrapper {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+            }
+
+            .expand #mapType-wrapper {
+                width: 298px;
+            }
+
+            #mapType {
+                height: 80px;
+                cursor: pointer;
+                transition-property: width, background-color;
+                -moz-transition-property: width, background-color; /* Firefox 4 */
+                -webkit-transition-property: width, background-color; /* Safari 和 Chrome */
+                -o-transition-property: width, background-color; /* Opera */
+                transition-duration: .4s;
+                -moz-transition-duration: .4s; /* Firefox 4 */
+                -webkit-transition-duration: .4s; /* Safari 和 Chrome */
+                -o-transition-duration: .4s; /* Opera */
+                width: 110px;
+                background-color: rgba(255, 255, 255, 0);
+            }
+
+            .expand #mapType {
+                width: 298px;
+                background-color: #fff;
+                background-color: rgba(255, 255, 255, .8);
+            }
+
+                .expand #mapType .mapTypeCard {
+                    border: 1px solid rgba(255, 255, 255, 0);
+                    background-image: url('../../Content/EPGL/img/shared/maptype.jpg');
+                }
+
+                    .expand #mapType .mapTypeCard.active {
+                        border: 1px solid #3385FF;
+                    }
+
+                .expand #mapType .satellite {
+                    right: 202px;
+                }
+
+                .expand #mapType .terrain {
+                    right: 106px;
+                }
+
+            #mapType .mapTypeCard {
+                height: 60px;
+                width: 86px;
+                position: absolute;
+                border-radius: 2px;
+                top: 10px;
+                box-sizing: border-box;
+                border: 1px solid transparent;
+                border: 1px solid rgba(153, 153, 153, .42);
+                background: url('../../Content/EPGL/img/shared/shadow_6bf0ecd.png') no-repeat 0 0;
+                background-size: 86px 240px;
+                -webkit-transition-property: right, background-image;
+                transition-property: right, background-image;
+                -webkit-transition-duration: .4s;
+                transition-duration: .4s;
+            }
+
+                #mapType .mapTypeCard span {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    display: inline-block;
+                    padding: 3px 3px 2px 4px;
+                    font-size: 12px;
+                    height: 17px;
+                    line-height: 17px;
+                    color: #FFF;
+                    border-top-left-radius: 2px;
+                }
+
+                #mapType .mapTypeCard.active span, #mapType .mapTypeCard:hover span {
+                    background-color: #3385FF;
+                }
+
+                #mapType .mapTypeCard:hover {
+                    border: 1px solid #3385FF;
+                }
+
+            #mapType .satellite {
+                z-index: 1;
+                background-position: 0 -60px;
+                right: 20px;
+            }
+
+            #mapType .terrain {
+                right: 15px;
+                z-index: 2;
+                background-position: 0 0;
+            }
+
+            #mapType .geoMap {
+                z-index: 3;
+                right: 10px;
+                background-image: url('../../Content/EPGL/img/shared/maptype.jpg');
+                background-position: 0 -121px;
+                border-left: 1px solid rgba(153, 153, 153, .6);
+            }
+
+
+            /*#rightMapTool-wrapper {
+            position: absolute;
+            bottom: 100px;
+            right: 10px;
+        }*/
+
+            a:hover,
+            a:focus {
+                text-decoration: underline;
+            }
+
+            iframe > body {
+                background-color: transparent;
+            }
+
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+
+
+            .ui-jqgrid-view {
+                z-index: 3;
+            }
+
+            .ui-jqgrid .ui-jqgrid-bdiv {
+                max-height: 480px;
+                overflow-y: auto;
+            }
+
+            .rightMenu {
+                float: right;
+            }
+
+            .mouse-position-wrapper {
+                width: 300px;
+                height: 29px;
+                color: #000000;
+                position: absolute;
+                left: 130px;
+                bottom: 9px;
+                text-align: center;
+                line-height: 29px;
+                z-index: 9999;
+            }
+
+            .map-control{
+                background-color:rgba(255,255,255,.4);
+                border-radius:4px;
+                position:absolute;
+                z-index:2;
+                padding:2px;
+            }
+            .map-control:hover{
+                background-color:rgba(255,255,255,.6);
+            }
+            .map-control button{
+                display:block;
+                margin:1px;
+                padding:0;
+                color:#fff;
+                font-size:1.14em;
+                font-weight:700;
+                text-decoration:none;
+                text-align:center;
+                height:1.375em;
+                width:1.375em;
+                line-height:.4em;
+                background-color:rgba(0,60,136,.5);
+                border:none;
+                border-radius:2px;
+                position: relative;
+                z-index: 2;
+            }       
+            .map-control button:hover{
+                text-decoration:none;
+                background-color:rgba(0,60,136,.7);
+            }
+            .map-scale{                
+                border-radius:4px;
+                bottom:8px;
+                left:8px;
+                position:absolute;
+                z-index: 1;
+                width:115px;
+            }
+            .map-scale-inline{
+                background-color:rgba(0,60,136,.3);
+                border:1px solid #eee;
+                border-top:none;
+                color:#eee;
+                font-size:10px;
+                text-align:center;
+                margin:1px;
+                will-change:contents, width;
+                width:100%;
+                height:100%;
+                position:relative;
+                z-index:2;
+            }
+
+    </style>
+<!--[if lt IE 9]>
+
+   <style type="text/css">
+    .map-control{
+        background: transparent;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66ffffff,endColorstr=#66ffffff);
+        zoom: 1;
+            }
+            .map-control:hover{
+        background: transparent;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+        zoom: 1;
+            }
+.map-control button {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f003c88,endColorstr=#7f003c88);
+    zoom: 1;
+}
+    .map-control button:hover{
+        background: transparent;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2003c88,endColorstr=#b2003c88);
+        zoom: 1;
+            }
+
+    .map-scale-inline{
+    background: transparent;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c003c88,endColorstr=#4c003c88);
+        zoom: 1;
+            }
+    </style>
+
+<![endif]-->
+
+
+}
+<form id="navigateForm" name="navigateForm" action="/TargetNav/Index" method="post" target="_blank" style="display: none;">
+    <input type="hidden" id="currentTarget" name="currentTarget">
+    <input type="hidden" id="currentElementName" name="currentElementName">
+</form>
+<form id="resultForm" name="resultform" action="/Viewer/Detail" method="post" target="_blank" style="display: none;">
+    <input type="hidden" id="mapId" name="iiid" size="25">
+    <input type="hidden" id="mapData" name="data" size="25">
+</form>
+<div id="horizontal">
+    <div id="left-pane">
+        <div class="pane-content">
+            <div id="targets_tree"></div>
+        </div>
+    </div>
+    <div id="center-pane">
+        <div class="pane-content">
+            <div id="maps">
+                <div id="geoMapPane" style="height: 100%; width: 100%;">
+                    @{Html.RenderPartial("GeoMapPartial");}
+                </div>
+                <div id="panelMap" style="height: 100%; width: 100%;display:none;">
+                    @{Html.RenderPartial("MapPartial");}
+                </div>
+                <div id="mapType-wrapper">
+                    <div id="mapType">
+                        <div class="mapTypeCard geoMap active" data-name="geomap">
+                            <span>地质图</span>
+                        </div>
+                        <div class="mapTypeCard terrain" data-name="terrain">
+                            <span>地面图</span>
+                        </div>
+                        <div class="mapTypeCard satellite" data-name="satellite">
+                            <span>卫星图</span>
+                        </div>
+                    </div>
+                    <iframe scrolling=no style='background-color: transparent; position: absolute; z-index: 0; width: 100%; height: 100%; top: 0; left: 0; border: none;'></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="right-pane">
+        <div class="pane-content">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#map_layer" aria-controls="map_layer" role="tab" data-toggle="tab">图层列表</a></li>
+                <li role="presentation"><a href="#map_relevant" aria-controls="map_relevant" role="tab" data-toggle="tab">相关图件</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content right-content">
+                <div role="tabpanel" class="tab-pane active" id="map_layer">
+                    <table id="table_layers"></table>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="map_relevant">
+                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+@section script{
+
+    @* ol不能跟echart一起引用 *@
+    <script src="~/Content/EPGL/js/plugins/ol3.20.1/ol-debug.js"></script>
+    @*<script src="~/Content/EPGL/js/plugins/ol3.20.1/ol.js"></script>*@
+
+    <script src="~/Content/EPGL/js/plugins/linq.js_ver2.2.0.2/linq.min.js"></script>
+    @*<script src="~/Content/EPGL/js/shared/ie8support.js"></script>*@
+    <script src="~/Content/EPGL/js/plugins/proj4/proj4.js"></script>
+
+    <script src="~/Content/EPGL/js/plugins/filesaver/FileSaver.min.js"></script>
+
+    <script src="~/Content/EPGL/js/plugins/fileinput/fileinput.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/fileinput/locales/zh.js"></script>
+
+    <script src="~/Content/EPGL/js/plugins/jsTree/jstree.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jqGrid-master/jquery.jqgrid.src.js"></script>
+    @*<script src="~/Content/EPGL/js/plugins/jqGrid-master/jquery.jqgrid.min.js"></script>*@
+
+    <script language="vbscript" src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-vbfunction.vbs" type="text/vbscript"></script>
+    <script src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-frame.js"></script>
+
+    <!--kendo-->
+    <script src="~/Content/EPGL/js/plugins/kendo/kendo.all.min.js"></script>
+    <!--bootstrap-colorpicker-->
+    <script src="~/Content/EPGL/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+
+    <script src="~/Content/EPGL/js/shared/ogis/ogis.js"></script>
+
+    <script src="~/Content/EPGL/js/pages/targetNav/load-geomap.js"></script>
+
+    <!--图元描述-->
+    <script src="~/DemoData/json/data-basin.js"></script>
+
+    <script src="~/Content/EPGL/js/pages/targetNav/load-map.js"></script>
+
+
+    <script type="text/javascript">
+        $.jgrid.defaults.responsive = true;
+        $.jgrid.defaults.styleUI = 'Bootstrap';
+        $.jgrid.no_legacy_api = true;
+
+
+        var node = '@Html.Raw(ViewBag.CurrentTargetNode)';
+        var eleName = '@Html.Raw(ViewBag.currentElementName)';
+        //当前选中目标节点
+        var currentTargetNode = (node && node != '') ? node : null;
+        //当前导航级别{1:盆地级,2:区带级,3:油田级,4:油藏级，5:井}
+        var currentNavLevel = 0;
+        //在geoMap里赋值,ol里使用，装载地图范围坐标点，实现三种地图的联动
+        var currentMapRange = null;
+        //当前选中的图元，保证依然选中{elementID: "", elementType: "", elementName: "", elementPolyCoords: [] };
+        var currentMapElement = (eleName && eleName != '') ? eleName : null;
+
+        //geomap地图图层数据
+        var geomap_layersdata = [];
+        //map地图图层数据
+        var map_layersdata = [];
+
+        var ids = [];//相关图件iiid集合
+
+        var mapType = $("#mapType .active").data("name");
+
+        //初始化目标树
+        var loadTargetTree = function () {
+            $.ajax({
+                url: "/BOAPI/GetBOTree",
+                async: true,
+                type: "post",
+                contentType: "application/json",
+                success: function (dataJson) {
+                    console.log(dataJson);
+                    targetsData = dataJson;
+                    basinNode = dataJson[0];
+
+                    if (currentTargetNode) {
+                        targetsData = getTargetNodes(currentTargetNode);
+                    }
+                    renderTargetTree(targetsData);
+                }
+            });
+        };
+        //渲染目标树
+        var renderTargetTree = function (jsonData) {
+            $("#targets_tree").jstree({
+                "plugins": ["types", "dnd", "search"],
+                "types": {
+                    "default": {
+                        "icon": "fa fa-folder"
+                    },
+                    "html": {
+                        "icon": "fa fa-file-code-o"
+                    },
+                    "svg": {
+                        "icon": "fa fa-file-picture-o"
+                    },
+                    "css": {
+                        "icon": "fa fa-file-code-o"
+                    },
+                    "img": {
+                        "icon": "fa fa-file-image-o"
+                    },
+                    "js": {
+                        "icon": "fa fa-file-text-o"
+                    }
+                },
+                "core": {
+                    "animation": true, //动画
+                    "data": jsonData
+                }
+            }).on("ready.jstree", function (e, data) {
+                targetTree = data.instance;
+
+                if (currentTargetNode) {
+                    currentTargetNode = targetTree.get_node(currentTargetNode).original;
+                } else {
+                    currentTargetNode = jsonData[0];
+                }
+                if (mapType == "geomap") {
+                    try {
+                        configGeoMap();
+                    }
+                    catch (e) {
+                        var url = "/Local/Tool/JoGIS4组件安装包1.51.exe";
+                        window.open(url);
+                    }
+                }
+                targetTree.deselect_all(true);
+                targetTree.select_node(currentTargetNode);
+
+            }).on("changed.jstree", targetChanged);
+
+        };
+        //树节点选择事件
+        var targetChanged = function (event, data) {
+            var action = data.action;
+            if (action == "select_node") {
+                //1.更新当前目标数据
+                currentTargetNode = data.node.original;
+
+                //2.获取相关图件
+                loadRelevantMap(currentTargetNode.aliasnames);
+                if (mapType == "geomap") {
+                    geoMapTargetSelected(event, data);
+                } else {
+                    treeNodeSelected(event, data);
+                }
+            }
+
+        };
+        //获取当前树节点的父节点
+        var getParTargetNode = function (parentId) {
+            if (parentId == '#')
+                return null;
+
+            //筛选
+            var queryresult = Enumerable.From(targetsData)
+                .Where("x=>x.id=='" + parentId + "'").ToArray();
+            return queryresult[0];
+        };
+        //获取当前图层数据
+        var getCurLayer = function (layId) {
+            //筛选
+            var queryresult = Enumerable.From(global_layersdata)
+                .Where("x=>x.layId=='" + layId + "'").ToArray();
+            return queryresult[0];
+        }
+
+        //渲染图层
+        var renderMapLayerTable = function () {
+            function visableFmatter(cellvalue, options, rowObject) {
+                if (cellvalue == 1) {
+                    return '<a href="javascript:void(0);" data-value="' + cellvalue + '" title="显示/隐藏"><i class="fa fa-eye"></i></a>';
+                } else {
+                    return '<a href="javascript:void(0);" data-value="' + cellvalue + '" title="显示/隐藏"><i class="fa fa-eye-slash"></i></a>';
+                }
+            }
+
+            function visibleUnFmatter(cellvalue, options, cell) {
+                return $("a", cell).data("value");
+            }
+            function lockFmatter(cellvalue, options, rowObject) {
+                if (cellvalue == 1) {
+                    return '<a href="javascript:void(0);" data-value="' + cellvalue + '" title="解锁/锁定"><i class="fa fa-unlock"></i></a>';
+                }
+                else {
+                    return '<a href="javascript:void(0);" data-value="' + cellvalue + '" title="解锁/锁定"><i class="fa fa-lock"></i></a>';
+                }
+            }
+            function lockUnFmatter(cellvalue, options, rowObject) {
+                return $("a", cell).data("value");
+            }
+            // Configuration for jqGrid
+            $("#table_layers").jqGrid({
+                //data: jsondata,
+                datatype: "local",
+                //height:480,
+                autowidth: true,
+                shrinkToFit: true,
+                rowNum: 1000,
+                //rowList: [10, 20, 30],
+                rownumbers: true,
+                rownumWidth: 25, // the width of the row numbers columns
+                colModel: [
+                    {
+                        name: "layId",
+                        hidden: true
+                    },
+                    {
+                        name: 'layName',
+                        index: "layName",
+                        sorttype: "string",
+                        label: "图层",
+                        width: 108,
+                        sortable: false
+                    },
+                    {
+                        name: 'visable',
+                        index: 'visable',
+                        label: "见",
+                        width: 40,
+                        align: "center",
+                        formatter: visableFmatter,
+                        unformat: visibleUnFmatter,
+                        sortable: false
+                    },
+                    {
+                        name: 'unlocked',
+                        index: 'unlocked',
+                        label: "选",
+                        width: 40,
+                        align: "center",
+                        formatter: lockFmatter,
+                        unformat: lockUnFmatter,
+                        sortable: false
+                    }
+                ],
+                onCellSelect: function (rowid, icol, cellcontent, e) {
+                    var row = $(this).getLocalRow(rowid);//获取行数据（原始数据）
+                    var entity = getCurLayer(row.layId);//获取GeoMap数据
+                    if (icol == 3) {
+                        //更新GeoMapJson
+                        entity.visable = entity.visable == 1 ? 0 : 1;
+                        if (mapType == "geomap") {
+                            setLayerStatus(entity.layName, entity.visable, entity.unlocked);
+                        } else {
+                            changeLayerVisible(entity.layId, entity.visable);
+                        }
+
+                        //更新jqgrid值
+                        $(this).jqGrid("setCell", rowid, 'visable', entity.visable);
+                    }
+                    if (icol == 4) {
+                        //更新GeoMapJson
+                        entity.unlocked = entity.unlocked == 1 ? 0 : 1;
+                        if (mapType == "geomap") {
+                            setLayerStatus(entity.layName, entity.visable, entity.unlocked);
+                        } else {
+                            changeLayerFrozen(entity.layId, entity.unlocked);
+                        }
+                        //更新jqgrid值
+                        $(this).jqGrid("setCell", rowid, 'unlocked', entity.unlocked);
+                    }
+                },
+                viewrecords: false,
+                gridview: true,
+                hidegrid: false,
+                scrollrows: true,
+                //pager: "#pager_new_layers",
+                pgbuttons: false,
+                pginput: false,
+                guiStyle: "bootstrap",
+                iconSet: "fontAwesome"
+            });
+        };
+        //加载图件的图层数据
+        var loadGeoLayers = function (jsondata) {
+            global_layersdata = jsondata;
+            $("#table_layers").jqGrid("clearGridData");
+            $("#table_layers").jqGrid("setGridParam", { data: jsondata }).trigger("reloadGrid");
+        }
+
+        //加载相关图件
+        var loadRelevantMap = function (boName) {
+
+            var param = {
+                "filter": {
+                    "$and": [
+                        { "ep.bo": { "$elemMatch": { "value": { "$in": boName }, "type": "Target" } } },
+                        { "ep.producttype": { "$regex": "^(?!.*?导航图$)", "$options": "$i" } }
+                    ]
+                },
+                "fields": {
+                    "iiid": 1,
+                    "dc.title": 1
+                }
+            };
+            var paramJson = JSON.stringify(param);
+            $.ajax({
+                url: global_api_url + "/SearchService/Match",
+                async: true,
+                type: "post",
+                contentType: 'application/json',
+                data: paramJson,
+                success: function (result) {
+
+                    if (!result || result.metadatas.length == 0) {
+                        $("#map_relevant").html("<h3>无相关图件!</h3>");
+                        return;
+                    }
+
+
+                    var data = result.metadatas;
+                    var results = '<ul class="list-group">';
+                    ids = [];
+                    for (var i = 0; i < data.length; i++) {
+                        var item = data[i];
+
+                        var temp = {
+                            iiid: item.iiid,
+                            name: "",
+                            title: ""
+                        };
+
+
+                        if (item.dc && item.dc.title) {
+                            for (var k = 0; k < item.dc.title.length; k++) {
+                                var title = item.dc.title[k];
+                                if (title.type === "Formal") {
+                                    temp.title = title.text;
+                                    temp.name = title.text ? title.text.split(".")[0] : "";
+                                }
+                            }
+                        }
+
+
+                        results += '<li class="list-group-item"><a onclick="openDetailPage(\'' + temp.iiid + '\')">' + temp.name + '</a></li>';
+                        ids.push(temp.iiid);
+                    }
+                    results += '</ul>';
+                    $("#map_relevant").html(results);
+
+                },
+                error: function (result) {
+
+
+                }
+            });
+        };
+
+        var openDetailPage = function (iiid) {
+            if (!iiid) {
+                return;
+            }
+
+            var idsStr = ids.join(",");
+            $("#mapId").val(iiid);
+            $("#mapData").val(idsStr);
+            $("#resultForm").submit();
+        };
+
+        $(document).ready(function () {
+            $("#horizontal").css("height", "100%").css("height","-=60px");
+
+            $("#horizontal").kendoSplitter({
+                panes: [
+                    { collapsible: true, size: "270px" },
+                    { collapsible: false },
+                    { collapsible: true, size: "220px" }
+                ]
+            });
+
+            //加载目标树
+            loadTargetTree();
+            //渲染图层列表
+            renderMapLayerTable();
+
+            var mapTypewrapper$ = $("#mapType-wrapper");
+            var mapType$ = $("#mapType");
+            //鼠标进入事件
+            mapType$.mouseenter(function () {
+                mapTypewrapper$.addClass("expand");
+            });
+            //鼠标离开事件
+            mapType$.mouseleave(function () {
+                mapTypewrapper$.removeClass("expand");
+            });
+
+            //鼠标点击事件
+            $(".mapTypeCard").click(function () {
+                var element = $(this);
+                mapType = element.data("name");
+
+                var currentMapTypeEl = $("#mapType .active");
+                var currentMapType = currentMapTypeEl.data("name");
+                if (mapType === currentMapType) {
+                    return;
+                }
+
+                currentMapTypeEl.removeClass("active");
+                element.addClass("active");
+
+                if (mapType == "geomap") {
+                    $("#geoMapPane").show();
+                    $("#panelMap").hide();
+
+                    global_layersdata=geomap_layersdata;
+                } else {
+                    $("#panelMap").show();
+                    $("#geoMapPane").hide();
+
+                    global_layersdata =map_layersdata;
+
+                    if (mapType == "terrain") {
+                        if (!ogis) {
+                            mapInit("terrain");
+                        } else {
+                            switchMap("terrain");
+                        }
+                    } else if (mapType == "satellite") {
+                        if (!ogis) {
+                            mapInit("satellite");
+                        } else {
+                            switchMap("satellite");
+                        }
+                    } 
+                }
+
+                //$.post("/TargetNav/LoadMap",{ mapType: mapType },function (data, status) {
+                    //    if (status === "success") {
+                //        $("#geoMapPane").html(data);
+                    //        currentNavLevel = getNavLevel();
+                    //        global_layersdata = [];
+                    //        switch (mapType) {
+                    //            case "geomap":
+                    //                configGeoMap();
+                    //                break;
+                    //            case "terrain":
+                    //                if (!ogis) {
+                    //                    mapInit("terrain");
+                    //                } else {
+                    //                    switchMap("terrain");
+                    //                }
+
+                    //                break;
+                    //            case "satellite":
+                    //                if (!ogis) {
+                    //                    mapInit("satellite");
+                    //                } else {
+                    //                    switchMap("satellite");
+                    //                }
+                    //                break;
+                    //            default:
+                    //                break;
+                    //        }
+                    //    }
+                    //});
+
+            });
+        });
+
+
+    </script>
+
+}

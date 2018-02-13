@@ -1,0 +1,182 @@
+﻿
+@{
+    ViewBag.Title = "LaySelector";
+    Layout = "~/Views/Shared/_WindowLayout.cshtml";
+}
+<div class="wrapper wrapper-content animated fadeInRight" style="padding: 5px 5px;">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div id="panelTabs" class="tabs-container">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">叠加面积</a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">叠加井位</a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false">叠加构造</a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-4" aria-expanded="false">叠加沉积相</a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-5" aria-expanded="false">叠加地层</a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-9" aria-expanded="false">叠加矿权</a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-10" aria-expanded="false">叠加地震</a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-11" aria-expanded="false">叠加油气藏</a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-12" aria-expanded="false">叠加油气田</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label style="margin-top: 6px;">原油类型：</label>
+                                    <select data-placeholder="选择原油类型..." multiple databind attrid="原油类型" class="chosen-select" tabindex="1"></select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label style="margin-top: 6px;">储量类别：</label>
+                                    <select data-placeholder="选择储量类别..." multiple databind attrid="储量类别" class="chosen-select" tabindex="2"></select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label style="margin-top: 6px;">储层岩性：</label>
+                                    <select data-placeholder="选择储层岩性..." multiple databind attrid="储层岩性" class="chosen-select" tabindex="3"></select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label style="margin-top: 6px;">油气藏类型：</label>
+                                    <select data-placeholder="选择油气藏类型..." multiple databind attrid="构造成因" class="chosen-select" tabindex="4"></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label style="margin-top: 6px;">上报年度：</label>
+                                    <div>
+                                        <input type="text" id="ionrange_1" name="ionrange_1" value="1985;2016" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label style="margin-top: 6px;">开发方式：</label>
+                                    <select data-placeholder="开发方式..." multiple databind attrid="开发方式" class="chosen-select" tabindex="2"></select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label style="margin-top: 6px;">含水率：</label>
+                                    <div class="m-r-md inline" style="margin-top: 6px;">
+                                        <input type="text" value="20" class="dial m-r-sm" data-fgColor="#1AB394" data-width="65" data-height="65" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>评价井</h4>
+                                    <div class="row form-group">
+                                        <div class="col-md-6">
+                                            <label style="margin-top: 6px;">年度：</label>
+                                            <select data-placeholder="选择年度..." multiple class="chosen-select" tabindex="1">
+                                                <option value="">选择年度</option>
+                                                <option value="2010" hassubinfo="true">2010</option>
+                                                <option value="2011" hassubinfo="true">2011</option>
+                                                <option value="2012" hassubinfo="true">2012</option>
+                                                <option value="2013" hassubinfo="true">2013</option>
+                                                <option value="2014" hassubinfo="true">2014</option>
+                                                <option value="2015" hassubinfo="true">2015</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label style="margin-top: 6px;">井号：</label>
+                                            <select data-placeholder="选择井号..." multiple class="chosen-select" tabindex="1">
+                                                <option value="">选择井号</option>
+                                                <option value="1" hassubinfo="true">稀油</option>
+                                                <option value="2" hassubinfo="true">稠油</option>
+                                                <option value="3" hassubinfo="true">气层气</option>
+                                                <option value="4" hassubinfo="true">凝析气</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" style="border-left: 1px solid #EFF2F4;">
+                                    <h4>开发井</h4>
+                                    <div class="row form-group">
+                                        <div class="col-md-4">
+                                            <label style="margin-top: 6px;">层位：</label>
+                                            <select data-placeholder="选择层位..." multiple class="chosen-select" tabindex="1">
+                                                <option value="">选择层位</option>
+                                                <option value="2010" hassubinfo="true">2010</option>
+                                                <option value="2011" hassubinfo="true">2011</option>
+                                                <option value="2012" hassubinfo="true">2012</option>
+                                                <option value="2013" hassubinfo="true">2013</option>
+                                                <option value="2014" hassubinfo="true">2014</option>
+                                                <option value="2015" hassubinfo="true">2015</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label style="margin-top: 6px;">区块：</label>
+                                            <select data-placeholder="选择区块..." multiple class="chosen-select" tabindex="1">
+                                                <option value="">选择区块</option>
+                                                <option value="1" hassubinfo="true">稀油</option>
+                                                <option value="2" hassubinfo="true">稠油</option>
+                                                <option value="3" hassubinfo="true">气层气</option>
+                                                <option value="4" hassubinfo="true">凝析气</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label style="margin-top: 6px;">井号：</label>
+                                            <select data-placeholder="选择井号..." multiple class="chosen-select" tabindex="1">
+                                                <option value="">选择井号</option>
+                                                <option value="1" hassubinfo="true">稀油</option>
+                                                <option value="2" hassubinfo="true">稠油</option>
+                                                <option value="3" hassubinfo="true">气层气</option>
+                                                <option value="4" hassubinfo="true">凝析气</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer text-center">
+                <button id="btnQuery" type="button" class="btn btn-primary "><i class="fa fa-search"></i>&nbsp;&nbsp;<span class="bold">查询</span></button>
+                <button type="button" class="btn btn-default "><i class="fa fa-mail-reply-all"></i>&nbsp;&nbsp;重置</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-sm-8" style="padding-right: 5px; padding-left: 15px;">
+            <div class="ibox float-e-margins" style="margin-bottom: 0px;">
+                <div class="ibox-title">
+                    <h5>图元列表 <small id="txtCurLayerName">当前的图层：</small></h5>
+                    <!--<div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>-->
+                </div>
+                <div class="ibox-content" style="padding: 5px 5px 5px 5px;">
+                    <div class="jqGrid_wrapper">
+                        <table id="table_items"></table>
+                        <!--<div id="pager_items"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4" style="padding-right: 15px; padding-left: 5px;">
+            <div class="ibox float-e-margins" style="margin-bottom: 0px;">
+                <div class="ibox-title">
+                    <h5>图层预览 <small>请选择叠加条件</small></h5>
+                </div>
+                <div id="panelView" class="ibox-content" style="padding: 5px 5px 0px 5px;">
+                    <OBJECT id="joGIS1" classid="clsid:D2546426-13FD-4018-85F1-F5BD61147C8F" CODEBASE="JoGIS4.ocx#version=1,0,0,1" style="width:100%;height:224px" wmode="Opaque"
+                            VIEWASTEXT>
+                        <PARAM NAME="_Version" VALUE="65536">
+                        <PARAM NAME="_ExtentX" VALUE="20000">
+                        <PARAM NAME="_ExtentY" VALUE="15000">
+                        <PARAM NAME="_StockProps" VALUE="0">
+                        <PARAM NAME="WMODE" VALUE="transparent">
+                    </OBJECT>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section script{
+<script src="~/DemoData/json/data-tragets-attr.js"></script>
+<script src="~/Content/EPGL/js/pages/flexdraw/laySelector.js"></script>
+    }

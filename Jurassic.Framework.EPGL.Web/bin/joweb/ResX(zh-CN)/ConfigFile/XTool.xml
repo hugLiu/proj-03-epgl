@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Map Type="EPCustomTool">
+	<MapToolX Text="自定义形状" File="XToolUser.sts" Flag="1"/><MapToolX Text="基本形状" File="XToolNormal.sts" Flag="1"/><MapToolX Text="专业形状" File="XToolSymbol.sts" Flag="1"/><MapToolX Text="挂图图式" File="XToolWallChart.sts" Flag="1"/></Map>

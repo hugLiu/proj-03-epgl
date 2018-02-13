@@ -1,0 +1,898 @@
+﻿@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = "~/Views/Shared/_EPGLLayout.cshtml";
+}
+
+@section css{
+    <!--footable-->
+    <link href="~/Content/EPGL/css/plugins/footable/footable.core.css" rel="stylesheet" />
+    <!--jsTree-->
+    <link href="~/Content/EPGL/css/plugins/jsTree/style.min.css" rel="stylesheet" />
+    <!--bootstrap colorpicker-->
+    <link href="~/Content/EPGL/css/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet" />
+    <!--fileinput-->
+    <link href="~/Content/EPGL/css/plugins/fileinput/fileinput.css" rel="stylesheet" />
+
+    <link href="~/Content/EPGL/css/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <style>
+        .lightBoxGallery img {
+            margin: 5px;
+            width: 160px;
+        }
+
+        .popover {
+            z-index: 2050;
+        }
+
+        .p-first div {
+            margin-bottom: 10px;
+        }
+
+        .p-last div {
+            margin-top: 20px;
+        }
+
+        #collapseTheme .form-group:hover {
+            background-color: #a8e4ff;
+        }
+
+        .navbar-static-side {
+            background-color: #E0E0E0;
+        }
+
+        .checkbox-addon {
+            width: 209px;
+            text-align: left;
+        }
+
+        .ts-tab-box {
+            display: none;
+        }
+
+        .form-label {
+            width: 114px;
+            text-align: right;
+        }
+    </style>
+}
+
+<form id="resultForm" name="resultform" action="/Viewer/Detail" method="post" target="_blank" style="display: none;">
+    <input type="hidden" id="mapId" name="iiid" size="25">
+    <input type="hidden" id="mapData" name="data" size="25">
+</form>
+<form id="formDown" method="post" action="/FileInfo/DownLoad" style="display:none;">
+    <input type="hidden" name="id" id="id" />
+    <input type="hidden" name="title" id="title" />
+    <input type="hidden" name="url" id="url" />
+    <input type="hidden" name="ticket" id="ticket" />
+    <input type="hidden" name="format" id="format" />
+    <input type="hidden" name="name" id="name" />
+</form>
+<div class="col-sm-3">
+    <div class="ibox float-e-margins" style="margin-bottom:5px">
+        <div class="ibox-title">
+            <h5>个人资料</h5>
+        </div>
+        <div>
+            <div class="ibox-content no-padding border-left-right">
+                <img alt="image" class="img-responsive" src="~/Content/EPGL/img/shared/avatar/profile_big.jpg">
+            </div>
+            <div class="ibox-content profile-content">
+                <h4><strong>@ViewBag.userName</strong></h4>
+                <p><i class="fa fa-map-marker"></i>新疆油田勘探开发研究院战略规划研究所</p>
+                <div class="user-button">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            @*<button type="button" class="btn btn-primary btn-sm btn-block"><i class="fa fa-upload"></i> 提交成果</button>*@
+                        </div>
+                        <div class="col-sm-6">
+                            <a class="btn btn-warning btn-sm btn-block" data-load-url="@Url.Action("changepassword", "account")" data-toggle="modal" data-target="#changePassword_modal"><i class="fa fa-coffee"></i> 修改密码</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--左侧导航开始-->
+    <div id="wrapper" style="margin-top:0px">
+        <nav class="navbar-default navbar-static-side" role="navigation" style="height:600px">
+            <!--<div class="nav-close"><i class="fa fa-times-circle"></i>
+            </div>-->
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="javascript:switchtab(1)">
+                            <i class="fa fa-chrome"></i>
+                            <span class="nav-label" style="font-size: 14px;">最近浏览</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#collapseFavTree" data-toggle="collapse">
+                            <i class="fa fa-heart"></i>
+                            <span class="nav-label" style="font-size: 14px;">我的收藏</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <div id="collapseFavTree" class="panel-collapse collapse" style="background-color:#ffffff;">
+                            <div class="panel-body" style="padding: 5px;">
+                                <div class="form-group">
+                                    <a class="btn" id="favCatalog_add_sibling" title="新增同级" data-toggle="tooltip"><i class="fa fa-plus fa-fw"></i>新增同级</a>
+                                    <a class="btn" id="favCatalog_add_child" title="新增子级" data-toggle="tooltip"><i class="fa fa-plus-square fa-fw"></i>新增子级</a>
+                                    <a class="btn disabled" id="favCatalog_rename" title="重命名" data-toggle="tooltip"><i class="fa fa-pencil fa-fw"></i>重命名</a>
+                                    <a class="btn disabled" id="favCatalog_delete"><i class="fa fa-trash-o fa-fw"></i>删除</a>
+                                    <input class="form-control" type="text" id="favSelect_search" placeholder="查找收藏夹" />
+                                </div>
+                                <div class="form-group">
+                                    <div id="favCatalog_jsTree"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:switchtab(3)">
+                            <i class="fa fa-download"></i>
+                            <span class="nav-label" style="font-size: 14px;">我的下载</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#collapseTheme" data-toggle="collapse">
+                            <i class="fa fa-gear"></i>
+                            <span class="nav-label" style="font-size: 14px;">主题管理</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <div id="collapseTheme" class="panel-collapse collapse" style="background-color:#ffffff;">
+                            <div class="panel-body" style="padding: 5px;">
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <a href="javascript:switchtab(4)">
+
+                                        <span class="nav-label" style="font-size: 14px;margin-left:20px;line-height:35px;color:#337ab7;">投影样式设定</span>
+                                    </a>
+                                </div>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <a href="javascript:switchtab(5)">
+
+                                        <span class="nav-label" style="font-size: 14px;margin-left:20px;line-height:35px;color:#337ab7;">开发曲线模板</span>
+                                    </a>
+                                </div>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <a href="javascript:switchtab(6)">
+
+                                        <span class="nav-label" style="font-size: 14px;margin-left:20px;line-height:35px;color:#337ab7;">图数联动设定</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#collapseGMFile" data-toggle="collapse">
+                            <i class="fa fa-asterisk"></i>
+                            <span class="nav-label" style="font-size: 14px;">图件管理</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <div id="collapseGMFile" class="panel-collapse collapse" style="background-color:#ffffff;">
+                            <div class="panel-body" style="padding: 5px;">
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <a href="javascript:switchtab(7)">
+                                        <span class="nav-label" style="font-size: 14px;margin-left:20px;line-height:35px;color:#337ab7;">图件提交</span>
+                                    </a>
+                                </div>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <a href="javascript:switchtab(8)">
+                                        <span class="nav-label" style="font-size: 14px;margin-left:20px;line-height:35px;color:#337ab7;">图件审核</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--左侧导航结束-->
+</div>
+<div id="content" class="col-sm-9">
+    <div id="tb1" tbindex=1 class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5>最近浏览关注的成果列表</h5>
+        </div>
+        <div class="ibox-content">
+            <div class="panel-body">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入成果名称" class="input-sm form-control" id="myLookTable"> <span class="input-group-btn">
+                                <button type="button" class="btn btn-sm btn-primary"> 搜索</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <table id="table_list1" class="footable table table-stripped toggle-arrow-tiny" data-page-size="10" data-filter="#myLookTable">
+                        <thead>
+                            <tr>
+                                <th style="width:40px">编号</th>
+                                <th>名称</th>
+                                <th style="width:85px">编图人</th>
+                                <th style="width:85px">图件分类</th>
+                                <th style="width:100px">制图日期</th>
+                                <th style="width:100px">入库日期</th>
+                                <th style="width:100px">浏览日期</th>
+                                <th style="width:80px">浏览次数</th>
+                                <th style="width:160px">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach:myLookList">
+                            <tr>
+                                <td><span class="ibx-hotTop-rank current" data-bind="text:$index() + 1"></span></td>
+                                <td><span data-bind="text: METATITLE"></span></td>
+                                <td data-bind="text: METAAUTHOR"></td>
+                                <td data-bind="text:METAPT"></td>
+                                <td data-bind="text:$parent.dateFormat(METACREATEDATE)"></td>
+                                <td data-bind="text:$parent.dateFormat(METAINDEXDATE)"></td>
+                                <td data-bind="text:$parent.dateFormat(LOOKDATE())"></td>
+                                <td class="text-navy"><i class="fa fa-level-up" data-bind="text:LOOKCOUNT"></i></td>
+                                <td>
+                                    <button class="btn btn-info btn-circle" type="button" data-bind="click: function(data,event){return $parent.openDetailPage(data,event,1);} " data-toggle="tooltip" data-placement="left" title="浏览">
+                                        <i class="fa fa-sticky-note-o"></i>
+                                    </button>
+                                    <!--ko if:FAVORITEFLAG()==1-->
+                                    <button class="btn btn-danger btn-circle btn-outline" type="button" data-bind="click: $parent.cancleFavorite" data-toggle="tooltip" data-placement="left" title="取消收藏">
+                                        <i class="fa fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-circle" type="button" data-toggle="modal" data-target="#favCatalog_modal" data-bind="attr:{'data-iiid':IIID,'data-favcatalogid':FAVCATALOGID,'data-favoriteflag':FAVORITEFLAG}" data-tabindex="1" data-placement="left" title="移动">
+                                        <i class="fa fa-share"></i>
+                                    </button>
+                                    <!--/ko-->
+                                    <!--ko if:FAVORITEFLAG()==0-->
+                                    <button class="btn btn-default btn-circle btn-outline" type="button" data-toggle="modal" data-target="#favCatalog_modal" data-bind="attr:{'data-iiid':IIID,'data-favcatalogid':FAVCATALOGID}" data-tabindex="1" data-placement="left" title="收藏">
+                                        <i class="fa fa-heart"></i>
+                                    </button>
+                                    <!--/ko-->
+                                    <button class="btn btn-success btn-circle" type="button" data-bind="click: $parent.downloadFile" data-toggle="tooltip" data-placement="left" title="下载">
+                                        <i class="fa fa-download"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination pull-right"></ul>
+                                </td>
+                                <td colspan="4"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tb2" tbindex=2 class="ibox float-e-margins" style="display:none">
+        <div class="ibox-title">
+            <h5>我收藏的成果列表</h5>
+        </div>
+        <div class="ibox-content">
+            <div class="panel-body">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入成果名称" class="input-sm form-control" id="myFavoriteTable"> <span class="input-group-btn">
+                                <button type="button" class="btn btn-sm btn-primary"> 搜索</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <table id="table_list2" class="footable table table-stripped toggle-arrow-tiny" data-page-size="10" data-filter="#myFavoriteTable">
+                        <thead>
+                            <tr>
+                                <th style="width:45px">编号</th>
+                                <th>名称</th>
+                                <th style="width:85px">作者</th>
+                                <th style="width:85px">图件类型</th>
+                                <th style="width:100px">制图日期</th>
+                                <th style="width:100px">入库日期</th>
+                                <th style="width:100px">收藏日期</th>
+                                <th style="width:160px">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach:myFavoriteList">
+                            <tr>
+                                <td><span class="ibx-hotTop-rank current" data-bind="text:$index()+ 1"></span></td>
+                                <td><span data-bind="text:METATITLE"></span></td>
+                                <td data-bind="text:METAAUTHOR"></td>
+                                <td data-bind="text:METAPT"></td>
+                                <td data-bind="text:$parent.dateFormat(METACREATEDATE)"></td>
+                                <td data-bind="text:$parent.dateFormat(METAINDEXDATE)"></td>
+                                <td data-bind="text:$parent.dateFormat(FAVORITEDATE())"></td>
+                                <td>
+                                    <button class="btn btn-info btn-circle" type="button" data-bind="click: function(data,event){return $parent.openDetailPage(data,event,2);}" data-toggle="tooltip" data-placement="left" title="浏览">
+                                        <i class="fa fa-sticky-note-o"></i>
+                                    </button>
+                                    <!--ko if:FAVORITEFLAG()==1-->
+                                    <button class="btn btn-danger btn-circle btn-outline" type="button" data-bind="click: $parent.cancleFavorite" data-toggle="tooltip" data-placement="left" title="取消收藏">
+                                        <i class="fa fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-circle" type="button" data-toggle="modal" data-target="#favCatalog_modal" data-bind="attr:{'data-iiid':IIID,'data-favcatalogid':FAVCATALOGID,'data-favoriteflag':FAVORITEFLAG}" data-tabindex="2" data-placement="left" title="移动">
+                                        <i class="fa fa-share"></i>
+                                    </button>
+                                    <!--/ko-->
+                                    <!--ko if:FAVORITEFLAG()==0-->
+                                    <button class="btn btn-default btn-circle btn-outline" type="button" data-toggle="modal" data-target="#favCatalog_modal" data-bind="attr:{'data-iiid':IIID,'data-favcatalogid':FAVCATALOGID}" data-tabindex="2" data-placement="left" title="收藏">
+                                        <i class="fa fa-heart"></i>
+                                    </button>
+                                    <!--/ko-->
+                                    <button class="btn btn-success btn-circle" type="button" data-bind="click: $parent.downloadFile" data-toggle="tooltip" data-placement="left" title="下载">
+                                        <i class="fa fa-download"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination pull-right"></ul>
+                                </td>
+                                <td colspan="3"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tb3" tbindex=3 class="ibox float-e-margins" style="display:none">
+        <div class="ibox-title">
+            <h5>我下载的成果列表</h5>
+        </div>
+        <div class="ibox-content">
+            <div class="panel-body">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入成果名称" class="input-sm form-control" id="myDownloadTable"> <span class="input-group-btn">
+                                <button type="button" class="btn btn-sm btn-primary"> 搜索</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <table id="table_list3" class="footable table table-stripped toggle-arrow-tiny" data-page-size="10" data-filter="#myDownloadTable">
+                        <thead>
+                            <tr>
+                                <th style="width:45px">编号</th>
+                                <th>名称</th>
+                                <th style="width:85px">作者</th>
+                                <th style="width:85px">图件类型</th>
+                                <th style="width:100px">制图日期</th>
+                                <th style="width:100px">入库日期</th>
+                                <th style="width:100px">下载日期</th>
+                                <th style="width:80px">下载次数</th>
+                                <th style="width:160px">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach:myDownloadList">
+                            <tr>
+                                <td><span class="ibx-hotTop-rank current" data-bind="text:$index()+ 1"></span></td>
+                                <td><span data-bind="text: METATITLE"></span></td>
+                                <td data-bind="text:METAAUTHOR"></td>
+                                <td data-bind="text:METAPT"></td>
+                                <td data-bind="text:$parent.dateFormat(METACREATEDATE)"></td>
+                                <td data-bind="text:$parent.dateFormat(METAINDEXDATE)"></td>
+                                <td data-bind="text:$parent.dateFormat(DOWNLOADDATE())"></td>
+                                <td class="text-navy"><i class="fa fa-level-up" data-bind="text:DOWNLOADCOUNT"></i></td>
+                                <td>
+                                    <button class="btn btn-info btn-circle" type="button" data-bind="click: function(data,event){return $parent.openDetailPage(data,event,3);}" data-toggle="tooltip" data-placement="left" title="浏览">
+                                        <i class="fa fa-sticky-note-o"></i>
+                                    </button>
+                                    <!--ko if:FAVORITEFLAG()==1-->
+                                    <button class="btn btn-danger btn-circle btn-outline" type="button" data-bind="click: $parent.cancleFavorite" data-toggle="tooltip" data-placement="left" title="取消收藏">
+                                        <i class="fa fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-warning btn-circle" type="button" data-toggle="modal" data-target="#favCatalog_modal" data-bind="attr:{'data-iiid':IIID,'data-favcatalogid':FAVCATALOGID,'data-favoriteflag':FAVORITEFLAG}" data-tabindex="3" data-placement="left" title="移动">
+                                        <i class="fa fa-share"></i>
+                                    </button>
+                                    <!--/ko-->
+                                    <!--ko if:FAVORITEFLAG()==0-->
+                                    <button class="btn btn-default btn-circle btn-outline" type="button" data-toggle="modal" data-target="#favCatalog_modal" data-bind="attr:{'data-iiid':IIID,'data-favcatalogid':FAVCATALOGID}" data-tabindex="3" data-placement="left" title="收藏">
+                                        <i class="fa fa-heart"></i>
+                                    </button>
+                                    <!--/ko-->
+                                    <button class="btn btn-success btn-circle" type="button" data-bind="click: $parent.downloadFile" data-toggle="tooltip" data-placement="left" title="下载">
+                                        <i class="fa fa-download"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination pull-right"></ul>
+                                </td>
+                                <td colspan="4"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tb4" tbindex=4 class="ibox float-e-margins" style="display:none">
+
+        <div class="ibox-title">
+            <h5>我的投影样式配置</h5>
+        </div>
+        <div class="ibox-content">
+            <div class="panel-body">
+                <div class="project-list">
+                    <row class="p-first">
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="text-align:center;">
+                            <div>
+                                目标类型名称
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="text-align:center;">
+                            <div>
+                                图层填充颜色
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="text-align:center;">
+                            <div>
+                                边界颜色
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="text-align:center;">
+                            <div>
+                                文本颜色
+                            </div>
+                        </div>
+                    </row>
+                    <row>
+                        <!--ko foreach:projectMode-->
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div>
+                                <span class="input-group-addon checkbox-addon" data-bind="text: bot"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div class="input-group colorpicker-component">
+                                <input type="text" name="pData" class="form-control" data-bind="attr:{'data-key':bot,'data-caption':'layerfillcolor',value:'rgb('+layerfillcolor.slice(0,layerfillcolor.lastIndexOf(','))+')'}" />
+                                <span class="input-group-addon" style="border-left:1px;"><i></i></span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div class="input-group colorpicker-component">
+                                <input type="text" name="pData" class="form-control" data-bind="attr:{'data-key':bot,'data-caption':'strokecolor',value:'rgb('+strokecolor.slice(0,strokecolor.lastIndexOf(','))+')'}" />
+                                <span class="input-group-addon" style="border-left:1px;"><i></i></span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div class="input-group colorpicker-component">
+                                <input type="text" name="pData" class="form-control" data-bind="attr:{'data-key':bot,'data-caption':'textcolor',value:'rgb('+textcolor.slice(0,textcolor.lastIndexOf(','))+')'}" />
+                                <span class="input-group-addon" style="border-left:1px;"><i></i></span>
+                            </div>
+                        </div>
+                        <!--/ko-->
+                    </row>
+                    <row class="p-last">
+                        <div class="col-md-9 col-sm-9 col-xs-9" style="text-align:center;"></div>
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="text-align:right;">
+                            <button type="button" class="btn btn-primary" onclick="modifyUserStyleConfig();">确定</button>
+                        </div>
+                    </row>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="tb5" tbindex=5 class="ibox float-e-margins" style="display:none;">
+        <div class="ibox-title">
+            <h5>开发曲线模板</h5>
+            <a id="addModel" class="btn btn-default" href="javascript:;" role="button" style="padding-top:0;padding-bottom:0;margin-left:30px;">增加<span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+            <a id="removeModel" class="btn btn-default" href="javascript:;" role="button" style="padding-top:0;padding-bottom:0;margin-left:5px;">删除<span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+            <a id="saveModel" class="btn btn-default" href="javascript:;" role="button" style="padding-top:0;padding-bottom:0;margin-left:5px;">保存<span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+
+            <a id="saveStyle" class="btn btn-default" href="javascript:;" role="button" style="padding-top:0;padding-bottom:0;margin-left:400px;">保存设置<span class="glyphicon glyphicon-saved" aria-hidden="true"></span></a>
+        </div>
+        <div class="ibox-content">
+
+
+
+
+            <div class="list-group" style="width:300px;float:left" id="modelList" data-bind="foreach:curveTemplate">
+                <div style="padding:0;position:relative" class="list-group-item tempItem">
+                    <div class="changeName" style="display:inline-block;width:90%;height:46px;line-height:46px;text-align:center;" data-bind="click: loadCurveTemplateData, text: dptempname, attr: { 'data-id': dptempid, 'data-isdefault': isdefault,'data-userid':userid,'data-text':dptempname}">
+                    </div>
+                    <input type="radio" name="isdefault" data-bind="attr:{checked:isdefault==1?true:false}" />
+                </div>
+            </div>
+
+
+
+
+            <div style="width:600px;float:left;margin-left:30px" id="CurveBox">
+
+
+
+                <!--ko foreach:curveMode-->
+                <div class="input-group" style="float:left;margin-left:20px">
+                    <span class="input-group-addon checkbox-addon">
+                        <input class="keyName" type="checkbox" name="checkDataSouce" data-bind="value:KEY,attr:{'data-type':VALTYPE,'data-caption':CAPTION,'data-captionindex':CAPTIONEXTEND,'data-classid':DATACLASSID,'data-keyindex':KEYINDEX}" />
+                        <span data-bind="text:CAPTION"></span>
+                    </span>
+                    <div class="input-group colorpicker-component" data-bind="attr:{title:CAPTION}">
+                        <input class="form-control hidden" type="text" data-bind="attr:{value:VALFORMAT}" />
+                        <span class="input-group-addon" style="border-left:1px;"><i></i></span>
+                    </div>
+                </div>
+                <!--/ko-->
+
+
+            </div>
+            <div style="clear:both"></div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <div id="tb6" tbindex=6 class="ibox float-e-margins" style="display:none">
+        <div class="ibox-title" style="position:relative">
+            <h5>图数联动设定</h5>
+            <button type="button" id="saveLinkage" class="btn btn-default" style="padding:3px 12px;position:absolute;top:10px;right:50px;">保存<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
+        </div>
+        <div class="ibox-content" style="min-height:500px;">
+
+            <ul class="nav nav-tabs" id="tsld-tab">
+                <li role="presentation" class="active"><a href="#tsld_tab1" tabindex="1" aria-controls="tsld_tab1" role="tab" data-toggle="tab">钻井基础</a></li>
+                <li role="presentation"><a href="#tsld_tab2" tabindex="2" aria-controls="tsld_tab2" role="tab" data-toggle="tab">油藏储量</a></li>
+                <li role="presentation"><a href="#tsld_tab3" tabindex="3" aria-controls="tsld_tab3" role="tab" data-toggle="tab">气藏储量</a></li>
+                <li role="presentation"><a href="#tsld_tab4" tabindex="4" aria-controls="tsld_tab4" role="tab" data-toggle="tab">稠油采油井产量</a></li>
+                <li role="presentation"><a href="#tsld_tab5" tabindex="5" aria-controls="tsld_tab5" role="tab" data-toggle="tab">稀油采油井产量</a></li>
+                <li role="presentation"><a href="#tsld_tab6" tabindex="6" aria-controls="tsld_tab6" role="tab" data-toggle="tab">注水井产量</a></li>
+                <li role="presentation"><a href="#tsld_tab7" tabindex="7" aria-controls="tsld_tab7" role="tab" data-toggle="tab">采气井产量</a></li>
+            </ul>
+            <div class="tab-content">
+                <!--ko foreach:dataLink-->
+                <div role="tabpanel" class="tab-pane" data-bind="attr:{id:'tsld_tab'+($index()+1)},css:$index()==0?'tab-pane active':'tab-pane'">
+                    <!--ko if:key==$index()+1-->
+                    <!--ko foreach:data-->
+                    <div class="input-group" style="float:left;margin-top:10px;">
+                        <span class="input-group-addon checkbox-addon" style="width:235px">
+                            <input type="checkbox" name="checkDataLink" data-bind="value:KEY,checked:DEFSHOW==1?true:false,attr:{text:CAPTION,'data-type':VALTYPE,'data-formate':VALFORMAT,'data-caption':CAPTION,'data-keyindex':KEYINDEX,'data-captionindex':CAPTIONEXTEND,'data-classid':DATACLASSID}" />
+                            <span data-bind="text:CAPTION" style="margin-left:25px"></span>
+                        </span>
+
+                    </div>
+                    <!--/ko-->
+                    <!--/ko-->
+                    <div style="clear:both;"></div>
+                </div>
+                <!--/ko-->
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="tb7" tbindex=7 class="ibox float-e-margins" style="display:none">
+        <div class="ibox-title">
+            <h5>我提交的图件列表</h5>
+        </div>
+        <div class="ibox-content">
+            <div class="panel-body">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入图件名称" class="input-sm form-control" id="mySubmitTable"> <span class="input-group-btn">
+                                <button type="button" class="btn btn-sm btn-primary"> 搜索</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-3">
+                        <button class="btn btn-white btn-sm" type="button" data-toggle="modal" data-target="#submit_add_modal">
+                            <i class="fa fa-plus">添加图件</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <table id="table_list7" class="footable table table-stripped toggle-arrow-tiny" data-page-size="10" data-filter="#mySubmitTable">
+                        <thead>
+                            <tr>
+                                <th style="width:45px">编号</th>
+                                <th>名称</th>
+                                <th style="width:85px">作者</th>
+                                <th style="width:85px">图件类型</th>
+                                <th style="width:100px">提交日期</th>
+                                <th style="width:100px">审核人</th>
+                                <th style="width:100px">审核状态</th>
+                                <th style="width:160px">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach:mySubmitList">
+                            <tr>
+                                <td><span class="ibx-hotTop-rank current" data-bind="text:$index()+ 1"></span></td>
+                                <td><span data-bind="text: KMD.Dc&&KMD.Dc.Title&&KMD.Dc.Title[0]&&KMD.Dc.Title[0].Text?KMD.Dc.Title[0].Text:''"></span></td>
+                                <td data-bind="text:KMD.Dc&&KMD.Dc.Contributor&&KMD.Dc.Contributor[0]?(KMD.Dc.Contributor[0].Type=='Author'?KMD.Dc.Contributor[0].Name:KMD.Dc.Contributor[1]&&KMD.Dc.Contributor[1].Type=='Author'?KMD.Dc.Contributor[1].Name:''):''"></td>
+                                <td data-bind="text:KMD.Ep&&KMD.Ep.Producttype?KMD.Ep.Producttype:''"></td>
+                                <td data-bind="text:$parent.dateFormat(CreatedDate)"></td>
+                                <td data-bind="text:KMD.Dc&&KMD.Dc.Contributor&&KMD.Dc.Contributor[0]?(KMD.Dc.Contributor[0].Type=='Auditor'?KMD.Dc.Contributor[0].Name:KMD.Dc.Contributor[1]&&KMD.Dc.Contributor[1].Type=='Auditor'?KMD.Dc.Contributor[1].Name:''):''"></td>
+                                <td data-bind="text:Authentic?'已审核':'未审核'"></td>
+                                <td>
+                                    <!--ko ifnot:Authentic-->
+                                    <button class="btn btn-info btn-circle btn-outline" type="button" data-toggle="modal" data-target="#submit_edit_modal" data-placement="left" title="编辑图件属性" data-bind="attr:{'data-iiid':KMD.IIId,'data-name':KMD.Dc&&KMD.Dc.Title[0].Text}">
+                                        <i class="fa fa-pencil"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="tooltip" data-placement="left" title="删除" data-bind="click:$parent.deleteOne,attr:{'data-iiid':KMD.IIId}">
+                                        <i class="fa fa-trash-o"></i>
+                                    </button>
+                                    <!--/ko-->
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination pull-right"></ul>
+                                </td>
+                                <td colspan="4"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tb8" tbindex=8 class="ibox float-e-margins" style="display:none">
+        <div class="ibox-title">
+            <h5>图件审核</h5>
+        </div>
+        <div class="ibox-content">
+            <div class="panel-body">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入图件名称" class="input-sm form-control" id="myUnauthenticTable"> <span class="input-group-btn">
+                                <button type="button" class="btn btn-sm btn-primary"> 搜索</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-3">
+                        <button type="button" id="loading-example-btn" class="btn btn-white btn-sm" onclick="authenticList()"><i class="fa fa-check">批量审核</i> </button>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <table id="table_list8" class="footable table table-stripped toggle-arrow-tiny" data-page-size="10" data-filter="#myUnauthenticTable">
+                        <thead>
+                            <tr>
+                                <th data-sort-ignore="true"><input type="checkbox" id="checkall" name="checkall" onclick="checkAll(this)" /></th>
+                                <th>名称</th>
+                                <th style="width:85px">作者</th>
+                                <th style="width:85px">图件类型</th>
+                                <th style="width:100px">创建日期</th>
+                                <th style="width:100px">审核人</th>
+                                <th style="width:100px">审核状态</th>
+                                <th style="width:100px">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach:myUnauthenticList" id="authentic-checkboxs">
+                            <tr>
+                                <td><input type="checkbox" name="checkone" onclick="checkOne(this)" data-bind="value:KMD.IIId" /></td>
+                                <td><span data-bind="text: KMD.Dc&&KMD.Dc.Title&&KMD.Dc.Title[0]&&KMD.Dc.Title[0].Text?KMD.Dc.Title[0].Text:''"></span></td>
+                                <td data-bind="text:KMD.Dc&&KMD.Dc.Contributor&&KMD.Dc.Contributor[0]?(KMD.Dc.Contributor[0].Type=='Author'?KMD.Dc.Contributor[0].Name:KMD.Dc.Contributor[1]&&KMD.Dc.Contributor[1].Type=='Author'?KMD.Dc.Contributor[1].Name:''):''"></td>
+                                <td data-bind="text:KMD.Ep&&KMD.Ep.Producttype?KMD.Ep.Producttype:''"></td>
+                                <td data-bind="text:$parent.dateFormat(CreatedDate)"></td>
+                                <td data-bind="text:KMD.Dc&&KMD.Dc.Contributor&&KMD.Dc.Contributor[0]?(KMD.Dc.Contributor[0].Type=='Auditor'?KMD.Dc.Contributor[0].Name:KMD.Dc.Contributor[1]&&KMD.Dc.Contributor[1].Type=='Auditor'?KMD.Dc.Contributor[1].Name:''):''"></td>
+                                <td data-bind="text:Authentic?'已审核':'未审核'"></td>
+                                <td>
+                                    <button class="btn btn-info btn-circle btn-outline" type="button" data-toggle="tooltip" data-placement="left" title="审核" data-bind="click:$parent.authenticOne,attr:{'data-iiid':KMD.IIId}">
+                                        <i class="fa fa-check"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination pull-right"></ul>
+                                </td>
+                                <td colspan="4"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="changePassword_modal" tabindex="-1" role="dialog" aria-labelledby="changePasswordModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">修改密码</h4>
+            </div>
+            <div class="modal-body">
+                <iframe src="@Url.Action("changepassword","account")" width="100%" height="450"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="favCatalog_modal" tabindex="-1" role="dialog" aria-labelledby="favCatalogModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="curveModalLabel">选择收藏文件夹</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 col-xs-8">
+                        <a class="btn btn-success btn-sm" id="favCatalogSelect_add_sibling"><i class="fa fa-plus fa-fw"></i> 新增同级</a>
+                        <a class="btn btn-info btn-sm" id="favCatalogSelect_add_child"><i class="fa fa-plus-square fa-fw"></i> 新增子级</a>
+                        <a class="btn btn-warning btn-sm disabled" id="favCatalogSelect_rename"><i class="fa fa-pencil fa-fw"></i> 重命名</a>
+                        <a class="btn btn-danger btn-sm disabled" id="favCatalogSelect_delete"><i class="fa fa-trash-o fa-fw"></i> 删除</a>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-4" style="text-align:right;">
+                        <input type="text" style="box-shadow:inset 0 0 4px #eee; width:120px; margin:0; padding:6px 12px; border-radius:4px; border:1px solid silver; font-size:1.1em;" id="select_search" placeholder="Search" />
+                        <input type="text" class="hide" id="input_iiid" />
+                        <input type="text" class="hide" id="input_tabIndex" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="favCatalogSelect_jsTree" style="margin-top:1em; min-height:200px;overflow:auto;padding:10px;border-radius:5px;box-shadow:0 0 5px #ccc"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bind="click:addFavorite">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="submit_add_modal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="curveModalLabel">图件属性添加</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    @*元数据定义*@
+                    <div class="form-inline" data-bind="foreach:metadataDefintionList">
+                        <!--ko ifnot:innertag-->
+                        <div class="form-group">
+                            <label class="form-label" data-bind="text:title+'：'"></label>
+                            <!--ko if:uitype=="Text"-->
+                            <input type="text" class="form-control" data-bind="attr:{'data-key':mapping.get,'data-name':name}" />
+                            <!--/ko-->
+                            <!--ko if:uitype=="Datetime"-->
+                            <div class="input-group date">
+                                <input class="form-control" type="text" data-bind="attr:{'data-key':mapping.get,'data-name':name}" />
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            </div>
+                            <!--/ko-->
+                            <!--ko if:uitype=="DropdownList"-->
+                            <input class="form-control" id="myProductType_add" list="producttypes_add" data-bind="attr:{'data-key':mapping.get,'data-name':name}" />
+                            <datalist id="producttypes_add"></datalist>
+                            <!--/ko-->
+                        </div>
+                        <!--/ko-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input id="file-input" name="file-input" type="file" class="file-loading" accept=".gdbx">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bind="click:figureSubmitForAdd">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="submit_edit_modal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="curveModalLabel">图件属性编辑</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    @*元数据定义*@
+                    <input type="text" class="form-control hidden" id="metaIIId" />
+                    <div class="form-inline">
+                        <!--ko foreach:metadataDefintionList-->
+                        <!--ko ifnot:innertag-->
+                        <div class="form-group">
+                            <label class="form-label" data-bind="text:title+'：'"></label>
+                            <!--ko if:uitype=="Text"-->
+                            <input type="text" class="form-control" data-bind="attr:{'data-key':mapping.get,'data-name':name}" />
+                            <!--/ko-->
+                            <!--ko if:uitype=="Datetime"-->
+                            <div class="input-group date">
+                                <input class="form-control" type="text" data-bind="attr:{'data-key':mapping.get,'data-name':name}" />
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            </div>
+                            <!--/ko-->
+                            <!--ko if:uitype=="DropdownList"-->
+                            <input class="form-control" type="text" name="productType" id="myProductType_edit" list="producttypes_edit" data-bind="attr:{'data-key':mapping.get,'data-name':name}" />
+                            <datalist id="producttypes_edit">
+                                <!--[if lt IE 9]><select name="productType" class="form-control"><![endif]-->
+                                <!--[if lt IE 9]></select><![endif]-->
+                            </datalist>
+                            <!--/ko-->
+                        </div>
+                        <!--/ko-->
+                        <!--/ko-->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bind="click:figureSubmitForUpdate">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section script{
+    <!--footable-->
+    <script src="~/Content/EPGL/js/plugins/footable/footable.all.min.js"></script>
+    <!--jstree-->
+    <script src="~/Content/EPGL/js/plugins/jsTree/jstree.min.js"></script>
+    <!--linq-->
+    <script src="~/Content/EPGL/js/plugins/linq.js_ver2.2.0.2/linq.min.js"></script>
+    <!--bootstrap-confirmation-->
+    <script src="~/Content/EPGL/js/plugins/bootstrap-confirmation/bootstrap-confirmation.min.js"></script>
+    <!--knockout mapping-->
+    <script src="~/Content/EPGL/js/plugins/knockout.mapping/knockout.mapping-latest.js"></script>
+    <!--bootstrap colorpicker-->
+    <script src="~/Content/EPGL/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+    <!--fileinput-->
+    <script src="~/Content/EPGL/js/plugins/fileinput/fileinput.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/fileinput/locales/zh.js"></script>
+    <!--bootstrap datetimepicker-->
+    <script src="~/Content/EPGL/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <!--loading-->
+    <script src="~/Content/EPGL/js/shared/loading.js"></script>
+    <script src="~/Content/EPGL/js/pages/mySpace/index.js"></script>
+}
+

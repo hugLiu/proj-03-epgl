@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<StyleSheet name="GeoMap" type="0" scale="700000.00" parm="" ver="4000002">
+	<StyleFeature TypeID="3" FeatureName="含油气面积" IsClosed="1" IsShowCtrlPt="1" IsReverse="0">
+		<Attribute>
+			<FillInfo PenWidth="2.000000" PenColor="4294928416" PenDashStyle="2" PenStyleID="2" PenStyleName="2" bDefaultColor="0" nType="0" nClrBeg="4286282688" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="385281.960000,5014297.630000,469780.780000,5048433.460000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</StyleFeature>
+</StyleSheet>

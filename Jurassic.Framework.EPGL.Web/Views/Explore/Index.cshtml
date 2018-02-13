@@ -1,0 +1,176 @@
+﻿@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = "~/Views/Shared/_EPGLLayout.cshtml";
+}
+@section css{
+<style>
+    .jstree-open > .jstree-anchor > .fa-folder:before {
+        content: "\f07c";
+    }
+
+    .jstree-default .jstree-icon.none {
+        width: 0;
+    }
+</style>
+    }
+<div class="row">
+    <div class="col-md-4 col-sm-4">
+        <div class="ibox float-e-margins" style="margin-bottom: 15px;">
+            <div class="ibox-title">
+                <h5>研究对象</h5>
+            </div>
+            <div class="ibox-content" style="height:220px">
+                <div id="targetTree"></div>
+            </div>
+        </div>
+
+        <div class="ibox float-e-margins" style="margin-bottom: 10px;">
+            <div class="ibox-title">
+                <h5>资料分类 <small>相关成果分类</small></h5>
+            </div>
+            <div class="ibox-content" style="height:420px">
+                <div id="catalogTree"></div>
+            </div>
+        </div>
+    </div><!-- col end -->
+    <div class="col-md-8 col-sm-8">
+        <div class="tabs-container">
+            <ul class="nav nav-tabs">
+                <span class="pull-right text-muted"><h3 id="labCurTargetName">相关成果分类</h3></span>
+                <li class="active">
+                    <a data-toggle="tab" href="#tab-1" aria-expanded="true"> <i class="fa fa-television"></i>成果图册 </a>
+                </li>
+                <li class="">
+                    <a data-toggle="tab" href="#tab-2" aria-expanded="false"> <i class="fa fa-list-ol"></i>成果列表 </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane active">
+                    <div class="panel-body">
+                        <div class="portfolio-content portfolio-1">
+                            <div id="js-filters-juicy-projects" class="cbp-l-filters-button">
+                                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item btn dark btn-outline uppercase">
+                                    所有结果
+                                    <div class="cbp-filter-counter"></div>
+                                </div>
+                                <!-- ko foreach: classificationList -->
+                                <div data-bind="attr:{'data-filter':'.'+typeid},text :typename" class="cbp-filter-item btn btn-success btn-outline uppercase">
+                                    <div class="cbp-filter-counter"></div>
+                                </div>
+                                <!-- /ko -->
+                            </div>
+                            <div id="js-grid-juicy-projects" class="cbp">
+                                <!-- ko foreach: resultAlbum -->
+                                <div data-bind="attr:{class:'cbp-item '+typeid}">
+                                    <div class="cbp-caption">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img data-bind="attr:{src:thumbSrc}" />
+                                        </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignCenter">
+                                                <div class="cbp-l-caption-body">
+                                                    <a class="btn btn-success btn-sm" data-bind="click:$parent.openDetailPage">
+                                                        <i class="fa fa-file-o"></i>打开
+                                                    </a>
+                                                    <a class="btn btn-danger btn-sm" style="margin-left: 5px;" data-bind="click: $parent.collectFavorite">
+                                                        <i class="fa fa-heart"></i>收藏
+                                                    </a>
+                                                    <a class="cbp-lightbox cbp-l-caption-buttonRight btn btn-primary btn-sm" data-bind="attr:{href:src,'data-title':previewtitle}">
+                                                        <i class="fa fa-tripadvisor"></i>预览
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cbp-l-grid-projects-title uppercase text-center uppercase text-center tooltips" data-bind="attr:{'data-original-title':name},text:name"></div>
+                                    <div class="cbp-l-grid-projects-desc uppercase text-center uppercase text-center" data-bind="text:titledesc"></div>
+                                </div>
+                                <!-- /ko -->
+                            </div>
+                            <div id="js-loadMore-juicy-projects" class="cbp-l-loadMore-button">
+                                <a data-bind="click:function(data,event){albumLoadMore(data,event)}}" class="cbp-l-loadMore-link btn grey-mint btn-outline" rel="nofollow">
+                                    <span class="cbp-l-loadMore-defaultText">查看更多</span>
+                                    <span class="cbp-l-loadMore-loadingText">数据加载中，请稍后...</span>
+                                    <span class="cbp-l-loadMore-noMoreLoading">没有更多记录</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-pane">
+                    <div class="panel-body">
+                        <div class="row m-b-sm m-t-sm">
+                            <div class="col-md-1">
+                                <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+                            </div>
+                            <div class="col-md-11">
+                                <div class="input-group">
+                                    <input type="text" placeholder="请输入成果名称" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> 搜索</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-list">
+                            <table id="table_list" class="footable table table-stripped toggle-arrow-tiny" data-page-size="10">
+                                <thead>
+                                    <tr>
+                                        <th style="width:45px">编号</th>
+                                        <th data-toggle="true">名称</th>
+                                        <th style="width:85px">作者</th>
+                                        <th data-hide="all">成果分类</th>
+                                        <th data-hide="all">编图人</th>
+                                        <th data-hide="all">绘图人</th>
+                                        <th data-hide="all">审核人</th>
+                                        <th data-hide="all">制图日期</th>
+                                        <th style="width:105px">入库日期</th>
+                                        <th style="width:80px">浏览</th>
+                                        <th style="width:160px">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bind="foreach:resultList">
+                                <tr>
+                                    <td><span class="ibx-hotTop-rank current" data-bind="text:$index()+1"></span></td>
+                                    <td><span data-bind="text:name"></span></td>
+                                    <td data-bind="text:author"></td>
+                                    <td data-bind="text:typename"></td>
+                                    <td data-bind="text:author"></td>
+                                    <td data-bind="text:author"></td>
+                                    <td data-bind="text:author"></td>
+                                    <td data-bind="text:createdate"></td>
+                                    <td data-bind="text:createdate"></td>
+                                    <td class="text-navy"><i class="fa fa-level-up" data-bind="text:no"></i></td>
+                                    <td>
+                                        <button class="btn btn-info btn-circle" data-bind="click: $parent.openDetailPage" type="button" data-toggle="tooltip" data-placement="left" title="浏览">
+                                            <i class="fa fa-sticky-note-o"></i>
+                                        </button>
+                                        <button class="btn btn-danger btn-circle btn-outline" data-bind="click: $parent.collectFavorite" type="button" data-toggle="tooltip" data-placement="left" title="收藏">
+                                            <i class="fa fa-heart"></i>
+                                        </button>
+                                        <button class="btn btn-success btn-circle" type="button" data-bind="click: $parent.downloadAchieve" data-toggle="tooltip" data-placement="left" title="下载">
+                                            <i class="fa fa-download"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="5">
+                                            <ul class="pagination pull-right"></ul>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- col end -->
+</div>
+@section script{
+<script src="~/DemoData/json/data-tragets.js"></script>
+<script src="~/DemoData/json/data-knowledges.js"></script>
+<script src="~/DemoData/json/data-thumb.js"></script>
+<script src="~/Content/EPGL/js/pages/explore/index.js"></script>
+    }

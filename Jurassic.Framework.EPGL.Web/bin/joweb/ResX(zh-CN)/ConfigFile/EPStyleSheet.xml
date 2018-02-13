@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Map>
+	<Types Name="地理信息.居民地" ID="0901000" LayerType="1010000" FilterName="地名" FilterID="13" EP3GXName="居民地" EP3GXID="13">
+		<Type Name="首都" ID="0901001" LayerType="1010100"/>
+		<Type Name="省、自治区、直辖市政府驻地" ID="0901001" LayerType="1010200"/>
+		<Type Name="省辖市（地级市）政府驻地" ID="0901002" LayerType="1010200"/>
+		<Type Name="地区、自治州、盟政府驻地" ID="0901003" LayerType="1010300"/>
+		<Type Name="市辖区、地辖区（县级市）政府驻地" ID="0901004" LayerType="1010300"/>
+		<Type Name="县、自治县、旗政府驻地" ID="0901005" LayerType="1010400"/>
+		<Type Name="省直辖行政单位政府驻地" ID="0901006" LayerType="1010300"/>
+		<Type Name="镇政府驻地" ID="0901007" LayerType="1010500"/>
+		<Type Name="乡政府驻地" ID="0901008" LayerType="1010500"/>
+		<Type Name="庙宇" ID="0901009"/>
+	</Types>
+	<Types Name="地理信息.企事业单位" ID="0902000" LayerType="1020000" FilterName="地名" FilterID="13" EP3GXName="企事业单位" EP3GXID="13">
+		<Type Name="学校" ID="0902001"/>
+		<Type Name="医院" ID="0902002"/>
+		<Type Name="油田公司（局）" ID="0902003"/>
+		<Type Name="采油厂（二级单位）" ID="0902004"/>
+		<Type Name="二级单位" ID="0902005"/>
+		<Type Name="采油矿（三级单位）" ID="0902006"/>
+		<Type Name="三级单位" ID="0902007"/>
+		<Type Name="四级单位" ID="0101017"/>
+		<Type Name="采油队（四级单位）" ID="0902008"/>
+		<Type Name="作业队（四级单位）" ID="0902009"/>
+		<Type Name="钻井队（四级单位）" ID="0902010"/>
+		<Type Name="注水队" ID="0902011"/>
+		<Type Name="采气队" ID="0902012"/>
+		<Type Name="试油队" ID="0902013"/>
+		<Type Name="大修队" ID="0902014"/>
+		<Type Name="试井队" ID="0902015"/>
+	</Types>
+	<Types Name="地理信息.行政境界" ID="0102000" LayerType="1030000" FilterName="通用线" FilterID="2|18|19" EP3GXName="行政境界" EP3GXID="2">
+		<Type Name="已定国界" ID="0102001"/>
+		<Type Name="未定国界" ID="0102002"/>
+		<Type Name="省、自治区、直辖市界" ID="0102003"/>
+		<Type Name="自治州、地区、盟、地级市界" ID="0102004"/>
+		<Type Name="县、自治县、旗、县级市界" ID="0102005"/>
+		<Type Name="乡、镇、国营农场、林场、牧场界" ID="0102006"/>
+		<Type Name="古长城" ID="0102007"/>
+	</Types>
+	<Types Name="地理信息.交通" ID="0103000" LayerType="1040000" FilterName="通用线" FilterID="2|18|19" EP3GXName="交通" EP3GXID="2">
+		<Type Name="高速公路（已建成）" ID="0103001"/>
+		<Type Name="高速公路（建筑中）" ID="0103002"/>
+		<Type Name="一级公路（已建成）" ID="0103003"/>
+		<Type Name="一级公路（建筑中）" ID="0103004"/>
+		<Type Name="二级公路（已建成）" ID="0103005"/>
+		<Type Name="二级公路（建筑中）" ID="0103006"/>
+		<Type Name="三级公路（已建成）" ID="0103007"/>
+		<Type Name="三级公路（建筑中）" ID="0103008"/>
+		<Type Name="四级公路（已建成）" ID="0103009"/>
+		<Type Name="四级公路（建筑中）" ID="0103010"/>
+		<Type Name="等外公路（已建成）" ID="0103011"/>
+		<Type Name="等外公路（建筑中）" ID="0103012"/>
+		<Type Name="普通公路（已建成）" ID="0103013"/>
+		<Type Name="普通公路（建筑中）" ID="0103014"/>
+		<Type Name="简易公路/大车路/拖拉机路" ID="0103015"/>
+		<Type Name="专用公路" ID="0103016"/>
+		<Type Name="乡村路" ID="0103017"/>
+		<Type Name="时令路/无定路" ID="0103018"/>
+		<Type Name="普通铁路" ID="0103019"/>
+	</Types>
+	<Types Name="地理信息.桥梁" ID="0104000" LayerType="1040000" FilterName="平面符号" FilterID="1" EP3GXName="桥梁" EP3GXID="1">
+		<Type Name="有输油气管线桥" ID="0104001"/>
+		<Type Name="铁路公路两用桥" ID="0104002"/>
+		<Type Name="铁路桥" ID="0104003"/>
+		<Type Name="阶面桥" ID="0104004"/>
+		<Type Name="人行桥" ID="0104005"/>
+		<Type Name="立交桥" ID="0104006"/>
+	</Types>
+	<Types Name="地理信息.隧道" ID="0105000" LayerType="1040000" FilterName="平面符号" FilterID="1" EP3GXName="隧道" EP3GXID="1">
+		<Type Name="铁路隧道" ID="0105001"/>
+		<Type Name="公路隧道" ID="0105002"/>
+		<Type Name="水下隧道" ID="0105003"/>
+	</Types>
+	<Types Name="地理信息.交通站点" ID="0106000" LayerType="1040000"  FilterName="平面符号" FilterID="1" EP3GXName="交通站点" EP3GXID="1">
+		<Type Name="飞机场" ID="0106001"/>
+		<Type Name="码头、港口" ID="0106002"/>
+		<Type Name="火车站" ID="0106003"/>
+		<Type Name="汽车站" ID="0106004"/>
+	</Types>
+	<Types Name="地理信息.线状水系" ID="0107000" LayerType="1050200" FilterName="通用线" FilterID="2|18|19" EP3GXName="线状水系" EP3GXID="2">
+		<Type Name="河流" ID="0107001"/>
+		<Type Name="运河" ID="0107002"/>
+		<Type Name="时令单线河" ID="0107003"/>
+		<Type Name="时令双线河" ID="0107004"/>
+		<Type Name="消失河" ID="0107005"/>
+		<Type Name="伏流河" ID="0107006"/>
+		<Type Name="渠道" ID="0107007"/>
+	</Types>
+	<Types Name="地理信息.面状水系" ID="0108000" LayerType="1050300" FilterName="通用面" FilterID="3" EP3GXName="面状水系" EP3GXID="3">
+		<Type Name="湖泊" ID="0108001"/>
+		<Type Name="淡水湖" ID="0108002"/>
+		<Type Name="咸水湖" ID="0108003"/>
+		<Type Name="时令湖" ID="0108004"/>
+		<Type Name="小水库" ID="0108005"/>
+		<Type Name="大型水库" ID="0108006"/>
+	</Types>
+	<Types Name="地理信息.海岸线" ID="0109000" LayerType="1050100" FilterName="通用线" FilterID="2|18|19" EP3GXName="海岸线" EP3GXID="2">
+		<Type Name="海岸线" ID="0109001"/>
+		<Type Name="海水等深线" ID="0109002"/>
+	</Types>
+	<Types Name="地理信息.点状水系" ID="0110000" LayerType="1050400" FilterName="平面符号" FilterID="1" EP3GXName="点状水系" EP3GXID="1">
+		<Type Name="水井" ID="0110001"/>
+		<Type Name="泉" ID="0110002"/>
+		<Type Name="瀑布" ID="0110003"/>
+	</Types>
+	<Types Name="地理信息.点状地物" ID="0111000" LayerType="1060000"  FilterName="平面符号" FilterID="1" EP3GXName="点状地物" EP3GXID="1">
+		<Type Name="盐田" ID="0111001"/>
+		<Type Name="岛屿" ID="0111002"/>
+		<Type Name="火山口" ID="0111003"/>
+		<Type Name="独立树" ID="0111004"/>
+		<Type Name="山峰" ID="0111005"/>
+	</Types>
+	<Types Name="地理信息.线状地物" ID="0112000" LayerType="1060000"  FilterName="通用线" FilterID="2|18|19" EP3GXName="线状地物" EP3GXID="2">
+		<Type Name="一般堤坝" ID="0112001"/>
+		<Type Name="主要堤坝" ID="0112002"/>
+		<Type Name="山脉" ID="0112003"/>
+		<Type Name="沙漠黄土界线" ID="0112004"/>
+	</Types>
+	<Types Name="地理信息.面状地物" ID="0113000" LayerType="1070000"  FilterName="通用面" FilterID="3" EP3GXName="面状地物" EP3GXID="3">
+		<Type Name="戈壁滩" ID="0113001"/>
+		<Type Name="盐碱地" ID="0113002"/>
+		<Type Name="小草丘地" ID="0113003"/>
+		<Type Name="沙漠" ID="0113004"/>
+		<Type Name="多小丘沙地" ID="0113005"/>
+		<Type Name="森林" ID="0113006"/>
+		<Type Name="灌木林" ID="0113007"/>
+		<Type Name="防护林" ID="0113008"/>
+		<Type Name="竹林" ID="0113009"/>
+		<Type Name="稻田" ID="0113010"/>
+		<Type Name="旱地" ID="0113011"/>
+		<Type Name="草地" ID="0113012"/>
+		<Type Name="芦苇地" ID="0113013"/>
+		<Type Name="沼泽" ID="0113014"/>
+		<Type Name="盐沼泽" ID="0113015"/>
+		<Type Name="自然保护区" ID="0113016"/>
+	</Types>
+	<Types Name="矿权信息.矿权区" ID="0201000" LayerType="2010000" FilterName="通用线面" FilterID="2|3|18|19" EP3GXName="矿权区" EP3GXID="3">
+		<Type Name="中石油采矿权" ID="0201001"/>
+		<Type Name="中石油探矿权" ID="0201002"/>
+		<Type Name="中石化矿权" ID="0201003"/>
+		<Type Name="中海油矿权" ID="0201004"/>
+		<Type Name="中联煤矿权" ID="0201005"/>
+		<Type Name="延长油矿矿权" ID="0201006"/>
+		<Type Name="对外合作矿权" ID="0201007"/>
+		<Type Name="其他公司矿权" ID="0201008"/>
+		<Type Name="矿权空白区" ID="0201009"/>
+		<Type Name="矿区边界" ID="0201010"/>
+		<Type Name="油区矿权" ID="0201011"/>
+		<Type Name="采油厂管辖边界" ID="0201012"/>
+		<Type Name="采油厂矿管辖边界" ID="0201013"/>
+		<Type Name="采油厂队管辖边界" ID="0201014"/>
+		<Type Name="油田范围" ID="0201015"/>
+		<Type Name="气田范围" ID="0201016"/>
+	</Types>
+	<Types Name="勘探工程信息.野外地层剖面点" ID="0301000" LayerType="3010000" FilterName="平面符号" FilterID="1" EP3GXName="野外地层剖面点" EP3GXID="1">
+		<Type Name="剖面点" ID="0301001"/>
+	</Types>
+	<Types Name="勘探工程信息.野外典型构造点" ID="0302000" LayerType="3020000" FilterName="平面符号" FilterID="1" EP3GXName="野外典型构造点" EP3GXID="1">
+		<Type Name="构造点" ID="0302001"/>
+	</Types>
+	<Types Name="勘探工程信息.地质露头" ID="0303000" LayerType="3030000" FilterName="平面符号" FilterID="1" EP3GXName="地质露头" EP3GXID="1">
+		<Type Name="地质露头" ID="0303001"/>
+	</Types>
+	<Types Name="勘探工程信息.实测地层剖面" ID="0304000" LayerType="4040500" FilterName="通用线" FilterID="2|18|19" EP3GXName="实测地层剖面" EP3GXID="2">
+		<Type Name="实测地层剖面" ID="0304001"/>
+	</Types>
+	<Types Name="勘探工程信息.油气标志" ID="0305000" LayerType="3040000" FilterName="平面符号" FilterID="1" EP3GXName="油气标志" EP3GXID="1">
+		<Type Name="地面油气苗" ID="0305001"/>
+		<Type Name="石油" ID="0305002"/>
+		<Type Name="天然气" ID="0305003"/>
+	</Types>
+	<Types Name="勘探工程信息.地震工区" ID="0306000" LayerType="3050000" FilterName="通用线" FilterID="2|18|19" EP3GXName="地震工区" EP3GXID="18">
+		<Type Name="已完成三维工区" ID="0306001"/>
+		<Type Name="二维完成工区≤1×1" ID="0306002"/>
+		<Type Name="二维完成工区1×2～2×2" ID="0306003"/>
+		<Type Name="二维完成工区2×2～4×4" ID="0306004"/>
+		<Type Name="二维完成工区4×8～8×16" ID="0306005"/>
+		<Type Name="二维完成工区≥8×16" ID="0306006"/>
+		<Type Name="部署三维地震工区" ID="0306007"/>
+		<Type Name="部署二维地震工区" ID="0306008"/>
+	</Types>
+	<Types Name="勘探工程信息.地震测线" ID="0307000" LayerType="3060000" FilterName="通用线" FilterID="2|18|19" EP3GXName="地震测线" EP3GXID="16">
+		<Type Name="部署二维测线" ID="0307001"/>
+		<Type Name="已完成二维测线" ID="0307002"/>
+		<Type Name="已完成三维测线" ID="0307003"/>
+	</Types>
+	<Types Name="勘探工程信息.地震相" ID="0308000" LayerType="3070000" FilterName="通用面" FilterID="3" EP3GXName="地震相" EP3GXID="3">
+		<Type Name="地震相" ID="0308001"/>
+	</Types>
+	<Types Name="勘探工程信息.地震资料品质区" ID="0309000" LayerType="3080000" FilterName="通用线面" FilterID="2|3|18|19" EP3GXName="地震资料品质区" EP3GXID="2">
+		<Type Name="一级品质区" ID="0309001"/>
+		<Type Name="二级品质区" ID="0309002"/>
+		<Type Name="三级品质区" ID="0309003"/>
+		<Type Name="资料空白区（资料复杂带）" ID="0309004"/>
+	</Types>
+	<Types Name="勘探工程信息.地震属性" ID="0310000" LayerType="3090000" FilterName="等值线" FilterID="17" EP3GXName="地震属性" EP3GXID="17">
+		<Type Name="地震属性" ID="0310001"/>
+	</Types>
+	<Types Name="勘探工程信息.反射层时间" ID="0311000" LayerType="3090000" FilterName="等值线" FilterID="17" EP3GXName="反射层时间" EP3GXID="17">
+		<Type Name="反射层时间" ID="0311001"/>
+	</Types>
+	<Types Name="勘探工程信息.非地震工区" ID="0311000" LayerType="3100000" FilterName="通用线" FilterID="2|18|19" EP3GXName="非地震工区" EP3GXID="2">
+		<Type Name="部署非地震物化探工区" ID="0311001"/>
+		<Type Name="部署重力工区" ID="0311002"/>
+		<Type Name="部署磁力工区" ID="0311003"/>
+		<Type Name="部署电法工区" ID="0311004"/>
+		<Type Name="部署化探工区" ID="0311005"/>
+		<Type Name="完成重力工区" ID="0311006"/>
+		<Type Name="完成磁力工区" ID="0311007"/>
+		<Type Name="完成电法工区" ID="0311008"/>
+		<Type Name="完成化探工区" ID="0311009"/>
+	</Types>
+	<Types Name="勘探工程信息.非地震物化探测线" ID="0312000" LayerType="3110000" FilterName="通用线" FilterID="2|18|19" EP3GXName="非地震物化探测线" EP3GXID="2">
+		<Type Name="非地震物化探测线" ID="0312001"/>
+	</Types>
+	<Types Name="勘探工程信息.井位.探井" ID="0313000" LayerType="3120100" FilterName="井位" FilterID="11" EP3GXName="井位" EP3GXID="11">
+		<Type Name="区探井" ID="0313001"/>
+		<Type Name="基准井" ID="0313002"/>
+		<Type Name="参数井" ID="0313003"/>
+		<Type Name="预探井" ID="0313004"/>
+		<Type Name="评价井" ID="0313005"/>
+		<Type Name="水文井" ID="0313006"/>
+		<Type Name="千吨油井" ID="0313007"/>
+		<Type Name="风险井" ID="0313008"/>
+		<Type Name="已钻井" ID="0313009"/>
+		<Type Name="发现井" ID="0313010"/>
+		<Type Name="工业油流井" ID="0313011"/>
+		<Type Name="工业气流井" ID="0313012"/>
+		<Type Name="低产油流井" ID="0313013"/>
+		<Type Name="低产气流井" ID="0313014"/>
+		<Type Name="少量油井" ID="0313015"/>
+		<Type Name="少量气井" ID="0313016"/>
+		<Type Name="产水井" ID="0313017"/>
+		<Type Name="热水井" ID="0313018"/>
+		<Type Name="干井" ID="0313019"/>
+		<Type Name="油水同层井" ID="0313020"/>
+		<Type Name="气水同层井" ID="0313021"/>
+		<Type Name="含油水井" ID="0313022"/>
+		<Type Name="含气水井" ID="0313023"/>
+		<Type Name="油气层井" ID="0313024"/>
+		<Type Name="油气显示井" ID="0313025"/>
+		<Type Name="工程报废井" ID="0313026"/>
+		<Type Name="地质报废井" ID="0313027"/>
+		<Type Name="正、待试井" ID="0313028"/>
+		<Type Name="滚动勘探井" ID="0313029"/>
+		<Type Name="取心井" ID="0313030"/>
+		<Type Name="大直径取心井" ID="0313031"/>
+		<Type Name="密闭取心井" ID="0313032"/>
+		<Type Name="油基泥浆取心井" ID="0313033"/>
+		<Type Name="井壁取心井" ID="0313034"/>
+		<Type Name="工程井" ID="0313035"/>
+		<Type Name="设计井" ID="0313036"/>
+		<Type Name="地质井" ID="0313037"/>
+	</Types>
+	<Types Name="勘探工程信息.井位.开发井" ID="0314000" LayerType="3120200" FilterName="井位" FilterID="11" EP3GXName="井位" EP3GXID="11">
+		<Type Name="采油井" ID="0314001"/>
+		<Type Name="采气井" ID="0314002"/>
+		<Type Name="排液井" ID="0314003"/>
+		<Type Name="一次调整油井" ID="0314004"/>
+		<Type Name="二次调整油井" ID="0314005"/>
+		<Type Name="观察井" ID="0314006"/>
+		<Type Name="试采井" ID="0314007"/>
+		<Type Name="更新油井" ID="0314008"/>
+		<Type Name="二次更新油井" ID="0314009"/>
+		<Type Name="三次更新油井" ID="0314010"/>
+		<Type Name="采油检查井" ID="0314011"/>
+		<Type Name="汽驱采油井" ID="0314012"/>
+		<Type Name="蒸汽吞吐井" ID="0314013"/>
+		<Type Name="火烧油层井" ID="0314014"/>
+		<Type Name="气举井" ID="0314015"/>
+		<Type Name="资料井" ID="0314016"/>
+		<Type Name="待报废油井" ID="0314017"/>
+		<Type Name="采CO2井" ID="0314018"/>
+		<Type Name="采气检查井" ID="0314019"/>
+		<Type Name="待报废气井" ID="0314020"/>
+		<Type Name="注水井" ID="0314021"/>
+		<Type Name="一次调整注水井" ID="0314022"/>
+		<Type Name="二次调整注水井" ID="0314023"/>
+		<Type Name="注碱水井" ID="0314024"/>
+		<Type Name="注化学剂井" ID="0314025"/>
+		<Type Name="注剂聚合物井" ID="0314026"/>
+		<Type Name="三元复合井" ID="0314027"/>
+		<Type Name="待报废水井" ID="0314028"/>
+		<Type Name="注蒸汽、注热水井" ID="0314029"/>
+		<Type Name="待报废注气井" ID="0314030"/>
+		<Type Name="注气井" ID="0314031"/>
+		<Type Name="注天然气井" ID="0314032"/>
+		<Type Name="注CO2气井" ID="0314033"/>
+		<Type Name="待报废注气井" ID="0314034"/>
+		<Type Name="采水井" ID="0314035"/>
+		<Type Name="采卤水井" ID="0314036"/>
+		<Type Name="待报废采水井" ID="0314037"/>
+		<Type Name="点火井" ID="0314038"/>
+		<Type Name="首钻井" ID="0314039"/>
+		<Type Name="利用报废采油井" ID="0314040"/>
+		<Type Name="利用报废采气井" ID="0314041"/>
+		<Type Name="利用报废注水井" ID="0314042"/>
+		<Type Name="利用报废注气井" ID="0314043"/>
+		<Type Name="利用报废注汽井" ID="0314044"/>
+		<Type Name="利用报废采水井" ID="0314045"/>
+		<Type Name="套管事故井" ID="0314046"/>
+		<Type Name="井下有落物井" ID="0314047"/>
+		<Type Name="其他工程报废井" ID="0314048"/>
+		<Type Name="未下套管井" ID="0314049"/>
+		<Type Name="无工业油流井" ID="0314050"/>
+		<Type Name="水淹后无油流井" ID="0314051"/>
+		<Type Name="其他地质报废井" ID="0314052"/>
+		<Type Name="停产井" ID="0314053"/>
+		<Type Name="停注井" ID="0314054"/>
+	</Types>
+	<Types Name="勘探工程信息.井位.废弃井" ID="0315000" LayerType="3120300" FilterName="井位" FilterID="11" EP3GXName="井位" EP3GXID="11">
+		<Type Name="废弃采油井" ID="0315001"/>
+		<Type Name="废弃采气井" ID="0315002"/>
+		<Type Name="废弃注水井" ID="0315003"/>
+		<Type Name="废弃注气井" ID="0315004"/>
+		<Type Name="废弃采水井" ID="0315005"/>
+		<Type Name="套管弯曲井" ID="0315006"/>
+		<Type Name="套管破裂井" ID="0315007"/>
+		<Type Name="外漏井" ID="0315008"/>
+	</Types>
+	<Types Name="勘探工程信息.井位.井况" ID="0316000" LayerType="3120400" FilterName="井位" FilterID="11" EP3GXName="井位" EP3GXID="11">
+		<Type Name="长停采油井" ID="0316001"/>
+		<Type Name="长停注水井" ID="0316002"/>
+		<Type Name="长停注气井" ID="0316003"/>
+		<Type Name="长停蒸气吞吐井" ID="0316004"/>
+		<Type Name="长停采水井" ID="0316005"/>
+		<Type Name="长停采气井" ID="0316006"/>
+	</Types>
+	<Types Name="勘探工程信息.井位.未完井" ID="0317000" LayerType="3120500" FilterName="井位" FilterID="11" EP3GXName="井位" EP3GXID="11">
+		<Type Name="当年新井" ID="0317001"/>
+		<Type Name="正钻井" ID="0317002"/>
+		<Type Name="缓钻井" ID="0317003"/>
+		<Type Name="待钻井" ID="0317004"/>
+		<Type Name="正建设井" ID="0317005"/>
+		<Type Name="待建设井" ID="0317006"/>
+		<Type Name="试油井" ID="0317007"/>
+		<Type Name="试注井" ID="0317008"/>
+		<Type Name="试气井" ID="0317009"/>
+	</Types>
+	<Types Name="勘探工程信息.井位.石油井" ID="0318000" LayerType="3120600" FilterName="井位" FilterID="11" EP3GXName="井位" EP3GXID="11">
+		<Type Name="石油井" ID="0318001"/>
+	</Types>
+	<Types Name="勘探工程信息.井位.天然气井" ID="0319000" LayerType="3120700" FilterName="井位" FilterID="11" EP3GXName="井位" EP3GXID="11">
+		<Type Name="天然气井" ID="0319001"/>
+	</Types>
+	<Types Name="勘探工程信息.勘探目标（项目工区）" ID="0320000" LayerType="3130000" FilterName="通用线" FilterID="2|18|19" EP3GXName="勘探目标（项目工区）" EP3GXID="2">
+		<Type Name="勘探目标（项目工区）" ID="0320001"/>
+	</Types>
+	<Types Name="地质信息.构造分区" ID="0401000" LayerType="4010000" FilterName="通用线面" FilterID="2|3|18|19" EP3GXName="构造分区" EP3GXID="2">
+		<Type Name="盆地边界" ID="0401001"/>
+		<Type Name="推测盆地边界" ID="0401002"/>
+		<Type Name="一级构造分区" ID="0401003"/>
+		<Type Name="推测一级构造分区" ID="0401004"/>
+		<Type Name="二级构造分区" ID="0401005"/>
+		<Type Name="推测二级构造分区" ID="0401006"/>
+		<Type Name="三级构造分区" ID="0401007"/>
+		<Type Name="推测三级构造分区" ID="0401008"/>
+		<Type Name="含油构造" ID="0401009"/>
+		<Type Name="含气构造" ID="0401010"/>
+		<Type Name="隆起" ID="0401011"/>
+		<Type Name="坳陷" ID="0401012"/>
+		<Type Name="凸起" ID="0401013"/>
+		<Type Name="凹陷" ID="0401014"/>
+		<Type Name="斜坡" ID="0401015"/>
+		<Type Name="有利构造带" ID="0401016"/>
+		<Type Name="Ⅰ类区带" ID="0401017"/>
+		<Type Name="Ⅱ类区带" ID="0401018"/>
+		<Type Name="Ⅲ类区带" ID="0401019"/>
+		<Type Name="Ⅳ类区带" ID="0401020"/>
+		<Type Name="Ⅴ类区带" ID="0401021"/>
+	</Types>
+	<Types Name="地质信息.断层" ID="0402000" LayerType="4020000" FilterName="断层线" FilterID="20" EP3GXName="断层" EP3GXID="20">
+		<Type Name="区域/坳陷断裂线" ID="0402001"/>
+		<Type Name="正断层" ID="0402002"/>
+		<Type Name="逆断层" ID="0402003"/>
+		<Type Name="复杂断层带" ID="0402004"/>
+		<Type Name="可靠性差正断层" ID="0402005"/>
+		<Type Name="可靠性差逆断层" ID="0402006"/>
+		<Type Name="一级正断层" ID="0402007"/>
+		<Type Name="二级正断层" ID="0402008"/>
+		<Type Name="亚二级正断层" ID="0402009"/>
+		<Type Name="三级正断层" ID="0402010"/>
+		<Type Name="四级正断层" ID="0402011"/>
+		<Type Name="一级逆断层" ID="0402012"/>
+		<Type Name="二级逆断层" ID="0402013"/>
+		<Type Name="亚二级逆断层" ID="0402014"/>
+		<Type Name="三级逆断层" ID="0402015"/>
+		<Type Name="四级逆断层" ID="0402016"/>
+		<Type Name="一级平推断层" ID="0402017"/>
+		<Type Name="二级平推断层" ID="0402018"/>
+		<Type Name="亚二级平推断层" ID="0402019"/>
+		<Type Name="三级平推断层" ID="0402020"/>
+		<Type Name="四级平推断层" ID="0402021"/>
+		<Type Name="一级逆掩断层" ID="0402022"/>
+		<Type Name="二级逆掩断层" ID="0402023"/>
+		<Type Name="亚二级逆掩断层" ID="0402024"/>
+		<Type Name="三级逆掩断层" ID="0402025"/>
+		<Type Name="四级逆掩断层" ID="0402026"/>
+		<Type Name="一级冲断层" ID="0402027"/>
+		<Type Name="二级冲断层" ID="0402028"/>
+		<Type Name="亚二级冲断层" ID="0402029"/>
+		<Type Name="三级冲断层" ID="0402030"/>
+		<Type Name="四级冲断层" ID="0402031"/>
+		<Type Name="推测正断层" ID="0402032"/>
+		<Type Name="推测逆断层" ID="0402033"/>
+		<Type Name="推测逆掩断层" ID="0402034"/>
+		<Type Name="推测平推断层" ID="0402035"/>
+		<Type Name="推测冲断层" ID="0402036"/>
+		<Type Name="性质不明断层" ID="0402037"/>
+		<Type Name="主要复活断层" ID="0402038"/>
+		<Type Name="资料不足主要复活断层" ID="0402039"/>
+	</Types>
+	<Types Name="地质信息.裂缝预测" ID="0403000" LayerType="4020100" FilterName="通用面" FilterID="3" EP3GXName="裂缝预测" EP3GXID="3">
+		<Type Name="裂缝预测" ID="0403001"/>
+	</Types>
+	<Types Name="地质信息.裂缝线" ID="0405000" LayerType="4020100" FilterName="通用线" FilterID="2|18|19" EP3GXName="裂缝线" EP3GXID="2">
+		<Type Name="裂缝线" ID="0405001"/>
+	</Types>
+	<Types Name="地质信息.裂缝发育带" ID="0405000" LayerType="4020100" FilterName="通用线面" FilterID="2|3|18|19" EP3GXName="裂缝发育带" EP3GXID="2">
+		<Type Name="裂缝发育带" ID="0405001"/>
+	</Types>
+	<Types Name="地质信息.构造深度" ID="0406000" LayerType="4030100" FilterName="等值线" FilterID="17" EP3GXName="构造深度" EP3GXID="17">
+		<Type Name="构造等值线" ID="0406001"/>
+		<Type Name="推测构造等值线" ID="0406002"/>
+		<Type Name="构造深度" ID="0406003"/>
+	</Types>
+	<Types Name="地质信息.高低点" ID="0407000"  LayerType="4160000"  FilterName="平面符号" FilterID="1" EP3GXName="高低点" EP3GXID="1">
+		<Type Name="构造高点" ID="0407001"/>
+		<Type Name="构造低点" ID="0407002"/>
+		<Type Name="磁高点" ID="0407003"/>
+		<Type Name="磁低点" ID="0407004"/>
+	</Types>
+	<Types Name="地质信息.地层界线" ID="0408000" LayerType="4040000" FilterName="通用线" FilterID="2|18|19" EP3GXName="地层界线" EP3GXID="2">
+		<Type Name="地层剥蚀线" ID="0408001"/>
+		<Type Name="推测地层剥蚀线" ID="0408002"/>
+		<Type Name="一级构造地层尖灭线" ID="0408003"/>
+		<Type Name="一级构造推测地层尖灭线" ID="0408004"/>
+		<Type Name="二级构造地层尖灭线" ID="0408005"/>
+		<Type Name="二级构造推测地层尖灭线" ID="0408006"/>
+		<Type Name="地层尖灭线" ID="0408007"/>
+		<Type Name="推测地层尖灭线" ID="0408008"/>
+		<Type Name="小（储）层尖灭线" ID="0408009"/>
+		<Type Name="推测小（储）层尖灭线" ID="0408010"/>
+		<Type Name="一级构造地层超覆线" ID="0408011"/>
+		<Type Name="一级构造推测地层超覆线" ID="0408012"/>
+		<Type Name="二级构造地层超覆线" ID="0408013"/>
+		<Type Name="二级构造推测地层超覆线" ID="0408014"/>
+		<Type Name="地层超覆线" ID="0408015"/>
+		<Type Name="推测地层超覆线" ID="0408016"/>
+		<Type Name="地层缺失线" ID="0408017"/>
+	</Types>
+	<Types Name="地质信息.埋深等值线" ID="0409000" LayerType="4030200" FilterName="等值线" FilterID="17" EP3GXName="埋深等值线" EP3GXID="17">
+		<Type Name="基底埋深线" ID="0409001"/>
+	</Types>
+	<Types Name="地质信息.地层接触关系" ID="0410000"  LayerType="4040000" FilterName="通用线" FilterID="2|18|19" EP3GXName="地层接触关系" EP3GXID="2">
+		<Type Name="地层整合线" ID="0410001"/>
+		<Type Name="地层推测整合界线" ID="0410002"/>
+		<Type Name="地层平行不整合界线" ID="0410003"/>
+		<Type Name="地层推测平行不整合界线" ID="0410004"/>
+		<Type Name="地层不整合界线" ID="0410005"/>
+		<Type Name="地层推测不整合界线" ID="0410006"/>
+	</Types>
+	<Types Name="地质信息.地层年代.界" ID="0411000" LayerType="4060100" FilterName="通用面" FilterID="3" EP3GXName="地层年代" EP3GXID="3">
+		<Type Name="新生界" ID="0411001"/>
+		<Type Name="中生界" ID="0411002"/>
+		<Type Name="古生界" ID="0411003"/>
+		<Type Name="元古界" ID="0411004"/>
+		<Type Name="太古界" ID="0411005"/>
+		<Type Name="前寒武" ID="0411006"/>
+		<Type Name="前震旦" ID="0411007"/>
+		<Type Name="上古生界" ID="0411008"/>
+		<Type Name="下古生界" ID="0411009"/>
+		<Type Name="上元古界" ID="0411010"/>
+		<Type Name="中元古界" ID="0411011"/>
+		<Type Name="下元古界" ID="0411012"/>
+		<Type Name="上太古界" ID="0411013"/>
+		<Type Name="中下太古界" ID="0411014"/>
+	</Types>
+	<Types Name="地质信息.地层年代.系" ID="0412000" LayerType="4060200" FilterName="通用面" FilterID="3" EP3GXName="地层年代" EP3GXID="3">
+		<Type Name="第四系" ID="0412001"/>
+		<Type Name="新近系" ID="0412002"/>
+		<Type Name="古近系" ID="0412003"/>
+		<Type Name="白垩系" ID="0412004"/>
+		<Type Name="侏罗系" ID="0412005"/>
+		<Type Name="三叠系" ID="0412006"/>
+		<Type Name="二叠系" ID="0412007"/>
+		<Type Name="石炭系" ID="0412008"/>
+		<Type Name="泥盆系" ID="0412009"/>
+		<Type Name="志留系" ID="0412010"/>
+		<Type Name="奥陶系" ID="0412011"/>
+		<Type Name="寒武系" ID="0412012"/>
+		<Type Name="震旦系" ID="0412013"/>
+		<Type Name="青白口系" ID="0412014"/>
+		<Type Name="蓟县系" ID="0412015"/>
+		<Type Name="长城系" ID="0412016"/>
+	</Types>
+	<Types Name="地质信息.地层年代.统" ID="0413000" LayerType="4060300" FilterName="通用面" FilterID="3" EP3GXName="地层年代" EP3GXID="3">
+		<Type Name="全新统" ID="0413001"/>
+		<Type Name="上更新统" ID="0413002"/>
+		<Type Name="中更新统" ID="0413003"/>
+		<Type Name="下更新统" ID="0413004"/>
+		<Type Name="上新统" ID="0413005"/>
+		<Type Name="中新统" ID="0413006"/>
+		<Type Name="渐新统" ID="0413007"/>
+		<Type Name="始新统" ID="0413008"/>
+		<Type Name="古新统" ID="0413009"/>
+		<Type Name="上白垩统" ID="0413010"/>
+		<Type Name="下白垩统" ID="0413011"/>
+		<Type Name="上侏罗统" ID="0413012"/>
+		<Type Name="中侏罗统" ID="0413013"/>
+		<Type Name="下侏罗统" ID="0413014"/>
+		<Type Name="上三叠统" ID="0413015"/>
+		<Type Name="中三叠统" ID="0413016"/>
+		<Type Name="下三叠统" ID="0413017"/>
+		<Type Name="上二叠统" ID="0413018"/>
+		<Type Name="中二叠统" ID="0413019"/>
+		<Type Name="下二叠统" ID="0413020"/>
+		<Type Name="上石炭统" ID="0413021"/>
+		<Type Name="下石炭统" ID="0413022"/>
+		<Type Name="上泥盆统" ID="0413023"/>
+		<Type Name="中泥盆统" ID="0413024"/>
+		<Type Name="下泥盆统" ID="0413025"/>
+		<Type Name="上志留统" ID="0413026"/>
+		<Type Name="中志留统" ID="0413027"/>
+		<Type Name="下志留统" ID="0413028"/>
+		<Type Name="上奥陶统" ID="0413029"/>
+		<Type Name="中奥陶统" ID="0413030"/>
+		<Type Name="下奥陶统" ID="0413032"/>
+		<Type Name="上寒武统" ID="0413033"/>
+		<Type Name="中寒武统" ID="0413034"/>
+		<Type Name="下寒武统" ID="0413035"/>
+		<Type Name="上震旦统" ID="0413036"/>
+		<Type Name="下震旦统" ID="0413037"/>
+	</Types>
+	<Types Name="地质信息.地层分布" ID="0414000"  LayerType="4030300" FilterName="等值线" FilterID="17" EP3GXName="地层分布" EP3GXID="17">
+		<Type Name="煤层厚度" ID="0414001"/>
+		<Type Name="地层厚度" ID="0414002"/>
+		<Type Name="泥岩厚度" ID="0414003"/>
+		<Type Name="有效厚度" ID="0414004"/>
+	</Types>
+	<Types Name="地质信息.剖面位置线" ID="0415000" FilterName="通用线" FilterID="2|18|19" EP3GXName="剖面位置线" EP3GXID="2">
+		<Type Name="剖面位置线" ID="0415001"/>
+	</Types>
+	<Types Name="地质信息.物源方向" ID="0416000" LayerType="4070000" FilterName="平面符号" FilterID="1" EP3GXName="物源方向" EP3GXID="1">
+		<Type Name="主要物源方向" ID="0416001"/>
+		<Type Name="次要物源方向" ID="0416002"/>
+	</Types>
+	<Types Name="地质信息.矿物分区" ID="0417000" LayerType="4080000" FilterName="通用线面" FilterID="2|3|18|19" EP3GXName="矿物分区" EP3GXID="2">
+		<Type Name="矿物分区" ID="0417001"/>
+	</Types>
+	<Types Name="地质信息.岩相古地理" ID="0418000" LayerType="4090000" FilterName="通用线面" FilterID="2|3|18|19" EP3GXName="岩相古地理" EP3GXID="2">
+		<Type Name="古河道" ID="0418001"/>
+		<Type Name="古沟槽" ID="0418002"/>
+		<Type Name="古地质" ID="0418003"/>
+	</Types>
+	<Types Name="地质信息.砂体边界线" ID="0419000" LayerType="4100000" FilterName="通用线" FilterID="2|18|19" EP3GXName="砂体边界线" EP3GXID="2">
+		<Type Name="砂体轮廓线" ID="0419001"/>
+		<Type Name="砂体尖灭线" ID="0419002"/>
+	</Types>
+	<Types Name="地质信息.砂岩含量" ID="0420000" LayerType="4030800" FilterName="等值线" FilterID="17" EP3GXName="砂岩含量" EP3GXID="17">
+		<Type Name="砂岩厚度等值线" ID="0420001"/>
+		<Type Name="砂岩百分含量等值线" ID="0420002"/>
+		<Type Name="砂泥比等值线" ID="0420003"/>
+	</Types>
+	<Types Name="地质信息.鲕滩分布带" ID="0421000" LayerType="4110000" FilterName="通用面" FilterID="3" EP3GXName="鲕滩分布带" EP3GXID="3">
+		<Type Name="鲕滩分布区" ID="0421001"/>
+	</Types>
+	<Types Name="地质信息.沉积相.旱地扇" ID="430000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="旱地扇" ID="430001" LayerType="4120100"/>
+		<Type Name="扇根" ID="430002" LayerType="4120200"/>
+		<Type Name="扇中" ID="430003" LayerType="4120200"/>
+		<Type Name="扇端" ID="430004" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.湿地扇" ID="431000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="湿地扇" ID="431001" LayerType="4120100"/>
+		<Type Name="扇根" ID="431002" LayerType="4120200"/>
+		<Type Name="扇中" ID="431003" LayerType="4120200"/>
+		<Type Name="扇端" ID="431004" LayerType="4120200"/>
+		<Type Name="扇间沼泽" ID="431005" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.河流相" ID="432000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="河流相" ID="432001" LayerType="4120100"/>
+		<Type Name="河道" ID="432002" LayerType="4120200"/>
+		<Type Name="河道间" ID="432003" LayerType="4120200"/>
+		<Type Name="洪泛洼地" ID="432004" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.扇三角洲" ID="433000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="扇三角洲" ID="433001" LayerType="4120100"/>
+		<Type Name="扇三角洲平原" ID="433002" LayerType="4120200"/>
+		<Type Name="分支河道" ID="433003" LayerType="4120300"/>
+		<Type Name="分支河道间" ID="433004" LayerType="4120300"/>
+		<Type Name="平原沼泽" ID="433005" LayerType="4120300"/>
+		<Type Name="平原洼地" ID="433006" LayerType="4120300"/>
+		<Type Name="扇三角洲前缘" ID="433007" LayerType="4120200"/>
+		<Type Name="前缘水下分流河道" ID="433008" LayerType="4120300"/>
+		<Type Name="前缘水下分流间湾" ID="433009" LayerType="4120300"/>
+		<Type Name="河口砂坝" ID="433010" LayerType="4120300"/>
+		<Type Name="远砂坝" ID="433011" LayerType="4120300"/>
+		<Type Name="扇前三角洲" ID="433012" LayerType="4120200"/>
+		<Type Name="席状砂" ID="433013" LayerType="4120300"/>
+		<Type Name="前三角洲泥" ID="433014" LayerType="4120300"/>
+	</Types>
+	<Types Name="地质信息.沉积相.辫状河三角洲" ID="434000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="辫状河三角洲" ID="434001" LayerType="4120100"/>
+		<Type Name="辫状河三角洲平原" ID="434002" LayerType="4120200"/>
+		<Type Name="分支河道" ID="434003" LayerType="4120300"/>
+		<Type Name="分支河道间" ID="434004" LayerType="4120300"/>
+		<Type Name="平原沼泽" ID="434005" LayerType="4120300"/>
+		<Type Name="平原洼地" ID="434006" LayerType="4120300"/>
+		<Type Name="辫状河三角洲前缘" ID="434007" LayerType="4120200"/>
+		<Type Name="前缘水下分流河道" ID="434009" LayerType="4120300"/>
+		<Type Name="前缘水下分流间湾" ID="434010" LayerType="4120300"/>
+		<Type Name="河口砂坝" ID="434011" LayerType="4120300"/>
+		<Type Name="远砂坝" ID="434012" LayerType="4120300"/>
+		<Type Name="辫状河前三角洲" ID="434013" LayerType="4120200"/>
+		<Type Name="席状砂" ID="434015" LayerType="4120300"/>
+		<Type Name="前三角洲泥" ID="434016" LayerType="4120300"/>
+	</Types>
+	<Types Name="地质信息.沉积相.河流三角洲" ID="435000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="河流三角洲" ID="435001" LayerType="4120100"/>
+		<Type Name="三角洲平原" ID="435002" LayerType="4120200"/>
+		<Type Name="分支河道" ID="435003" LayerType="4120300"/>
+		<Type Name="分支河道间" ID="435004" LayerType="4120300"/>
+		<Type Name="平原沼泽" ID="435005" LayerType="4120300"/>
+		<Type Name="平原洼地" ID="435006" LayerType="4120300"/>
+		<Type Name="三角洲前缘" ID="435007" LayerType="4120200"/>
+		<Type Name="前缘水下分流河道" ID="435008" LayerType="4120300"/>
+		<Type Name="前缘水下分流间湾" ID="435009" LayerType="4120300"/>
+		<Type Name="河口砂坝" ID="435010" LayerType="4120300"/>
+		<Type Name="远砂坝" ID="435011" LayerType="4120300"/>
+		<Type Name="前三角洲" ID="435012" LayerType="4120200"/>
+		<Type Name="席状砂" ID="435013" LayerType="4120300"/>
+		<Type Name="前三角洲泥" ID="435014" LayerType="4120300"/>
+	</Types>
+	<Types Name="地质信息.沉积相.淡水湖泊" ID="436000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="淡水湖泊" ID="436001" LayerType="4120100"/>
+		<Type Name="滨湖" ID="436002" LayerType="4120200"/>
+		<Type Name="滨湖滩砂" ID="436003" LayerType="4120300"/>
+		<Type Name="滨湖沼泽" ID="436004" LayerType="4120300"/>
+		<Type Name="滨湖泥滩" ID="436005" LayerType="4120300"/>
+		<Type Name="浅湖" ID="436006" LayerType="4120200"/>
+		<Type Name="浅湖砂坝" ID="436007" LayerType="4120300"/>
+		<Type Name="浅湖泥" ID="436008" LayerType="4120300"/>
+		<Type Name="半深湖" ID="436009" LayerType="4120200"/>
+		<Type Name="浊积扇" ID="436010" LayerType="4120300"/>
+		<Type Name="半深湖泥" ID="436011" LayerType="4120300"/>
+		<Type Name="深湖" ID="436012" LayerType="4120200"/>
+		<Type Name="席状砂" ID="436013" LayerType="4120300"/>
+		<Type Name="深湖泥" ID="436014" LayerType="4120300"/>
+	</Types>
+	<Types Name="地质信息.沉积相.半咸水湖泊" ID="437000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="半咸水湖泊" ID="437001" LayerType="4120100"/>
+		<Type Name="滨湖泥滩" ID="437002" LayerType="4120200"/>
+		<Type Name="浅湖" ID="437003" LayerType="4120200"/>
+		<Type Name="浅湖碳酸盐" ID="437004" LayerType="4120300"/>
+		<Type Name="浅湖泥" ID="437005" LayerType="4120300"/>
+		<Type Name="半深湖" ID="437006" LayerType="4120200"/>
+		<Type Name="半深湖泥" ID="437007" LayerType="4120300"/>
+		<Type Name="深湖" ID="437008" LayerType="4120200"/>
+		<Type Name="深湖泥" ID="437009" LayerType="4120300"/>
+	</Types>
+	<Types Name="地质信息.沉积相.咸水湖泊" ID="438000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="咸水湖泊" ID="438001" LayerType="4120100"/>
+		<Type Name="滨湖盐泥滩" ID="438002" LayerType="4120200"/>
+		<Type Name="滨岸蒸发盐" ID="438003" LayerType="4120200"/>
+		<Type Name="浅湖" ID="438004" LayerType="4120200"/>
+		<Type Name="浅湖盐泥坪" ID="438005" LayerType="4120300"/>
+		<Type Name="半深湖" ID="438006" LayerType="4120200"/>
+		<Type Name="深湖" ID="438007" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.陆源海岸(滨海)" ID="439000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="陆源海岸(滨海)" ID="439001" LayerType="4120100"/>
+		<Type Name="滨岸沙丘" ID="439002" LayerType="4120200"/>
+		<Type Name="后滨滩沙" ID="439003" LayerType="4120200"/>
+		<Type Name="近滨沙坝" ID="439004" LayerType="4120200"/>
+		<Type Name="前滨滩沙" ID="439005" LayerType="4120200"/>
+		<Type Name="临滨" ID="439006" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.碳酸盐岩海岸(滨海)" ID="440000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="碳酸盐岩海岸(滨海)" ID="440001" LayerType="4120100"/>
+		<Type Name="滨岸混积礁屑滩" ID="440002" LayerType="4120200"/>
+		<Type Name="前滨碳酸盐岩滩坝" ID="440003" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.陆源障壁海岸(滨海)" ID="441000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="陆源障壁海岸(滨海)" ID="441001" LayerType="4120100"/>
+		<Type Name="潮坪" ID="441002" LayerType="4120200"/>
+		<Type Name="泻湖" ID="441003" LayerType="4120200"/>
+		<Type Name="潮道" ID="441004" LayerType="4120200"/>
+		<Type Name="沙滩" ID="441005" LayerType="4120200"/>
+		<Type Name="沙坝" ID="441006" LayerType="4120200"/>
+		<Type Name="萨勃哈盐碱滩" ID="441007" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.滨外陆棚" ID="442000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="滨外陆棚" ID="442001" LayerType="4120100"/>
+	</Types>
+	<Types Name="地质信息.沉积相.碳酸盐岩障壁海岸(滨海)" ID="443000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="碳酸盐岩障壁海岸(滨海)" ID="443001" LayerType="4120100"/>
+		<Type Name="潮坪" ID="443002" LayerType="4120200"/>
+		<Type Name="泻湖" ID="443003" LayerType="4120200"/>
+		<Type Name="潮道" ID="443004" LayerType="4120200"/>
+		<Type Name="鲕滩" ID="443005" LayerType="4120200"/>
+		<Type Name="沙坝" ID="443006" LayerType="4120200"/>
+		<Type Name="萨勃哈盐碱滩" ID="443007" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.碳酸盐岩台地(浅海)" ID="444000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="碳酸盐岩台地(浅海)" ID="444001" LayerType="4120100"/>
+		<Type Name="局限台地" ID="444002" LayerType="4120200"/>
+		<Type Name="开阔台地" ID="444003" LayerType="4120200"/>
+		<Type Name="台内洼地" ID="444004" LayerType="4120200"/>
+		<Type Name="蒸发台地" ID="444005" LayerType="4120200"/>
+		<Type Name="台内浅滩" ID="444006" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.碳酸盐岩台地边缘(浅海)" ID="445000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="碳酸盐岩台地边缘(浅海)" ID="445001" LayerType="4120100"/>
+		<Type Name="边缘鲕滩" ID="445002" LayerType="4120200"/>
+		<Type Name="边缘生物礁" ID="445003" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.浅海陆棚" ID="446000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="浅海陆棚" ID="446001" LayerType="4120100"/>
+	</Types>
+	<Types Name="地质信息.沉积相.陆源斜坡(次深海)" ID="447000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="陆源斜坡(次深海)" ID="447001" LayerType="4120100"/>
+		<Type Name="斜坡扇" ID="447002" LayerType="4120200"/>
+		<Type Name="盆底扇" ID="447003" LayerType="4120200"/>
+		<Type Name="斜坡泥" ID="447004" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.碳酸盐岩台地边缘斜坡(次深海)" ID="448000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="碳酸盐岩台地边缘斜坡(次深海)" ID="448001" LayerType="4120100"/>
+		<Type Name="斜坡扇" ID="448002" LayerType="4120200"/>
+		<Type Name="盆底扇" ID="448003" LayerType="4120200"/>
+		<Type Name="斜坡泥丘" ID="448004" LayerType="4120200"/>
+		<Type Name="垮塌角砾" ID="448005" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.沉积相.深海盆地" ID="449000" FilterName="通用面" FilterID="3" EP3GXName="沉积相" EP3GXID="3">
+		<Type Name="深海盆地" ID="449001" LayerType="4120100"/>
+		<Type Name="深海泥" ID="449002" LayerType="4120200"/>
+		<Type Name="盆地扇" ID="449003" LayerType="4120200"/>
+		<Type Name="深海灰泥" ID="449004" LayerType="4120200"/>
+	</Types>
+	<Types Name="地质信息.岩性分布" ID="0425000" LayerType="4130000" FilterName="通用面" FilterID="3" EP3GXName="岩性分布" EP3GXID="3">
+		<Type Name="岩性分布" ID="0425001"/>
+	</Types>
+	<Types Name="地质信息.成岩相带" ID="0426000" LayerType="4140000" FilterName="通用面" FilterID="3" EP3GXName="成岩相带" EP3GXID="3">
+		<Type Name="成岩相带" ID="0426001"/>
+	</Types>
+	<Types Name="地质信息.岩体边界线" ID="0427000" LayerType="4150000" FilterName="通用线" FilterID="2|18|19" EP3GXName="岩体边界线" EP3GXID="2">
+		<Type Name="岩体边界线" ID="0427001"/>
+	</Types>
+	<Types Name="地质信息.圈闭" ID="0428000" LayerType="4050200" FilterName="通用面" FilterID="3" EP3GXName="圈闭" EP3GXID="3">
+		<Type Name="圈闭" ID="0428001"/>
+		<Type Name="Ⅰ类圈闭" ID="0428002"/>
+		<Type Name="Ⅱ类圈闭" ID="0428003"/>
+		<Type Name="Ⅲ类圈闭" ID="0428004"/>
+		<Type Name="Ⅳ类圈闭" ID="0428005"/>
+		<Type Name="Ⅴ类圈闭" ID="0428006"/>
+	</Types>
+	<Types Name="地质信息.地层产状" ID="0429000" FilterName="平面符号" FilterID="1" EP3GXName="地层产状" EP3GXID="1">
+		<Type Name="地层产状" ID="0429001"/>
+	</Types>
+	<Types Name="油气信息.烃源岩等值线" ID="0501000" LayerType="5010000" FilterName="等值线" FilterID="17" EP3GXName="烃源岩等值线" EP3GXID="17">
+		<Type Name="烃源岩厚度等值线" ID="0501001"/>
+		<Type Name="烃源岩TOC等值线" ID="0501002"/>
+		<Type Name="生烃强度等值线" ID="0501003"/>
+		<Type Name="Ro等值线" ID="0501004"/>
+	</Types>
+	<Types Name="油气信息.有机质丰度" ID="0502000" LayerType="5020000" FilterName="等值线" FilterID="17" EP3GXName="有机质丰度" EP3GXID="17">
+		<Type Name="总有机碳含量等值线" ID="0502001"/>
+		<Type Name="氯仿沥青A等值线" ID="0502002"/>
+		<Type Name="总烃HC等值线" ID="0502003"/>
+	</Types>
+	<Types Name="油气信息.温差特征" ID="0503000" LayerType="5030000" FilterName="等值线" FilterID="17" EP3GXName="温差特征" EP3GXID="17">
+		<Type Name="实测静温值等值线" ID="0503001"/>
+		<Type Name="实测静压值等值线" ID="0503002"/>
+	</Types>
+	<Types Name="油气信息.储层物性" ID="0504000" LayerType="5040000" FilterName="等值线" FilterID="17" EP3GXName="储层物性" EP3GXID="17">
+		<Type Name="孔隙度等值线" ID="0504001"/>
+		<Type Name="渗透率等值线" ID="0504002"/>
+		<Type Name="含油饱和度等值线" ID="0504003"/>
+		<Type Name="含气饱和度等值线" ID="0504004"/>
+		<Type Name="含水饱和度等值线" ID="0504005"/>
+	</Types>
+	<Types Name="油气信息.储层非均质性" ID="0505000" LayerType="5050000" FilterName="等值线" FilterID="17" EP3GXName="储层非均质性" EP3GXID="17">
+		<Type Name="渗透率变异系数等值线" ID="0505001"/>
+		<Type Name="渗透率突进系数等值线" ID="0505002"/>
+		<Type Name="渗透率级差等值线" ID="0505003"/>
+		<Type Name="层间隔层厚度等值线" ID="0505004"/>
+	</Types>
+	<Types Name="油气信息.储层分类" ID="0506000" LayerType="5060000" FilterName="通用面" FilterID="3" EP3GXName="储层分类" EP3GXID="3">
+		<Type Name="Ⅰ类储层" ID="0506001"/>
+		<Type Name="Ⅱ类储层" ID="0506002"/>
+		<Type Name="Ⅲ类储层" ID="0506003"/>
+		<Type Name="Ⅳ类储层" ID="0506004"/>
+		<Type Name="Ⅴ类储层" ID="0506005"/>
+	</Types>
+	<Types Name="油气信息.流体势力" ID="0507000" LayerType="5070000">
+		<Type Name="流体势力" ID="0507001"/>
+	</Types>
+	<Types Name="油气信息.储量类型" ID="0508000" LayerType="5080000" FilterName="通用面" FilterID="3" EP3GXName="储量类型" EP3GXID="3">
+		<Type Name="探明石油储量" ID="0508001"/>
+		<Type Name="控制石油储量" ID="0508002"/>
+		<Type Name="预测石油储量" ID="0508003"/>
+		<Type Name="探明天然气储量" ID="0508004"/>
+		<Type Name="控制天然气储量" ID="0508005"/>
+		<Type Name="预测天然气储量" ID="0508006"/>
+		<Type Name="历年累计石油探明储量" ID="0508007"/>
+		<Type Name="历年累计石油控制储量" ID="0508008"/>
+		<Type Name="历年累计石油预测储量" ID="0508009"/>
+		<Type Name="历年累计天然气探明储量" ID="0508010"/>
+		<Type Name="历年累计天然气控制储量" ID="0508011"/>
+		<Type Name="历年累计天然气预测储量" ID="0508012"/>
+		<Type Name="当年新增石油探明储量" ID="0508013"/>
+		<Type Name="当年新增石油控制储量" ID="0508014"/>
+		<Type Name="当年新增石油预测储量" ID="0508015"/>
+		<Type Name="当年新增天然气探明储量" ID="0508016"/>
+		<Type Name="当年新增天然气控制储量" ID="0508017"/>
+		<Type Name="当年新增天然气预测储量" ID="0508018"/>
+		<Type Name="评价石油储量" ID="0508019"/>
+		<Type Name="评价天然气储量" ID="0508020"/>
+	</Types>
+	<Types Name="油气信息.储量级别" ID="0509000" LayerType="5090000" FilterName="通用面" FilterID="3" EP3GXName="储量级别" EP3GXID="3">
+		<Type Name="探明石油I级储量" ID="0509001"/>
+		<Type Name="探明石油II级储量" ID="0509002"/>
+		<Type Name="探明石油III级储量" ID="0509003"/>
+		<Type Name="探明天然气I级储量" ID="0509004"/>
+		<Type Name="探明天然气II级储量" ID="0509005"/>
+		<Type Name="探明天然气III级储量" ID="0509006"/>
+	</Types>
+	<Types Name="油气信息.储量分类" ID="0510000" LayerType="5100000" FilterName="通用面" FilterID="3" EP3GXName="储量分类" EP3GXID="3">
+		<Type Name="已探明石油储量" ID="0510001"/>
+		<Type Name="已开发探明石油储量" ID="0510002"/>
+		<Type Name="老区探明石油储量" ID="0510003"/>
+		<Type Name="新油田探明石油储量" ID="0510004"/>
+		<Type Name="新块探明石油储量" ID="0510005"/>
+		<Type Name="新层探明石油储量" ID="0510006"/>
+		<Type Name="扩边探明石油储量" ID="0510007"/>
+		<Type Name="升级探明石油储量" ID="0510008"/>
+		<Type Name="其他探明石油储量" ID="0510009"/>
+	</Types>
+	<Types Name="油气信息.流动单元" ID="0511000" LayerType="5110000">
+		<Type Name="流动单元" ID="0511001"/>
+	</Types>
+	<Types Name="油气信息.盖层厚度" ID="0512000" LayerType="5120000" FilterName="等值线" FilterID="17" EP3GXName="盖层厚度" EP3GXID="17">
+		<Type Name="盖层厚度" ID="0511001"/>
+	</Types>
+	<Types Name="油气信息.过剩压力" ID="0513000" LayerType="5130000" FilterName="等值线" FilterID="17" EP3GXName="过剩压力" EP3GXID="17">
+		<Type Name="过剩压力" ID="0513001"/>
+	</Types>
+	<Types Name="油气信息.油气资源量" ID="0514000" LayerType="5140000" FilterName="通用面" FilterID="3" EP3GXName="油气资源量" EP3GXID="3">
+		<Type Name="油气资源量" ID="0514001"/>
+	</Types>
+	<Types Name="油气信息.油气藏类型" ID="0515000" LayerType="5150000" FilterName="通用面" FilterID="3" EP3GXName="油气藏类型" EP3GXID="3">
+		<Type Name="油气藏类型" ID="0515001"/>
+	</Types>
+	<Types Name="油气信息.含油气面积" ID="0516000" LayerType="5160000" FilterName="通用面" FilterID="3" EP3GXName="含油气面积" EP3GXID="3">
+		<Type Name="含油面积" ID="0516001"/>
+		<Type Name="含气面积" ID="0516002"/>
+		<Type Name="探明含油面积" ID="0516003"/>
+		<Type Name="控制含油面积" ID="0516004"/>
+		<Type Name="预测含油面积" ID="0516005"/>
+		<Type Name="探明含气面积" ID="0516006"/>
+		<Type Name="控制含气面积" ID="0516007"/>
+		<Type Name="预测含气面积" ID="0516008"/>
+	</Types>
+	<Types Name="油气信息.油气水边界" ID="0517000" LayerType="5170000" FilterName="通用线" FilterID="2|18|19" EP3GXName="油气水边界" EP3GXID="2">
+		<Type Name="油水外边界" ID="0517001"/>
+		<Type Name="油水内边界" ID="0517002"/>
+		<Type Name="气油外边界" ID="0517003"/>
+		<Type Name="气油内边界" ID="0517004"/>
+		<Type Name="气水外边界" ID="0517005"/>
+		<Type Name="气水内边界" ID="0517006"/>
+		<Type Name="含油边界" ID="0517007"/>
+		<Type Name="含油零线" ID="0517008"/>
+		<Type Name="含气边界" ID="0517009"/>
+		<Type Name="油气边界" ID="0517010"/>
+		<Type Name="气水边界" ID="0517011"/>
+		<Type Name="叠加边界" ID="0517012"/>
+		<Type Name="储量计算线" ID="0517013"/>
+		<Type Name="油藏中迹线" ID="0517014"/>
+		<Type Name="气藏中迹线" ID="0517015"/>
+	</Types>
+	<Types Name="开发生产信息.地层系数等值线" ID="0601000" LayerType="6010000" FilterName="等值线" FilterID="17" EP3GXName="地层系数等值线" EP3GXID="17">
+		<Type Name="地层系数等值线" ID="0601001"/>
+	</Types>
+	<Types Name="开发生产信息.试采初期产能等值线" ID="0602000" LayerType="6020000" FilterName="等值线" FilterID="17" EP3GXName="试采初期产能等值线" EP3GXID="17">
+		<Type Name="试采初期产能等值线" ID="0602001"/>
+	</Types>
+	<Types Name="开发生产信息.井网" ID="0603000" LayerType="6030000">
+		<Type Name="井网" ID="0603001"/>
+	</Types>
+	<Types Name="开发生产信息.油井含水分布线" ID="0604000" LayerType="6040000" FilterName="通用线" FilterID="2|18|19" EP3GXName="油井含水分布线" EP3GXID="2">
+		<Type Name="油井含水分布线" ID="0604001"/>
+	</Types>
+	<Types Name="开发生产信息.油井含水等值线" ID="0605000" LayerType="6050000" FilterName="等值线" FilterID="17" EP3GXName="油井含水等值线" EP3GXID="17">
+		<Type Name="油井含水等值线" ID="0605001"/>
+	</Types>
+	<Types Name="开发生产信息.油层压力等值线" ID="0606000" LayerType="6060000" FilterName="等值线" FilterID="17" EP3GXName="油层压力等值线" EP3GXID="17">
+		<Type Name="油层压力等值线" ID="0606001"/>
+	</Types>
+	<Types Name="开发生产信息.面状开发动态信息" ID="0607000" LayerType="6070000" FilterName="通用面" FilterID="3" EP3GXName="面状开发动态信息" EP3GXID="3">
+		<Type Name="面状开发动态信息" ID="0607001"/>
+	</Types>
+	<Types Name="地面工程信息.集输站.气站" ID="0701000" LayerType="7010100" FilterName="平面符号" FilterID="1" EP3GXName="集输站" EP3GXID="1">
+		<Type Name="常温集气站" ID="0701001"/>
+		<Type Name="压气站" ID="0701002"/>
+		<Type Name="配气站" ID="0701003"/>
+		<Type Name="集气配气站" ID="0701004"/>
+		<Type Name="注气站" ID="0701005"/>
+		<Type Name="气举站" ID="0701006"/>
+		<Type Name="低温集气站" ID="0701007"/>
+		<Type Name="（气）增压站" ID="0701008"/>
+		<Type Name="脱硫厂" ID="0701009"/>
+		<Type Name="轻烃回收站" ID="0701010"/>
+		<Type Name="阴极保护站" ID="0701011"/>
+		<Type Name="供热站" ID="0701012"/>
+		<Type Name="加热站" ID="0701013"/>
+		<Type Name="清管装置" ID="0701014"/>
+		<Type Name="气体处理站" ID="0701015"/>
+		<Type Name="大化肥厂" ID="0701016"/>
+		<Type Name="分输站" ID="0701017"/>
+		<Type Name="输气门站" ID="0701018"/>
+		<Type Name="清管及配气站" ID="0701019"/>
+		<Type Name="输气首站" ID="0701020"/>
+	</Types>
+	<Types Name="地面工程信息.集输站.油站" ID="0702000" LayerType="7010200" FilterName="平面符号" FilterID="1" EP3GXName="集输站" EP3GXID="1">
+		<Type Name="计量站" ID="0702001"/>
+		<Type Name="接转站" ID="0702002"/>
+		<Type Name="脱水转油站（集油站）" ID="0702003"/>
+		<Type Name="联合站（油、电）" ID="0702004"/>
+		<Type Name="油、污水联合站" ID="0702005"/>
+		<Type Name="中间站" ID="0702006"/>
+		<Type Name="装油站" ID="0702007"/>
+		<Type Name="拉油点(原油）" ID="0702008"/>
+		<Type Name="卸油点" ID="0702009"/>
+		<Type Name="动力液站" ID="0702010"/>
+		<Type Name="水力活塞泵站" ID="0702011"/>
+		<Type Name="轻烃稳定站" ID="0702012"/>
+		<Type Name="轻烃储存站、轻烃处理装置" ID="0702013"/>
+		<Type Name="天然气处理站" ID="0702014"/>
+		<Type Name="加油站（成品油）" ID="0702015"/>
+		<Type Name="计量配水站" ID="0702016"/>
+		<Type Name="热采站" ID="0702017"/>
+		<Type Name="降粘站" ID="0702018"/>
+		<Type Name="（油）加压站、热泵站" ID="0702019"/>
+		<Type Name="炼厂、石化厂" ID="0702020"/>
+		<Type Name="油气标定站" ID="0702021"/>
+		<Type Name="油库、外输首站、末站" ID="0702022"/>
+		<Type Name="联合站（专指油、注水、电联合）" ID="0702023"/>
+		<Type Name="集中处理站" ID="0702024"/>
+		<Type Name="液化石油气站" ID="0702025"/>
+		<Type Name="转油站" ID="0702026"/>
+		<Type Name="调压计量站" ID="0702027"/>
+	</Types>
+	<Types Name="地面工程信息.集输站.水站" ID="0703000" LayerType="7010300" FilterName="平面符号" FilterID="1" EP3GXName="集输站" EP3GXID="1">
+		<Type Name="水源（水源井）" ID="0703001"/>
+		<Type Name="注水处理站、净化站" ID="0703002"/>
+		<Type Name="给水泵站（水源站、加压泵站）" ID="0703003"/>
+		<Type Name="供水站" ID="0703004"/>
+		<Type Name="污水处理站" ID="0703005"/>
+		<Type Name="排涝站" ID="0703006"/>
+		<Type Name="注水泵站" ID="0703007"/>
+		<Type Name="水脱氧站" ID="0703008"/>
+		<Type Name="注水、变电联合站" ID="0703009"/>
+		<Type Name="（注水）配水间" ID="0703010"/>
+		<Type Name="污水提升站" ID="0703011"/>
+	</Types>
+	<Types Name="地面工程信息.集输站.其他站" ID="0704000" LayerType="7010400" FilterName="平面符号" FilterID="1" EP3GXName="集输站" EP3GXID="1">
+		<Type Name="注汽站" ID="0704001"/>
+		<Type Name="掺液站" ID="0704002"/>
+		<Type Name="注聚站" ID="0704003"/>
+		<Type Name="水力发电站" ID="0704004"/>
+		<Type Name="火力发电站" ID="0704005"/>
+		<Type Name="消防站" ID="0704006"/>
+		<Type Name="计算站" ID="0704007"/>
+		<Type Name="变电所（站）" ID="0704008"/>
+		<Type Name="电话站" ID="0704009"/>
+		<Type Name="微波通讯站" ID="0704010"/>
+		<Type Name="变压器" ID="0704011"/>
+	</Types>
+	<Types Name="地面工程信息.集输管线.气管线" ID="0705000" LayerType="7020100" FilterName="通用线" FilterID="2|18|19" EP3GXName="集输管线" EP3GXID="2">
+		<Type Name="集气管线" ID="0705001"/>
+		<Type Name="集气干线" ID="0705002"/>
+		<Type Name="单井气管线" ID="0705003"/>
+		<Type Name="长输气干线" ID="0705004"/>
+		<Type Name="输气干线" ID="0705005"/>
+		<Type Name="输气管线" ID="0705006"/>
+		<Type Name="外输气干线" ID="0705007"/>
+		<Type Name="供气干线" ID="0705008"/>
+		<Type Name="供气支线" ID="0705009"/>
+		<Type Name="供气管线" ID="0705010"/>
+		<Type Name="注气干线" ID="0705011"/>
+		<Type Name="注气管线" ID="0705012"/>
+		<Type Name="气举管线" ID="0705013"/>
+		<Type Name="注排管线" ID="0705014"/>
+		<Type Name="集气支线" ID="0705015"/>
+	</Types>
+	<Types Name="地面工程信息.集输管线.汽管线" ID="0706000" LayerType="7020200" FilterName="通用线" FilterID="2|18|19" EP3GXName="集输管线" EP3GXID="2">
+		<Type Name="注汽干线" ID="0706001"/>
+		<Type Name="注汽管线" ID="0706002"/>
+		<Type Name="注汽支线" ID="0706003"/>
+		<Type Name="单井汽管线" ID="0706004"/>
+		<Type Name="供聚合物液管干线" ID="0706005"/>
+	</Types>
+	<Types Name="地面工程信息.集输管线.高压气管线" ID="0707000" LayerType="7020300" FilterName="通用线" FilterID="2|18|19" EP3GXName="集输管线" EP3GXID="2">
+		<Type Name="干线" ID="0707001"/>
+		<Type Name="支线" ID="0707002"/>
+		<Type Name="其他管线" ID="0707003"/>
+	</Types>
+	<Types Name="地面工程信息.集输管线.油管线" ID="0708000" LayerType="7020300" FilterName="通用线" FilterID="2|18|19" EP3GXName="集输管线" EP3GXID="2">
+		<Type Name="长输油管线" ID="0708001"/>
+		<Type Name="单井油管线" ID="0708002"/>
+		<Type Name="集油管线" ID="0708003"/>
+		<Type Name="集油干线" ID="0708004"/>
+		<Type Name="外输油管线" ID="0708005"/>
+		<Type Name="长输油管线" ID="0708006"/>
+		<Type Name="掺油管线" ID="0708007"/>
+		<Type Name="热洗管线 " ID="0708008 "/>
+		<Type Name="动力液管线" ID="0708009"/>
+	</Types>
+	<Types Name="地面工程信息.集输管线.水管线" ID="0709000" LayerType="7020400" FilterName="通用线" FilterID="2|18|19" EP3GXName="集输管线" EP3GXID="2">
+		<Type Name="集水管线" ID="0709001"/>
+		<Type Name="集水干线" ID="0709002"/>
+		<Type Name="供水干线（一级）" ID="0709003"/>
+		<Type Name="供水管线" ID="0709004"/>
+		<Type Name="注水干线（一级）" ID="0709005"/>
+		<Type Name="注水管线（二级）" ID="0709006"/>
+		<Type Name="单井注水管线（三级）" ID="0709007"/>
+		<Type Name="掺水管线" ID="0709008"/>
+		<Type Name="伴热管线 " ID="0709009 "/>
+		<Type Name="热洗管线" ID="0709010"/>
+		<Type Name="回水管线" ID="0709011"/>
+		<Type Name="污水干线" ID="0709012"/>
+		<Type Name="污水管线" ID="0709013"/>
+	</Types>
+	<Types Name="地面工程信息.井场" ID="0710000" LayerType="7030000">
+		<Type Name="井场" ID="0710001"/>
+	</Types>
+	<Types Name="其他.拼图线" ID="0801000" LayerType="10010000" FilterName="通用线" FilterID="2|18|19" EP3GXName="拼图线" EP3GXID="2">
+		<Type Name="拼图线" ID="0801001"/>
+	</Types>
+</Map>

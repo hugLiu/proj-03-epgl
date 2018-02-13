@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="~/Content/EPGL/css/pages/browsemode/common.css" rel="stylesheet" />
+    <style>
+        p {
+            font-size: 16px;
+            text-indent: 2em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div data-bind="ifnot:isImage">
+        <h1 style="text-align: center" data-bind="text:title"></h1>
+        <h2>1．区块概况</h2>
+        <!-- ko foreach:contentOne-->
+        <p data-bind="text:contentPara"></p>
+        <!-- /ko-->
+        <br/><br/>
+        <h2>2．开发方案要点</h2>
+        <!-- ko foreach:contentTwo-->
+        <p data-bind="text:contentPara"></p>
+        <!-- /ko-->
+        <br /><br />
+        <h2>3．实施情况</h2>       
+        <!-- ko foreach:contentThree-->
+        <p data-bind="text:contentPara"></p>
+        <!-- /ko-->
+        <br /><br />
+    </div>
+    <div data-bind="if:isImage">
+        <img data-bind="attr:{src:imgSrc}" alt="" height="100%" width="100%" />
+    </div>
+
+
+
+    <script src="~/Content/EPGL/js/core/jquery-2.1.4.min.js"></script>
+    <script src="~/Content/EPGL/js/core/knockout-3.4.2.js"></script>
+    <script src="~/DemoData/bookdata/buildingdata.js"></script>
+    <script type="text/javascript">
+    var imgUrl = "/Content/EPGL/img/pages/browsemode/building/";
+
+    var ViewModel = function (isImage, title, contentOne, contentTwo, contentThree, imgSrc) {
+        var self = this;
+        self.isImage = isImage;
+        self.title = title;
+        self.contentOne = ko.observableArray(contentOne);
+        self.contentTwo = ko.observableArray(contentTwo);
+        self.contentThree = ko.observableArray(contentThree);
+        self.imgSrc = imgSrc;
+    };
+    $(function () {
+        var index = Number(@ViewBag.DataIndex);
+        var isImage = Number(@ViewBag.IsImage) == 1 ? true : false;
+        var data = buildingData[index];
+        var imgSrc = "";
+        if (isImage) {
+            var imageIndex = Number(@ViewBag.DataImageIndex);
+            imgSrc = imgUrl + data.imgDes[imageIndex];
+        }
+        var currentViewModel = new ViewModel(isImage, data.title, data.contentOne, data.contentTwo, data.contentThree, imgSrc);
+
+        ko.applyBindings(currentViewModel);
+
+        $('img').on('click',
+            function() {
+                $(window.parent.document).find('.hidden-Bigimg img').attr('src', currentViewModel.imgSrc);
+                $(window.parent.document).find('.hidden-Bigimg').show(200);
+
+            });
+    });
+    </script>
+</body>
+</html>

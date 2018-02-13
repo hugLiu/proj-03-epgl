@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<StyleSheet name="GeoMap" type="0" scale="700000.00" parm="" ver="4000003">
+	<StyleFeature TypeID="11" FeatureName="风险井" DrawBorder="0" LockChild="0" offsetX="4.655580" offsetY="-2.788571">
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="370787.490000,5055412.040300,377298.479496,5058764.040000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+		<Feature TypeID="1" FeatureName="井口" Wdith="4.000000" Height="4.000000" Index="2510004" ClrBeg="4294901760" ClrEnd="4294967295" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="1" FeatureName="井底" Wdith="4.000000" Height="4.000000" Index="2510004" ClrBeg="4294901760" ClrEnd="4294967295" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="370787.490000,5055964.040000,373587.490000,5058764.040000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="6" FeatureName="井名" Wdith="5.291667" Height="3.518958" Index="2530005" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="0" FillTransparent="0" AnchorType="6" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="373594.312504,5055412.040300,377298.479496,5057875.310808" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+			<GMFONT Height="-12" Width="0" Escapement="0" Orientation="0" Weight="-858993460" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.500000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="4278190080" tBkColor="4278190080" tBkFill="1"/>
+		</Feature>
+	</StyleFeature>
+	<StyleFeature TypeID="11" FeatureName="预探井" DrawBorder="0" LockChild="0" offsetX="0.000000" offsetY="2.000000">
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="449994.116504,5075301.020000,453698.283496,5080739.290508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+		<Feature TypeID="1" FeatureName="井口" Wdith="4.500000" Height="4.500000" Index="2510002" ClrBeg="4278211840" ClrEnd="4294967295" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="1" FeatureName="井底" Wdith="2.200000" Height="2.200000" Index="2510002" ClrBeg="4278211840" ClrEnd="4294967295" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="451076.200000,5076106.020000,452616.200000,5077646.020000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="6" FeatureName="井名" Wdith="5.291667" Height="3.518958" Index="2530005" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="0" FillTransparent="0" AnchorType="6" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="449994.116504,5078276.020000,453698.283496,5080739.290508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+			<GMFONT Height="-12" Width="0" Escapement="0" Orientation="0" Weight="-858993460" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.500000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="4278190080" tBkColor="4278190080" tBkFill="1"/>
+		</Feature>
+	</StyleFeature>
+	<StyleFeature TypeID="11" FeatureName="评价井" DrawBorder="0" LockChild="0" offsetX="0.000000" offsetY="2.000000">
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="443238.216504,5065594.620000,446942.383496,5070157.890508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+		<Feature TypeID="1" FeatureName="井口" Wdith="2.000000" Height="2.000000" Index="2510003" ClrBeg="4278190080" ClrEnd="4287532600" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="1" FeatureName="井底" Wdith="2.000000" Height="2.000000" Index="2510003" ClrBeg="4278190080" ClrEnd="4287532600" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="444390.300000,5065594.620000,445790.300000,5066994.620000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="6" FeatureName="井名" Wdith="5.291667" Height="3.518958" Index="2530005" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="0" FillTransparent="0" AnchorType="6" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="443238.216504,5067694.620000,446942.383496,5070157.890508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+			<GMFONT Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.500000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="4278190080" tBkColor="4294967295" tBkFill="1"/>
+		</Feature>
+	</StyleFeature>
+	<StyleFeature TypeID="11" FeatureName="已钻井" DrawBorder="0" LockChild="0" offsetX="0.000000" offsetY="2.000000">
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="424449.926504,5109915.020000,428154.093496,5114478.290508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+		<Feature TypeID="1" FeatureName="井口" Wdith="2.000000" Height="2.000000" Index="9200002" ClrBeg="4278190080" ClrEnd="4287532600" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="1" FeatureName="井底" Wdith="2.000000" Height="2.000000" Index="9200002" ClrBeg="4278190080" ClrEnd="4287532600" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="425602.010000,5109915.020000,427002.010000,5111315.020000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="6" FeatureName="井名" Wdith="5.291667" Height="3.518958" Index="2530005" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="0" FillTransparent="0" AnchorType="6" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="424449.926504,5112015.020000,428154.093496,5114478.290508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+			<GMFONT Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.500000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="4278190080" tBkColor="4294967295" tBkFill="1"/>
+		</Feature>
+	</StyleFeature>
+	<StyleFeature TypeID="11" FeatureName="详探井" DrawBorder="0" LockChild="0" offsetX="0.000000" offsetY="2.000000">
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="387675.426504,5098654.940000,391379.593496,5103218.210508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+		<Feature TypeID="1" FeatureName="井口" Wdith="2.000000" Height="2.000000" Index="4294967295" ClrBeg="4278190080" ClrEnd="4287532600" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="1" FeatureName="井底" Wdith="2.000000" Height="2.000000" Index="4294967295" ClrBeg="4278190080" ClrEnd="4287532600" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="388827.510000,5098654.940000,390227.510000,5100054.940000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="6" FeatureName="井名" Wdith="5.291667" Height="3.518958" Index="2530005" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="0" FillTransparent="0" AnchorType="6" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="387675.426504,5100754.940000,391379.593496,5103218.210508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+			<GMFONT Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.500000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="4278190080" tBkColor="4294967295" tBkFill="1"/>
+		</Feature>
+	</StyleFeature>
+	<StyleFeature TypeID="11" FeatureName="注水井" DrawBorder="0" LockChild="0" offsetX="0.000000" offsetY="2.000000">
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="393925.116504,5072138.630000,397629.283496,5076701.900508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+		<Feature TypeID="1" FeatureName="井口" Wdith="2.000000" Height="2.000000" Index="2720057" ClrBeg="4278190080" ClrEnd="4287532600" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="1" FeatureName="井底" Wdith="2.000000" Height="2.000000" Index="2720057" ClrBeg="4278190080" ClrEnd="4287532600" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="395077.200000,5072138.630000,396477.200000,5073538.630000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="6" FeatureName="井名" Wdith="5.291667" Height="3.518958" Index="2530005" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="0" FillTransparent="0" AnchorType="6" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="393925.116504,5074238.630000,397629.283496,5076701.900508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+			<GMFONT Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.500000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="4278190080" tBkColor="4294967295" tBkFill="1"/>
+		</Feature>
+	</StyleFeature>
+	<StyleFeature TypeID="11" FeatureName="采油井" DrawBorder="0" LockChild="0" offsetX="0.000000" offsetY="2.000000">
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="451178.716504,5089780.320000,454882.883496,5094343.590508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+		<Feature TypeID="1" FeatureName="井口" Wdith="2.000000" Height="2.000000" Index="2510014" ClrBeg="4278190080" ClrEnd="4287532600" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="1" FeatureName="井底" Wdith="2.000000" Height="2.000000" Index="2510014" ClrBeg="4278190080" ClrEnd="4287532600" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="452330.800000,5089780.320000,453730.800000,5091180.320000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="6" FeatureName="井名" Wdith="5.291667" Height="3.518958" Index="2530005" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="0" FillTransparent="0" AnchorType="6" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="451178.716504,5091880.320000,454882.883496,5094343.590508" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+			<GMFONT Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.500000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="4278190080" tBkColor="4294967295" tBkFill="1"/>
+		</Feature>
+	</StyleFeature>
+	<StyleFeature TypeID="2" FeatureName="二级构造分区" IsClosed="0" IsShowCtrlPt="1" IsReverse="0">
+		<Attribute>
+			<FillInfo PenWidth="0.142857" PenColor="4289014272" PenDashStyle="4" PenStyleID="4" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4294967295" nBlend="2110001" nStyle="0.000000" rc="460283.410000,5110031.810000,469797.510000,5112797.210000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</StyleFeature>
+	<StyleFeature TypeID="2" FeatureName="一级构造分区" IsClosed="0" IsShowCtrlPt="1" IsReverse="0">
+		<Attribute>
+			<FillInfo PenWidth="0.285714" PenColor="4289014272" PenDashStyle="3" PenStyleID="3" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4294967295" nBlend="2110001" nStyle="0.000000" rc="436590.690000,5028570.410000,469797.480000,5137684.010000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</StyleFeature>
+	<StyleFeature TypeID="13" FeatureName="镇政府驻地" DrawBorder="0" LockChild="0" offsetX="3.441900" offsetY="1.340343">
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="397155.910000,5106910.330000,403265.990000,5111538.736748" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+		<Feature TypeID="1" FeatureName="符号" Wdith="2.500000" Height="2.500000" Index="2110004" ClrBeg="4294901760" ClrEnd="4294901760" ClrFill="0" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="397155.910000,5106910.330000,398905.910000,5108660.330000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+		</Feature>
+		<Feature TypeID="6" FeatureName="地名" Wdith="8.073571" Height="4.021667" Index="2530005" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="0" FillTransparent="0" AnchorType="6" PenScale="1.000000">
+			<Attribute>
+				<FillInfo PenWidth="0.100000" PenColor="4278190335" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="397614.490000,5108723.570000,403265.990000,5111538.736748" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+			</Attribute>
+			<GMFONT Height="-14" Width="0" Escapement="0" Orientation="0" Weight="-858993460" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="黑体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="4.000000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="4278190080" tBkColor="4278190080" tBkFill="1"/>
+		</Feature>
+	</StyleFeature>
+	<StyleFeature TypeID="2" FeatureName="地层剥蚀线" IsClosed="0" IsShowCtrlPt="1" IsReverse="0">
+		<Attribute>
+			<FillInfo PenWidth="0.200000" PenColor="4286595136" PenDashStyle="0" PenStyleID="16" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="339588.710000,5014301.070000,467623.450000,5138860.120000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</StyleFeature>
+	<StyleFeature TypeID="3" FeatureName="扇三角洲前缘" IsClosed="1" IsShowCtrlPt="1" IsReverse="0">
+		<Attribute>
+			<FillInfo PenWidth="0.000000" PenColor="4294901760" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="1" nType="1" nClrBeg="4294965681" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="356978.060000,5014317.420000,469784.070000,5138905.170000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</StyleFeature>
+	<StyleFeature TypeID="3" FeatureName="扇三角洲平原" IsClosed="1" IsShowCtrlPt="1" IsReverse="0">
+		<Attribute>
+			<FillInfo PenWidth="0.000000" PenColor="4294901760" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="1" nType="1" nClrBeg="4294953984" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="415311.970000,5081573.460000,461161.980000,5129078.150000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</StyleFeature>
+	<StyleFeature TypeID="3" FeatureName="滨湖" IsClosed="1" IsShowCtrlPt="1" IsReverse="0">
+		<Attribute>
+			<FillInfo PenWidth="0.000000" PenColor="4294901760" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="1" nType="1" nClrBeg="4288731638" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="385281.960000,5014297.630000,469780.780000,5048433.460000" sz="0,0" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</StyleFeature>
+</StyleSheet>

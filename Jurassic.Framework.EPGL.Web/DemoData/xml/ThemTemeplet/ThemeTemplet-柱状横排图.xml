@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ThemeTemplet  Name="演示模板" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ThemeTemplet.xsd">
+	<ThemeStyle  Name="柱状图" Type="HistogramStyle"  OffsetX="10.000000" OffsetY="10.000000" FontHeight="-6" FontWidth="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="134" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FontName="SimSun" FontColor="0" IsShowLabel="1" LabelPos="lblPosTopCenter" LabelOffsetX="0" LabelOffsetY="0" IsBottomOffset="1" HeightType="ctFixed" GraduateSizeType="gtFixed" ProductPerMM="10.000000" HisType="htMultiBar" HeightValue="10.000000" Width="8.000000"/>
+	<Legend RectWidth="10.000000" RectHeight="6.000000" RectSpaceH="5.000000" LabelFromRect="2.000000" FontHeight="-12" FontWidth="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="134" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FontName="SimSun" FontColor="0" LabelAlign="laCenter" FromRB_X="2.000000" FromRB_Y="2.000000" LegendPosition="lpRightBottom"/>
+	<!--Label表示匹配项，Title表示标题-->
+	<ItemInfo  Title="油" Label="油" Color="rgb(255,0,0)" DispPar="1.000000e+000" SetRange="1" MaxValue="1000" MinValue="0" ZeroLabel="0"/>
+	<ItemInfo  Title="气" Label="气" Color="rgb(255,255,0)" DispPar="1.000000e+000" SetRange="1" MaxValue="1000" MinValue="0" ZeroLabel="0"/>
+	<ItemInfo  Title="水" Label="水" Color="rgb(0,0,255)" DispPar="1.000000e+000" SetRange="1" MaxValue="1000" MinValue="0" ZeroLabel="0"/>
+	</ThemeTemplet>
+	

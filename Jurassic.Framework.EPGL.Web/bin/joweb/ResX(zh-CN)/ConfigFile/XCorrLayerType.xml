@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GeoMapCorrLayerType>
+	<CorrType id="1" name="地层">
+		<LayerType id="4010100" name="界"/>
+		<LayerType id="4010200" name="系"/>
+		<LayerType id="4010300" name="统"/>
+		<LayerType id="4010400" name="组"/>
+		<LayerType id="4010500" name="段"/>
+		<LayerType id="4010600" name="亚段"/>
+		<LayerType id="4010700" name="油层组"/>
+		<LayerType id="4010800" name="砂层组"/>
+		<LayerType id="4010900" name="小层"/>
+	</CorrType>
+	<CorrType id="2" name="沉积相">
+		<LayerType id="4030100" name="微相"/>
+		<LayerType id="4030200" name="亚相"/>
+		<LayerType id="4030300" name="相"/>
+	</CorrType>
+	<CorrType id="3" name="层序旋回">
+		<LayerType id="4050100" name="短期"/>
+		<LayerType id="4050200" name="中期"/>
+		<LayerType id="4050300" name="长期"/>
+	</CorrType>
+	<CorrType id="4" name="解释数据">
+		<LayerType id="4080100" name="砂层解释"/>
+		<LayerType id="4080200" name="测井油气解释"/>
+		<LayerType id="4080300" name="荧光油气解释"/>
+		<LayerType id="4080400" name="地化油气解释"/>
+		<LayerType id="4080500" name="油气综合解释"/>
+	</CorrType>
+</GeoMapCorrLayerType>

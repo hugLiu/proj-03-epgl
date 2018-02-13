@@ -1,0 +1,82 @@
+﻿[
+  {
+    "Theme": "blue",
+    "ShowTab": false,
+    "GridLineStyle": 1,
+    "LoginToLastPage": false,
+    "UserStartPageConfig": {
+      "UserId": "2",
+      "PanelWidth": "100",
+      "PanelHeight": "100",
+      "PanelIncision": "['50%','50%']",
+      "Widgets": [
+        {
+          "WidgetColumn": 0,
+          "WidgetId": "widget01",
+          "WidgetTitle": "测试流程2",
+          "WidgetShowCloseButton": "false",
+          "WidgetBody": "",
+          "WidgetHeight": "250",
+          "RenderUrl": "/AppCenter/Users/Index",
+          "Order": "3"
+        },
+        {
+          "WidgetColumn": 0,
+          "WidgetId": "00000008",
+          "WidgetTitle": "测试流程3",
+          "WidgetShowCloseButton": "false",
+          "WidgetBody": "",
+          "WidgetHeight": "250",
+          "Order": "4"
+        }
+      ]
+    },
+    "Email": "156060158@qq.com",
+    "Id": "2",
+    "Name": "pmis",
+    "RoleNames": "admin",
+    "IsDefaultRole": true,
+    "IsOnline": true,
+    "LastOpTime": "2017-07-20 19:30:09",
+    "RoleIds": [
+      "4"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Theme": "blue",
+    "ShowTab": false,
+    "GridLineStyle": 1,
+    "LoginToLastPage": false,
+    "Email": "",
+    "PhoneNumber": "",
+    "Id": "12",
+    "Name": "fasax",
+    "RoleNames": "admin",
+    "IsDefaultRole": true,
+    "IsOnline": false,
+    "LastOpTime": "0001-01-01 00:00:00",
+    "RoleIds": [
+      "4"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Theme": "blue",
+    "ShowTab": false,
+    "GridLineStyle": 0,
+    "LoginToLastPage": false,
+    "Email": "",
+    "PhoneNumber": "",
+    "Id": "16",
+    "Name": "zss",
+    "RoleNames": "admin",
+    "IsDefaultRole": true,
+    "IsOnline": false,
+    "LastOpTime": "0001-01-01 00:00:00",
+    "RoleIds": [
+      "4"
+    ],
+    "FunctionIds": []
+  }
+]

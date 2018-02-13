@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TypeMatch>
+	<Match class="地名">
+		<Gcg>
+			<Gcgpart applyto="驻地" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="境界">
+		<Gcg>
+			<Gcgpart applyto="轨迹线" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="界限" geotype="Curve"/>
+			<Geopart name="界名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="交通线">
+		<Gcg>
+			<Gcgpart applyto="路线" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="路线" geotype="Curve"/>
+			<Geopart name="路名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="桥梁">
+		<Gcg>
+			<Gcgpart applyto="桥梁位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="隧道">
+		<Gcg>
+			<Gcgpart applyto="隧道位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="交通站点">
+		<Gcg>
+			<Gcgpart applyto="站点位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="线状水系">
+		<Gcg>
+			<Gcgpart applyto="水系轨迹" geotype="Curve"/>
+			<Gcgpart applyto="流向" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="河流" geotype="Curve"/>
+			<Geopart name="河流名" geotype="Text"/>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="面状水系">
+		<Gcg>
+			<Gcgpart applyto="水系覆盖范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="湖面" geotype="Polygon"/>
+			<Geopart name="湖名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="海岸线">
+		<Gcg>
+			<Gcgpart applyto="海岸线分布" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="点状水系">
+		<Gcg>
+			<Gcgpart applyto="水系位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="点状地物">
+		<Gcg>
+			<Gcgpart applyto="地物位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="线状地物">
+		<Gcg>
+			<Gcgpart applyto="地物位置" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="面状地物">
+		<Gcg>
+			<Gcgpart applyto="地物覆盖范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="矿权区">
+		<Gcg>
+			<Gcgpart applyto="矿权区范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="野外地层剖面点">
+		<Gcg>
+			<Gcgpart applyto="剖面点位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="野外典型构造点">
+		<Gcg>
+			<Gcgpart applyto="构造点位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地质露头">
+		<Gcg>
+			<Gcgpart applyto="露头位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="实测地层剖面">
+		<Gcg>
+			<Gcgpart applyto="剖面线" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="油气标志">
+		<Gcg>
+			<Gcgpart applyto="标志位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地震工区">
+		<Gcg>
+			<Gcgpart applyto="地震工区作业范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地震测线">
+		<Gcg>
+			<Gcgpart applyto="炮点连线" geotype="Curve"/>
+			<Gcgpart applyto="炮点标注" geotype="Text"/>
+			<Gcgpart applyto="炮点" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地震相">
+		<Gcg>
+			<Gcgpart applyto="地震相展布面" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地震资料品质区">
+		<Gcg>
+			<Gcgpart applyto="地震资料品质分区面" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地震属性">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="反射层时间">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="非地震工区">
+		<Gcg>
+			<Gcgpart applyto="非地震作业范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="非地震物化探测线">
+		<Gcg>
+			<Gcgpart applyto="非地震测点连线" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="井位">
+		<Gcg>
+			<Gcgpart applyto="井口" geotype="Point"/>
+			<Gcgpart applyto="井底" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="井口" geotype="Point"/>
+			<Geopart name="井底" geotype="Point"/>
+			<Geopart name="井名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="勘探目标（项目工区）">
+		<Gcg>
+			<Gcgpart applyto="勘探目标范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="构造分区">
+		<Gcg>
+			<Gcgpart applyto="构造范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="裂缝预测">
+		<Gcg>
+			<Gcgpart applyto="裂缝预测轨迹" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="裂缝线">
+		<Gcg>
+			<Gcgpart applyto="裂缝线发育轨迹" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="裂缝发育带">
+		<Gcg>
+			<Gcgpart applyto="裂缝发育范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="断层">
+		<Gcg>
+			<Gcgpart applyto="上盘" geotype="Curve"/>
+			<Gcgpart applyto="下盘" geotype="Curve"/>
+			<Gcgpart applyto="断层面" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="构造深度">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="高低点">
+		<Gcg>
+			<Gcgpart applyto="高低点位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地层界线">
+		<Gcg>
+			<Gcgpart applyto="地层界线的轨迹" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="埋深等值线">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地层接触关系">
+		<Gcg>
+			<Gcgpart applyto="地层接触关系线" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地层年代">
+		<Gcg>
+			<Gcgpart applyto="地层年代面" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地层分布">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="剖面位置线">
+		<Gcg>
+			<Gcgpart applyto="剖面位置线的轨迹线" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="物源方向">
+		<Gcg>
+			<Gcgpart applyto="物源方向的空间位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="矿物分区线">
+		<Gcg>
+			<Gcgpart applyto="分区线的轨迹" geotype="Cuvre"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="岩相古地理">
+		<Gcg>
+			<Gcgpart applyto="岩相古地理面的范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="砂体边界线">
+		<Gcg>
+			<Gcgpart applyto="砂体边界线的轨迹" geotype="Cuvre"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="砂岩含量">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="鲕滩分布带">
+		<Gcg>
+			<Gcgpart applyto="鲕滩分布范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="沉积相">
+		<Gcg>
+			<Gcgpart applyto="沉积相分布范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="岩性分布">
+		<Gcg>
+			<Gcgpart applyto="岩性的分布范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="成岩相带">
+		<Gcg>
+			<Gcgpart applyto="成岩相带的范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="岩体边界线">
+		<Gcg>
+			<Gcgpart applyto="岩体边界线的轨迹" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="圈闭">
+		<Gcg>
+			<Gcgpart applyto="圈闭范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地层产状">
+		<Gcg>
+			<Gcgpart applyto="地层产状的轨迹线" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="烃源岩等值线">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="有机质丰度">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="温差特征">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="储层物性">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="储层非均质性">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="储层分类">
+		<Gcg>
+			<Gcgpart applyto="储层范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="流体势力">
+		<Gcg>
+			<Gcgpart applyto="流体势力的坐标" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="储量类型">
+		<Gcg>
+			<Gcgpart applyto="储量范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="储量级别">
+		<Gcg>
+			<Gcgpart applyto="储量范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="储量分类">
+		<Gcg>
+			<Gcgpart applyto="储量范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="流动单元">
+		<Gcg>
+			<Gcgpart applyto="流动单元范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="盖层厚度">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="过剩压力">
+		<Gcg>
+			<Gcgpart applyto="压力线轨迹" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="油气资源量">
+		<Gcg>
+			<Gcgpart applyto="油气资源量范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="油气藏类型">
+		<Gcg>
+			<Gcgpart applyto="油气藏类型范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="含油气面积">
+		<Gcg>
+			<Gcgpart applyto="含油气范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="油气水边界">
+		<Gcg>
+			<Gcgpart applyto="油、气、水、边界轨迹" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="地层系数等值线">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="试采初期产能等值线">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="井网">
+		<Gcg>
+			<Gcgpart applyto="井网的空间的坐标" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="油井含水分布线">
+		<Gcg>
+			<Gcgpart applyto="分布线轨迹" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="油井含水等值线">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="油层压力等值线">
+		<Gcg>
+			<Gcgpart applyto="层面" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="面状开发动态信息">
+		<Gcg>
+			<Gcgpart applyto="开发动态的范围" geotype="Polygon"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="区块" geotype="Polygon"/>
+			<Geopart name="标注" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="集输站">
+		<Gcg>
+			<Gcgpart applyto="站点位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="集输管线">
+		<Gcg>
+			<Gcgpart applyto="管线展布" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="井场">
+		<Gcg>
+			<Gcgpart applyto="井场位置" geotype="Point"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="符号" geotype="Point"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+	<Match class="拼图线">
+		<Gcg>
+			<Gcgpart applyto="拼图线" geotype="Curve"/>
+		</Gcg>
+		<Geo>
+			<Geopart name="线" geotype="Curve"/>
+			<Geopart name="地名" geotype="Text"/>
+		</Geo>
+	</Match>
+</TypeMatch>

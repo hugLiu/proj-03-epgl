@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Map>
+	<Types Name="地理信息.居民地" FilterName="" FilterID="">
+		<Type Name="首都" ID="2110001"/>
+		<Type Name="省、自治区、直辖市政府驻地" ID="2110002"/>
+		<Type Name="省辖市（地级市）政府驻地" ID="2110003"/>
+		<Type Name="地区、自治州、盟政府驻地" ID="2110003"/>
+		<Type Name="市辖区、地辖区（县级市）政府驻地" ID="2110003"/>
+		<Type Name="县、自治县、旗政府驻地" ID="2110003"/>
+		<Type Name="省直辖行政单位政府驻地" ID="2110003"/>
+		<Type Name="镇政府驻地" ID="2110004"/>
+		<Type Name="乡政府驻地" ID="2110004"/>
+		<Type Name="宝塔" ID="2110006"/>
+		<Type Name="庙宇" ID="2110005"/>
+		<Type Name="居民点" ID="2710008"/>
+	</Types>
+	<Types Name="地理信息.企事业单位" FilterName="" FilterID="">
+		<Type Name="学校" ID="2710007"/>
+		<Type Name="医院" ID="2710003"/>
+		<Type Name="图书馆" ID="9010001"/>
+		<Type Name="电信邮政" ID="9010002"/>
+		<Type Name="宾馆" ID="9010003"/>
+		<Type Name="电影院" ID="9010004"/>
+		<Type Name="公园" ID="9010005"/>
+		<Type Name="体育馆" ID="9010006"/>
+		<Type Name="体育场" ID="9010007"/>
+		<Type Name="商场" ID="9010008"/>
+		<Type Name="书店" ID="9010009"/>
+		<Type Name="工厂" ID="2710002"/>
+		<Type Name="饭店" ID="9010011"/>
+		<Type Name="金融保险" ID="9010012"/>
+		<Type Name="局" ID="2710001"/>
+		<Type Name="二级单位" ID="9010013"/>
+		<Type Name="采油厂（二级单位）" ID="9010014"/>
+		<Type Name="三级单位" ID="9010015"/>
+		<Type Name="采油矿（三级单位）" ID="9010016"/>
+		<Type Name="四级单位" ID="9010017"/>
+		<Type Name="采油队（四级单位）" ID="9010018"/>
+		<Type Name="作业队（四级单位）" ID="9010019"/>
+		<Type Name="钻井队（四级单位）" ID="9010020"/>
+		<Type Name="注水队" ID="9010021"/>
+		<Type Name="采气队" ID="9010022"/>
+		<Type Name="试油队" ID="9010023"/>
+		<Type Name="大修队" ID="9010024"/>
+		<Type Name="试井队" ID="9010025"/>
+	</Types>
+	<Types Name="地理信息.交通.桥梁" FilterName="" FilterID="">
+		<Type Name="桥梁" ID="5400006"/>
+		<Type Name="有输油气管线桥" ID="9020002"/>
+		<Type Name="铁路公路两用桥" ID="9020003"/>
+		<Type Name="铁路桥" ID="9020004"/>
+		<Type Name="阶面桥" ID="9020005"/>
+		<Type Name="人行桥" ID="5230002"/>
+		<Type Name="立交桥" ID="5230001"/>
+	</Types>
+	<Types Name="地理信息.交通.隧道" FilterName="" FilterID="">
+		<Type Name="铁路隧道" ID="9020108"/>
+		<Type Name="公路隧道" ID="9020109"/>
+		<Type Name="水下隧道" ID="9020110"/>
+	</Types>
+	<Types Name="地理信息.交通.站点" FilterName="" FilterID="">
+		<Type Name="飞机场" ID="5230008"/>
+		<Type Name="码头、港口" ID="2710005"/>
+		<Type Name="火车站" ID="2710004"/>
+		<Type Name="汽车站" ID="2710006"/>
+	</Types>
+	<Types Name="地理信息.交通.路" FilterName="" FilterID="">
+		<Type Name="公路（规划）" ID="2710075"/>
+		<Type Name="铁路（规划）" ID="2710076"/>
+		<Type Name="公路（现状）" ID="2720075"/>
+		<Type Name="铁路（现状）" ID="2720076"/>
+	</Types>
+	<Types Name="地理信息.水系" FilterName="" FilterID="">
+		<Type Name="饮用水井" ID="9030001"/>
+		<Type Name="井泉" ID="9030001"/>
+		<Type Name="温泉" ID="5240001"/>
+		<Type Name="瀑布" ID="9030003"/>
+	</Types>
+	<Types Name="地理信息.地形地貌" FilterName="" FilterID="">
+		<Type Name="山峰" ID="2150011"/>
+		<Type Name="火山口" ID="2150012"/>
+		<Type Name="戈壁滩" ID="9040001"/>
+		<Type Name="沼泽" ID="9030004"/>
+		<Type Name="沙漠" ID="2150009"/>
+		<Type Name="盐碱地" ID="9040002"/>
+		<Type Name="小草丘地" ID="9040003"/>
+		<Type Name="多小丘沙地" ID="9040004"/>
+		<Type Name="盐田" ID="2150010"/>
+	</Types>
+	<Types Name="地理信息.植被" FilterName="" FilterID="">
+		<Type Name="森林及独立树" ID="2150001"/>
+		<Type Name="灌木林" ID="2150002"/>
+		<Type Name="防护林" ID="2150003"/>
+		<Type Name="竹林" ID="2150004"/>
+		<Type Name="稻田" ID="2150005"/>
+		<Type Name="旱地" ID="2150006"/>
+		<Type Name="草地" ID="2150007"/>
+		<Type Name="芦苇地" ID="2150008"/>
+	</Types>
+	<Types Name="勘探工程.区域" FilterName="" FilterID="">
+		<Type Name="油气田生产基地" ID="2710077"/>
+		<Type Name="油田" ID="2410001"/>
+		<Type Name="气田" ID="2410002"/>
+		<Type Name="获工业油流构造或地区" ID="2410003"/>
+		<Type Name="获工业气流构造或地区" ID="2410004"/>
+		<Type Name="评价有利含油区" ID="2410005"/>
+		<Type Name="评价有利含气区" ID="2410006"/>
+		<Type Name="油气水边界" ID="2410007"/>
+	</Types>
+	<Types Name="勘探工程.油气标志" FilterName="" FilterID="">
+		<Type Name="地面气苗" ID="2520025"/>
+		<Type Name="地面油气苗" ID="2520024"/>
+		<Type Name="地面油苗" ID="2520028"/>
+	</Types>
+	<Types Name="勘探工程.钻井.探井" FilterName="" FilterID="">
+		<Type Name="区探井" ID="2510001"/>
+		<Type Name="基准井" ID="2510001"/>
+		<Type Name="参数井" ID="2510001"/>
+		<Type Name="预探井" ID="2510002"/>
+		<Type Name="评价井" ID="2510003"/>
+		<Type Name="水文井" ID="2510022"/>
+		<Type Name="千吨井" ID="2510004"/>
+		<Type Name="风险井" ID="9200001"/>
+		<Type Name="已钻井" ID="9200002"/>
+		<Type Name="发现井" ID="2510023"/>
+		<Type Name="工业油流井" ID="2510005"/>
+		<Type Name="工业气流井" ID="2510006"/>
+		<Type Name="低产油流井" ID="2510007"/>
+		<Type Name="低产气流井" ID="2510008"/>
+		<Type Name="少量油井" ID="2510024"/>
+		<Type Name="少量气井" ID="2510025"/>
+		<Type Name="干井" ID="2510013"/>
+		<Type Name="油水同层井" ID="2510026"/>
+		<Type Name="气水同层井" ID="2510028"/>
+		<Type Name="含油水井" ID="2510030"/>
+		<Type Name="含气水井" ID="2510031"/>
+		<Type Name="油气层井" ID="2510011"/>
+		<Type Name="油气显示井" ID="2510012"/>
+		<Type Name="工程报废井" ID="2510017"/>
+		<Type Name="地质报废井" ID="9200003"/>
+		<Type Name="正、待试井" ID="2510019"/>
+		<Type Name="滚动勘探井" ID="9200004"/>
+		<Type Name="取心井" ID="9200005"/>
+		<Type Name="大直径取心井" ID="2530014"/>
+		<Type Name="密闭取心井" ID="2530012"/>
+		<Type Name="油基泥浆取心井" ID="2530013"/>
+		<Type Name="井壁取心井" ID="9200006"/>
+		<Type Name="工程井" ID="9200007"/>
+		<Type Name="设计井" ID="2510020"/>
+		<Type Name="地质井" ID="2510021"/>
+	</Types>
+	<Types Name="勘探工程.钻井.开发井" FilterName="" FilterID="">
+		<Type Name="采油井" ID="2510014"/>
+		<Type Name="采气井" ID="2510015"/>
+		<Type Name="排液井" ID="9200101"/>
+		<Type Name="一次调整油井" ID="9200102"/>
+		<Type Name="二次调整油井" ID="9200103"/>
+		<Type Name="观察井" ID="2530009"/>
+		<Type Name="试采井" ID="2530008"/>
+		<Type Name="更新油井" ID="9200104"/>
+		<Type Name="二次更新油井" ID="9200105"/>
+		<Type Name="三次更新油井" ID="9200106"/>
+		<Type Name="采油检查井" ID="9200107"/>
+		<Type Name="汽驱采油井" ID="9200108"/>
+		<Type Name="蒸汽吞吐井" ID="2530007"/>
+		<Type Name="火烧油层井" ID="9200109"/>
+		<Type Name="资料井" ID="2530015"/>
+		<Type Name="待报废油井" ID="9200110"/>
+		<Type Name="采CO2井" ID="9200112"/>
+		<Type Name="采气检查井" ID="9200113"/>
+		<Type Name="待报废气井" ID="9200114"/>
+		<Type Name="一次调整注水井" ID="9200115"/>
+		<Type Name="二次调整注水井" ID="9200116"/>
+		<Type Name="注碱水井" ID="9200117"/>
+		<Type Name="注化学剂井" ID="9200118"/>
+		<Type Name="注剂聚合物井" ID="9200119"/>
+		<Type Name="三元复合井" ID="9200120"/>
+		<Type Name="待报废水井" ID="9200121"/>
+		<Type Name="注汽井、注热水井" ID="2530006"/>
+		<Type Name="待报废注气井" ID="9200122"/>
+		<Type Name="首钻井" ID="2530060"/>
+		<Type Name="注气井" ID="2530002"/>
+		<Type Name="注天然气井" ID="9200123"/>
+		<Type Name="注CO2气井" ID="9200124"/>
+		<Type Name="待报废注气井" ID="9200122"/>
+		<Type Name="采水井" ID="2530003"/>
+		<Type Name="气举井" ID="2530004"/>
+		<Type Name="采卤水井" ID="9200126"/>
+		<Type Name="热水井" ID="2510010"/>
+		<Type Name="待报废采水井" ID="9200127"/>
+		<Type Name="点火井" ID="2530005"/>
+		<Type Name="利用报废采油井" ID="9200128"/>
+		<Type Name="利用报废采气井" ID="9200129"/>
+		<Type Name="利用报废注水井" ID="9200130"/>
+		<Type Name="利用报废注气井" ID="9200131"/>
+		<Type Name="套管事故井" ID="9200133"/>
+		<Type Name="井下有落物井" ID="9200134"/>
+		<Type Name="其他工程报废井" ID="9200135"/>
+		<Type Name="未下套管井" ID="2510016"/>
+		<Type Name="无工业油流井" ID="9200136"/>
+		<Type Name="水淹后无油流井" ID="9200137"/>
+		<Type Name="其他地质报废井" ID="9200138"/>
+		<Type Name="停产井" ID="2530019"/>
+		<Type Name="停注井" ID="2530020"/>
+		<Type Name="注汽井（规划）" ID="2710059"/>
+		<Type Name="气井（规划）" ID="2710060"/>
+		<Type Name="盐井（规划）" ID="2710062"/>
+		<Type Name="注汽井（现状）" ID="2720059"/>
+		<Type Name="气井（现状））" ID="2720060"/>
+		<Type Name="盐井（现状）" ID="2720062"/>
+		<Type Name="自喷油井" ID="2720055"/>
+		<Type Name="机械采油井" ID="2720056"/>
+		<Type Name="注水井" ID="2720057"/>
+	</Types>
+	<Types Name="勘探工程.钻井.废弃井" FilterName="" FilterID="">
+		<Type Name="废弃井采油井" ID="2530021"/>
+		<Type Name="废弃井采气井" ID="2530022"/>
+		<Type Name="废弃井注水井" ID="2530023"/>
+		<Type Name="废弃井注气井" ID="2530024"/>
+		<Type Name="废弃井采水井" ID="2530025"/>
+		<Type Name="套管弯曲井" ID="2530026"/>
+		<Type Name="套管破裂井" ID="2530027"/>
+		<Type Name="外漏井" ID="2530028"/>
+	</Types>
+	<Types Name="勘探工程.钻井.井况" FilterName="" FilterID="">
+		<Type Name="长停采油井" ID="9200139"/>
+		<Type Name="长停注水井" ID="9200140"/>
+		<Type Name="长停注气井" ID="9200141"/>
+		<Type Name="长停蒸气吞吐井" ID="9200142"/>
+		<Type Name="长停采水井" ID="9200143"/>
+		<Type Name="长停采气井" ID="9200144"/>
+	</Types>
+	<Types Name="勘探工程.钻井.未完井" FilterName="" FilterID="">
+		<Type Name="当年新井" ID="9200201"/>
+		<Type Name="正钻井" ID="2510018"/>
+		<Type Name="缓钻井" ID="2530061"/>
+		<Type Name="待钻井" ID="9200202"/>
+		<Type Name="正建设井" ID="9200203"/>
+		<Type Name="待建设井" ID="9200204"/>
+		<Type Name="试油井" ID="9200205"/>
+		<Type Name="试注井" ID="9200206"/>
+		<Type Name="试气井" ID="9200207"/>
+	</Types>
+	<Types Name="勘探工程.钻井.石油井" FilterName="" FilterID="">
+		<Type Name="石油井" ID="9200301"/>
+	</Types>
+	<Types Name="勘探工程.钻井.天然气井" FilterName="" FilterID="">
+		<Type Name="天然气井" ID="9200401"/>
+	</Types>
+	<Types Name="勘探工程.钻井.井型" FilterName="" FilterID="">
+		<Type Name="钻井平台" ID="2710078"/>
+		<Type Name="海上采油平台" ID="9200501"/>
+		<Type Name="定向井" ID="9200502"/>
+		<Type Name="水平井" ID="2530018"/>
+		<Type Name="丛式井" ID="2530016"/>
+		<Type Name="蒸汽锅炉平台" ID="9200503"/>
+		<Type Name="斜井" ID="2530017"/>
+		<Type Name="侧钻井" ID="9200504"/>
+		<Type Name="侧钻水平井" ID="9200505"/>
+		<Type Name="援救井" ID="9200506"/>
+		<Type Name="多底井" ID="9200507"/>
+	</Types>
+	<Types Name="勘探工程.钻井油气水显示" FilterName="" FilterID="">
+		<Type Name="槽面气泡" ID="2520002"/>
+		<Type Name="槽面油花" ID="2520001"/>
+		<Type Name="地面气苗" ID="2520025"/>
+		<Type Name="地面油气苗" ID="2520024"/>
+		<Type Name="二氧化碳气侵" ID="2520005"/>
+		<Type Name="井漏" ID="2520018"/>
+		<Type Name="井涌气" ID="2520008"/>
+		<Type Name="井涌水" ID="2520010"/>
+		<Type Name="井涌油" ID="2520009"/>
+		<Type Name="沥青" ID="2520026"/>
+		<Type Name="硫化氢气侵" ID="2520006"/>
+		<Type Name="喷气" ID="2520011"/>
+		<Type Name="喷气水" ID="2520015"/>
+		<Type Name="喷水" ID="2520013"/>
+		<Type Name="喷油" ID="2520012"/>
+		<Type Name="喷油气" ID="2520014"/>
+		<Type Name="喷油水" ID="2520016"/>
+		<Type Name="钻井液带出油流" ID="2520007"/>
+		<Type Name="钻井液气侵" ID="2520003"/>
+		<Type Name="钻井液水侵" ID="2520004"/>
+	</Types>
+	<Types Name="勘探工程.钻机作业情况" FilterName="" FilterID="">
+		<Type Name="跳钻" ID="2520023"/>
+		<Type Name="蹩钻" ID="2520022"/>
+		<Type Name="井漏" ID="2520018"/>
+		<Type Name="放空" ID="2520019"/>
+		<Type Name="换钻头" ID="2520021"/>
+		<Type Name="起下钻" ID="2520020"/>
+	</Types>
+	<Types Name="勘探工程.射孔" FilterName="" FilterID="">
+		<Type Name="射孔" ID="3000015"/>
+	</Types>
+	<Types Name="勘探工程.井壁取心" FilterName="" FilterID="">
+		<Type Name="井壁取心" ID="2520027"/>
+	</Types>
+	<Types Name="勘探工程.钻井取心" FilterName="" FilterID="">
+		<Type Name="钻井取心" ID="9240001"/>
+	</Types>
+	<Types Name="勘探工程.磨损面位置" FilterName="" FilterID="">
+		<Type Name="磨损面位置" ID="2520030"/>
+	</Types>
+	<Types Name="地质信息.地层分布" FilterName="" FilterID="">
+		<Type Name="构造高点" ID="9430001"/>
+		<Type Name="构造低点" ID="9430002"/>
+	</Types>
+	<Types Name="地质信息.沉积相.物源方向" FilterName="" FilterID="">
+		<Type Name="主要物源方向" ID="9400101"/>
+		<Type Name="次要物源方向" ID="9400102"/>
+	</Types>
+	<Types Name="地质信息.沉积相.相" FilterName="" FilterID="">
+		<Type Name="旱地扇" ID="909221413"/>
+		<Type Name="湿地扇" ID="909221600"/>
+		<Type Name="河流相" ID="909251627"/>
+		<Type Name="半咸水湖泊" ID="910101351"/>
+		<Type Name="咸水湖泊" ID="910101403"/>
+		<Type Name="滨外陆棚" ID="910140948"/>
+		<Type Name="浅海陆棚" ID="910141505"/>
+		<Type Name="碳酸盐岩海岸(滨海)" ID="910271435"/>
+		<Type Name="碳酸盐岩障壁海岸(滨海)" ID="910271608"/>
+		<Type Name="碳酸盐岩台地边缘斜坡(次深海)" ID="910281734"/>
+	</Types>
+	<Types Name="地质信息.沉积相.亚微相" FilterName="" FilterID="">
+		<Type Name="扇根" ID="909221542"/>
+		<Type Name="旱地:扇中" ID="909221552"/>
+		<Type Name="扇端" ID="909221554"/>
+		<Type Name="湿地:扇中" ID="909221624"/>
+		<Type Name="扇间沼泽" ID="909221626"/>
+		<Type Name="河道" ID="909251648"/>
+		<Type Name="河道间" ID="909251651"/>
+		<Type Name="洪泛洼地" ID="910100938"/>
+		<Type Name="分支河道" ID="910101007"/>
+		<Type Name="分支河道间" ID="910101008"/>
+		<Type Name="三角洲前缘" ID="910101016"/>
+		<Type Name="前三角洲" ID="910101035"/>
+		<Type Name="席状砂" ID="910101036"/>
+		<Type Name="三角洲平原" ID="910101043"/>
+		<Type Name="平原洼地" ID="910101148"/>
+		<Type Name="浅湖碳酸盐" ID="910101356"/>
+		<Type Name="滨湖盐泥滩" ID="910101428"/>
+		<Type Name="滨岸蒸发盐" ID="910101432"/>
+		<Type Name="浅湖盐泥坪" ID="910101438"/>
+		<Type Name="半深湖" ID="910101510"/>
+		<Type Name="深湖" ID="910101602"/>
+		<Type Name="后滨滩沙" ID="910101614"/>
+		<Type Name="滨岸混积礁屑滩" ID="910101645"/>
+		<Type Name="前滨碳酸盐滩坝" ID="910140909"/>
+		<Type Name="潮道" ID="910140940"/>
+		<Type Name="泻湖" ID="910141027"/>
+		<Type Name="鲕滩" ID="910141348"/>
+		<Type Name="开阔台地" ID="910141409"/>
+		<Type Name="蒸发台地" ID="910141449"/>
+		<Type Name="斜坡扇" ID="910141547"/>
+		<Type Name="碳酸盐岩台地边缘斜坡:斜坡扇" ID="910141553"/>
+		<Type Name="垮塌角砾" ID="910141619"/>
+		<Type Name="陆源障壁海岸(滨海):潮坪" ID="910271638"/>
+		<Type Name="边缘鲕滩" ID="910271646"/>
+		<Type Name="萨勃哈盐碱滩" ID="910271657"/>
+	</Types>
+	<Types Name="地质信息.旋回" FilterName="" FilterID="">
+		<Type Name="上旋" ID="9410001"/>
+		<Type Name="下旋" ID="9410002"/>
+		<Type Name="加积" ID="9410003"/>
+	</Types>
+	<Types Name="地质信息.砂层解释" FilterName="" FilterID="">
+		<Type Name="砂层" ID="9440001"/>
+	</Types>
+	<Types Name="地质信息.岩石.堆积物" FilterName="" FilterID="">
+		<Type Name="贝壳层" ID="2211028"/>
+		<Type Name="粗砂" ID="2211012"/>
+		<Type Name="粉砂质砾石" ID="2211009"/>
+		<Type Name="粉砂质粘土" ID="2211018"/>
+		<Type Name="腐植土层" ID="2211021"/>
+		<Type Name="红土" ID="2211002"/>
+		<Type Name="化学沉积" ID="2211022"/>
+		<Type Name="角砾" ID="2211006"/>
+		<Type Name="砾石" ID="2211005"/>
+		<Type Name="卵石" ID="2211004"/>
+		<Type Name="泥砾" ID="2211008"/>
+		<Type Name="泥炭土" ID="2211024"/>
+		<Type Name="泥质粉砂" ID="2211016"/>
+		<Type Name="漂砾" ID="2211003"/>
+		<Type Name="砂姜" ID="2211011"/>
+		<Type Name="砂砾" ID="2211007"/>
+		<Type Name="砂质粘土" ID="2211017"/>
+		<Type Name="填筑土" ID="2211023"/>
+		<Type Name="细砂" ID="2211014"/>
+		<Type Name="粘土" ID="2211019"/>
+		<Type Name="粘土质砾石" ID="2211010"/>
+		<Type Name="植物沉积层" ID="2211020"/>
+		<Type Name="中砂" ID="2211013"/>
+		<Type Name="表土和积土层" ID="2211001"/>
+		<Type Name="粉砂" ID="2211025"/>
+		<Type Name="砂层" ID="2211026"/>
+		<Type Name="新砂层" ID="2211027"/>
+	</Types>
+	<Types Name="地质信息.岩石.砾岩" FilterName="" FilterID="">
+		<Type Name="巨砾岩" ID="2212001"/>
+		<Type Name="粗砾岩" ID="2212002"/>
+		<Type Name="中砾岩" ID="2212003"/>
+		<Type Name="细砾岩" ID="2212004"/>
+		<Type Name="小砾岩" ID="2212005"/>
+		<Type Name="泥砾岩" ID="2212006"/>
+		<Type Name="角砾岩" ID="2212007"/>
+		<Type Name="灰质砾岩" ID="2212008"/>
+		<Type Name="灰质角砾岩" ID="2212009"/>
+		<Type Name="铁质砾岩" ID="2212010"/>
+		<Type Name="硅质砾岩" ID="2212011"/>
+		<Type Name="凝灰质砾岩" ID="2212012"/>
+		<Type Name="凝灰质角砾岩" ID="2212013"/>
+		<Type Name="凝灰质砂砾岩" ID="2212014"/>
+		<Type Name="砂砾岩" ID="2212015"/>
+		<Type Name="泥砂小砾岩" ID="2212016"/>
+		<Type Name="砾岩" ID="2212017"/>
+		<Type Name="玄武质砂砾岩" ID="2212018"/>
+	</Types>
+	<Types Name="地质信息.岩石.砂岩" FilterName="" FilterID="">
+		<Type Name="砂岩" ID="2213079"/>
+		<Type Name="砾状砂岩" ID="2213001"/>
+		<Type Name="粗砂岩" ID="2213003"/>
+		<Type Name="中砂岩" ID="2213004"/>
+		<Type Name="细砂岩" ID="2213005"/>
+		<Type Name="粉砂岩" ID="2213006"/>
+		<Type Name="石英砂岩" ID="2213023"/>
+		<Type Name="白云质粗砂岩" ID="2213043"/>
+		<Type Name="白云质中砂岩" ID="2213044"/>
+		<Type Name="白云质细砂岩" ID="2213045"/>
+		<Type Name="白云质粉砂岩" ID="2213046"/>
+		<Type Name="灰质粗砂岩" ID="2213047"/>
+		<Type Name="灰质中砂岩" ID="2213048"/>
+		<Type Name="灰质细砂岩" ID="2213049"/>
+		<Type Name="灰质粉砂岩" ID="2213050"/>
+		<Type Name="泥质砂岩" ID="2213080"/>
+		<Type Name="泥质粗砂岩" ID="2213063"/>
+		<Type Name="泥质中砂岩" ID="2213064"/>
+		<Type Name="泥质细砂岩" ID="2213065"/>
+		<Type Name="泥质粉砂岩" ID="2213066"/>
+		<Type Name="碳质粗砂岩" ID="2213075"/>
+		<Type Name="碳质中砂岩" ID="2213076"/>
+		<Type Name="碳质细砂岩" ID="2213077"/>
+		<Type Name="碳质粉砂岩" ID="2213078"/>
+		<Type Name="铁质粗砂岩" ID="2213059"/>
+		<Type Name="铁质中砂岩" ID="2213060"/>
+		<Type Name="铁质细砂岩" ID="2213061"/>
+		<Type Name="铁质粉砂岩" ID="2213062"/>
+		<Type Name="长石砂岩" ID="2213024"/>
+		<Type Name="鲕状砂岩" ID="2213002"/>
+		<Type Name="石膏质粗砂岩" ID="2213034"/>
+		<Type Name="石膏质中砂岩" ID="2213035"/>
+		<Type Name="石膏质细砂岩" ID="2213036"/>
+		<Type Name="石膏质粉砂岩" ID="2213037"/>
+		<Type Name="凝灰质粗砂岩" ID="2213055"/>
+		<Type Name="凝灰质中砂岩" ID="2213056"/>
+		<Type Name="凝灰质细砂岩" ID="2213057"/>
+		<Type Name="凝灰质粉砂岩" ID="2213058"/>
+		<Type Name="高岭土质粗砂岩" ID="2213030"/>
+		<Type Name="高岭土质中砂岩" ID="2213031"/>
+		<Type Name="高岭土质细砂岩" ID="2213032"/>
+		<Type Name="高岭土质粉砂岩" ID="2213033"/>
+		<Type Name="中-细砂岩" ID="2213007"/>
+		<Type Name="粉-细砂岩" ID="2213008"/>
+		<Type Name="含砾粉-细砂岩" ID="2213009"/>
+		<Type Name="含砾中-细砂岩" ID="2213010"/>
+		<Type Name="含砾粗砂岩" ID="2213011"/>
+		<Type Name="含砾中砂岩" ID="2213012"/>
+		<Type Name="含砾细砂岩" ID="2213013"/>
+		<Type Name="含砾粉砂岩" ID="2213014"/>
+		<Type Name="含砾泥质粗砂岩" ID="2213015"/>
+		<Type Name="含砾泥质中砂岩" ID="2213016"/>
+		<Type Name="含砾泥质粉砂岩" ID="2213018"/>
+		<Type Name="海绿石粗砂岩" ID="2213019"/>
+		<Type Name="海绿石中砂岩" ID="2213020"/>
+		<Type Name="海绿石细砂岩" ID="2213021"/>
+		<Type Name="海绿石粉砂岩" ID="2213022"/>
+		<Type Name="长石石英砂岩" ID="2213025"/>
+		<Type Name="玄武质粗砂岩" ID="2213026"/>
+		<Type Name="玄武质中砂岩" ID="2213027"/>
+		<Type Name="玄武质细砂岩" ID="2213028"/>
+		<Type Name="玄武质粉砂岩" ID="2213029"/>
+		<Type Name="硅质粗砂岩" ID="2213038"/>
+		<Type Name="硅质中砂岩" ID="2213039"/>
+		<Type Name="硅质细砂岩" ID="2213040"/>
+		<Type Name="硅质粉砂岩" ID="2213041"/>
+		<Type Name="硅质石英砂岩" ID="2213042"/>
+		<Type Name="沥青质粗砂岩" ID="2213051"/>
+		<Type Name="沥青质中砂岩" ID="2213052"/>
+		<Type Name="沥青质细砂岩" ID="2213053"/>
+		<Type Name="沥青质粉砂岩" ID="2213054"/>
+		<Type Name="含磷粗砂岩" ID="2213067"/>
+		<Type Name="含磷中砂岩" ID="2213068"/>
+		<Type Name="含磷细砂岩" ID="2213069"/>
+		<Type Name="含磷粉砂岩" ID="2213070"/>
+		<Type Name="含角砾粗砂岩" ID="2213071"/>
+		<Type Name="含角砾中砂岩" ID="2213072"/>
+		<Type Name="含角砾细砂岩" ID="2213073"/>
+		<Type Name="含角砾粉砂岩" ID="2213074"/>
+		<Type Name="含砾砂岩" ID="2213081"/>
+		<Type Name="含钙粉砂岩" ID="2213082"/>
+		<Type Name="含钙砂岩" ID="2213083"/>
+		<Type Name="钙质砂岩" ID="2213084"/>
+		<Type Name="不等粒砂岩" ID="2213085"/>
+		<Type Name="含砾不等粒砂岩" ID="2213086"/>
+		<Type Name="含螺细砂岩" ID="2213087"/>
+		<Type Name="白云质砂岩" ID="2213088"/>
+		<Type Name="灰质砂岩" ID="2213089"/>
+		<Type Name="含螺粉砂岩" ID="2213090"/>
+		<Type Name="凝灰质砂岩" ID="2213091"/>
+		<Type Name="含砾泥质细砂岩" ID="2213017"/>
+	</Types>
+	<Types Name="地质信息.岩石.泥岩" FilterName="" FilterID="">
+		<Type Name="泥岩" ID="2214003"/>
+		<Type Name="泥岩(粘土岩)" ID="2214031"/>
+		<Type Name="砂质泥岩" ID="2214006"/>
+		<Type Name="粉砂质泥岩" ID="2214005"/>
+		<Type Name="含砾泥岩" ID="2214008"/>
+		<Type Name="碳质泥岩" ID="2214010"/>
+		<Type Name="白云质泥岩" ID="2214012"/>
+		<Type Name="石膏质泥岩" ID="2214013"/>
+		<Type Name="盐质泥岩" ID="2214016"/>
+		<Type Name="沥青质泥岩" ID="2214018"/>
+		<Type Name="硅质泥岩" ID="2214020"/>
+		<Type Name="凝灰质泥岩" ID="2214024"/>
+		<Type Name="铝土质泥岩" ID="2214025"/>
+		<Type Name="玄武质泥岩" ID="2214027"/>
+		<Type Name="含砂泥岩" ID="2214007"/>
+		<Type Name="灰质泥岩" ID="2214009"/>
+		<Type Name="含膏泥岩" ID="2214014"/>
+		<Type Name="含膏、含盐泥岩" ID="2214015"/>
+		<Type Name="芒硝泥岩" ID="2214017"/>
+		<Type Name="钙质泥岩" ID="2214032"/>
+		<Type Name="灰钙泥岩" ID="2214033"/>
+		<Type Name="含盐泥岩" ID="2214034"/>
+		<Type Name="含盐含膏泥岩" ID="2214035"/>
+		<Type Name="油泥岩" ID="2214036"/>
+		<Type Name="灰质油泥岩" ID="2214037"/>
+	</Types>
+	<Types Name="地质信息.岩石.页岩" FilterName="" FilterID="">
+		<Type Name="页岩" ID="2214001"/>
+		<Type Name="钙质页岩" ID="2214038"/>
+		<Type Name="硅质页岩" ID="2214021"/>
+		<Type Name="灰质页岩" ID="2214022"/>
+		<Type Name="沥青质页岩" ID="2214019"/>
+		<Type Name="铝土质页岩" ID="2214026"/>
+		<Type Name="砂质页岩" ID="2214004"/>
+		<Type Name="碳质页岩" ID="2214011"/>
+		<Type Name="油页岩" ID="2214002"/>
+	</Types>
+	<Types Name="地质信息.岩石.灰岩" FilterName="" FilterID="">
+		<Type Name="沉凝灰岩" ID="2214028"/>
+		<Type Name="白云岩化沉凝灰岩" ID="2214029"/>
+		<Type Name="石灰岩" ID="2215001"/>
+		<Type Name="白云质灰岩" ID="2215006"/>
+		<Type Name="含白云石灰岩" ID="2215002"/>
+		<Type Name="含泥灰岩" ID="2215003"/>
+		<Type Name="泥灰岩" ID="2215010"/>
+		<Type Name="页状灰岩" ID="2215055"/>
+		<Type Name="生物灰岩" ID="2215030"/>
+		<Type Name="介壳灰岩" ID="2215031"/>
+		<Type Name="含螺灰岩" ID="2215033"/>
+		<Type Name="介形虫灰岩" ID="2215032"/>
+		<Type Name="角砾状灰岩" ID="2215020"/>
+		<Type Name="薄层状灰岩" ID="2215016"/>
+		<Type Name="溶洞灰岩" ID="2215019"/>
+		<Type Name="竹叶状灰岩" ID="2215015"/>
+		<Type Name="针孔状灰岩" ID="2215022"/>
+		<Type Name="豹皮灰岩" ID="2215023"/>
+		<Type Name="燧石条带灰岩" ID="2215017"/>
+		<Type Name="燧石结核灰岩" ID="2215018"/>
+		<Type Name="硅质灰岩" ID="2215008"/>
+		<Type Name="鲕状灰岩" ID="2215024"/>
+		<Type Name="假鲕状灰岩" ID="2215025"/>
+		<Type Name="砂质灰岩" ID="2215014"/>
+		<Type Name="石膏质灰岩" ID="2215009"/>
+		<Type Name="泥质条带灰岩" ID="2215012"/>
+		<Type Name="碳质灰岩" ID="2215013"/>
+		<Type Name="结晶灰岩" ID="2215028"/>
+		<Type Name="沥青质灰岩" ID="2215007"/>
+		<Type Name="瘤状灰岩" ID="2215027"/>
+		<Type Name="藻灰岩" ID="2215034"/>
+		<Type Name="团块灰岩" ID="2215021"/>
+		<Type Name="砂屑石灰岩" ID="2215057"/>
+		<Type Name="泥质灰岩" ID="2215011"/>
+		<Type Name="葡萄状灰岩" ID="2215026"/>
+		<Type Name="生物白云质灰岩" ID="2215058"/>
+		<Type Name="生物泥灰岩" ID="2215059"/>
+		<Type Name="生屑灰岩" ID="2215029"/>
+		<Type Name="含白灰岩" ID="2215004"/>
+		<Type Name="含白垩灰岩" ID="2215005"/>
+	</Types>
+	<Types Name="地质信息.岩石.白云岩" FilterName="" FilterID="">
+		<Type Name="白云岩" ID="2215035"/>
+		<Type Name="灰质白云岩" ID="2215038"/>
+		<Type Name="含灰白云岩" ID="2215036"/>
+		<Type Name="含泥白云岩" ID="2215037"/>
+		<Type Name="泥质白云岩" ID="2215043"/>
+		<Type Name="竹叶状白云岩" ID="2215046"/>
+		<Type Name="针孔白云岩" ID="2215048"/>
+		<Type Name="燧石条带白云岩" ID="2215052"/>
+		<Type Name="燧石结核白云岩" ID="2215053"/>
+		<Type Name="硅质白云岩" ID="2215039"/>
+		<Type Name="鲕状白云岩" ID="2215049"/>
+		<Type Name="角砾状白云岩" ID="2215047"/>
+		<Type Name="砂质白云岩" ID="2215045"/>
+		<Type Name="石膏质白云岩" ID="2215040"/>
+		<Type Name="泥质条带白云岩" ID="2215044"/>
+		<Type Name="藻云岩" ID="2215060"/>
+		<Type Name="凝灰质白云岩(白云岩化凝灰岩)" ID="2215041"/>
+		<Type Name="假鲕状白云岩" ID="2215050"/>
+		<Type Name="葡萄状白云岩" ID="2215051"/>
+		<Type Name="钙质白云岩" ID="2215061"/>
+		<Type Name="生物白云岩" ID="2215062"/>
+		<Type Name="T白云岩" ID="2215042"/>
+	</Types>
+	<Types Name="地质信息.岩石.其他岩石" FilterName="" FilterID="">
+		<Type Name="白垩土" ID="2216021"/>
+		<Type Name="赤铁矿层" ID="2216008"/>
+		<Type Name="断层角砾岩" ID="2216024"/>
+		<Type Name="断层泥岩" ID="2216023"/>
+		<Type Name="钙芒硝岩" ID="2216018"/>
+		<Type Name="膏盐岩" ID="2216017"/>
+		<Type Name="硅质岩" ID="2216001"/>
+		<Type Name="含膏盐岩" ID="2216016"/>
+		<Type Name="含灰" ID="2216028"/>
+		<Type Name="含灰砾" ID="2216029"/>
+		<Type Name="含介形虫" ID="2216031"/>
+		<Type Name="含镁盐岩" ID="2216015"/>
+		<Type Name="含泥砾" ID="2216030"/>
+		<Type Name="含铁" ID="2216032"/>
+		<Type Name="黄铁矿岩" ID="2216005"/>
+		<Type Name="钾盐岩" ID="2216014"/>
+		<Type Name="介形虫层" ID="2216025"/>
+		<Type Name="磷质岩(磷块岩)" ID="2216002"/>
+		<Type Name="菱铁矿层" ID="2216007"/>
+		<Type Name="铝质岩(铝土岩)" ID="2216003"/>
+		<Type Name="煤层或煤夹层" ID="2216009"/>
+		<Type Name="锰质岩(猛矿岩)" ID="2216004"/>
+		<Type Name="泥质介形虫层" ID="2216027"/>
+		<Type Name="硼砂" ID="2216010"/>
+		<Type Name="膨润土、坩子土" ID="2216022"/>
+		<Type Name="砂质介形虫层" ID="2216026"/>
+		<Type Name="石膏岩" ID="2216012"/>
+		<Type Name="燧石层" ID="2216020"/>
+		<Type Name="细碧岩" ID="2216037"/>
+		<Type Name="盐岩" ID="2216013"/>
+		<Type Name="杂卤石" ID="2216019"/>
+		<Type Name="重晶石" ID="2216011"/>
+		<Type Name="砂泥岩互层" ID="2214030"/>
+		<Type Name="硅、钙、硼石(绿豆岩)" ID="2215054"/>
+		<Type Name="铁矿层" ID="2216006"/>
+		<Type Name="泥膏岩" ID="2214023"/>
+	</Types>
+	<Types Name="地质信息.岩石.火山岩" FilterName="" FilterID="">
+		<Type Name="超基性侵入岩" ID="2221001"/>
+		<Type Name="基性侵入岩" ID="2221002"/>
+		<Type Name="中性侵入岩" ID="2221003"/>
+		<Type Name="酸性侵入岩" ID="2221004"/>
+		<Type Name="橄榄岩" ID="2221005"/>
+		<Type Name="辉石岩" ID="2221006"/>
+		<Type Name="辉长岩" ID="2221007"/>
+		<Type Name="苏长岩" ID="2221008"/>
+		<Type Name="斜长岩" ID="2221009"/>
+		<Type Name="辉绿岩" ID="2221010"/>
+		<Type Name="闪长岩" ID="2221011"/>
+		<Type Name="正长岩" ID="2221012"/>
+		<Type Name="闪长玢岩" ID="2221013"/>
+		<Type Name="角闪石岩" ID="2221014"/>
+		<Type Name="花岗岩" ID="2221015"/>
+		<Type Name="煌斑岩" ID="2221016"/>
+		<Type Name="云煌岩" ID="2221017"/>
+		<Type Name="伟晶岩" ID="2221018"/>
+		<Type Name="基性喷发岩" ID="2222001"/>
+		<Type Name="中性喷发岩" ID="2222002"/>
+		<Type Name="酸性喷发岩" ID="2222003"/>
+		<Type Name="玄武岩" ID="2222004"/>
+		<Type Name="安山玄武岩" ID="2222005"/>
+		<Type Name="安山岩" ID="2222006"/>
+		<Type Name="安山玢岩" ID="2222007"/>
+		<Type Name="粗面岩" ID="2222008"/>
+		<Type Name="流纹岩" ID="2222009"/>
+		<Type Name="流纹斑岩" ID="2222010"/>
+		<Type Name="英安岩" ID="2222011"/>
+		<Type Name="英安斑岩" ID="2222012"/>
+		<Type Name="凝灰岩" ID="2222013"/>
+		<Type Name="火山集块岩" ID="2222014"/>
+		<Type Name="火山角砾岩和砾岩" ID="2222015"/>
+	</Types>
+	<Types Name="地质信息.岩石.变质岩" FilterName="" FilterID="">
+		<Type Name="变质岩" ID="2230001"/>
+		<Type Name="变质砂岩或粉砂岩" ID="2230002"/>
+		<Type Name="变质砾岩" ID="2230003"/>
+		<Type Name="碎裂岩" ID="2230004"/>
+		<Type Name="构造角砾岩" ID="2230005"/>
+		<Type Name="糜棱岩" ID="2230006"/>
+		<Type Name="板岩" ID="2230007"/>
+		<Type Name="硅质板岩" ID="2230008"/>
+		<Type Name="绿泥石板岩" ID="2230009"/>
+		<Type Name="碳质板岩" ID="2230010"/>
+		<Type Name="蛇纹岩" ID="2230011"/>
+		<Type Name="大理岩" ID="2230012"/>
+		<Type Name="千枚岩" ID="2230013"/>
+		<Type Name="绢云千枚岩" ID="2230014"/>
+		<Type Name="绿泥千枚岩" ID="2230015"/>
+		<Type Name="片岩" ID="2230016"/>
+		<Type Name="石英片岩" ID="2230017"/>
+		<Type Name="黑云片岩" ID="2230018"/>
+		<Type Name="绿泥片岩" ID="2230019"/>
+		<Type Name="片麻岩" ID="2230020"/>
+		<Type Name="花岗片麻岩" ID="2230021"/>
+		<Type Name="石英岩" ID="2230022"/>
+	</Types>
+	<Types Name="地质信息.岩石.岩性缺失" FilterName="" FilterID="">
+		<Type Name="缺失" ID="2250001"/>
+	</Types>
+	<Types Name="地质信息.岩石.化石" FilterName="" FilterID="">
+		<Type Name="放射虫" ID="2218001"/>
+		<Type Name="有孔虫" ID="2218002"/>
+		<Type Name="蜓" ID="2218003"/>
+		<Type Name="海绵骨针" ID="2218004"/>
+		<Type Name="海绵" ID="2218005"/>
+		<Type Name="古杯动物" ID="2218006"/>
+		<Type Name="层孔虫" ID="2218007"/>
+		<Type Name="单体四射珊瑚" ID="2218008"/>
+		<Type Name="复体四射珊瑚" ID="2218009"/>
+		<Type Name="横板珊瑚" ID="2218010"/>
+		<Type Name="苔藓动物" ID="2218011"/>
+		<Type Name="腕足动物" ID="2218012"/>
+		<Type Name="腹足类" ID="2218013"/>
+		<Type Name="掘足类" ID="2218014"/>
+		<Type Name="双壳类(瓣鳃类)" ID="2218015"/>
+		<Type Name="直壳鹦鹉螺(角石)类" ID="2218016"/>
+		<Type Name="菊石类" ID="2218017"/>
+		<Type Name="竹节石" ID="2218018"/>
+		<Type Name="软舌螺" ID="2218019"/>
+		<Type Name="三叶虫" ID="2218020"/>
+		<Type Name="叶肢介" ID="2218021"/>
+		<Type Name="介形类" ID="2218022"/>
+		<Type Name="昆虫" ID="2218023"/>
+		<Type Name="海林檎" ID="2218024"/>
+		<Type Name="海蕾" ID="2218025"/>
+		<Type Name="海百合" ID="2218026"/>
+		<Type Name="海百合茎" ID="2218027"/>
+		<Type Name="海胆" ID="2218028"/>
+		<Type Name="海星" ID="2218029"/>
+		<Type Name="笔石" ID="2218030"/>
+		<Type Name="鱼类化石" ID="2218031"/>
+		<Type Name="脊椎动物" ID="2218032"/>
+		<Type Name="藻类" ID="2218033"/>
+		<Type Name="蓝藻" ID="2218034"/>
+		<Type Name="绿藻" ID="2218035"/>
+		<Type Name="红藻" ID="2218036"/>
+		<Type Name="硅藻" ID="2218037"/>
+		<Type Name="轮藻" ID="2218038"/>
+		<Type Name="柱状叠层石" ID="2218039"/>
+		<Type Name="锥状叠层石" ID="2218040"/>
+		<Type Name="层状叠层石" ID="2218041"/>
+		<Type Name="古植物化石" ID="2218042"/>
+		<Type Name="植物枝干化石" ID="2218043"/>
+		<Type Name="植物碎片" ID="2218044"/>
+		<Type Name="碳屑" ID="2218045"/>
+		<Type Name="孢子花粉" ID="2218046"/>
+		<Type Name="牙形刺(石)" ID="2218047"/>
+		<Type Name="遗迹化石" ID="2218048"/>
+		<Type Name="化石碎片" ID="2218049"/>
+		<Type Name="完好生物化石" ID="2218050"/>
+		<Type Name="生物碎屑" ID="2218051"/>
+		<Type Name="生长生态" ID="2218052"/>
+		<Type Name="自由生长生态" ID="2218053"/>
+		<Type Name="原地堆积生态" ID="2218054"/>
+		<Type Name="浮游沉降生态" ID="2218055"/>
+		<Type Name="搬运生态" ID="2218056"/>
+	</Types>
+	<Types Name="地质信息.岩石.矿物" FilterName="" FilterID="">
+		<Type Name="黄铁矿" ID="2240001"/>
+		<Type Name="方解石" ID="2240002"/>
+		<Type Name="白云石" ID="2240003"/>
+		<Type Name="铁锰结核" ID="2240004"/>
+		<Type Name="自生石英" ID="2240005"/>
+		<Type Name="方解石脉" ID="2240006"/>
+		<Type Name="石英脉" ID="2240007"/>
+		<Type Name="石膏脉" ID="2240008"/>
+		<Type Name="白云岩脉" ID="2240009"/>
+		<Type Name="沥青脉" ID="2240010"/>
+		<Type Name="沥青包裹体" ID="2240011"/>
+		<Type Name="磷灰石" ID="2240012"/>
+		<Type Name="石膏" ID="2240013"/>
+		<Type Name="菱铁矿" ID="2240014"/>
+		<Type Name="芒硝盐膏" ID="2240015"/>
+		<Type Name="盐" ID="2240016"/>
+	</Types>
+	<Types Name="地质信息.岩石.层理构造" FilterName="" FilterID="">
+		<Type Name="水平层理" ID="9450601"/>
+		<Type Name="波状层理" ID="9450602"/>
+		<Type Name="平行层理" ID="9450603"/>
+		<Type Name="交错层理" ID="9450604"/>
+		<Type Name="季节性层理" ID="9450605"/>
+		<Type Name="叠层构造" ID="9450606"/>
+		<Type Name="搅混构造" ID="9450607"/>
+		<Type Name="柔皱构造" ID="9450608"/>
+		<Type Name="缝合线" ID="9450609"/>
+		<Type Name="冲刷面" ID="9450610"/>
+		<Type Name="干裂" ID="9450611"/>
+		<Type Name="角砾状构造" ID="9450612"/>
+		<Type Name="气孔状构造" ID="9450613"/>
+		<Type Name="均匀状构造" ID="9450614"/>
+		<Type Name="虫孔构造" ID="9450615"/>
+		<Type Name="虫迹" ID="9450616"/>
+		<Type Name="透镜体" ID="9450617"/>
+		<Type Name="鸟眼构造" ID="9450618"/>
+		<Type Name="波痕" ID="9450619"/>
+		<Type Name="泥质团块" ID="9450620"/>
+		<Type Name="灰质结核" ID="9450621"/>
+		<Type Name="硅质结核" ID="9450622"/>
+		<Type Name="泥质条带" ID="9450623"/>
+		<Type Name="砂质条带" ID="9450624"/>
+		<Type Name="介形虫条带" ID="9450625"/>
+		<Type Name="灰质条带" ID="9450626"/>
+		<Type Name="裂缝" ID="9450627"/>
+		<Type Name="板状交错层理" ID="9450628"/>
+		<Type Name="楔状交错层理" ID="9450629"/>
+		<Type Name="槽状交错层理" ID="9450630"/>
+		<Type Name="透镜状层理" ID="9450631"/>
+		<Type Name="递变层理" ID="9450632"/>
+		<Type Name="韵律层理" ID="9450633"/>
+	</Types>
+	<Types Name="油气信息.试油成果" FilterName="" FilterID="">
+		<Type Name="试油成果" ID="9520001"/>
+	</Types>
+	<Types Name="油气信息.油气水层" FilterName="" FilterID="">
+		<Type Name="油层" ID="9500001"/>
+		<Type Name="气层" ID="9500004"/>
+		<Type Name="水层" ID="9500005"/>
+		<Type Name="差油层" ID="9500002"/>
+		<Type Name="干层" ID="3000010"/>
+		<Type Name="致密层" ID="3000009"/>
+		<Type Name="含油水层" ID="3000003"/>
+		<Type Name="含气水层" ID="3000008"/>
+		<Type Name="可疑油层" ID="9500003"/>
+		<Type Name="可疑气层" ID="9500012"/>
+		<Type Name="油水同层" ID="3000001"/>
+		<Type Name="油气同层" ID="3000004"/>
+		<Type Name="气水同层" ID="3000006"/>
+		<Type Name="含水油层" ID="3000011"/>
+		<Type Name="含水气层" ID="9500010"/>
+		<Type Name="夹层" ID="9200009"/>
+		<Type Name="煤层" ID="9500011"/>
+		<Type Name="储层断失" ID="9500006"/>
+		<Type Name="储层断失 余厚" ID="9500007"/>
+		<Type Name="未钻穿" ID="9500008"/>
+	</Types>
+	<Types Name="油气信息.录井含油气性" FilterName="" FilterID="">
+		<Type Name="饱含油" ID="9510001"/>
+		<Type Name="富含油" ID="9510002"/>
+		<Type Name="油浸" ID="2900001"/>
+		<Type Name="油斑" ID="2900002"/>
+		<Type Name="油迹" ID="2900003"/>
+		<Type Name="荧光" ID="2900004"/>
+		<Type Name="气砂" ID="9510003"/>
+		<Type Name="含气" ID="9510004"/>
+		<Type Name="含水" ID="9510005"/>
+		<Type Name="水砂" ID="2900005"/>
+	</Types>
+	<Types Name="油气信息图式.预测油气层" FilterName="" FilterID="">
+		<Type Name="实体" ID="9700001"/>
+		<Type Name="条纹1" ID="9700002"/>
+		<Type Name="条纹2" ID="9700003"/>
+	</Types>
+	<Types Name="地面工程.气站" FilterName="" FilterID="">
+		<Type Name="常温集气站" ID="2710029"/>
+		<Type Name="压气站" ID="2710028"/>
+		<Type Name="配气站" ID="2710031"/>
+		<Type Name="集气配气站" ID="9600001"/>
+		<Type Name="注气站" ID="2710036"/>
+		<Type Name="气举站" ID="9600002"/>
+		<Type Name="低温集气站" ID="2710030"/>
+		<Type Name="（气）增压站" ID="9600003"/>
+		<Type Name="脱硫厂" ID="9600004"/>
+		<Type Name="轻烃回收站" ID="2710013"/>
+		<Type Name="阴极保护站" ID="2710053"/>
+		<Type Name="供热站" ID="2710022"/>
+		<Type Name="加热站" ID="2710021"/>
+		<Type Name="清管装置" ID="2710032"/>
+		<Type Name="气体处理站" ID="2710037"/>
+		<Type Name="大化肥厂" ID="9600005"/>
+	</Types>
+	<Types Name="地面工程.油站" FilterName="" FilterID="">
+		<Type Name="计量站" ID="2710025"/>
+		<Type Name="接转站" ID="2710024"/>
+		<Type Name="脱水转油站（集油站）" ID="9600006"/>
+		<Type Name="联合站（专指油、注水、电联合）" ID="2710017"/>
+		<Type Name="联合站（油、电）" ID="9600008"/>
+		<Type Name="油、污水联合站" ID="9600009"/>
+		<Type Name="中间站" ID="9600010"/>
+		<Type Name="油库、外输首站、末站" ID="2710015"/>
+		<Type Name="装油站" ID="9600012"/>
+		<Type Name="拉油点(原油）" ID="2710047"/>
+		<Type Name="卸油点" ID="9600013"/>
+		<Type Name="动力液站" ID="9600014"/>
+		<Type Name="水力活塞泵站" ID="2710040"/>
+		<Type Name="轻烃稳定站" ID="9600015"/>
+		<Type Name="轻烃储存站、轻烃处理装置" ID="9600016"/>
+		<Type Name="天然气处理站、" ID="2710012"/>
+		<Type Name="加油站（成品油）" ID="2710014"/>
+		<Type Name="计量配水站" ID="2710027"/>
+		<Type Name="热采站" ID="9600017"/>
+		<Type Name="降粘站" ID="9600018"/>
+		<Type Name="加热站、热泵站" ID="2710021"/>
+		<Type Name="（油）加压站" ID="2710020"/>
+		<Type Name="炼厂、石化厂" ID="2710011"/>
+		<Type Name="油气标定站" ID="9600019"/>
+		<Type Name="油库、外输首站、末站" ID="2710015"/>
+		<Type Name="联合站（专指油、注水、电联合）" ID="2710017"/>
+	</Types>
+	<Types Name="地面工程.水站" FilterName="" FilterID="">
+		<Type Name="水源（水源井）（规划）" ID="2710061"/>
+		<Type Name="注水处理站、净化站" ID="2710041"/>
+		<Type Name="给水泵站（水源站、加压泵站）" ID="2710042"/>
+		<Type Name="供水站" ID="9600020"/>
+		<Type Name="污水处理站" ID="2710043"/>
+		<Type Name="排涝站" ID="2710045"/>
+		<Type Name="注水泵站" ID="2710038"/>
+		<Type Name="水脱氧站" ID="2710039"/>
+		<Type Name="注水、变电联合站" ID="9600021"/>
+		<Type Name="（注水）配水间" ID="2710046"/>
+		<Type Name="水源井（现状）" ID="2720061"/>
+	</Types>
+	<Types Name="地面工程.其他站" FilterName="" FilterID="">
+		<Type Name="注汽站" ID="9600022"/>
+		<Type Name="掺液站" ID="9600023"/>
+		<Type Name="注聚站" ID="9600024"/>
+	</Types>
+	<Types Name="管线.油水管线" FilterName="" FilterID="">
+		<Type Name="油管线（规划）" ID="2710064"/>
+		<Type Name="气管线（规划）" ID="2710065"/>
+		<Type Name="轻油管线（规划）" ID="2710066"/>
+		<Type Name="液化气管线（规划）" ID="2710067"/>
+		<Type Name="注水管线（规划）" ID="2710068"/>
+		<Type Name="脱氧水管线（规划）" ID="2710069"/>
+		<Type Name="给水管线（规划）" ID="2710070"/>
+		<Type Name="净化水管线（规划）" ID="2710071"/>
+		<Type Name="污水管线（规划）" ID="2710072"/>
+		<Type Name="油管线（现状）" ID="2720064"/>
+		<Type Name="气管线（现状）" ID="2720065"/>
+		<Type Name="轻油管线（现状）" ID="2720066"/>
+		<Type Name="液化气管线（现状）" ID="2720067"/>
+		<Type Name="注水管线（现状）" ID="2720068"/>
+		<Type Name="脱氧水管线（现状）" ID="2720069"/>
+		<Type Name="给水管线（现状）" ID="2720070"/>
+		<Type Name="净化水管线（现状）" ID="2720071"/>
+		<Type Name="污水管线（现状）" ID="2720072"/>
+	</Types>
+	<Types Name="管线.电信管线" FilterName="" FilterID="">
+		<Type Name="电力线（规划）" ID="2710073"/>
+		<Type Name="通信线（规划）" ID="2710074"/>
+		<Type Name="电力线（现状）" ID="2720073"/>
+		<Type Name="通信线（现状）" ID="2720074"/>
+	</Types>
+	<Types Name="通用符号.交会图符号" FilterName="" FilterID="">
+		<Type Name="正方形" ID="910281735"/>
+		<Type Name="三角形" ID="910281736"/>
+		<Type Name="菱形" ID="910281737"/>
+		<Type Name="圆形" ID="910281738"/>
+		<Type Name="星形" ID="910281739"/>
+		<Type Name="同心圆" ID="910281740"/>
+	</Types>
+	<Types Name="通用符号.修饰" FilterName="" FilterID="">
+		<Type Name="蝴蝶" ID="2110007"/>
+	</Types>
+</Map>

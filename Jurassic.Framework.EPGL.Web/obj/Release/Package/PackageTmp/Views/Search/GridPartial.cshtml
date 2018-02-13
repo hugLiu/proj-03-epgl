@@ -1,0 +1,47 @@
+﻿<div id="js-filters-juicy-projects" class="cbp-l-filters-button" style="margin-top:20px;margin-bottom:10px;">
+    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item btn btn-success btn-outline uppercase">
+        所有结果
+        <div class="cbp-filter-counter"></div>
+    </div>
+    <!-- ko foreach: classificationList -->
+    <div data-bind="attr:{'data-filter':'.'+productTypeId,'data-type':productType},html :productType+'<div class=\'cbp-filter-counter\'></div>'" class="cbp-filter-item btn btn-success btn-outline uppercase">
+    </div>
+    <!-- /ko -->
+</div>
+<div id="js-grid-juicy-projects" class="cbp">
+    <!-- ko foreach: resultAlbum -->
+    <div data-bind="attr:{class:'cbp-item '+productTypeId}">
+        <div class="cbp-caption">
+            <div class="cbp-caption-defaultWrap">
+                <a class="cbp-lightbox" data-bind="attr:{href:'data:image/png;base64,'+thumb,'data-title':name + '<br>制图人：'+ author}">
+                    <img data-bind="attr:{src:'data:image/png;base64,'+thumb}" />
+                </a>
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                        <a class="btn btn-success btn-sm" data-bind="click:$parent.openDetailPage">
+                            <i class="fa fa-file-o"></i>打开
+                        </a>
+                        <!--ko if:favoriteFlag()==0-->
+                        <a class="btn btn-danger btn-line btn-sm" style="margin-left: 5px;" data-toggle="modal" data-target="#favCatalog_modal" data-bind="attr:{'data-iiid':iiid}">
+                            <i class="fa fa-heart-o"></i>收藏
+                        </a>
+                        <!--/ko-->
+                        <!--ko if:favoriteFlag()==1-->
+                        <a class="btn btn-danger btn-sm" style="margin-left: 5px;" data-bind="click:$parent.cancleFavorite">
+                            <i class="fa fa-heart"></i>取消收藏
+                        </a>
+                        <!--/ko-->
+                        <a class="cbp-l-caption-buttonRight btn btn-primary btn-sm" data-bind="click:$parent.downloadMap">
+                            <i class="fa fa-download"></i>下载
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cbp-l-grid-projects-title uppercase text-center text-center tooltips" data-bind="attr:{'data-original-title':title},text:title"></div>
+        <div class="cbp-l-grid-projects-desc uppercase text-center text-center" data-bind="text:'制图人：' + author + ' / 入库日期：' + indexedDateShow"></div>
+    </div>
+    <!-- /ko -->
+</div>

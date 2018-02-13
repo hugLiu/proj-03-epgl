@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<PCGMultiWellStyles>
+	<PinchingStyles>
+		<!--尖灭样式-->
+		<PinchingStyle id="268435456">
+			<Point>0,0</Point>
+			<Point>1,0</Point>
+			<Point>0.96,0.48</Point>
+			<Point>0.92,0.64</Point>
+			<Point>0.88,0.76</Point>
+			<Point>0.84,0.84</Point>
+			<Point>0.8,0.89</Point>
+			<Point>0.7,0.96</Point>
+			<Point>0.6,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="1342177280">
+			<Point>0,0</Point>
+			<Point>1,0</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="536870912">
+			<Point>0,0</Point>
+			<Point>0.6,0.0</Point>
+			<Point>0.68,0.04</Point>
+			<Point>0.76,0.12</Point>
+			<Point>0.84,0.26</Point>
+			<Point>0.92,0.64</Point>
+			<Point>1,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="1610612736">
+			<Point>0,0</Point>
+			<Point>1,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="1">
+			<Point>0,0</Point>
+			<Point>0.25,0</Point>
+			<Point>0.125,0.15</Point>
+			<Point>0.625,0.225</Point>
+			<Point>0.49,0.375</Point>
+			<Point>1.0,0.5</Point>
+			<Point>0.49,0.625</Point>
+			<Point>0.625,0.775</Point>
+			<Point>0.125,0.85</Point>
+			<Point>0.25,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="2">
+			<Point>0,0</Point>
+			<Point>0.5,0</Point>
+			<Point>0.3,0.15</Point>
+			<Point>0.625,0.3</Point>
+			<Point>0.45,0.375</Point>
+			<Point>1.0,0.5</Point>
+			<Point>0.45,0.625</Point>
+			<Point>0.625,0.7</Point>
+			<Point>0.3,0.85</Point>
+			<Point>0.5,1</Point>
+			<Point>0,1.0</Point>
+		</PinchingStyle>
+		<PinchingStyle id="3">
+			<Point>0,0</Point>
+			<Point>0.75,0</Point>
+			<Point>0.55,0.15</Point>
+			<Point>0.865,0.225</Point>
+			<Point>0.7,0.375</Point>
+			<Point>1,0.5</Point>
+			<Point>1,0.55</Point>
+			<Point>0.9,0.55</Point>
+			<Point>0.7,0.625</Point>
+			<Point>0.865,0.775</Point>
+			<Point>0.55,0.85</Point>
+			<Point>0.75,1.0</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="4">
+			<Point>0,0</Point>
+			<Point>1,0</Point>
+			<Point>0.9,0.1</Point>
+			<Point>0.8,0.5</Point>
+			<Point>0.65,0.5</Point>
+			<Point>0.6,0.55</Point>
+			<Point>0.55,0.9</Point>
+			<Point>0.5,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="5">
+			<Point>0,0</Point>
+			<Point>1,0</Point>
+			<Point>0.675,0.3</Point>
+			<Point>0.85,0.55</Point>
+			<Point>0.6,0.7</Point>
+			<Point>0.75,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="6">
+			<Point>0,0</Point>
+			<Point>1,0</Point>
+			<Point>0.95,0</Point>
+			<Point>0.625,0.15</Point>
+			<Point>0.75,0.3</Point>
+			<Point>0.5,0.4</Point>
+			<Point>0.675,0.6</Point>
+			<Point>0.375,0.75</Point>
+			<Point>0.5,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="7">
+			<Point>0,0</Point>
+			<Point>1,0</Point>
+			<Point>0.95,0</Point>
+			<Point>0.68,0.25</Point>
+			<Point>0.77,0.4</Point>
+			<Point>0.38,0.5</Point>
+			<Point>0.52,0.65</Point>
+			<Point>0.135,0.8</Point>
+			<Point>0.25,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="8">
+			<Point>0,0</Point>
+			<Point>0.25,0</Point>
+			<Point>0.125,0.17</Point>
+			<Point>0.675,0.25</Point>
+			<Point>0.48,0.35</Point>
+			<Point>1,0.5</Point>
+			<Point>0.48,0.65</Point>
+			<Point>0.675,0.75</Point>
+			<Point>0.125,0.83</Point>
+			<Point>0.25,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="9">
+			<Point>0,0</Point>
+			<Point>0.25,0</Point>
+			<Point>0.125,0.15</Point>
+			<Point>0.625,0.225</Point>
+			<Point>0.49,0.375</Point>
+			<Point>1.0,0.5</Point>
+			<Point>0.49,0.625</Point>
+			<Point>0.625,0.775</Point>
+			<Point>0.125,0.85</Point>
+			<Point>0.25,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="10">
+			<Point>0,0</Point>
+			<Point>0.75,0</Point>
+			<Point>0.55,0.15</Point>
+			<Point>0.865,0.225</Point>
+			<Point>0.7,0.375</Point>
+			<Point>1,0.5</Point>
+			<Point>1,0.55</Point>
+			<Point>0.9,0.55</Point>
+			<Point>0.7,0.625</Point>
+			<Point>0.865,0.775</Point>
+			<Point>0.55,0.85</Point>
+			<Point>0.75,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="11">
+			<Point>0,0</Point>
+			<Point>0.75,0</Point>
+			<Point>0.8,0.15</Point>
+			<Point>0.77,0.4</Point>
+			<Point>0.9,0.55</Point>
+			<Point>0.9,0.8</Point>
+			<Point>1.0,0.9</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="12">
+			<Point>0,0</Point>
+			<Point>0.75,0</Point>
+			<Point>0.6,0.35</Point>
+			<Point>0.8,0.5</Point>
+			<Point>0.75,0.75</Point>
+			<Point>1,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="13">
+			<Point>0,0</Point>
+			<Point>0.5,0</Point>
+			<Point>0.3,0.35</Point>
+			<Point>0.65,0.35</Point>
+			<Point>0.45,0.6</Point>
+			<Point>0.78,0.6</Point>
+			<Point>0.6,0.8</Point>
+			<Point>1,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="14">
+			<Point>0,0</Point>
+			<Point>0.25,0</Point>
+			<Point>0.11,0.25</Point>
+			<Point>0.5,0.35</Point>
+			<Point>0.25,0.55</Point>
+			<Point>0.75,0.6</Point>
+			<Point>0.4,0.8</Point>
+			<Point>1,1</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+		<PinchingStyle id="-1">
+			<Point>0,0</Point>
+			<Point>1,0.5</Point>
+			<Point>0,1</Point>
+		</PinchingStyle>
+	</PinchingStyles>
+	<!--岩性过渡带样式-->
+	<LithoBreakStyles>
+		<LithoBreakStyle id="2">
+			<Point>0,1</Point>
+			<Point>1,0.66</Point>
+			<Point>0,0.33</Point>
+			<Point>1,0</Point>
+		</LithoBreakStyle>
+		<LithoBreakStyle id="3">
+			<Point>0,1</Point>
+			<Point>1,0.8</Point>
+			<Point>0,0.6</Point>
+			<Point>1,0.4</Point>
+			<Point>0,0.2</Point>
+			<Point>1,0</Point>
+		</LithoBreakStyle>
+		<LithoBreakStyle id="4">
+			<Point>0,1</Point>
+			<Point>1,0.84</Point>
+			<Point>0,0.7</Point>
+			<Point>1,0.56</Point>
+			<Point>0,0.42</Point>
+			<Point>1,0.28</Point>
+			<Point>0,0.14</Point>
+			<Point>1,0</Point>
+		</LithoBreakStyle>
+	</LithoBreakStyles>
+</PCGMultiWellStyles>

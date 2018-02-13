@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+数据导入导出配置文件
+DataType节点表示数据分类信息
+DataItem节点表示数据项信息
+Property节点表示数据项的内容
+IsNeed属性是否必须
+EnumValueType枚举变量值
+
+DisplayFilter显示过滤条件
+说明：
+1、单井等井相关模块，目前用3位来表示。 
+   从左到右分别代表: 第1位 1-主控调用显示 
+                    第2位 1-业务模块调用显示 
+                    第3位 1-导入多口井数据时显示 
+-->
+<Root>
+	<PlanData ID="PlanData" Title="平面数据">
+		<DataType ID="A" Title="点类数据">
+			<DataItem ID="11" Text="井位数据" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellName" Title="井名" IsNeed="1" IsUnique="1"/>
+					<Property Name="WellTopX" Title="井口横坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="WellTopY" Title="井口纵坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="WellTopType" Title="井口类别" IsNeed="0" IsUnique="1"/>
+					<Property Name="WellBottomX" Title="井底横坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="WellBottomY" Title="井底纵坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="WellBottomType" Title="井底类别" IsNeed="0" IsUnique="1"/>
+					<Property Name="WellBottomOffset" Title="井底位移" IsNeed="0" IsUnique="1"/>
+					<Property Name="WellBottomAzimuth" Title="井底方位角" IsNeed="0" IsUnique="1"/>
+					<Property Name="WellDepth" Title="深度" IsNeed="0" IsUnique="1"/>
+					<Property Name="WellElevation" Title="补心海拔" IsNeed="0" IsUnique="1"/>
+					<Property Name="WellResearchTop" Title="起始深度" IsNeed="0" IsUnique="1"/>
+					<Property Name="WellResearchBottom" Title="终止深度" IsNeed="0" IsUnique="1"/>
+					<Property Name="WellCompletionDate" Title="完钻日期" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+				<ColumnMatch StartRowIndex="2">
+					<MatchInfo Index="1" Text="井名"/>
+					<MatchInfo Index="2" Text="井口横坐标"/>
+					<MatchInfo Index="3" Text="井口纵坐标"/>
+					<MatchInfo Index="4" Text="井口类别"/>
+					<MatchInfo Index="5" Text="井底横坐标"/>
+					<MatchInfo Index="6" Text="井底纵坐标"/>
+					<MatchInfo Index="7" Text="井底类别"/>
+					<MatchInfo Index="8" Text="井底位移"/>
+					<MatchInfo Index="9" Text="井底方位角"/>
+				</ColumnMatch>
+			</DataItem>
+			<DataItem ID="15" Text="沉积相数据" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="SedType" Title="沉积相" IsNeed="1" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="29" Text="油气水柱子" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellName" Title="井名" IsNeed="0" IsUnique="1"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="OilProduction" Title="油产量" IsNeed="0" IsUnique="1"/>
+					<Property Name="GasProduction" Title="气产量" IsNeed="0" IsUnique="1"/>
+					<Property Name="WaterProduction" Title="水产量" IsNeed="0" IsUnique="1"/>
+					<Property Name="WaterRatio" Title="含水率" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="10" Text="数据十字" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellName" Title="井名" IsNeed="0" IsUnique="1"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="TopLeftText" Title="左上文字" IsNeed="0" IsUnique="1"/>
+					<Property Name="TopRightText" Title="右上文字" IsNeed="0" IsUnique="1"/>
+					<Property Name="BottomLeftText" Title="左下文字" IsNeed="0" IsUnique="1"/>
+					<Property Name="BottomRightText" Title="右下文字" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="1" Text="符号" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="Symbol" Title="符号" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="13" Text="地名" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="Placename" Title="地名" IsNeed="1" IsUnique="1"/>
+					<Property Name="Symbol" Title="地名符号" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="6" Text="文字" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="Word" Title="文字" IsNeed="1" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="38" Text="水平井数据" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellPointX" Title="入靶点横坐标" IsNeed="1" IsUnique="0"/>
+					<Property Name="WellPointY" Title="入靶点纵坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="WellTopType" Title="井口类别" IsNeed="0" IsUnique="1"/>
+					<Property Name="ForeAngle" Title="井口方位角" IsNeed="0" IsUnique="1"/>
+					<Property Name="ForeLength" Title="靶前距" IsNeed="0" IsUnique="1"/>
+					<Property Name="ForeTopType" Title="靶点类别" IsNeed="0" IsUnique="1"/>
+					<Property Name="ForeNum" Title="靶点个数" IsNeed="1" IsUnique="1"/>
+					<Property Name="HorAngle" Title="靶点方位角" IsNeed="0" IsUnique="1"/>
+					<Property Name="HorLength" Title="靶点长度" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+		<DataType ID="B" Title="线类数据">
+			<DataItem ID="2" Text="曲线" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="TypeName" Title="曲线名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="Type" Title="专业名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="17" Text="等值线" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="ZVaule" Title="Z值" IsNeed="1" IsUnique="1"/>
+					<Property Name="Type" Title="专业名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="IsoNum" Title="标记列" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+				<ColumnMatch StartRowIndex="1"><MatchInfo Index="1" Text="横坐标"/><MatchInfo Index="2" Text="纵坐标"/><MatchInfo Index="3" Text="构造等值图"/></ColumnMatch></DataItem>
+			<DataItem ID="20" Text="断层线" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="FaultNum" Title="断层号" IsNeed="0" IsUnique="1"/>
+					<Property Name="FaultType" Title="断层类型" IsNeed="0" EnumValueType="正断层,逆断层,地层缺失面,不明断层,不明正断层,不明逆断层" IsUnique="1"/>
+					<Property Name="Type" Title="专业名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+				<ColumnMatch StartRowIndex="2"><MatchInfo Index="1" Text="横坐标"/><MatchInfo Index="2" Text="纵坐标"/><MatchInfo Index="4" Text="标记列"/></ColumnMatch></DataItem>
+			<DataItem ID="18" Text="地震工区" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="SeisAreaName" Title="工区名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="Type" Title="专业名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="16" Text="二维地震测线" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointLabel" Title="测点标注" IsNeed="0" IsUnique="1"/>
+					<Property Name="LineType" Title="测线类型" IsNeed="0" IsUnique="1"/>
+					<Property Name="SeisLineName" Title="测线名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="Type" Title="专业名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+		<DataType ID="C" Title="面类数据">
+			<DataItem ID="3" Text="面" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="PointX" Title="X坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="PointY" Title="Y坐标" IsNeed="1" IsUnique="1"/>
+					<Property Name="TypeName" Title="面名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="Type" Title="专业名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+	</PlanData>
+	<WellData ID="WellData" Title="单井数据">
+		<DataType ID="A" Title="井筒数据" DisplayFilter="11">
+			<DataItem ID="4010100" Text="地层数据" DisplayFilter="01">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="地层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="FormationType" Title="接触关系" IsNeed="0" EnumValueType="整合,假整合,不整合" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4010100" Text="地层.界" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="地层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="FormationType" Title="接触关系" IsNeed="0" EnumValueType="整合,假整合,不整合" IsUnique="1"/>
+					<Property Name="Lithology" Title="主岩性" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4010200" Text="地层.系" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="地层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="FormationType" Title="接触关系" IsNeed="0" EnumValueType="整合,假整合,不整合" IsUnique="1"/>
+					<Property Name="Lithology" Title="主岩性" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4010300" Text="地层.统" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="地层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="FormationType" Title="接触关系" IsNeed="0" EnumValueType="整合,假整合,不整合" IsUnique="1"/>
+					<Property Name="Lithology" Title="主岩性" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4010400" Text="地层.组" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="地层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="FormationType" Title="接触关系" IsNeed="0" EnumValueType="整合,假整合,不整合" IsUnique="1"/>
+					<Property Name="Lithology" Title="主岩性" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4010500" Text="地层.段" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="地层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="FormationType" Title="接触关系" IsNeed="0" EnumValueType="整合,假整合,不整合" IsUnique="1"/>
+					<Property Name="Lithology" Title="主岩性" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4010600" Text="地层.亚段" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="地层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="FormationType" Title="接触关系" IsNeed="0" EnumValueType="整合,假整合,不整合" IsUnique="1"/>
+					<Property Name="Lithology" Title="主岩性" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4010700" Text="地层.油层组" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="地层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="FormationType" Title="接触关系" IsNeed="0" EnumValueType="整合,假整合,不整合" IsUnique="1"/>
+					<Property Name="Lithology" Title="主岩性" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4010800" Text="地层.砂层组" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="地层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="FormationType" Title="接触关系" IsNeed="0" EnumValueType="整合,假整合,不整合" IsUnique="1"/>
+					<Property Name="Lithology" Title="主岩性" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4010900" Text="地层.小层" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="地层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="FormationType" Title="接触关系" IsNeed="0" EnumValueType="整合,假整合,不整合" IsUnique="1"/>
+					<Property Name="Lithology" Title="主岩性" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4040100" Text="断层">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="FaultName" Title="断层名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="FaultType" Title="断层类型" IsNeed="0" EnumValueType="正断层,逆断层,冲断层,左旋断层,右旋断层" IsUnique="1"/>
+					<Property Name="VerticalOffset" Title="断距" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="1000002" Text="井斜数据" DisplayFilter="01">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="测量深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="Azimuth" Title="方位角" IsNeed="1" IsUnique="1"/>
+					<Property Name="Inclination" Title="倾角" IsNeed="1" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4060100" Text="取心信息">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="RockLength" Title="心长" IsNeed="0" IsUnique="1"/>
+					<Property Name="SampleTimes" Title="取心次数" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4060200" Text="岩心剖面">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="ColorName" Title="颜色名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="Color" Title="颜色代码" IsNeed="0" IsUnique="1"/>
+					<Property Name="OilLevel" Title="含油性" IsNeed="0" IsUnique="1"/>
+					<Property Name="Lithology" Title="岩性名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="LithologyName" Title="岩性全称" IsNeed="0" IsUnique="1"/>
+					<Property Name="ExtrusionLen" Title="挤压长度" IsNeed="0" IsUnique="1"/>
+					<Property Name="RiftDesc" Title="裂缝描述" IsNeed="0" IsUnique="1"/>
+					<Property Name="HoleDesc" Title="孔洞描述" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4060700" Text="岩心描述">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="描述" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4061400" Text="磨损面位置">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4060900" Text="岩心沉积层理、构造">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="沉积层理、构造" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4061000" Text="岩心含有物">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="含有物" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4060800" Text="岩石相">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="岩石相" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4061100" Text="岩心照片">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="Title" Title="注释" IsNeed="0" IsUnique="1"/>
+					<Property Name="Path" Title="路径" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4061200" Text="井壁取心">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="ColorName" Title="颜色名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="Color" Title="颜色代码" IsNeed="0" IsUnique="1"/>
+					<Property Name="OilLevel" Title="含油性" IsNeed="0" IsUnique="1"/>
+					<Property Name="Lithology" Title="岩性名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="LithologyName" Title="岩性全称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4170100" Text="试油数据">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="Class" Title="试油结论" IsNeed="0" IsUnique="1"/>
+					<Property Name="Method" Title="方式" IsNeed="0" IsUnique="1"/>
+					<Property Name="OilPerDay" Title="日产油" IsNeed="0" IsUnique="1"/>
+					<Property Name="GasPerDay" Title="日产气" IsNeed="0" IsUnique="1"/>
+					<Property Name="WaterPerDay" Title="日产水" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4061300" Text="钻井取心">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4080700" Text="油气水显示" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="油气水显示" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+		<DataType ID="B" Title="录井数据" DisplayFilter="11">
+			<DataItem ID="4070100" Text="岩性剖面">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="ColorName" Title="颜色名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="Color" Title="颜色代码" IsNeed="0" IsUnique="1"/>
+					<Property Name="OilLevel" Title="含油性" IsNeed="0" IsUnique="1"/>
+					<Property Name="Lithology" Title="岩性名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="LithologyName" Title="岩性全称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4100100" Text="岩屑岩性剖面">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="ColorName" Title="颜色名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="Color" Title="颜色代码" IsNeed="0" IsUnique="1"/>
+					<Property Name="OilLevel" Title="含油性" IsNeed="0" IsUnique="1"/>
+					<Property Name="Lithology" Title="岩性名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="LithologyName" Title="岩性全称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4100300" Text="岩屑岩性描述">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="描述" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4100400" Text="岩屑沉积层理、构造">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="沉积层理、构造" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4100500" Text="岩屑含有物">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="含有物" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="5130100" Text="地化录井">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="5130100" Title="S0" IsNeed="0" IsUnique="1"/>
+					<Property Name="5130200" Title="S1" IsNeed="0" IsUnique="1"/>
+					<Property Name="5130300" Title="S2" IsNeed="0" IsUnique="1"/>
+					<Property Name="5130400" Title="S3" IsNeed="0" IsUnique="1"/>
+					<Property Name="5130500" Title="S4" IsNeed="0" IsUnique="1"/>
+					<Property Name="5130800" Title="总有机碳" IsNeed="0" IsUnique="0"/>
+					<Property Name="5130600" Title="最高裂解峰温" IsNeed="0" IsUnique="1"/>
+					<Property Name="5130700" Title="生烃潜力" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="5140100" Text="气测录井">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="5140100" Title="全烃含量%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5140600" Title="甲烷%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5140700" Title="乙烷%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5140500" Title="丙烷%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5140800" Title="异丁烷%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5140900" Title="正丁烷%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5141000" Title="异戊烷%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5141100" Title="正戊烷%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5140300" Title="氢气%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5140200" Title="二氧化碳%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5141200" Title="氮气%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5140400" Title="硫化氢%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5141300" Title="氧气%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5141400" Title="一氧化碳%" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4080300" Text="荧光油气解释">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="LayerName" Title="解释层名" IsNeed="0" IsUnique="0"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="Interpretation" Title="解释结论" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4080400" Text="地化油气解释">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="LayerName" Title="解释层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="Interpretation" Title="解释结论" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4080500" Text="油气综合解释">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="LayerName" Title="解释层名" IsNeed="0" IsUnique="0"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="Interpretation" Title="解释结论" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4080600" Text="有效厚度">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="LayerName" Title="解释层名" IsNeed="0" IsUnique="0"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+		<DataType ID="C" Title="分析数据" DisplayFilter="11">
+			<DataItem ID="4150100" Text="样品位置">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="SampleTimes" Title="取心次数" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="5110100" Text="铸体薄片数据">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="5110100" Title="石英含量%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5110200" Title="长石含量%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5110300" Title="岩屑含量%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5110400" Title="碎屑总含量%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5110500" Title="填隙物含量" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4110600" Text="孔隙组合类型">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="文本内容" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4110700" Text="铸体薄片.胶结类型">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="文本内容" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4110800" Text="薄片照片">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="Title" Title="注释" IsNeed="0" IsUnique="1"/>
+					<Property Name="Path" Title="路径" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4160100" Text="扫描电镜照片">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="Title" Title="注释" IsNeed="0" IsUnique="1"/>
+					<Property Name="Path" Title="路径" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="5120100" Text="岩心物性分析数据">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="5120100" Title="孔隙度%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5120200" Title="渗透率×103μm2" IsNeed="0" IsUnique="1"/>
+					<Property Name="5120300" Title="含油饱和度%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5120400" Title="含水饱和度%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5120500" Title="含气饱和度%" IsNeed="0" IsUnique="1"/>
+					<Property Name="5120600" Title="碳酸盐含量%" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+		<DataType ID="D" Title="测井数据" DisplayFilter="11">
+			<DataItem ID="1000005" Text="测井曲线">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="CurveValue" Title="曲线值" IsNeed="1" IsUnique="0"/>
+				</Propertys>
+				<ColumnMatch StartRowIndex="2">
+					<MatchInfo Index="1" Text="深度"/>
+					<MatchInfo Index="2" Text="曲线值"/>
+					<MatchInfo Index="3" Text="曲线值"/>
+					<MatchInfo Index="4" Text="曲线值"/>
+					<MatchInfo Index="5" Text="曲线值"/>
+					<MatchInfo Index="6" Text="曲线值"/>
+				</ColumnMatch>
+			</DataItem>
+			<DataItem ID="4080100" Text="砂层解释">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="LayerName" Title="解释层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="Interpretation" Title="解释结论" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4080200" Text="测井油气解释">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="LayerName" Title="解释层名" IsNeed="0" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="Interpretation" Title="解释结论" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4030300" Text="沉积相.相">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="FaciesName" Title="相名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4030200" Text="沉积相.亚相" DisplayFilter="01">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="SubName" Title="亚相名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4030100" Text="沉积相.微相" DisplayFilter="01">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="MicroName" Title="微相名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4030200" Text="沉积相.亚相" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="SubName" Title="亚相名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="FaciesName" Title="相名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4030100" Text="沉积相.微相" DisplayFilter="10">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="MicroName" Title="微相名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="SubName" Title="亚相名称" IsNeed="0" IsUnique="1"/>
+					<Property Name="FaciesName" Title="相名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4050300" Text="层序旋回.长期旋回">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="CycleType" Title="旋回类型" IsNeed="0" EnumValueType="加积,上旋,下旋" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4050200" Text="层序旋回.中期旋回">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="CycleType" Title="旋回类型" IsNeed="0" EnumValueType="加积,上旋,下旋" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4050100" Text="层序旋回.短期旋回">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="CycleType" Title="旋回类型" IsNeed="0" EnumValueType="加积,上旋,下旋" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4090100" Text="储层空间类型">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="解释结论" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4090200" Text="储层评价.胶结类型">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="解释结论" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4090300" Text="成岩阶段划分">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="解释结论" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4090400" Text="储层分类评价">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="解释结论" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+		<DataType ID="E" Title="射孔" DisplayFilter="11">
+			<DataItem ID="4180100" Text="射孔">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="WellID" Title="井号" IsNeed="1" DisplayFilter="101" IsUnique="1"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="FireHoleCount" Title="射孔次数" IsNeed="0" IsUnique="1"/>
+					<Property Name="FireHoleID" Title="射孔序号" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+		<DataType ID="F" Title="通用道数据" DisplayFilter="10">
+			<DataItem ID="4000800" Text="点符号">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="符号名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4001000" Text="段符号">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="符号名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4000200" Text="点文本">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="文本内容" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4000300" Text="段文本">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="文本内容" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4000400" Text="多行段文本">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="pText" Title="文本内容" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4000600" Text="照片">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="Title" Title="注释" IsNeed="0" IsUnique="1"/>
+					<Property Name="Path" Title="路径" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4000500" Text="标记道">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="Depth" Title="深度" IsNeed="1" IsUnique="1"/>
+					<Property Name="StratumName" Title="标记名称" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="4001100" Text="符号注释数据">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsUnique="0"/>
+					<Property Name="MinDepth" Title="顶深" IsNeed="1" IsUnique="1"/>
+					<Property Name="MaxDepth" Title="底深" IsNeed="1" IsUnique="1"/>
+					<Property Name="Class" Title="试油结论" IsNeed="0" IsUnique="1"/>
+					<Property Name="Method" Title="方式" IsNeed="0" IsUnique="1"/>
+					<Property Name="OilPerDay" Title="日产油" IsNeed="0" IsUnique="1"/>
+					<Property Name="GasPerDay" Title="日产气" IsNeed="0" IsUnique="1"/>
+					<Property Name="WaterPerDay" Title="日产水" IsNeed="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+	</WellData>
+	<ContourData ID="CoutourData" Title="等值数据">
+		<DataType ID="A" Title="点类数据">
+			<DataItem ID="12" Text="离散点数据" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsDefaultDisPlay="0" IsUnique="0"/>
+					<Property Name="PointX" Title="横坐标" IsNeed="1" IsDefaultDisPlay="1" IsUnique="1"/>
+					<Property Name="PointY" Title="纵坐标" IsNeed="1" IsDefaultDisPlay="1" IsUnique="1"/>
+					<Property Name="构造等值图" Title="构造等值图" IsNeed="0" IsDefaultDisPlay="1" IsUnique="1"/>
+					<Property Name="地层等厚图" Title="地层等厚图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="砂层等厚图" Title="砂层等厚图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="砂岩百分比等值图" Title="砂岩百分比等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="泥岩等厚图" Title="泥岩等厚图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="砂泥比等值图" Title="砂泥比等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="泥质含量等值图" Title="泥质含量等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="渗透率等值图" Title="渗透率等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="有效孔隙度等值图" Title="有效孔隙度等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="含油饱和度等值图" Title="含油饱和度等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="含水饱和度等值图" Title="含水饱和度等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="地层系数等值图" Title="地层系数等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="储层系数等值图" Title="储层系数等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油田体积系数等值图" Title="油田体积系数等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油层有效厚度等值图" Title="油层有效厚度等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="砂岩有效厚度等值图" Title="砂岩有效厚度等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油、气、水密度等值图 " Title="油、气、水密度等值图 " IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油、气、水粘度等值图 " Title="油、气、水粘度等值图 " IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油田(油藏)等压降图 " Title="油田(油藏)等压降图 " IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油田(油藏)等压图" Title="油田(油藏)等压图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油田(油藏)等液面图" Title="油田(油藏)等液面图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油田(油藏)主要指标等差值图" Title="油田(油藏)主要指标等差值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="产能分级等值图" Title="产能分级等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="地温等值图" Title="地温等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="动液面等值图" Title="动液面等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="静液面等值图" Title="静液面等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="烃源岩Ro等值线" Title="烃源岩Ro等值线" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="烃源岩TOC等值线" Title="烃源岩TOC等值线" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="烃源岩厚度等值线" Title="烃源岩厚度等值线" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="生烃强度等值线" Title="生烃强度等值线" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="未定义" Title="未定义" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="WellName" Title="井名" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+		<DataType ID="B" Title="线类数据">
+			<DataItem ID="19" Text="边界数据" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsDefaultDisPlay="0" IsUnique="0"/>
+					<Property Name="PointX" Title="横坐标" IsNeed="1" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="PointY" Title="纵坐标" IsNeed="1" IsDefaultDisPlay="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="20" Text="断层数据" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsDefaultDisPlay="0" IsUnique="0"/>
+					<Property Name="PointX" Title="横坐标" IsNeed="1" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="PointY" Title="纵坐标" IsNeed="1" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="FaultNum" Title="标记列" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<!--空洞是断层的一种，为了区分导入，其ID没有用图元类型ID-->
+			<DataItem ID="201" Text="空洞数据" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsDefaultDisPlay="0" IsUnique="0"/>
+					<Property Name="PointX" Title="横坐标" IsNeed="1" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="PointY" Title="纵坐标" IsNeed="1" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="FaultNum" Title="标记列" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+			<DataItem ID="17" Text="等值线数据" DisplayFilter="11">
+				<Propertys>
+					<Property Name="" Title="未匹配列" IsNeed="0" IsDefaultDisPlay="0" IsUnique="0"/>
+					<Property Name="PointX" Title="横坐标" IsNeed="1" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="PointY" Title="纵坐标" IsNeed="1" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="构造等值图" Title="构造等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="IsoNum" Title="标记列" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="地层等厚图" Title="地层等厚图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="砂层等厚图" Title="砂层等厚图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="砂岩百分比等值图" Title="砂岩百分比等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="泥岩等厚图" Title="泥岩等厚图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="砂泥比等值图" Title="砂泥比等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="泥质含量等值图" Title="泥质含量等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="渗透率等值图" Title="渗透率等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="有效孔隙度等值图" Title="有效孔隙度等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="含油饱和度等值图" Title="含油饱和度等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="含水饱和度等值图" Title="含水饱和度等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="地层系数等值图" Title="地层系数等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="储层系数等值图" Title="储层系数等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油田体积系数等值图" Title="油田体积系数等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油层有效厚度等值图" Title="油层有效厚度等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="砂岩有效厚度等值图" Title="砂岩有效厚度等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油、气、水密度等值图 " Title="油、气、水密度等值图 " IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油、气、水粘度等值图 " Title="油、气、水粘度等值图 " IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油田(油藏)等压降图 " Title="油田(油藏)等压降图 " IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油田(油藏)等压图" Title="油田(油藏)等压图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油田(油藏)等液面图" Title="油田(油藏)等液面图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="油田(油藏)主要指标等差值图" Title="油田(油藏)主要指标等差值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="产能分级等值图" Title="产能分级等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="地温等值图" Title="地温等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="动液面等值图" Title="动液面等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="静液面等值图" Title="静液面等值图" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="烃源岩Ro等值线" Title="烃源岩Ro等值线" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="烃源岩TOC等值线" Title="烃源岩TOC等值线" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="烃源岩厚度等值线" Title="烃源岩厚度等值线" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="生烃强度等值线" Title="生烃强度等值线" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+					<Property Name="未定义" Title="未定义" IsNeed="0" IsDefaultDisPlay="0" IsUnique="1"/>
+				</Propertys>
+			</DataItem>
+		</DataType>
+	</ContourData>
+	<!--离散点类型，等值模块使用-->
+	<ScatterType Title="离散点类型">
+		<ScatterTypeID ID="0" Name="未定义"/>
+		<ScatterTypeID ID="1" Name="构造等值图"/>
+		<ScatterTypeID ID="2" Name="地层等厚图"/>
+		<ScatterTypeID ID="3" Name="砂层等厚图"/>
+		<ScatterTypeID ID="4" Name="砂岩百分比等值图"/>
+		<ScatterTypeID ID="5" Name="泥岩等厚图 "/>
+		<ScatterTypeID ID="6" Name="砂泥比等值图"/>
+		<ScatterTypeID ID="7" Name="泥质含量等值图"/>
+		<ScatterTypeID ID="8" Name="渗透率等值图"/>
+		<ScatterTypeID ID="9" Name="有效孔隙度等值图"/>
+		<ScatterTypeID ID="10" Name="含油饱和度等值图"/>
+		<ScatterTypeID ID="11" Name="含水饱和度等值图"/>
+		<ScatterTypeID ID="12" Name="地层系数等值图"/>
+		<ScatterTypeID ID="13" Name="储层系数等值图"/>
+		<ScatterTypeID ID="14" Name="油田体积系数等值图"/>
+		<ScatterTypeID ID="15" Name="油层有效厚度等值图"/>
+		<ScatterTypeID ID="16" Name="砂岩有效厚度等值图"/>
+		<ScatterTypeID ID="17" Name="油、气、水密度等值图"/>
+		<ScatterTypeID ID="18" Name="油、气、水粘度等值图"/>
+		<ScatterTypeID ID="19" Name="油田(油藏)等压降图"/>
+		<ScatterTypeID ID="20" Name="油田(油藏)等压图"/>
+		<ScatterTypeID ID="21" Name="油田(油藏)等液面图"/>
+		<ScatterTypeID ID="22" Name="油田(油藏)主要指标等差值图"/>
+		<ScatterTypeID ID="23" Name="产能分级等值图"/>
+		<ScatterTypeID ID="24" Name="地温等值图"/>
+		<ScatterTypeID ID="25" Name="动液面等值图"/>
+		<ScatterTypeID ID="26" Name="静液面等值图"/>
+		<ScatterTypeID ID="27" Name="烃源岩Ro等值线"/>
+		<ScatterTypeID ID="28" Name="烃源岩TOC等值线"/>
+		<ScatterTypeID ID="29" Name="烃源岩厚度等值线"/>
+		<ScatterTypeID ID="30" Name="生烃强度等值线"/>
+	</ScatterType>
+</Root>

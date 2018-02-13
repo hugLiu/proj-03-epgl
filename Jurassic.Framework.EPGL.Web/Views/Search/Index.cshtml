@@ -1,0 +1,428 @@
+﻿
+@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = "~/Views/Shared/_EPGLLayout.cshtml";
+}
+
+@section css{
+    @* plugins *@
+    <link href="~/Content/EPGL/css/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" />
+    <!-- ionRangeSlider-->
+    <link href="~/Content/EPGL/css/plugins/ionRangeSlider/css/ion.rangeSlider.css" rel="stylesheet" />
+<!-- ionRangeSlider skinFlat-->
+    <link href="~/Content/EPGL/css/plugins/ionRangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet" />
+    <!-- choosen-->
+    <link href="~/Content/EPGL/css/plugins/chosen/chosen.css" rel="stylesheet" />
+    <!--jstree-->
+<link href="~/Content/EPGL/css/plugins/jsTree/style.min.css" rel="stylesheet" />
+
+
+<style>
+    .theme-panel .theme-colors > li.theme-color > .theme-color-name {
+        display: inline-block;
+        color: #777;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    #search_carousel,#advanceSearch_carousel {
+        height: 265px;
+    }
+    #search_carousel .carousel-indicators {
+        bottom: 0px;
+        margin-bottom: 0px;
+
+    }
+   .carousel-indicators li {
+        border-color: #777;
+    }
+    .carousel-indicators .active {
+        background-color: #777;
+    }
+    .fixHeight-page {
+        height: 100%;
+    }
+    .fixSize-content {
+        height: calc(100% - 63px);
+        height: -moz-calc(100% - 63px);
+        height: -webkit-calc(100% - 63px);
+        width: 100%;
+    }
+    .fixScroll-content {
+        overflow: auto;
+    }
+
+    #advanceSearch_left{
+        background-image: none;
+        display: none;
+    }
+    #advanceSearch_right {
+        background-image: none;        
+    }
+    .carousel-inner{
+        overflow:visible;
+    }
+    .carousel-control {
+        width: 5%;
+    }
+    .glyphicon-chevron-left,.glyphicon-chevron-right {
+        color: #777777;
+    }
+    .popover{
+        z-index:2050;
+    }
+    .history-result{
+        position: relative; 
+        z-index: 1001;
+    }
+    .history-div{
+        padding:5px;
+        z-index:1005;
+        cursor:pointer;
+    }
+    .history-collapse{
+        width: 355px;
+        position:absolute;
+        top:55px;
+        z-index:1000;
+        background-color:#fff;
+     }
+    .result-preview-count{
+        color:#337AB6;
+    }
+</style>
+
+    }
+
+<form id="formDown" method="post" action="/FileInfo/DownLoad" style="display:none;">
+    <input type="hidden" name="id" id="id" />
+    <input type="hidden" name="title" id="title" />
+    <input type="hidden" name="url" id="url" />
+    <input type="hidden" name="ticket" id="ticket" />
+    <input type="hidden" name="format" id="format" />
+    <input type="hidden" name="name" id="name" />
+</form>
+
+<form id="resultForm" name="resultform" action="/Viewer/Detail" method="post" target="_blank" style="display: none;">
+    <input type="hidden" id="mapId" name="iiid" size="25">
+    <input type="hidden" id="mapData" name="data" size="25">
+</form> 
+<div class="page-container fixHeight-page">
+    <!-- BEGIN CONTENT -->
+    <!-- BEGIN PAGE HEAD-->
+    <div class="page-head">
+        <div class="container">
+            <!-- BEGIN PAGE TITLE -->
+            <div class="page-title">
+                <h1>
+                    图件搜索
+                    <small>大量且丰富的历史成果数据与图件，将繁多的图件资料利用应用平台统一管理起来</small>
+                </h1>
+            </div>
+            <!-- END PAGE TITLE -->
+            <!-- BEGIN PAGE TOOLBAR -->
+            <div class="page-toolbar">
+                <div class="btn-group" style="margin-top: 16px; float: right;">
+                    <a class="btn tooltips" id="gridMode" data-original-title="网格模式" data-container="body" data-placement="right"><i class="fa fa-th-large" aria-hidden="true" style="font-size: 20px;"></i></a>
+                    <a class="btn tooltips" id="listMode" data-original-title="列表模式" data-container="body" data-placement="right"><i class="fa fa-bars" aria-hidden="true" style="font-size: 20px;"></i></a>
+                </div>
+                <!-- BEGIN THEME PANEL -->
+                <div class="btn-group btn-theme-panel" style="margin-top: 16px; float: right;">
+                    <a class="btn dropdown-toggle tooltips" id="advanceSearchDrop" data-original-title="高级搜索" data-container="body" data-placement="right" data-toggle="dropdown" data-bind="click:initAdvanceSearchData">
+                        <i class="fa fa-binoculars" style="font-size: 20px;"></i>
+                    </a>
+                    <div class="dropdown-menu theme-panel dropdown-menu-right dropdown-custom hold-on-click" style="min-width: 965px; min-height: 275px; padding: 5px 5px;">                            
+                            <div id="advanceSearch_carousel" class="carousel slide" data-interval="false">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <h4>高级搜索</h4>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="row">
+                                                    <div class="col-md-9" style="text-align: right;">
+                                                        @*<span data-bind="text:currentSearchSchemeName"></span>*@
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        @*<a data-bind="click:searchSchemeSave" data-original-title="保存搜索方案">保存搜索方案</a>*@
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label class="col-md-2" style="width: 12%; margin-top: 6px;">工区范围</label>
+                                            <div class="col-md-10">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <select class="chosen-select" data-placeholder="选择盆地..." style="width: 200px;" tabindex="1" cascade target typeid="Basin" typename="盆地" level=1 parentsel="#" data-bind="options: basins,value: selectedBasin,optionsValue:'id',optionsText:'text', optionsCaption: '选择盆地...'"></select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <select class="chosen-select" data-placeholder="选择区带..." tabindex="2" cascade target typeid="Play" typename="区带" level=2 parentsel="pd" data-bind="options: regions,value: selectedRegion,optionsValue:'id',optionsText:'text', optionsCaption: '选择区带...'"></select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <select class="chosen-select" data-placeholder="选择油田..." tabindex="3" cascade target typeid="Field" typename="油田" level=3 parentsel="qd" data-bind="options: oilFields,value: selectedOilField,optionsValue:'id',optionsText:'text', optionsCaption: '选择油田...'"></select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <select class="chosen-select" data-placeholder="选择油藏..." tabindex="4" cascade target typeid="Pool" typename="油藏" level=4 parentsel="yt" data-bind="options: oilReservoir,value: selectedOilReservoir,optionsValue:'id',optionsText:'text', optionsCaption: '选择油藏...'"></select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-group">
+                                            <label class="col-md-2" style="width: 12%; margin-top: 6px;">地质层位</label>
+                                            <div class="col-md-10">
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <select class="chosen-select" data-placeholder="选择界..." style="width: 200px;" tabindex="5" cascade strata typeid="J" typename="界" level=1 data-bind="options: erathem,value: selectedErathem,optionsValue:'seqid',optionsText:'seqname', optionsCaption: '选择界...'"></select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <select class="chosen-select" data-placeholder="选择系..." tabindex="6" cascade strata typeid="X" typename="系" level=2 data-bind="options: system,value: selectedSystem,optionsValue:'seqid',optionsText:'seqname', optionsCaption: '选择系...'"></select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <select class="chosen-select" data-placeholder="选择统..." tabindex="7" cascade strata typeid="T" typename="统" level=3 data-bind="options: series,value: selectedSeries,optionsValue:'seqid',optionsText:'seqname', optionsCaption: '选择统...'"></select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <select class="chosen-select" data-placeholder="选择组..." tabindex="8" cascade strata typeid="Z" typename="组" level=4 data-bind="options: formation,value: selectedFormation,optionsValue:'seqid',optionsText:'seqname', optionsCaption: '选择组...'"></select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <select class="chosen-select" data-placeholder="选择段..." tabindex="9" cascade strata typeid="C" typename="段" level=5 data-bind="options: member,value: selectedMember,optionsValue:'seqid',optionsText:'seqname', optionsCaption: '选择段...'"></select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-group">
+                                            <label class="col-md-2" style="width: 12%; margin-top: 6px;">图件分类</label>
+                                            <div class="col-md-10">
+                                                <select class="chosen-select" data-placeholder="选择图件分类..." multiple typeid="tjfl" typename="图件分类" tabindex="10" data-bind="options: classification,
+　　　　　　　　　　　　　　    optionsText:'name',optionsValue:'name', selectedOptions:selectedClassifications"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label class="col-md-2" style="width: 12%; margin-top: 6px;">成果年份</label>
+                                            <div class="col-md-10">
+                                                <input type="text" id="ionrange_1" name="ionrange_1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+
+                                        <div class="row" style="padding-right:40px;">
+                                            <div class="col-md-2">
+                                                <h4>油藏属性搜索</h4>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="row">
+                                                    <div class="col-md-9" style="text-align: right;">
+                                                        @*<span data-bind="text:currentSearchSchemeName"></span>*@
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        @*<a data-bind="click:searchSchemeSave" data-original-title="保存搜索方案">保存搜索方案</a>*@
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group" style="padding-right:40px;">
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择上报年度..." tabindex="1" reservoir typeid="sbnd" typename="上报年度" data-bind="options: annualReporting,value: currentAnnualReporting, optionsCaption: '选择上报年度...'"></select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="chosen-select" data-placeholder="选择归属单位..." tabindex="2" reservoir typeid="gldw" typename="归属单位" data-bind="options: manageUnits,value: currentManageUnit, optionsCaption: '选择归属单位...'"></select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择管理方式..." tabindex="3" reservoir typeid="glfs" typename="管理方式" data-bind="options: manageMode,value: currentManageMode, optionsCaption: '选择管理方式...'"></select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="chosen-select" data-placeholder="选择储量类型..." tabindex="4" reservoir typeid="cllx" typename="储量类型" data-bind="options: storageType,value: currentStorageType, optionsCaption: '选择储量类型...'"></select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择储量类别..." tabindex="5" reservoir typeid="cllb" typename="储量类别" data-bind="options: storageCategories,value: currentStorageCategory, optionsCaption: '选择储量类别...'"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group" style="padding-right:40px;">
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择储量来源..." tabindex="6" reservoir typeid="clly" typename="储量来源" data-bind="options: storageSource,value: currentStorageSource, optionsCaption: '选择储量来源...'"></select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择油气藏类型..." tabindex="7" reservoir typeid="yclx" typename="油气藏类型" data-bind="options: reservoirType,value: currentReservoirType, optionsCaption: '选择油气藏类型...'"></select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择储层物性..." tabindex="8" reservoir typeid="ccwx" typename="储层物性" data-bind="options: reservoirPhysical,value: currentReservoirPhysical, optionsCaption: '选择储层物性...'"></select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="chosen-select" data-placeholder="选择储层岩性..." tabindex="9" reservoir typeid="ccyx" typename="储层岩性" data-bind="options: reservoirLithology,value: currentReservoirLithology, optionsCaption: '选择储层岩性...'"></select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="chosen-select" data-placeholder="选择岩性细分..." tabindex="10" reservoir typeid="xfyx" typename="岩性细分" data-bind="options: subdivisionLithology,value: currentSubdivisionLithology, optionsCaption: '选择岩性细分...'"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group" style="padding-right:40px;">
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择储量丰度..." tabindex="11" reservoir typeid="clfd" typename="储量丰度" data-bind="options: reservesAbundance,value: currentReservesAbundance, optionsCaption: '选择储量丰度...'"></select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择资源类型..." tabindex="12" reservoir typeid="yylx" typename="资源类型" data-bind="options: crudeTypes,value: currentCrudeType, optionsCaption: '选择资源类型...'"></select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="chosen-select" data-placeholder="选择原油密度..." tabindex="13" reservoir typeid="yymd" typename="原油密度" data-bind="options: crudeDensity,value: currentCrudeDensity, optionsCaption: '选择原油密度...'"></select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="chosen-select" data-placeholder="选择边底水情况..." tabindex="14" reservoir typeid="bds" typename="边底水情况" data-bind="options: edgeBottomWater,value: currentEdgeBottomWater, optionsCaption: '选择边底水情况...'"></select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择驱动类型..." tabindex="15" reservoir typeid="qdlx" typename="驱动类型" data-bind="options: driveTypes,value: currentDriveTypes, optionsCaption: '选择驱动类型...'"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group" style="padding-right:40px;">
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择储集类型..." tabindex="16" reservoir typeid="cjlx" typename="储集类型" data-bind="options: saveType,value: currentSaveType, optionsCaption: '选择储集类型...'"></select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择胶结类型..." tabindex="17" reservoir typeid="jjlx" typename="胶结类型" data-bind="options: cementationTypes,value: currentCementationType, optionsCaption: '选择胶结类型...'"></select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="chosen-select" data-placeholder="选择埋藏深度..." tabindex="18" reservoir typeid="mcsd" typename="埋藏深度" data-bind="options: burialDepth,value: currentBurialDepth, optionsCaption: '选择埋藏深度...'"></select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="chosen-select" data-placeholder="选择储层非均质程度..." tabindex="19" reservoir typeid="fjz" typename="储层非均质程度" data-bind="options: heterogeneousDegree,value: currentHeterogeneous, optionsCaption: '选择储层非均质程度...'"></select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="chosen-select" data-placeholder="选择地层压力..." tabindex="20" reservoir typeid="dcyl" typename="地层压力" data-bind="options: formationPressure,value: currentFormationPressure, optionsCaption: '选择地层压力...'"></select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a id="advanceSearch_left" class="right carousel-control" href="#advanceSearch_carousel" role="button" data-slide="prev" data-bind="click:advanceSwitch">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" data-slide="prev"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a id="advanceSearch_right" class="right carousel-control" href="#advanceSearch_carousel" role="button" data-slide="next" data-bind="click:advanceSwitch">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" data-slide="next"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-3 col-sm-offset-9">
+                                    <a class="btn btn-sm btn-success" data-bind="click:function(){return searchResult('advance');}"><i class="fa fa-search"></i>搜索图件</a>
+                                    <a class="btn btn-sm btn-warning" data-bind="click:resetSelect"><i class="fa fa-mail-reply-all"></i>重置条件</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- END THEME PANEL -->
+                <!-- BEGIN HEADER SEARCH BOX -->
+                <form class="search-form" style="margin-top: 16px; float: right;">
+                    <div class="input-group" style="width: 400px">
+                        <input id="txtKeyword" name="keyword" type="text" class="form-control" placeholder="输入搜索关键字" data-bind="value:searchKey" data-toggle="collapse" data-target="#historyCollapse" data-parent="body" aria-expanded="false" aria-controls="historyCollapse">
+                        <span class="input-group-btn">
+                            <a data-bind="click:function(){return searchResult('simple');}" class="btn submit tooltips" data-original-title="关键字搜索" data-container="body" data-placement="left">
+                                <i class="fa fa-search" style="font-size: 20px;"></i>
+                            </a>
+                        </span>                       
+                    </div>
+                </form>    
+                <div class="collapse history-collapse" id="historyCollapse" aria-labelledby="historyCollapse">
+                    <!--ko if:isHistoryLoading-->
+                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
+                    <!--/ko-->
+                    <!--ko ifnot:isHistoryLoading-->
+                    <div data-bind="foreach:historyResults" class="history-result">
+                        <!--ko if:MyInput-->
+                        <div data-bind="click: $parent.historyResultClick" class="history-div">
+                            <label data-bind="text:KeyWord"></label>
+                        </div>
+                        <!--/ko-->
+                        <!--ko ifnot:MyInput-->
+                        <div data-bind="click: $parent.historyResultClick" class="history-div">
+                            <span data-bind="text:KeyWord"></span>
+                        </div>
+                        <!--/ko-->
+                    </div>
+                    <!--/ko-->                   
+                </div>           
+                <!-- END HEADER SEARCH BOX -->
+            </div>
+            <!-- END PAGE TOOLBAR -->
+        </div>
+    </div>
+    <!-- END PAGE HEAD-->
+    <!-- BEGIN PAGE CONTENT BODY -->
+    <div class="page-content fixSize-content fixScroll-content" id="resultContent">        
+        <div class="container fixHeight-page">
+            <div>
+                <h4>系统为您找到相关结果约<span data-bind="text:resultCount" class="result-preview-count"></span> 个，分为<span data-bind="text:resultTotalPage" class="result-preview-count"></span>页浏览，当前是第 <span data-bind="text:resultCurrentPage" class="result-preview-count"></span> 页</h4>
+            </div>
+            <div id="gridModeResult_pane">
+                @{Html.RenderPartial("GridPartial"); }
+            </div>
+            <div id="listModeResult_pane" style="display:none;">
+                @{Html.RenderPartial("ListPartial");}
+            </div>
+            <div>
+                <ul id="page_nav"></ul>
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE CONTENT BODY -->
+    <!-- END CONTENT -->
+</div>
+<div class="modal fade" id="favCatalog_modal" tabindex="-1" role="dialog" aria-labelledby="favCatalogModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="curveModalLabel">选择收藏文件夹</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 col-xs-8">
+                        <a class="btn btn-success btn-sm" id="favCatalog_add_sibling"><i class="fa fa-plus"></i> 新增同级</a>
+                        <a class="btn btn-info btn-sm" id="favCatalog_add_child"><i class="fa fa-plus"></i> 新增子级</a>
+                        <a class="btn btn-warning btn-sm disabled" id="favCatalog_rename"><i class="fa fa-pencil"></i> 重命名</a>
+                        <a class="btn btn-danger btn-sm disabled" id="favCatalog_delete"><i class="fa fa-trash-o"></i> 删除</a>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-4" style="text-align:right;">
+                        <input type="text" value="" style="box-shadow:inset 0 0 4px #eee; width:120px; margin:0; padding:6px 12px; border-radius:4px; border:1px solid silver; font-size:1.1em;" id="selelct_search" placeholder="Search" />
+                        <input type="text" class="hide" id="input_modal"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="favCatalog_jsTree" style="margin-top:1em; min-height:200px;overflow:auto;padding:10px;border-radius:5px;box-shadow:0 0 5px #ccc"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bind="click:addFavorite">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>                
+            </div>
+        </div>
+    </div>
+</div>
+@section script{
+   <!--linq-->
+<script src="~/Content/EPGL/js/plugins/linq.js_ver2.2.0.2/linq.min.js"></script>
+    <!--cubeportfolio-->
+    <script src="~/Content/EPGL/js/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <!--rangeSlider-->
+<script src="~/Content/EPGL/js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+    <!--chosen-->
+    <script src="~/Content/EPGL/js/plugins/chosen/chosen.jquery.min.js"></script>
+    <!--jstree-->
+<script src="~/Content/EPGL/js/plugins/jsTree/jstree.min.js"></script>
+    <!--bootstrap-confirmation-->
+<script src="~/Content/EPGL/js/plugins/bootstrap-confirmation/bootstrap-confirmation.js"></script>
+    <!--bootstrap-paginator-->
+<script src="~/Content/EPGL/js/plugins/bootstrap-paginator/bootstrap-paginator.js"></script>
+    <script type="text/javascript">
+        var searchKey = "@Html.Raw(ViewBag.SearchKey)";
+        var userid = "@Html.Raw(ViewBag.UserId)";
+    </script>
+    <script src="~/Content/EPGL/js/pages/search/index.js"></script>
+    }

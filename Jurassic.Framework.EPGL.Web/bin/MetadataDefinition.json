@@ -1,0 +1,1916 @@
+[
+  {
+    "name": "IIId",
+    "mapping": {
+      "get": "iiid",
+      "set": [
+        {
+          "key": "iiid",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "信息项ID",
+    "description": "唯一标识，SourceUrl的md5码",
+    "required": true,
+    "type": "String",
+    "format": "MD5",
+    "innertag": true,
+    "groupname": "内部标签",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 0,
+    "itemorder": 1,
+    "showindetail": false
+  },
+  {
+    "name": "IndexedDate",
+    "mapping": {
+      "get": "indexeddate",
+      "set": [
+        {
+          "key": "indexeddate",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "索引时间",
+    "description": "元数据插入/更新的时间",
+    "required": true,
+    "type": "DateString",
+    "format": "",
+    "innertag": true,
+    "groupname": "内部标签",
+    "regexp": "",
+    "uitype": "Datetime",
+    "items": null,
+    "grouporder": 0,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "Fulltext",
+    "mapping": {
+      "get": "fulltext",
+      "set": [
+        {
+          "key": "fulltext",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "全文",
+    "description": "",
+    "required": true,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "内部标签",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 0,
+    "itemorder": 4,
+    "showindetail": false
+  },
+  {
+    "name": "SourceUrl",
+    "mapping": {
+      "get": "source.url",
+      "set": [
+        {
+          "key": "source.url",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "URL",
+    "description": "适配器中获取实体数据的唯一key",
+    "required": true,
+    "type": "String",
+    "format": "ADP://adaptername/datatype/naturekey",
+    "innertag": true,
+    "groupname": "数据源",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 2,
+    "itemorder": 1,
+    "showindetail": false
+  },
+  {
+    "name": "SourceType",
+    "mapping": {
+      "get": "source.type",
+      "set": [
+        {
+          "key": "source.type",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "数据源类型",
+    "description": "数据系统类型。如：GeoBank、GeoFrame",
+    "required": true,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "数据源",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 2,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "SourceName",
+    "mapping": {
+      "get": "source.name",
+      "set": [
+        {
+          "key": "source.name",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "数据源名称",
+    "description": "数据系统名称。比如：科研成果库、A2。",
+    "required": true,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "数据源",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 2,
+    "itemorder": 3,
+    "showindetail": false
+  },
+  {
+    "name": "SourceFormat",
+    "mapping": {
+      "get": "source.format",
+      "set": [
+        {
+          "key": "source.format",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "格式",
+    "description": "数据实体格式。标签值必须严格从《格式》中取",
+    "required": true,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "数据源",
+    "regexp": "",
+    "uitype": "DropdownList",
+    "items": [
+      {
+        "text": "Word文档",
+        "value": "DOC",
+        "selected": false
+      },
+      {
+        "text": "Excel表格",
+        "value": "XLS",
+        "selected": false
+      },
+      {
+        "text": "PPT文件",
+        "value": "PPT",
+        "selected": false
+      },
+      {
+        "text": "GDB图件",
+        "value": "GDB",
+        "selected": false
+      },
+      {
+        "text": "Web网页",
+        "value": "HTML",
+        "selected": false
+      },
+      {
+        "text": "PNG图片",
+        "value": "PNG",
+        "selected": false
+      }
+    ],
+    "grouporder": 2,
+    "itemorder": 4,
+    "showindetail": false
+  },
+  {
+    "name": "SourceMedia",
+    "mapping": {
+      "get": "source.media",
+      "set": [
+        {
+          "key": "source.media",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "介质",
+    "description": "标识信息的存在形式。网页、存储、实物等。不同的形式，获取信息的方式不同。",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "数据源",
+    "regexp": "",
+    "uitype": "DropdownList",
+    "items": [
+      {
+        "text": "网页",
+        "value": "Web",
+        "selected": false
+      },
+      {
+        "text": "在线存储",
+        "value": "Online Storage",
+        "selected": false
+      },
+      {
+        "text": "离线磁盘文件",
+        "value": "Offline Disk",
+        "selected": false
+      },
+      {
+        "text": "纸介质",
+        "value": "Paper",
+        "selected": false
+      },
+      {
+        "text": "样品",
+        "value": "Sample",
+        "selected": false
+      },
+      {
+        "text": "库存",
+        "value": "Stock",
+        "selected": false
+      }
+    ],
+    "grouporder": 2,
+    "itemorder": 5,
+    "showindetail": false
+  },
+  {
+    "name": "FormalTitle",
+    "mapping": {
+      "get": "dc.title[?(@.type=='Formal')].text",
+      "set": [
+        {
+          "key": "dc.title[0].type",
+          "value": "Formal"
+        },
+        {
+          "key": "dc.title[0].text",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "图件名称",
+    "description": "",
+    "required": true,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "图件信息",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 1,
+    "showindetail": false
+  },
+  {
+    "name": "Author",
+    "mapping": {
+      "get": "dc.contributor[?(@.type=='Author')].name",
+      "set": [
+        {
+          "key": "dc.contributor[0].type",
+          "value": "Author"
+        },
+        {
+          "key": "dc.contributor[0].name",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "编图人",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "贡献者",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 4,
+    "itemorder": 1,
+    "showindetail": false
+  },
+  {
+    "name": "Drawer",
+    "mapping": {
+      "get": "dc.contributor[?(@.type=='Drawer')].name",
+      "set": [
+        {
+          "key": "dc.contributor[1].type",
+          "value": "Drawer"
+        },
+        {
+          "key": "dc.contributor[1].name",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "绘图人",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "贡献者",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 4,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "Auditor",
+    "mapping": {
+      "get": "dc.contributor[?(@.type=='Auditor')].name",
+      "set": [
+        {
+          "key": "dc.contributor[2].type",
+          "value": "Auditor"
+        },
+        {
+          "key": "dc.contributor[2].name",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "审核人",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "贡献者",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 4,
+    "itemorder": 3,
+    "showindetail": false
+  },
+  {
+    "name": "Matser",
+    "mapping": {
+      "get": "dc.contributor[?(@.type=='Matser')].name",
+      "set": [
+        {
+          "key": "dc.contributor[3].type",
+          "value": "Matser"
+        },
+        {
+          "key": "dc.contributor[3].name",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "负责人",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "贡献者",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 4,
+    "itemorder": 4,
+    "showindetail": false
+  },
+  {
+    "name": "Subject",
+    "mapping": {
+      "get": "dc.subject",
+      "set": [
+        {
+          "key": "dc.subject",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "主题词",
+    "description": "主题词、关键词",
+    "required": false,
+    "type": "StringArray",
+    "format": "",
+    "innertag": true,
+    "groupname": "描述",
+    "regexp": "",
+    "uitype": "Tageditor",
+    "items": null,
+    "grouporder": 5,
+    "itemorder": 1,
+    "showindetail": false
+  },
+  {
+    "name": "Abstract",
+    "mapping": {
+      "get": "dc.description[?(@.type=='Abstract')].text",
+      "set": [
+        {
+          "key": "dc.description[0].type",
+          "value": "Abstract"
+        },
+        {
+          "key": "dc.description[0].text",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "摘要",
+    "description": "摘要",
+    "required": true,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "描述",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 5,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "Catalogue",
+    "mapping": {
+      "get": "dc.description[?(@.type=='Catalogue')].text",
+      "set": [
+        {
+          "key": "dc.description[1].type",
+          "value": "Catalogue"
+        },
+        {
+          "key": "dc.description[1].text",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "目录",
+    "description": "目录",
+    "required": true,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "描述",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 5,
+    "itemorder": 3,
+    "showindetail": false
+  },
+  {
+    "name": "Introduction",
+    "mapping": {
+      "get": "dc.description[?(@.type=='Introduction')].text",
+      "set": [
+        {
+          "key": "dc.description[2].type",
+          "value": "Introduction"
+        },
+        {
+          "key": "dc.description[2].text",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "引言",
+    "description": "引言",
+    "required": true,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "描述",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 5,
+    "itemorder": 4,
+    "showindetail": false
+  },
+  {
+    "name": "Summary",
+    "mapping": {
+      "get": "dc.description[?(@.type=='Summary')].text",
+      "set": [
+        {
+          "key": "dc.description[3].type",
+          "value": "Summary"
+        },
+        {
+          "key": "dc.description[3].text",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "结束语",
+    "description": "结束语",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "描述",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 5,
+    "itemorder": 5,
+    "showindetail": false
+  },
+  {
+    "name": "CreatedDate",
+    "mapping": {
+      "get": "dc.date[?(@.type=='Created')].value",
+      "set": [
+        {
+          "key": "dc.date[0].type",
+          "value": "Created"
+        },
+        {
+          "key": "dc.date[0].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "创建日期",
+    "description": "",
+    "required": false,
+    "type": "DateString",
+    "format": "",
+    "innertag": false,
+    "groupname": "日期",
+    "regexp": "",
+    "uitype": "Datetime",
+    "items": null,
+    "grouporder": 6,
+    "itemorder": 1,
+    "showindetail": false
+  },
+  {
+    "name": "ValidDate",
+    "mapping": {
+      "get": "dc.date[?(@.type=='Valid')].value",
+      "set": [
+        {
+          "key": "dc.date[1].type",
+          "value": "Valid"
+        },
+        {
+          "key": "dc.date[1].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "生效日期",
+    "description": "",
+    "required": false,
+    "type": "DateString",
+    "format": "",
+    "innertag": true,
+    "groupname": "日期",
+    "regexp": "",
+    "uitype": "Datetime",
+    "items": null,
+    "grouporder": 6,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "AvailableDate",
+    "mapping": {
+      "get": "dc.date[?(@.type=='Available')].value",
+      "set": [
+        {
+          "key": "dc.date[2].type",
+          "value": "Available"
+        },
+        {
+          "key": "dc.date[2].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "可获得日期",
+    "description": "",
+    "required": false,
+    "type": "DateString",
+    "format": "",
+    "innertag": true,
+    "groupname": "日期",
+    "regexp": "",
+    "uitype": "Datetime",
+    "items": null,
+    "grouporder": 6,
+    "itemorder": 3,
+    "showindetail": false
+  },
+  {
+    "name": "IssuedDate",
+    "mapping": {
+      "get": "dc.date[?(@.type=='Issued')].value",
+      "set": [
+        {
+          "key": "dc.date[3].type",
+          "value": "Issued"
+        },
+        {
+          "key": "dc.date[3].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "发行日期",
+    "description": "",
+    "required": false,
+    "type": "DateString",
+    "format": "",
+    "innertag": true,
+    "groupname": "日期",
+    "regexp": "",
+    "uitype": "Datetime",
+    "items": null,
+    "grouporder": 6,
+    "itemorder": 4,
+    "showindetail": false
+  },
+  {
+    "name": "SubmittedDate",
+    "mapping": {
+      "get": "dc.date[?(@.type=='Submitted')].value",
+      "set": [
+        {
+          "key": "dc.date[4].type",
+          "value": "Submitted"
+        },
+        {
+          "key": "dc.date[4].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "提交日期",
+    "description": "",
+    "required": false,
+    "type": "DateString",
+    "format": "",
+    "innertag": true,
+    "groupname": "日期",
+    "regexp": "",
+    "uitype": "Datetime",
+    "items": null,
+    "grouporder": 6,
+    "itemorder": 5,
+    "showindetail": false
+  },
+  {
+    "name": "Year",
+    "mapping": {
+      "get": "dc.year",
+      "set": [
+        {
+          "key": "dc.year",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "年度",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 3,
+    "showindetail": false
+  },
+  {
+    "name": "Organization",
+    "mapping": {
+      "get": "dc.organization",
+      "set": [
+        {
+          "key": "dc.organization",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "单位",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 3,
+    "showindetail": false
+  },
+  {
+    "name": "Type",
+    "mapping": {
+      "get": "dc.type",
+      "set": [
+        {
+          "key": "dc.type",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "体裁",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 3,
+    "showindetail": false
+  },
+  {
+    "name": "Language",
+    "mapping": {
+      "get": "dc.language",
+      "set": [
+        {
+          "key": "dc.language",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "语言",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "DropdownList",
+    "items": [
+      {
+        "text": "丹麦语",
+        "value": "da",
+        "selected": false
+      },
+      {
+        "text": "德语",
+        "value": "de",
+        "selected": false
+      },
+      {
+        "text": "英语",
+        "value": "en",
+        "selected": false
+      },
+      {
+        "text": "西班牙语",
+        "value": "es",
+        "selected": false
+      },
+      {
+        "text": "法语",
+        "value": "fr",
+        "selected": false
+      },
+      {
+        "text": "意大利语",
+        "value": "it",
+        "selected": false
+      },
+      {
+        "text": "荷兰语",
+        "value": "nl",
+        "selected": false
+      },
+      {
+        "text": "伊多语",
+        "value": "no",
+        "selected": false
+      },
+      {
+        "text": "葡萄牙语",
+        "value": "pt",
+        "selected": false
+      },
+      {
+        "text": "俄语",
+        "value": "ru",
+        "selected": false
+      },
+      {
+        "text": "中文",
+        "value": "zh",
+        "selected": false
+      }
+    ],
+    "grouporder": 1,
+    "itemorder": 4,
+    "showindetail": false
+  },
+  {
+    "name": "Relation",
+    "mapping": {
+      "get": "dc.relation",
+      "set": [
+        {
+          "key": "dc.relation",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "关系",
+    "description": "",
+    "required": false,
+    "type": "StringArray",
+    "format": "",
+    "innertag": true,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Tageditor",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 5,
+    "showindetail": false
+  },
+  {
+    "name": "Coverage",
+    "mapping": {
+      "get": "dc.coverage",
+      "set": [
+        {
+          "key": "dc.coverage",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "覆盖",
+    "description": "",
+    "required": false,
+    "type": "WKTString",
+    "format": "",
+    "innertag": true,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 6,
+    "showindetail": false
+  },
+  {
+    "name": "Period",
+    "mapping": {
+      "get": "dc.period",
+      "set": [
+        {
+          "key": "dc.period",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "生命周期",
+    "description": "",
+    "required": false,
+    "type": "StringArray",
+    "format": "",
+    "innertag": true,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Tageditor",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 7,
+    "showindetail": false
+  },
+  {
+    "name": "RegionCountry",
+    "mapping": {
+      "get": "dc.region[?(@.type=='Country')].name",
+      "set": [
+        {
+          "key": "dc.region[0].type",
+          "value": "Country"
+        },
+        {
+          "key": "dc.region[0].name",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "国家",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "地区",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 7,
+    "itemorder": 1,
+    "showindetail": false
+  },
+  {
+    "name": "Rights",
+    "mapping": {
+      "get": "dc.rights",
+      "set": [
+        {
+          "key": "dc.rights",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "版权信息",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 8,
+    "showindetail": false
+  },
+  {
+    "name": "Status",
+    "mapping": {
+      "get": "dc.status",
+      "set": [
+        {
+          "key": "dc.status",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "资源状态",
+    "description": "草稿、待审核、已审核、发布",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "DropdownList",
+    "items": [
+      {
+        "text": "草稿",
+        "value": "草稿",
+        "selected": false
+      },
+      {
+        "text": "提交",
+        "value": "提交",
+        "selected": false
+      },
+      {
+        "text": "审核中",
+        "value": "审核中",
+        "selected": false
+      },
+      {
+        "text": "已审核",
+        "value": "已审核",
+        "selected": false
+      },
+      {
+        "text": "已发布",
+        "value": "已发布",
+        "selected": false
+      },
+      {
+        "text": "作废",
+        "value": "作废",
+        "selected": false
+      }
+    ],
+    "grouporder": 1,
+    "itemorder": 9,
+    "showindetail": false
+  },
+  {
+    "name": "BoWorkarea",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Workarea')].value",
+      "set": [
+        {
+          "key": "ep.bo[0].type",
+          "value": "Workarea"
+        },
+        {
+          "key": "ep.bo[0].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "工区",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 1,
+    "showindetail": false
+  },
+  {
+    "name": "BoBasin",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Basin')].value",
+      "set": [
+        {
+          "key": "ep.bo[1].type",
+          "value": "Basin"
+        },
+        {
+          "key": "ep.bo[1].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "盆地",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "BoPlay",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Play')].value",
+      "set": [
+        {
+          "key": "ep.bo[2].type",
+          "value": "Play"
+        },
+        {
+          "key": "ep.bo[2].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "区带",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 3,
+    "showindetail": false
+  },
+  {
+    "name": "BoTrap",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Trap')].value",
+      "set": [
+        {
+          "key": "ep.bo[3].type",
+          "value": "Trap"
+        },
+        {
+          "key": "ep.bo[3].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "圈闭",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 4,
+    "showindetail": false
+  },
+  {
+    "name": "BoPool",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Pool')].value",
+      "set": [
+        {
+          "key": "ep.bo[4].type",
+          "value": "Pool"
+        },
+        {
+          "key": "ep.bo[4].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "油气藏",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 5,
+    "showindetail": false
+  },
+  {
+    "name": "BoReservoir",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Reservoir')].value",
+      "set": [
+        {
+          "key": "ep.bo[5].type",
+          "value": "Reservoir"
+        },
+        {
+          "key": "ep.bo[5].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "储层",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 6,
+    "showindetail": false
+  },
+  {
+    "name": "BoField",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Field')].value",
+      "set": [
+        {
+          "key": "ep.bo[6].type",
+          "value": "Field"
+        },
+        {
+          "key": "ep.bo[6].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "油气田",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 7,
+    "showindetail": false
+  },
+  {
+    "name": "BoStratum",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Stratum')].value",
+      "set": [
+        {
+          "key": "ep.bo[7].type",
+          "value": "Stratum"
+        },
+        {
+          "key": "ep.bo[7].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "层位",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 8,
+    "showindetail": false
+  },
+  {
+    "name": "BoZone",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Zone')].value",
+      "set": [
+        {
+          "key": "ep.bo[8].type",
+          "value": "Zone"
+        },
+        {
+          "key": "ep.bo[8].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "油层组",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 9,
+    "showindetail": false
+  },
+  {
+    "name": "BoWell",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Well')].value",
+      "set": [
+        {
+          "key": "ep.bo[9].type",
+          "value": "Well"
+        },
+        {
+          "key": "ep.bo[9].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "井",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 10,
+    "showindetail": false
+  },
+  {
+    "name": "BoPlatform",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Platform')].value",
+      "set": [
+        {
+          "key": "ep.bo[10].type",
+          "value": "Platform"
+        },
+        {
+          "key": "ep.bo[10].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "海上钻井平台",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 11,
+    "showindetail": false
+  },
+  {
+    "name": "BoMineralright",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Mineralright')].value",
+      "set": [
+        {
+          "key": "ep.bo[11].type",
+          "value": "Mineralright"
+        },
+        {
+          "key": "ep.bo[11].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "矿权区",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 12,
+    "showindetail": false
+  },
+  {
+    "name": "BoOrganization",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Organization')].value",
+      "set": [
+        {
+          "key": "ep.bo[12].type",
+          "value": "Organization"
+        },
+        {
+          "key": "ep.bo[12].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "组织机构",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 8,
+    "itemorder": 13,
+    "showindetail": false
+  },
+  {
+    "name": "Project",
+    "mapping": {
+      "get": "ep.project",
+      "set": [
+        {
+          "key": "ep.project",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "项目",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 10,
+    "showindetail": false
+  },
+  {
+    "name": "ProductType",
+    "mapping": {
+      "get": "ep.producttype",
+      "set": [
+        {
+          "key": "ep.producttype",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "图件类型",
+    "description": "",
+    "required": true,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "ThemeBD",
+    "mapping": {
+      "get": "ep.theme[?(@.type=='BD')].value",
+      "set": [
+        {
+          "key": "ep.theme[0].type",
+          "value": "BD"
+        },
+        {
+          "key": "ep.theme[0].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "业务域",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "主题",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 9,
+    "itemorder": 1,
+    "showindetail": false
+  },
+  {
+    "name": "ThemeBT",
+    "mapping": {
+      "get": "ep.theme[?(@.type=='BT')].value",
+      "set": [
+        {
+          "key": "ep.theme[1].type",
+          "value": "BT"
+        },
+        {
+          "key": "ep.theme[1].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "业务类型",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "主题",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 9,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "ThemeBP",
+    "mapping": {
+      "get": "ep.theme[?(@.type=='BP')].value",
+      "set": [
+        {
+          "key": "ep.theme[2].type",
+          "value": "BP"
+        },
+        {
+          "key": "ep.theme[2].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "业务程序",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "主题",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 9,
+    "itemorder": 3,
+    "showindetail": false
+  },
+  {
+    "name": "ThemeBA",
+    "mapping": {
+      "get": "ep.theme[?(@.type=='BA')].value",
+      "set": [
+        {
+          "key": "ep.theme[3].type",
+          "value": "BA"
+        },
+        {
+          "key": "ep.theme[3].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "业务活动",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "主题",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 9,
+    "itemorder": 4,
+    "showindetail": false
+  },
+  {
+    "name": "ThemeBF",
+    "mapping": {
+      "get": "ep.theme[?(@.type=='BF')].value",
+      "set": [
+        {
+          "key": "ep.theme[4].type",
+          "value": "BF"
+        },
+        {
+          "key": "ep.theme[4].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "地质特征",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "主题",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 9,
+    "itemorder": 5,
+    "showindetail": false
+  },
+  {
+    "name": "ThemeDP",
+    "mapping": {
+      "get": "ep.theme[?(@.type=='DP')].value",
+      "set": [
+        {
+          "key": "ep.theme[5].type",
+          "value": "DP"
+        },
+        {
+          "key": "ep.theme[5].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "学科",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "主题",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 9,
+    "itemorder": 6,
+    "showindetail": false
+  },
+  {
+    "name": "ThemeRT",
+    "mapping": {
+      "get": "ep.theme[?(@.type=='RT')].value",
+      "set": [
+        {
+          "key": "ep.theme[6].type",
+          "value": "RT"
+        },
+        {
+          "key": "ep.theme[6].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "资源类型",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "主题",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 9,
+    "itemorder": 7,
+    "showindetail": false
+  },
+  {
+    "name": "Tool",
+    "mapping": {
+      "get": "ep.tool",
+      "set": [
+        {
+          "key": "ep.tool",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "工具",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 11,
+    "showindetail": false
+  },
+  {
+    "name": "Scope",
+    "mapping": {
+      "get": "ep.scope",
+      "set": [
+        {
+          "key": "ep.scope",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "置信范围",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": true,
+    "groupname": "基础信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 12,
+    "showindetail": false
+  },
+  /*GeologySeries地质层位*/
+  {
+    "name": "GSErathem",
+    "mapping": {
+      "get": "ep.geologyseries[?(@.type=='Erathem')].value",
+      "set": [
+        {
+          "key": "ep.geologyseries[0].type",
+          "value": "Erathem"
+        },
+        {
+          "key": "ep.geologyseries[0].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "界",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "地质层位信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "GSSystem",
+    "mapping": {
+      "get": "ep.geologyseries[?(@.type=='System')].value",
+      "set": [
+        {
+          "key": "ep.geologyseries[1].type",
+          "value": "System"
+        },
+        {
+          "key": "ep.geologyseries[1].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "系",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "地质层位信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "GSSeries",
+    "mapping": {
+      "get": "ep.geologyseries[?(@.type=='Series')].value",
+      "set": [
+        {
+          "key": "ep.geologyseries[2].type",
+          "value": "Series"
+        },
+        {
+          "key": "ep.geologyseries[2].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "统",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "地质层位信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "GSFormation",
+    "mapping": {
+      "get": "ep.geologyseries[?(@.type=='Formation')].value",
+      "set": [
+        {
+          "key": "ep.geologyseries[3].type",
+          "value": "Formation"
+        },
+        {
+          "key": "ep.geologyseries[3].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "组",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "地质层位信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "GSHorizon",
+    "mapping": {
+      "get": "ep.geologyseries[?(@.type=='Horizon')].value",
+      "set": [
+        {
+          "key": "ep.geologyseries[4].type",
+          "value": "Horizon"
+        },
+        {
+          "key": "ep.geologyseries[4].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "层位",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "地质层位信息集",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 1,
+    "itemorder": 2,
+    "showindetail": false
+  },
+  {
+    "name": "Thumbnail",
+    "mapping": {
+      "get": "thumbnail",
+      "set": [
+        {
+          "key": "thumbnail",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "缩略图",
+    "description": "",
+    "required": false,
+    "type": "Base64StringArray",
+    "format": "image/png",
+    "innertag": true,
+    "groupname": "缩略图",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 0,
+    "itemorder": 3,
+    "showindetail": false
+  },
+  {
+    "name": "Target",
+    "mapping": {
+      "get": "ep.bo[?(@.type=='Target')].value",
+      "set": [
+        {
+          "key": "ep.bo[13].type",
+          "value": "Target"
+        },
+        {
+          "key": "ep.bo[13].value",
+          "value": "@value"
+        }
+      ]
+    },
+    "title": "目标",
+    "description": "",
+    "required": false,
+    "type": "String",
+    "format": "",
+    "innertag": false,
+    "groupname": "业务对象",
+    "regexp": "",
+    "uitype": "Text",
+    "items": null,
+    "grouporder": 0,
+    "itemorder": 4,
+    "showindetail": false
+  }
+]

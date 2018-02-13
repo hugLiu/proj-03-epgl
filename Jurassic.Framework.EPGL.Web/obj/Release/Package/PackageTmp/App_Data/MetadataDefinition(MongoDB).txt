@@ -1,0 +1,800 @@
+﻿{
+  "name" : "IIId",
+  "mapping" : {
+    "get" : "iiid",
+    "set" : [{
+        "key" : "iiid",
+        "value" : "@value"
+      }]
+  },
+  "title" : "信息项ID",
+  "description" : "唯一标识，SourceUrl的md5码",
+  "required" : true,
+  "type" : "String",
+  "format" : "MD5",
+  "innertag" : true,
+  "groupname" : "内部标签",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 0,
+  "itemorder" : 1,
+  "showindetail" : false
+}
+
+{
+  "name" : "IndexedDate",
+  "mapping" : {
+    "get" : "indexeddate",
+    "set" : [{
+        "key" : "indexeddate",
+        "value" : "@value"
+      }]
+  },
+  "title" : "索引时间",
+  "description" : "元数据插入/更新的时间",
+  "required" : true,
+  "type" : "DateString",
+  "format" : "",
+  "innertag" : true,
+  "groupname" : "内部标签",
+  "regexp" : "",
+  "uitype" : "Datetime",
+  "items" : null,
+  "grouporder" : 0,
+  "itemorder" : 2,
+  "showindetail" : false
+}
+
+{
+  "name" : "Thumbnail",
+  "mapping" : {
+    "get" : "thumbnail",
+    "set" : [{
+        "key" : "thumbnail",
+        "value" : "@value"
+      }]
+  },
+  "title" : "缩略图",
+  "description" : "",
+  "required" : false,
+  "type" : "Base64StringArray",
+  "format" : "image/png",
+  "innertag" : true,
+  "groupname" : "内部标签",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 0,
+  "itemorder" : 3,
+  "showindetail" : false
+}
+
+{
+  "name" : "SourceUrl",
+  "mapping" : {
+    "get" : "source.url",
+    "set" : [{
+        "key" : "source.url",
+        "value" : "@value"
+      }]
+  },
+  "title" : "URL",
+  "description" : "适配器中获取实体数据的唯一key",
+  "required" : true,
+  "type" : "String",
+  "format" : "ADP://adaptername/datatype/naturekey",
+  "innertag" : true,
+  "groupname" : "数据源",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 1,
+  "itemorder" : 1,
+  "showindetail" : false
+}
+
+{
+  "name" : "SourceType",
+  "mapping" : {
+    "get" : "source.type",
+    "set" : [{
+        "key" : "source.type",
+        "value" : "@value"
+      }]
+  },
+  "title" : "数据源类型",
+  "description" : "数据系统类型。如：GeoBank、GeoFrame",
+  "required" : true,
+  "type" : "String",
+  "format" : "",
+  "innertag" : true,
+  "groupname" : "数据源",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 1,
+  "itemorder" : 2,
+  "showindetail" : false
+}
+
+{
+  "name" : "SourceName",
+  "mapping" : {
+    "get" : "source.name",
+    "set" : [{
+        "key" : "source.name",
+        "value" : "@value"
+      }]
+  },
+  "title" : "数据源名称",
+  "description" : "数据系统名称。比如：科研成果库、A2。",
+  "required" : true,
+  "type" : "String",
+  "format" : "",
+  "innertag" : true,
+  "groupname" : "数据源",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 1,
+  "itemorder" : 3,
+  "showindetail" : true
+}
+
+{
+  "name" : "SourceFormat",
+  "mapping" : {
+    "get" : "source.format",
+    "set" : [{
+        "key" : "source.format",
+        "value" : "@value"
+      }]
+  },
+  "title" : "格式",
+  "description" : "数据实体格式。标签值必须严格从《格式》中取",
+  "required" : true,
+  "type" : "String",
+  "format" : "",
+  "innertag" : true,
+  "groupname" : "数据源",
+  "regexp" : "",
+  "uitype" : "DropdownList",
+  "items" : [{
+      "text" : "Word文档",
+      "value" : "DOC",
+      "selected" : false
+    }, {
+      "text" : "Excel表格",
+      "value" : "XLS",
+      "selected" : false
+    }, {
+      "text" : "PPT文件",
+      "value" : "PPT",
+      "selected" : false
+    }, {
+      "text" : "GDB图件",
+      "value" : "GDB",
+      "selected" : false
+    }, {
+      "text" : "Web网页",
+      "value" : "HTML",
+      "selected" : false
+    }, {
+      "text" : "PNG图片",
+      "value" : "PNG",
+      "selected" : false
+    }],
+  "grouporder" : 1,
+  "itemorder" : 4,
+  "showindetail" : true
+}
+
+{
+  "name" : "FormalTitle",
+  "mapping" : {
+    "get" : "dc.title[?(@.type=='Formal')].text",
+    "set" : [{
+        "key" : "dc.title[0].type",
+        "value" : "Formal"
+      }, {
+        "key" : "dc.title[0].text",
+        "value" : "@value"
+      }]
+  },
+  "title" : "标题",
+  "description" : "",
+  "required" : true,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "成果信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 1,
+  "showindetail" : true
+}
+
+{
+  "name" : "Author",
+  "mapping" : {
+    "get" : "dc.contributor[?(@.type=='Author')].name",
+    "set" : [{
+        "key" : "dc.contributor[0].type",
+        "value" : "Author"
+      }, {
+        "key" : "dc.contributor[0].name",
+        "value" : "@value"
+      }]
+  },
+  "title" : "作者",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "成果信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 2,
+  "showindetail" : true
+}
+
+{
+  "name" : "Auditor",
+  "mapping" : {
+    "get" : "dc.contributor[?(@.type=='Auditor')].name",
+    "set" : [{
+        "key" : "dc.contributor[1].type",
+        "value" : "Auditor"
+      }, {
+        "key" : "dc.contributor[1].name",
+        "value" : "@value"
+      }]
+  },
+  "title" : "审核者",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "成果信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 3,
+  "showindetail" : false
+}
+
+{
+  "name" : "Submitter",
+  "mapping" : {
+    "get" : "dc.contributor[?(@.type=='Submitter')].name",
+    "set" : [{
+        "key" : "dc.contributor[2].type",
+        "value" : "Submitter"
+      }, {
+        "key" : "dc.contributor[2].name",
+        "value" : "@value"
+      }]
+  },
+  "title" : "提交者",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "成果信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 4,
+  "showindetail" : false
+}
+
+{
+  "name" : "Subject",
+  "mapping" : {
+    "get" : "dc.subject",
+    "set" : [{
+        "key" : "dc.subject",
+        "value" : "@value"
+      }]
+  },
+  "title" : "主题词",
+  "description" : "主题词、关键词",
+  "required" : false,
+  "type" : "StringArray",
+  "format" : "",
+  "innertag" : true,
+  "groupname" : "成果信息",
+  "regexp" : "",
+  "uitype" : "Tageditor",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 5,
+  "showindetail" : false
+}
+
+{
+  "name" : "Abstract",
+  "mapping" : {
+    "get" : "dc.description[?(@.type=='Abstract')].text",
+    "set" : [{
+        "key" : "dc.description[0].type",
+        "value" : "Abstract"
+      }, {
+        "key" : "dc.description[0].text",
+        "value" : "@value"
+      }]
+  },
+  "title" : "摘要",
+  "description" : "摘要",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "成果信息",
+  "regexp" : "",
+  "uitype" : "Textarea",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 6,
+  "showindetail" : true
+}
+
+{
+  "name" : "CreatedDate",
+  "mapping" : {
+    "get" : "dc.date[?(@.type=='Created')].value",
+    "set" : [{
+        "key" : "dc.date[0].type",
+        "value" : "Created"
+      }, {
+        "key" : "dc.date[0].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "创建日期",
+  "description" : "",
+  "required" : false,
+  "type" : "DateString",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "成果信息",
+  "regexp" : "",
+  "uitype" : "Date",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 7,
+  "showindetail" : false
+}
+
+{
+  "name" : "SubmittedDate",
+  "mapping" : {
+    "get" : "dc.date[?(@.type=='Submitted')].value",
+    "set" : [{
+        "key" : "dc.date[1].type",
+        "value" : "Submitted"
+      }, {
+        "key" : "dc.date[1].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "提交日期",
+  "description" : "",
+  "required" : false,
+  "type" : "DateString",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "成果信息",
+  "regexp" : "",
+  "uitype" : "Date",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 8,
+  "showindetail" : false
+}
+
+{
+  "name" : "Status",
+  "mapping" : {
+    "get" : "dc.status",
+    "set" : [{
+        "key" : "dc.status",
+        "value" : "@value"
+      }]
+  },
+  "title" : "资源状态",
+  "description" : "草稿、待审核、已审核、发布",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : true,
+  "groupname" : "成果信息",
+  "regexp" : "",
+  "uitype" : "DropdownList",
+  "items" : [{
+      "text" : "草稿",
+      "value" : "草稿",
+      "selected" : false
+    }, {
+      "text" : "提交",
+      "value" : "提交",
+      "selected" : false
+    }, {
+      "text" : "审核中",
+      "value" : "审核中",
+      "selected" : false
+    }, {
+      "text" : "已审核",
+      "value" : "已审核",
+      "selected" : false
+    }, {
+      "text" : "已发布",
+      "value" : "已发布",
+      "selected" : false
+    }, {
+      "text" : "作废",
+      "value" : "作废",
+      "selected" : false
+    }],
+  "grouporder" : 2,
+  "itemorder" : 9,
+  "showindetail" : false
+}
+
+{
+  "name" : "Workarea",
+  "mapping" : {
+    "get" : "ep.bo[?(@.type=='Workarea')].value",
+    "set" : [{
+        "key" : "ep.bo[0].type",
+        "value" : "Workarea"
+      }, {
+        "key" : "ep.bo[0].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "地震工区",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 3,
+  "itemorder" : 1,
+  "showindetail" : false
+}
+
+{
+  "name" : "CalUnit",
+  "mapping" : {
+    "get" : "ep.bo[?(@.type=='CalUnit')].value",
+    "set" : [{
+        "key" : "ep.bo[1].type",
+        "value" : "CalUnit"
+      }, {
+        "key" : "ep.bo[1].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "计算单元",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 3,
+  "itemorder" : 2,
+  "showindetail" : false
+}
+
+{
+  "name" : "WellBlock",
+  "mapping" : {
+    "get" : "ep.bo[?(@.type=='WellBlock')].value",
+    "set" : [{
+        "key" : "ep.bo[2].type",
+        "value" : "WellBlock"
+      }, {
+        "key" : "ep.bo[2].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "井区",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 3,
+  "itemorder" : 3,
+  "showindetail" : false
+}
+
+{
+  "name" : "Trap",
+  "mapping" : {
+    "get" : "ep.bo[?(@.type=='Trap')].value",
+    "set" : [{
+        "key" : "ep.bo[3].type",
+        "value" : "Trap"
+      }, {
+        "key" : "ep.bo[3].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "圈闭",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 3,
+  "itemorder" : 4,
+  "showindetail" : false
+}
+
+{
+  "name" : "Pool",
+  "mapping" : {
+    "get" : "ep.bo[?(@.type=='Pool')].value",
+    "set" : [{
+        "key" : "ep.bo[4].type",
+        "value" : "Pool"
+      }, {
+        "key" : "ep.bo[4].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "油气藏",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 3,
+  "itemorder" : 5,
+  "showindetail" : false
+}
+
+{
+  "name" : "Stratum",
+  "mapping" : {
+    "get" : "ep.bo[?(@.type=='Stratum')].value",
+    "set" : [{
+        "key" : "ep.bo[5].type",
+        "value" : "Stratum"
+      }, {
+        "key" : "ep.bo[5].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "层位",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 3,
+  "itemorder" : 6,
+  "showindetail" : false
+}
+
+{
+  "name" : "Well",
+  "mapping" : {
+    "get" : "ep.bo[?(@.type=='Well')].value",
+    "set" : [{
+        "key" : "ep.bo[6].type",
+        "value" : "Well"
+      }, {
+        "key" : "ep.bo[6].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "井",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 3,
+  "itemorder" : 7,
+  "showindetail" : false
+}
+
+{
+  "name" : "Organization",
+  "mapping" : {
+    "get" : "ep.bo[?(@.type=='Organization')].value",
+    "set" : [{
+        "key" : "ep.bo[7].type",
+        "value" : "Organization"
+      }, {
+        "key" : "ep.bo[7].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "辖区",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 3,
+  "itemorder" : 8,
+  "showindetail" : false
+}
+
+{
+  "name" : "ProductType",
+  "mapping" : {
+    "get" : "ep.producttype",
+    "set" : [{
+        "key" : "ep.producttype",
+        "value" : "@value"
+      }]
+  },
+  "title" : "成果类型",
+  "description" : "",
+  "required" : true,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 9,
+  "showindetail" : false
+}
+
+{
+  "name" : "ThemeBD",
+  "mapping" : {
+    "get" : "ep.theme[?(@.type=='BD')].value",
+    "set" : [{
+        "key" : "ep.theme[0].type",
+        "value" : "BD"
+      }, {
+        "key" : "ep.theme[0].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "业务域",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 10,
+  "showindetail" : false
+}
+
+{
+  "name" : "ThemeBT",
+  "mapping" : {
+    "get" : "ep.theme[?(@.type=='BT')].value",
+    "set" : [{
+        "key" : "ep.theme[1].type",
+        "value" : "BT"
+      }, {
+        "key" : "ep.theme[1].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "业务类型",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 11,
+  "showindetail" : false
+}
+
+{
+  "name" : "ThemeBP",
+  "mapping" : {
+    "get" : "ep.theme[?(@.type=='BP')].value",
+    "set" : [{
+        "key" : "ep.theme[2].type",
+        "value" : "BP"
+      }, {
+        "key" : "ep.theme[2].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "业务程序",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 12,
+  "showindetail" : false
+}
+
+{
+  "name" : "ThemeBA",
+  "mapping" : {
+    "get" : "ep.theme[?(@.type=='BA')].value",
+    "set" : [{
+        "key" : "ep.theme[3].type",
+        "value" : "BA"
+      }, {
+        "key" : "ep.theme[3].value",
+        "value" : "@value"
+      }]
+  },
+  "title" : "业务活动",
+  "description" : "",
+  "required" : false,
+  "type" : "String",
+  "format" : "",
+  "innertag" : false,
+  "groupname" : "专业信息",
+  "regexp" : "",
+  "uitype" : "Text",
+  "items" : null,
+  "grouporder" : 2,
+  "itemorder" : 13,
+  "showindetail" : false
+}

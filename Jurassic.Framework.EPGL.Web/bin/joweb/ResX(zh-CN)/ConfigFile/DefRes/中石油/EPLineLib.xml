@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Map>
+	<Types Name="基础线型.基础" FilterName="通用" FilterID="2|18|19">
+		<Type Name="0" ID="0"/>
+		<Type Name="1" ID="1"/>
+		<Type Name="2" ID="2"/>
+		<Type Name="3" ID="3"/>
+		<Type Name="4" ID="4"/>
+		<Type Name="5" ID="5"/>
+		<Type Name="6" ID="6"/>
+		<Type Name="7" ID="7"/>
+		<Type Name="8" ID="8"/>
+		<Type Name="9" ID="9"/>
+		<Type Name="10" ID="10"/>
+		<Type Name="11" ID="11"/>
+		<Type Name="12" ID="12"/>
+		<Type Name="13" ID="13"/>
+		<Type Name="14" ID="14"/>
+		<Type Name="15" ID="15"/>
+		<Type Name="16" ID="16"/>
+		<Type Name="17" ID="17"/>
+		<Type Name="18" ID="18"/>
+		<Type Name="19" ID="19"/>
+		<Type Name="20" ID="20"/>
+		<Type Name="21" ID="21"/>
+		<Type Name="22" ID="22"/>
+		<Type Name="23" ID="23"/>
+		<Type Name="24" ID="24"/>
+		<Type Name="25" ID="25"/>
+		<Type Name="26" ID="26"/>
+		<Type Name="27" ID="27"/>
+		<Type Name="28" ID="28"/>
+		<Type Name="29" ID="29"/>
+		<Type Name="30" ID="30"/>
+		<Type Name="31" ID="31"/>
+		<Type Name="32" ID="32"/>
+		<Type Name="33" ID="33"/>
+		<Type Name="34" ID="34"/>
+		<Type Name="35" ID="35"/>
+		<Type Name="36" ID="36"/>
+		<Type Name="37" ID="37"/>
+		<Type Name="38" ID="38"/>
+		<Type Name="39" ID="39"/>
+		<Type Name="40" ID="40"/>
+		<Type Name="41" ID="41"/>
+		<Type Name="42" ID="42"/>
+		<Type Name="43" ID="43"/>
+	</Types>
+	<Types Name="地理信息.境界" FilterName="通用" FilterID="2|18|19">
+		<Type Name="已定国界" ID="8"/>
+		<Type Name="未定国界" ID="7"/>
+		<Type Name="联邦国界" ID="141"/>
+		<Type Name="省、自治区、直辖市界" ID="46"/>
+		<Type Name="自治州、地区、盟、地级市界" ID="47"/>
+		<Type Name="县、自治县、旗、县级市界" ID="3"/>
+		<Type Name="乡、镇、国营农场、林场、牧场界" ID="4"/>
+		<Type Name="自然保护区" ID="48"/>
+		<Type Name="古长城" ID="30"/>
+	</Types>
+	<Types Name="地理信息.交通.公路" FilterName="通用" FilterID="2|18|19">
+		<Type Name="高速公路（已建成）" ID="127"/>
+		<Type Name="高速公路（建筑中）" ID="129"/>
+		<Type Name="一级公路（已建成）" ID="130"/>
+		<Type Name="一级公路（建筑中）" ID="131"/>
+		<Type Name="二级公路（已建成）" ID="132"/>
+		<Type Name="二级公路（建筑中）" ID="133"/>
+		<Type Name="三级公路（已建成）" ID="134"/>
+		<Type Name="三级公路（建筑中）" ID="135"/>
+		<Type Name="四级公路（已建成）" ID="142"/>
+		<Type Name="四级公路（建筑中）" ID="143"/>
+		<Type Name="等外公路（已建成）" ID="144"/>
+		<Type Name="等外公路（建筑中）" ID="145"/>
+		<Type Name="普通公路（已建成）" ID="5"/>
+		<Type Name="普通公路（建筑中）" ID="146"/>
+		<Type Name="简易公路/大车路/拖拉机路" ID="35"/>
+		<Type Name="专用公路" ID="147"/>
+	</Types>
+	<Types Name="地理信息.交通.铁路" FilterName="通用" FilterID="2|18|19">
+		<Type Name="电气化铁路" ID="6"/>
+		<Type Name="复线电气化铁路" ID="102"/>
+		<Type Name="单线电气化铁路" ID="101"/>
+		<Type Name="建筑中的电气化铁路" ID="103"/>
+		<Type Name="普通铁路" ID="6"/>
+		<Type Name="复线铁路" ID="102"/>
+		<Type Name="单线铁路" ID="101"/>
+		<Type Name="建筑中的铁路" ID="103"/>
+		<Type Name="窄轨铁路" ID="6"/>
+		<Type Name="建筑中的窄轨铁路" ID="6"/>
+	</Types>
+	<Types Name="地理信息.交通.乡村路" FilterName="通用" FilterID="2|18|19">
+		<Type Name="乡村路" ID="1"/>
+	</Types>
+	<Types Name="地理信息.交通.无定路" FilterName="通用" FilterID="2|18|19">
+		<Type Name="时令路、无定路" ID="2"/>
+	</Types>
+	<Types Name="地理信息.交通.山隘" FilterName="通用" FilterID="2|18|19">
+		<Type Name="山隘（垭口）" ID="2"/>
+	</Types>
+	<Types Name="地理信息.水系" FilterName="通用" FilterID="2|18|19">
+		<Type Name="河流" ID="0"/>
+		<Type Name="运河" ID="93"/>
+		<Type Name="时令河" ID="0"/>
+		<Type Name="消失河" ID="1"/>
+		<Type Name="海岸线" ID="15"/>
+		<Type Name="海水等深线" ID="0"/>
+		<Type Name="水渠" ID="107"/>
+		<Type Name="主要堤坝" ID="104"/>
+		<Type Name="一般堤坝" ID="94"/>
+	</Types>
+	<Types Name="地理信息.地形地貌" FilterName="通用" FilterID="2|18|19">
+		<Type Name="山脉" ID="50"/>
+	</Types>
+	<Types Name="矿权信息.矿权管理" FilterName="通用" FilterID="2|18|19">
+		<Type Name="采矿权管理线" ID="0"/>
+		<Type Name="中石油矿权管理线" ID="0"/>
+		<Type Name="中石化矿权管理线" ID="0"/>
+		<Type Name="中海油矿权管理线" ID="0"/>
+		<Type Name="其它公司矿权管理线" ID="0"/>
+		<Type Name="中联煤矿权管理线" ID="0"/>
+		<Type Name="延长油矿矿权管理线" ID="0"/>
+		<Type Name="对外合作矿权管理线" ID="0"/>
+		<Type Name="采油厂管辖边界" ID="92"/>
+		<Type Name="采油厂矿管辖边界" ID="98"/>
+		<Type Name="采油厂队管辖边界" ID="105"/>
+	</Types>
+	<Types Name="勘探工程.野外地层剖面" FilterName="通用" FilterID="2|18|19">
+		<Type Name="野外地层剖面" ID="10"/>
+	</Types>
+	<Types Name="勘探工程.地震测线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="年度部署三维测线" ID="0"/>
+		<Type Name="正施工三维测线" ID="0"/>
+		<Type Name="已完成三维测线" ID="0"/>
+		<Type Name="年度部署二维测线" ID="0"/>
+		<Type Name="正施工二维测线" ID="0"/>
+		<Type Name="已完成二维测线" ID="0"/>
+	</Types>
+	<Types Name="勘探工程.地震资料品质线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="一级品质线" ID="0"/>
+		<Type Name="二级品质线" ID="0"/>
+		<Type Name="三级品质线" ID="1"/>
+	</Types>
+	<Types Name="勘探工程.地震属性等值线" FilterName="等值线" FilterID="17">
+		<Type Name="振幅等值线" ID="0"/>
+		<Type Name="频率等值线" ID="0"/>
+		<Type Name="相位等值线" ID="0"/>
+		<Type Name="能量等值线" ID="0"/>
+		<Type Name="波形等值线" ID="0"/>
+		<Type Name="衰减等值线" ID="0"/>
+		<Type Name="相关等值线" ID="0"/>
+		<Type Name="比率等值线" ID="0"/>
+		<Type Name="速度等值线" ID="0"/>
+	</Types>
+	<Types Name="地质信息.盆地边界线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="盆地边界线" ID="50"/>
+		<Type Name="推测盆地边界线" ID="51"/>
+		<Type Name="沉积盆地边界" ID="0"/>
+		<Type Name="含油气盆地边界" ID="0"/>
+	</Types>
+	<Types Name="地质信息.构造分区线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="一级构造分区线" ID="3"/>
+		<Type Name="推测一级构造分区线" ID="148"/>
+		<Type Name="二级构造分区线" ID="46"/>
+		<Type Name="推测二级构造分区线" ID="149"/>
+		<Type Name="三级构造分区线" ID="115"/>
+		<Type Name="推测三级构造分区线" ID="116"/>
+	</Types>
+	<Types Name="地质信息.断层线.断层线" FilterName="断层线" FilterID="20">
+		<Type Name="坳陷断层线/区域断裂" ID="0"/>
+		<Type Name="一级断层线" ID="0"/>
+		<Type Name="二级断层线" ID="0"/>
+		<Type Name="亚二级断层线" ID="0"/>
+		<Type Name="三级断层线" ID="0"/>
+		<Type Name="亚二级推测断层" ID="1"/>
+		<Type Name="三级推测断层" ID="1"/>
+	</Types>
+	<Types Name="地质信息.断层线.正断层" FilterName="断层线" FilterID="20">
+		<Type Name="坳陷正断层（裂）" ID="0"/>
+		<Type Name="一级正断层" ID="88"/>
+		<Type Name="二级正断层" ID="88"/>
+		<Type Name="亚二级正断层" ID="88"/>
+		<Type Name="亚二级推测正断层" ID="90"/>
+		<Type Name="三级正断层" ID="88"/>
+		<Type Name="三级推测正断层" ID="90"/>
+		<Type Name="四级正断层" ID="88"/>
+		<Type Name="四级推测正断层" ID="90"/>
+	</Types>
+	<Types Name="地质信息.断层线.逆断层" FilterName="断层线" FilterID="20">
+		<Type Name="坳陷逆断层（裂）" ID="0"/>
+		<Type Name="一级逆断层" ID="89"/>
+		<Type Name="二级逆断层" ID="89"/>
+		<Type Name="亚二级逆断层" ID="89"/>
+		<Type Name="亚二级推测逆断层" ID="91"/>
+		<Type Name="三级逆断层" ID="89"/>
+		<Type Name="三级推测逆断层" ID="91"/>
+		<Type Name="四级逆断层" ID="89"/>
+		<Type Name="四级推测逆断层" ID="91"/>
+	</Types>
+	<Types Name="地质信息.断层线.平推断层" FilterName="断层线" FilterID="20">
+		<Type Name="一级平推断层" ID="139"/>
+		<Type Name="二级平推断层" ID="139"/>
+		<Type Name="亚二级平推断层" ID="139"/>
+		<Type Name="三级平推断层" ID="139"/>
+		<Type Name="四级平推断层" ID="139"/>
+	</Types>
+	<Types Name="地质信息.断层线.逆掩断层" FilterName="断层线" FilterID="20">
+		<Type Name="一级逆掩断层" ID="111"/>
+		<Type Name="二级逆掩断层" ID="111"/>
+		<Type Name="亚二级逆掩断层" ID="111"/>
+		<Type Name="三级逆掩断层" ID="111"/>
+		<Type Name="四级逆掩断层" ID="111"/>
+	</Types>
+	<Types Name="地质信息.断层线.冲断层" FilterName="断层线" FilterID="20">
+		<Type Name="一级冲断层" ID="95"/>
+		<Type Name="二级冲断层" ID="95"/>
+		<Type Name="亚二级冲断层" ID="95"/>
+		<Type Name="三级冲断层" ID="95"/>
+		<Type Name="四级冲断层" ID="95"/>
+	</Types>
+	<Types Name="地质信息.断层线.复活断层" FilterName="断层线" FilterID="20">
+		<Type Name="主要复活断层" ID="5"/>
+		<Type Name="资料不足主要复活断层" ID="135"/>
+	</Types>
+	<Types Name="地质信息.断层线.不明断层" FilterName="断层线" FilterID="20">
+		<Type Name="性质不明断层" ID="1"/>
+	</Types>
+	<Types Name="地质信息.断层线.地震解释断层"  FilterName="断层线" FilterID="20">
+		<Type Name="地震解释正断层" ID="152"/>
+		<Type Name="地震解释逆断层" ID="110"/>
+		<Type Name="地震解释平推断层" ID="139"/>
+		<Type Name="地震解释逆掩断层" ID="111"/>
+		<Type Name="地震解释冲断层" ID="95"/>
+	</Types>
+	<Types Name="地质信息.等值线.构造深度等值线" FilterName="等值线" FilterID="17">
+		<Type Name="确定构造等值线" ID="0"/>
+		<Type Name="推测构造等值线" ID="2"/>
+	</Types>
+	<Types Name="地质信息.等值线.基底埋深等值线" FilterName="等值线" FilterID="17">
+		<Type Name="基底埋深线" ID="0"/>
+	</Types>
+	<Types Name="地质信息.等值线.地层分布等值线" FilterName="等值线" FilterID="17">
+		<Type Name="地层厚度等值线" ID="0"/>
+		<Type Name="地层剥蚀厚度等值线" ID="0"/>
+		<Type Name="地层残余厚度等值线" ID="0"/>
+		<Type Name="泥岩厚度等值线" ID="0"/>
+		<Type Name="有效厚度等值线" ID="0"/>
+		<Type Name="煤层厚度等值线" ID="0"/>
+		<Type Name="膏岩厚度等值线" ID="0"/>
+		<Type Name="砂岩厚度等值线" ID="0"/>
+		<Type Name="砂岩百分含量等值线" ID="0"/>
+		<Type Name="砂泥比等值线" ID="0"/>
+	</Types>
+	<Types Name="地质信息.等值线.储层性质等值线" FilterName="等值线" FilterID="17">
+		<Type Name="烃源岩厚度等值线" ID="0"/>
+		<Type Name="烃源岩TOC等值线" ID="0"/>
+		<Type Name="生烃强度等值线" ID="0"/>
+		<Type Name="Ro等值线" ID="0"/>
+		<Type Name="总有机碳含量等值线" ID="0"/>
+		<Type Name="氯仿沥青A等值线" ID="0"/>
+		<Type Name="总烃HC等值线" ID="0"/>
+		<Type Name="实测静温值等值线" ID="0"/>
+		<Type Name="实测静压值等值线" ID="0"/>
+		<Type Name="孔隙度等值线" ID="0"/>
+		<Type Name="渗透率等值线" ID="0"/>
+		<Type Name="渗透率变异系数等值线" ID="0"/>
+		<Type Name="渗透率突进系数等值线" ID="0"/>
+		<Type Name="渗透率级差等值线" ID="0"/>
+		<Type Name="层间隔层厚度等值线" ID="0"/>
+		<Type Name="盖层厚度等值线" ID="0"/>
+		<Type Name="过剩压力线" ID="0"/>
+		<Type Name="油层厚度" ID="0"/>
+		<Type Name="气层厚度" ID="0"/>
+		<Type Name="含油饱和度" ID="0"/>
+		<Type Name="含气饱和度" ID="0"/>
+		<Type Name="地层系数" ID="0"/>
+	</Types>
+	<Types Name="地质信息.等值线.开发等值线" FilterName="等值线" FilterID="17">
+		<Type Name="试采初期产能" ID="0"/>
+		<Type Name="油井含水等值线" ID="0"/>
+		<Type Name="油层压力等值线" ID="0"/>
+		<Type Name="采液强度等值线" ID="0"/>
+	</Types>
+	<Types Name="地质信息.地层线.地层缺失线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="地层缺失线" ID="15"/>
+	</Types>
+	<Types Name="地质信息.地层线.地层超覆线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="地层超覆线" ID="13"/>
+		<Type Name="推测地层超覆线" ID="112"/>
+		<Type Name="一级构造地层超覆线" ID="13"/>
+		<Type Name="一级构造推测地层超覆线" ID="112"/>
+		<Type Name="二级构造地层超覆线" ID="13"/>
+		<Type Name="二级构造推测地层超覆线" ID="112"/>
+	</Types>
+	<Types Name="地质信息.地层线.地层剥蚀线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="地层剥蚀线" ID="113"/>
+		<Type Name="推测地层剥蚀线" ID="96"/>
+	</Types>
+	<Types Name="地质信息.地层线.地层尖灭线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="地层尖灭线" ID="15"/>
+		<Type Name="推测地层尖灭线" ID="97"/>
+		<Type Name="小(储)层尖灭线" ID="15"/>
+		<Type Name="推测小(储)层尖灭线" ID="97"/>
+		<Type Name="一级构造地层尖灭线" ID="15"/>
+		<Type Name="一级构造推测地层尖灭线" ID="97"/>
+		<Type Name="二级构造地层尖灭线" ID="15"/>
+		<Type Name="二级构造推测地层尖灭线" ID="97"/>
+	</Types>
+	<Types Name="地质信息.地层线.地层接触关系线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="地层整合线" ID="117"/>
+		<Type Name="地层推测整合界线" ID="119"/>
+		<Type Name="地层不整合界线" ID="118"/>
+		<Type Name="地层推测不整合界线" ID="122"/>
+		<Type Name="地层平行不整合界线" ID="120"/>
+		<Type Name="地层角度不整合界线" ID="12"/>
+		<Type Name="地层局部不整合界线" ID="12"/>
+	</Types>
+	<Types Name="地质信息.地层线.非构造油气藏目的层分布线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="非构造油气藏目的层分布线" ID="0"/>
+	</Types>
+	<Types Name="地质信息.地层线.出露层位界线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="出露层位界线" ID="0"/>
+	</Types>
+	<Types Name="地质信息.地层线.实测地层剖面线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="实测地层剖面线" ID="10"/>
+	</Types>
+	<Types Name="地质信息.沉积相.矿物分区线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="重矿物分区线" ID="0"/>
+		<Type Name="轻矿物分区线" ID="0"/>
+		<Type Name="粒度分界线" ID="0"/>
+	</Types>
+	<Types Name="地质信息.沉积相.砂体分布" FilterName="通用" FilterID="2|18|19">
+		<Type Name="主砂体轮廓线" ID="0"/>
+		<Type Name="砂体尖灭线" ID="15"/>
+	</Types>
+	<Types Name="地质信息.岩体边界线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="岩体尖灭线" ID="15"/>
+		<Type Name="灰岩尖灭线" ID="15"/>
+	</Types>
+	<Types Name="油气信息.油气水边界" FilterName="通用" FilterID="2|18|19">
+		<Type Name="油水边界" ID="153"/>
+		<Type Name="油水内边界" ID="71"/>
+		<Type Name="油水外边界" ID="70"/>
+		<Type Name="气水边界" ID="154"/>
+		<Type Name="气水外边界" ID="75"/>
+		<Type Name="气水内边界" ID="77"/>
+		<Type Name="气油边界" ID="80"/>
+		<Type Name="气油外边界" ID="73"/>
+		<Type Name="气油内边界" ID="72"/>
+		<Type Name="含油边界" ID="78"/>
+		<Type Name="含气边界" ID="80"/>
+		<Type Name="含油零线" ID="0"/>
+		<Type Name="油藏中迹线" ID="84"/>
+		<Type Name="气藏中迹线" ID="83"/>
+		<Type Name="最大含油边界" ID="0"/>
+	</Types>
+	<Types Name="地面工程.油管线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="单井油管线" ID="0"/>
+		<Type Name="集油管线" ID="0"/>
+		<Type Name="集油干线" ID="0"/>
+		<Type Name="外输油管线" ID="0"/>
+		<Type Name="长输油管线" ID="0"/>
+		<Type Name="掺油管线" ID="0"/>
+		<Type Name="热洗管线 " ID="158"/>
+		<Type Name="动力液管线" ID="0"/>
+		<Type Name="输油气管线" ID="155"/>
+		<Type Name="海底管线" ID="156"/>
+	</Types>
+	<Types Name="地面工程.气管线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="集气管线" ID="0"/>
+		<Type Name="集气干线" ID="0"/>
+		<Type Name="单井气管线" ID="0"/>
+		<Type Name="长输气干线" ID="0"/>
+		<Type Name="输气干线" ID="0"/>
+		<Type Name="输气管线" ID="0"/>
+		<Type Name="外输气干线" ID="0"/>
+		<Type Name="供气干线" ID="0"/>
+		<Type Name="供气支线" ID="0"/>
+		<Type Name="供气管线" ID="0"/>
+		<Type Name="注气干线" ID="0"/>
+		<Type Name="注气管线" ID="0"/>
+		<Type Name="气举管线" ID="0"/>
+		<Type Name="注排管线" ID="0"/>
+		<Type Name="集气支线" ID="0"/>
+	</Types>
+	<Types Name="地面工程.汽管线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="注汽干线" ID="0"/>
+		<Type Name="注汽管线" ID="0"/>
+		<Type Name="注汽支线" ID="0"/>
+		<Type Name="单井汽管线" ID="0"/>
+		<Type Name="供聚合物液管干线" ID="0"/>
+	</Types>
+	<Types Name="地面工程.高压气管线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="干线" ID="0"/>
+		<Type Name="支线" ID="0"/>
+		<Type Name="其他管线" ID="0"/>
+	</Types>
+	<Types Name="地面工程图式.水管线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="集水管线" ID="0"/>
+		<Type Name="集水干线" ID="0"/>
+		<Type Name="供水干线（一级）" ID="0"/>
+		<Type Name="供水管线" ID="0"/>
+		<Type Name="注水干线（一级）" ID="0"/>
+		<Type Name="注水管线（二级）" ID="0"/>
+		<Type Name="单井注水管线（三级）" ID="0"/>
+		<Type Name="掺水管线" ID="157"/>
+		<Type Name="伴热管线 " ID="0"/>
+		<Type Name="热洗管线" ID="0"/>
+		<Type Name="回水管线" ID="159"/>
+		<Type Name="污水干线" ID="0"/>
+		<Type Name="污水管线" ID="0"/>
+	</Types>
+	<Types Name="辅助图式.拼图线" FilterName="通用" FilterID="2|18|19">
+		<Type Name="拼图线" ID="26"/>
+	</Types>
+</Map>

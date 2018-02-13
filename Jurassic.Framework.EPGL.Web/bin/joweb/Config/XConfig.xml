@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--本文件是平台主控程序的配置文件，请勿随便更改，可能会导致程序加载或运行错误。
+-->
+<GeoMap>
+	<!--需要优先加载的插件请放到前面，主UI插件必须要有且只能有一个-->
+	<Root IDName="GMManager" Text="主控平台插件注册" TabName="GeoMap 地质制图平台" Icon="New.png" Index="-1">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPDataImportExport.dll" Name="EPDataImportExport" Text="数据导入导出" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPManager.dll" Name="EPManager" Text="成图管理" ClassName="" TipText="" Icon="" UIPlug="1"/>
+		<Item FileName="EPSingleWell.dll" Name="EPSingleWell" Text="单井模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPMultiWell.dll" Name="EPMultiWell" Text="剖面模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPPlanMap.dll" Name="EPPlanMap" Text="平面模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+	</Root>
+	<Root IDName="GMPlanMap" Text="平面制图插件注册" TabName="平面制图" Icon="PlanMap.png" Index="0">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPPlanMap.dll" Name="EPPlanMap" Text="平面模块" ClassName="" TipText="" Icon="" UIPlug="1"/>
+		<Item FileName="EPContour.dll" Name="EPContour" Text="等值模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSingleWell.dll" Name="EPSingleWell" Text="单井模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPMultiWell.dll" Name="EPMultiWell" Text="剖面模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+                <Item FileName="EPCrossPlot.dll" Name="EPCrossPlot" Text="交会图模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPDataImportExport.dll" Name="EPDataImportExport" Text="数据导入导出" ClassName="" TipText="" Icon="" UIPlug="0"/>
+	</Root>
+	<Root IDName="GMSingleWell" Text="单井制图插件注册" TabName="单井制图" Icon="SingleWell.png" Index="1">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSingleWell.dll" Name="EPSingleWell" Text="单井模块" ClassName="" TipText="" Icon="" UIPlug="1"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPDataImportExport.dll" Name="EPDataImportExport" Text="数据导入导出" ClassName="" TipText="" Icon="" UIPlug="0"/>
+	</Root>
+	<Root IDName="GMMultiWell" Text="剖面制图插件注册" TabName="剖面制图" Icon="MultiWell.png" Index="2">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPMultiWell.dll" Name="EPMultiWell" Text="剖面模块" ClassName="" TipText="" Icon="" UIPlug="1"/>
+		<Item FileName="EPPlanMap.dll" Name="EPPlanMap" Text="平面模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPDataImportExport.dll" Name="EPDataImportExport" Text="数据导入导出" ClassName="" TipText="" Icon="" UIPlug="0"/>
+	</Root>
+	<Root IDName="GMContour" Text="等值追踪插件注册" TabName="等值追踪" Icon="Contour.png" Index="3">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPPlanMap.dll" Name="EPPlanMap" Text="平面模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPContour.dll" Name="EPContour" Text="等值模块" ClassName="" TipText="" Icon="" UIPlug="1"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<!--暂时不注册，确实需要再注册
+		<Item FileName="EPSingleWell.dll" Name="EPSingleWell" Text="单井模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPMultiWell.dll" Name="EPMultiWell" Text="剖面模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		-->
+		<Item FileName="EPDataImportExport.dll" Name="EPDataImportExport" Text="数据导入导出" ClassName="" TipText="" Icon="" UIPlug="0"/>
+	</Root>
+	<Root IDName="GMLineEdit" Text="线型编辑插件注册" TabName="线型编辑" Icon="LineEdit.png" Index="6">
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="1"/>
+	</Root>
+	<Root IDName="GMSymbolEdit" Text="符号编辑插件注册" TabName="符号编辑" Icon="SymbolEdit.png" Index="5">
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="1"/>
+	</Root>
+	<Root IDName="GMCustomTool" Text="形状工具插件注册" TabName="形状工具" Icon="CustomTool.png" Index="7">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPCustomTool.dll" Name="EPCustomTool" Text="形状编辑" ClassName="" TipText="" Icon="" UIPlug="1"/>
+	</Root>
+	<Root IDName="GMAssist" Text="转换助手插件注册" TabName="转换助手" Icon="Assist.png" Index="8">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPAssist.dll" Name="EPAssist" Text="助手模块" ClassName="" TipText="" Icon="" UIPlug="1"/>
+	</Root>
+	<Root IDName="GMStyleEdit" Text="样式单插件注册" TabName="样式单" Icon="New.png" Index="9">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPStyleEdit.dll" Name="EPStyleEdit" Text="样式单编辑" ClassName="" TipText="" Icon="" UIPlug="1"/>
+	</Root>
+	<Root IDName="GMConnexity" Text="栅状制图插件注册" TabName="栅状图" Icon="Connexity.png" Index="10">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPDataImportExport.dll" Name="EPDataImportExport" Text="数据导入导出" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPConnexity.dll" Name="EPConnexity" Text="栅状模块" ClassName="" TipText="" Icon="" UIPlug="1"/>
+	</Root>
+	<Root IDName="GMWellNetDsgnr" Text="井网部署插件注册" TabName="井网部署图" Icon="WellNetDsgnr.png" Index="11">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPDataImportExport.dll" Name="EPDataImportExport" Text="数据导入导出" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPWellNetDsgnr.dll" Name="EPWellNetDsgnr" Text="井网部署" ClassName="" TipText="" Icon="" UIPlug="1"/>
+	</Root>
+	<Root IDName="GMCrossPlot" Text="交会制图插件注册" TabName="交会图" Icon="CrossPlot.png" Index="12">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPDataImportExport.dll" Name="EPDataImportExport" Text="数据导入导出" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPCrossPlot.dll" Name="EPCrossPlot" Text="交会模块" ClassName="" TipText="" Icon="" UIPlug="1"/>
+	</Root>
+	<!--注意：以上是独立进程注册项，以 AllowMultiInst 作为解释分割线-->
+	<Root IDName="AllowMultiInst" Text="设置注册进程是否运行多个实例">
+		<Root IDName="GMPlanMap" Text="平面制图" AllowMultiInst="1"/>
+		<Root IDName="GMSingleWell" Text="单井制图" AllowMultiInst="1"/>
+		<Root IDName="GMMultiWell" Text="剖面制图" AllowMultiInst="1"/>
+		<Root IDName="GMContour" Text="等值追踪" AllowMultiInst="1"/>
+		<Root IDName="GMLineEdit" Text="线型编辑" AllowMultiInst="0"/>
+		<Root IDName="GMSymbolEdit" Text="符号编辑" AllowMultiInst="0"/>
+		<Root IDName="GMCustomTool" Text="形状工具" AllowMultiInst="0"/>
+		<Root IDName="GMStyleEdit" Text="样式编辑" AllowMultiInst="0"/>
+		<Root IDName="GMAssist" Text="转换助手" AllowMultiInst="0"/>
+		<Root IDName="EPConnexity" Text="栅状图" AllowMultiInst="0"/>
+		<Root IDName="EPWellNetDsgnr" Text="井网部署图" AllowMultiInst="0"/>
+		<Root IDName="EPCrossPlot" Text="交会图" AllowMultiInst="0"/>
+	</Root>
+	<!--说明：图集工具中使用JoGIS4控件，支持数据成图、新增数据成图接口依赖EPDataImportExport.dll插件-->
+	<Root IDName="JoGIS4" Text="GIS导航插件注册">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPGeoTM.dll" Name="EPGeoTM" Text="专题图" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPContour.dll" Name="EPContour" Text="等值模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPDataImportExport.dll" Name="EPDataImportExport" Text="数据导入导出" ClassName="" TipText="" Icon="" UIPlug="0"/>
+	</Root>
+	<Root IDName="EPGraph" Text="EPGraph插件注册">
+		<Item FileName="EPGeoMap.dll" Name="EPGeoMap" Text="GeoMap兼容模块" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPLineEdit.dll" Name="EPLineEdit" Text="线型编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPSymbolEdit.dll" Name="EPSymbolEdit" Text="符号编辑" ClassName="" TipText="" Icon="" UIPlug="0"/>
+		<Item FileName="EPDataImportExport.dll" Name="EPDataImportExport" Text="数据导入导出" ClassName="" TipText="" Icon="" UIPlug="0"/>
+	</Root>
+	<Root IDName="ExeTool" Text="外部工具">
+		<Item Text="记事本" FileName="notepad.exe"/>
+		<Item Text="计算器" FileName="calc.exe"/>
+	</Root>
+	<Root IDName="MultiLanguage" Text="多国语言" Current="zh-CN">
+		<Item Name="zh-CN" Value="简体中文"/>
+	</Root>
+	<Root IDName="Reg_GMPlanMap" Text="平面图文件类型注册">
+		<Item Name="gdb" Value="GeoMap"/>
+		<Item Name="gdbx" Value="GeoMap4"/>
+		<Item Name="ptpt" Value="GeoMap4_Template"/>
+	</Root>
+	<Root IDName="Reg_GMSingleWell" Text="单井图文件类型注册">
+		<Item Name="wllx" Value="SingleWell"/>
+		<Item Name="stpt" Value="SingleWell_Template"/>
+	</Root>
+	<Root IDName="Reg_GMMultiWell" Text="剖面图文件类型注册">
+		<Item Name="scnx" Value="MultiWell"/>
+		<Item Name="mtpt" Value="MultiWell_Template"/>
+	</Root>
+	<Root IDName="Reg_GMCrossPlot" Text="交会图文件类型注册">
+		<Item Name="crsx" Value="CrossPlot"/>
+	</Root>
+	<Root IDName="Reg_GMConnexity" Text="栅状图文件类型注册">
+		<Item Name="CNTX" Value="Connexity"/>
+		<Item Name="CTPT" Value="Connexity_Template"/>
+	</Root>
+	<Root IDName="FileExt" Text="拖拽文件类型注册">
+		<Item Name="GMPlanMap" Value="gdb,gdbx,xyz,jsd,flt,bdl"/>
+		<Item Name="GMSingleWell" Value="wll,tpt"/>
+		<Item Name="GMCrossPlot" Value="crsx"/>
+	</Root>
+	<Root IDName="NetConfig" Text="小组工作网络路径">
+		<WorkPath>E:\产品集\GeoMap4.0（2015年11月For栅状图）\GeoMapNet\Lib_Release\演示工区库</WorkPath>
+		<WorkType>1</WorkType>
+		<WorkAreaLib>E:\产品集\GeoMap4.0（2015年11月For栅状图）\GeoMapNet\Lib_Release\演示工区库</WorkAreaLib>
+		<WorkArea>演示工区</WorkArea>
+		<WorkDataServer>0</WorkDataServer>
+	</Root>
+	<Root IDName="HomeStand" Text="当前标准规范" Val="系统默认"/>
+</GeoMap>

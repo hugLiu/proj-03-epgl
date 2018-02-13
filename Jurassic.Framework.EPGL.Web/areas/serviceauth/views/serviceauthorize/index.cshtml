@@ -1,0 +1,191 @@
+﻿@model Jurassic.CommonModels.ServerAuth.ServiceInfo
+@{
+    ViewBag.ShowSearchBox = false;
+}
+
+<div class="mini-splitter frame-fit" style="width: 100%;">
+    <div size="200" showcollapsebutton="true">
+
+        <ul id="treeData" class="mini-tree" style="height:100%" url="@Url.Action("GetAllTreeData")" 
+            showtreeicon="true" 
+            textfield="ServiceName" 
+            idfield="ServiceID"
+            parentfield="ParentID" 
+            onnodeselect="nodeselect" 
+            expandOnLoad ="true"
+            resultastree="false"
+            >
+        </ul>
+    </div> 
+
+    <div showcollapsebutton="false">
+        <div class="form-div frame-fit" id="formData">
+            <table border="0" cellpadding="1" cellspacing="2" style="width: 428px; table-layout: fixed;">
+                <tr>
+                    <td class="col-md-10">
+                        <input id="CreatedDate" name="CreatedDate" class="mini-hidden" value="@Model.CreatedDate" />
+                        <input id="CreatedBy" name="CreatedBy" class="mini-hidden" value="@Model.CreatedBy" />
+                        <input id="ServiceID" name="ServiceID" class="mini-hidden" value="@Model.ServiceID" />
+
+                        <input labelfield="true" label="服务描述名称：" name="ServiceName" value="@Model.ServiceName" required="true" class="mini-textbox" maxlength="50" style="width:600px;" />
+                    </td>
+                </tr>  
+                <tr>
+                    <td class="col-md-10">
+                        <input labelfield="true" label="服务方法名称：" name="ServiceFunctionName" value="@Model.ServiceFunctionName"  class="mini-textbox" maxlength="255" style="width:600px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-10">
+                        <input labelfield="true" label="服务方法全称：" name="ServiceFullName" value="@Model.ServiceFullName"  class="mini-textbox" maxlength="255" style="width:600px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-10">
+                        <input id="lookTree" name="ParentID" class="mini-treeselect" style="width:600px;"
+                                url="@Url.Action("GetTreeData")" 
+                                labelField="true" 
+                                label="上级分类："
+                                multiselect="false"
+                                valuefromselect="false"
+                                allowinput="false"
+                                showfoldercheckbox="false"
+                                showradiobutton="false"
+                                expandonload="0"
+                                popupwidth="600"
+                                showclose="true"
+                                oncloseclick="javascript:this.setText('');this.setValue('');"
+
+                                textfield="ServiceName"
+                                valuefield="ServiceID"
+                                parentfield="ParentID" 
+
+                                value="@Model.ParentID" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-10">
+                        <input labelfield="true" label="授权方式：" name="AuthWay" id="AuthWay" class="mini-combobox" required="true" value="@Model.AuthWay" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-10">
+                        <input labelfield="true" label="服务状态:" name="IsvalId" class="mini-radiobuttonlist"  value="@Model.IsvalId" data="[{id: 1, text: '启用'}, {id: 0, text: '禁用'}]" style="width:400px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="col-md-10">
+                        <input labelfield="true" label="备注：" value="@Model.Memo" name="Memo" maxlength="1000" style="width:600px;height:100px" class="mini-textarea" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    mini.parse();
+    //左侧树组件
+    var lookTree = mini.get('#lookTree')
+    var treeData = mini.get('#treeData')
+    var form = new mini.Form("formData"); 
+    var cboAuthWay = mini.get("#AuthWay");
+   
+    var authOptions = [
+        { id: "@((int)JAuthType.AllUsers)", text: "所有授权客户端" },
+        { id: "@((int)JAuthType.EveryOne)", text: "所有人" },
+        { id: "@((int)JAuthType.Forbidden)", text: "禁止所有人" },
+        { id: "@((int)JAuthType.NeedAuth)", text: "有权限的客户组" } 
+    ];
+    cboAuthWay.setData(authOptions);
+
+    //树节点选中事件
+    function nodeselect(e) {
+        var node = treeData.getSelectedNode()
+        if (node == null || node.ServiceID == '') {
+            form.reset();
+            return;
+        }
+        var dataID = node.ServiceID;
+        form.loading();
+        $.ajax({
+            url: "@Url.Action("GetDataInfo")" + "?id=" + dataID,
+            success: function (text) {
+                var o = mini.decode(text);
+                form.setData(o);
+                form.unmask();
+            },
+            complete: function () {
+                form.unmask();
+            }
+        });
+    }
+ 
+    //新增主节点按钮事件
+    function addNew() {
+        form.reset();
+        var node = treeData.getSelectedNode()
+        if (node == null) {
+            return;
+        }
+        lookTree.setText(node.ServiceName);
+        lookTree.setValue(node.ServiceID);
+    }
+    
+    $.regButton({
+        text: "删除服务节点",
+        beforeSubmit: function (ajax) {
+            var node = treeData.getSelectedNode()
+            if (node == null || node.ServiceID == '') {
+                alert("@ResHelper.GetStr("请选择一行数据!")");
+                return false;
+            }
+            if (!treeData.isLeaf(node)) {
+                alert("@ResHelper.GetStr("请先删除子节点!")");
+                return false;
+            }
+            if (!confirm("@ResHelper.GetStr("确定删除所选择的数据?")")) {
+                return false;
+            }
+            ajax.data = { id: node.ServiceID }
+        },
+        afterSubmit: function (data) {
+            var node = treeData.getSelectedNode()
+            if (data.Type == "success" && node) {
+                lookTree.load("/ServiceAuth/ServiceAuthorize/GetTreeData")
+                treeData.removeNode(node);
+                form.reset();
+            }
+        }
+    });
+
+    $.regButton({
+        text: "新增服务节点",
+        noSubmit: addNew
+    });
+
+    $.regButton({
+        text: "保存",
+        afterSubmit: function (data) {
+            data = data.ReturnValue;
+            if (!data) {
+                return;
+            }
+            //刷新并选中节点
+            var newNode = data.Data.data
+            if (newNode) {
+                //treeData.selectNode({});
+                treeData.load("@Url.Action("GetAllTreeData")")
+                treeData.selectNode(newNode);
+
+                lookTree.load("@Url.Action("GetTreeData")")
+            }
+        }
+    });
+
+
+    
+
+</script>

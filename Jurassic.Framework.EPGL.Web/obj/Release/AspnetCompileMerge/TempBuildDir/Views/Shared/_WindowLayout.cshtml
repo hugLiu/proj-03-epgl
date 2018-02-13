@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新疆油气田开发规划图库管理平台</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="~/Content/EPGL/css/core/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/core/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/core/font-awesome-ie7.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/core/animate.css" rel="stylesheet" />
+    
+    <!--jsTree-->
+    <link href="~/Content/EPGL/css/plugins/jsTree/style.min.css" rel="stylesheet" />
+    <!-- jqgrid-->
+    <link href="~/Content/EPGL/css/plugins/jqgrid/ui.jqgrid.css" rel="stylesheet" />
+    <!-- iCheck-->
+    <link href="~/Content/EPGL/css/plugins/iCheck/custom.css" rel="stylesheet" />
+    <!-- chosen-->
+    <link href="~/Content/EPGL/css/plugins/chosen/chosen.css" rel="stylesheet" />
+    <!-- colorpicker-->
+    <link href="~/Content/EPGL/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet" />
+    <!-- cropper-->
+    <link href="~/Content/EPGL/css/plugins/cropper/cropper.min.css" rel="stylesheet" />
+    <!-- switchery-->
+    <link href="~/Content/EPGL/css/plugins/switchery/switchery.css" rel="stylesheet" />
+    <!-- jasny-->
+    <link href="~/Content/EPGL/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet" />
+    <!-- nouslider-->
+    <link href="~/Content/EPGL/css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet" />
+    <!-- datapicker-->
+    <link href="~/Content/EPGL/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+    <!-- ionRangeSlider-->
+    <link href="~/Content/EPGL/css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet" />
+    <!-- ionRangeSlider skinFlat-->
+    <link href="~/Content/EPGL/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet" />
+    <!-- checkbox-->
+    <link href="~/Content/EPGL/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet" />
+    <!-- clockpicker-->
+    <link href="~/Content/EPGL/css/plugins/clockpicker/clockpicker.css" rel="stylesheet" />
+
+    <link href="~/Content/EPGL/css/shared/style.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/shared/layout.css" rel="stylesheet" />
+
+    @RenderSection("css", false)
+
+</head>
+
+<body class="gray-bg pace-done">
+    @RenderBody()
+
+<!-- 全局js -->
+    <script src="~/Content/EPGL/js/core/jquery-2.1.4.min.js"></script>
+    <script src="~/Content/EPGL/js/core/bootstrap.min.js"></script>
+    <!-- slimscroll plugin javascript -->
+    <script src="~/Content/EPGL/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- jsTree plugin javascript -->
+    <script src="~/Content/EPGL/js/plugins/jsTree/jstree.min.js"></script>
+    <!-- jqGrid -->
+    <script src="~/Content/EPGL/js/plugins/jqgrid/i18n/grid.locale-cn.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jqgrid/jquery.jqGrid.min.js"></script>
+
+
+    <!-- layer plugin javascript -->
+    <script src="~/Content/EPGL/js/plugins/layer/layer.min.js"></script>
+
+    <!-- Pace.js – 超赞的页面加载进度自动指示和Ajax 导航效果 -->
+    @*<script src="~/Content/EPGL/js/plugins/pace/pace.min.js"></script>*@
+
+    <!-- jquery.linq -->
+    <script src="~/Content/EPGL/js/plugins/linq.js_ver2.2.0.2/linq.min.js"></script>
+    <!-- Chosen -->
+    <script src="~/Content/EPGL/js/plugins/chosen/chosen.jquery.js"></script>
+    <!-- JSKnob -->
+    <script src="~/Content/EPGL/js/plugins/jsKnob/jquery.knob.js"></script>
+    <!-- Input Mask-->
+    <script src="~/Content/EPGL/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+    <!-- Data picker -->
+    <script src="~/Content/EPGL/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <!-- Prettyfile -->
+    <script src="~/Content/EPGL/js/plugins/prettyfile/bootstrap-prettyfile.js"></script>
+    <!-- NouSlider -->
+    <script src="~/Content/EPGL/js/plugins/nouslider/jquery.nouislider.min.js"></script>
+    <!-- Switchery -->
+    <script src="~/Content/EPGL/js/plugins/switchery/switchery.js"></script>
+    <!-- IonRangeSlider -->
+    <script src="~/Content/EPGL/js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+    <!-- iCheck -->
+    <script src="~/Content/EPGL/js/plugins/iCheck/icheck.min.js"></script>
+    <!-- MENU -->
+    <script src="~/Content/EPGL/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- Color picker -->
+    <script src="~/Content/EPGL/js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+    <!-- Clock picker -->
+    <script src="~/Content/EPGL/js/plugins/clockpicker/clockpicker.js"></script>
+    <!-- Image cropper -->
+    <script src="~/Content/EPGL/js/plugins/cropper/cropper.min.js"></script>
+    <!-- bootstrap-typeahead -->
+    <script src="~/Content/EPGL/js/plugins/bootstrap-typeahead/bootstrap-typeahead.js"></script>
+    <!-- underscore -->
+    <script src="~/Content/EPGL/js/plugins/underscore/underscore-min.js"></script>
+    <!-- cubeportfolio -->
+    <script src="~/Content/EPGL/js/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <!-- amcharts -->
+    <script src="~/Content/EPGL/js/plugins/amcharts/amcharts.js"></script>
+    <script src="~/Content/EPGL/js/plugins/amcharts/serial.js"></script>
+    <script src="~/Content/EPGL/js/plugins/amcharts/pie.js"></script>
+    <script src="~/Content/EPGL/js/plugins/amcharts/radar.js"></script>
+    <script src="~/Content/EPGL/js/plugins/amcharts/themes/light.js"></script>
+    <script src="~/Content/EPGL/js/plugins/amcharts/themes/patterns.js"></script>
+    <script src="~/Content/EPGL/js/plugins/amcharts/themes/chalk.js"></script>
+    <!-- highcharts -->
+    <script src="~/Content/EPGL/js/plugins/highcharts/highcharts.js"></script>
+    <script src="~/Content/EPGL/js/plugins/highcharts/highcharts-3d.js"></script>
+    <script src="~/Content/EPGL/js/plugins/highcharts/highcharts-more.js"></script>
+    <script src="~/Content/EPGL/js/plugins/highcharts/highcharts-zh_CN.js"></script>
+
+    <!-- counterup -->
+    <script src="~/Content/EPGL/js/plugins/counterup/jquery.waypoints.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/counterup/jquery.counterup.js"></script>
+
+    <!-- ECharts -->
+    <script src="~/Content/EPGL/js/plugins/echarts-2.2.7/build/dist/echarts.js"></script>
+
+    <!-- Jquery Validate -->
+    <script src="~/Content/EPGL/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/validate/messages_zh.min.js"></script>
+
+    <!-- 自定义js -->
+    <script src="~/Content/EPGL/js/shared/app.js"></script>
+    <script src="~/Content/EPGL/js/shared/content.js"></script>
+
+    <!--页面级脚本-->
+    <script src="~/Content/EPGL/js/shared/proj4js-compressed.js"></script>
+    <script src="~/Content/EPGL/js/plugins/ol3.20.1/ol.js"></script>
+
+    <script src="~/Content/EPGL/js/shared/jsTools.js"></script>
+    <script language="vbscript" src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-vbfunction.vbs" type="text/vbscript"></script>
+    <script src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-frame.js"></script>
+    <script src="~/Content/EPGL/js/shared/global.js"></script>
+    <script src="~/Content/EPGL/js/shared/GUID.js"></script>
+
+
+    @RenderSection("script", false)
+</body>
+</html>
+

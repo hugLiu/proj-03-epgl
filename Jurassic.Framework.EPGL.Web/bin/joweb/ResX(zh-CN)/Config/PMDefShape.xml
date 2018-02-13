@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Map ShapesCount="20" ShapesType="Jurassic">
+	<jgTown TypeID="13" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="-5698.564453,-10000.000000,5698.564453,2500.000000" CanMove="1" IsLock="0">
+		<Group DrawBorder="0" LockChild="0">
+			<Shapes Count="2">
+				<jgAnchor TypeID="1" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="符号" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="-2500.000000,-2500.000000,2500.000000,2500.000000" CanMove="1" IsLock="0">
+					<Anchor Anchor="0.000000,0.000000,0.000000" Wdith="10.000000" Height="10.000000" Index="2110004" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000" SymbolName=""/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgAnchor>
+				<jgText TypeID="6" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="地名" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="-5698.564453,-10000.000000,5698.564453,-5251.196289" CanMove="1" IsLock="0" Text="地名">
+					<Anchor Anchor="0.000000,-10000.000000,0.000000" Wdith="22.794258" Height="9.497607" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="6" PenScale="1.000000" SymbolName="地名"/>
+					<GMFONT Height="-38" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="10.000000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgText>
+			</Shapes>
+		</Group>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,-20.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgTown>
+	<jgWell TypeID="11" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="-2500.000000,-2500.000000,7500.000000,3500.000000" CanMove="1" IsLock="0">
+		<Group DrawBorder="0" LockChild="0">
+			<Shapes Count="3">
+				<jgAnchor TypeID="1" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="井口" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="-2500.000000,-2500.000000,2500.000000,2500.000000" CanMove="1" IsLock="0">
+					<Anchor Anchor="0.000000,0.000000,0.000000" Wdith="10.000000" Height="10.000000" Index="2510003" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000" SymbolName=""/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgAnchor>
+				<jgAnchor TypeID="1" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="井底" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="-2000.000000,-2000.000000,2000.000000,2000.000000" CanMove="1" IsLock="0">
+					<Anchor Anchor="0.000000,0.000000,0.000000" Wdith="8.000000" Height="8.000000" Index="2510005" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000" SymbolName=""/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgAnchor>
+				<jgText TypeID="6" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="井名" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="2500.000000,-1500.000000,7500.000000,3500.000000" CanMove="1" IsLock="0" Text="井名">
+					<Anchor Anchor="5000.000000,-1500.000000,0.000000" Wdith="10.000000" Height="10.000000" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="6" PenScale="1.000000" SymbolName="井名"/>
+					<GMFONT Height="-22" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="6.000000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgText>
+			</Shapes>
+		</Group>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="10.000000,-3.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgWell>
+	<jgAnchor TypeID="1" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,-5000.000000,5000.000000,0.000000" CanMove="1" IsLock="0">
+		<Anchor Anchor="0.000000,0.000000,0.000000" Wdith="10.000000" Height="10.000000" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="0" PenScale="1.000000" SymbolName=""/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgAnchor>
+	<jgText TypeID="6" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,-1640.681274,6731.000000,0.000000" CanMove="1" IsLock="0" Text="文字图元">
+		<Anchor Anchor="0.000000,0.000000,0.000000" Wdith="13.462000" Height="3.281363" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="0" PenScale="1.000000" SymbolName="文字图元"/>
+		<GMFONT Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.180000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgText>
+	<jgIsoScatter TypeID="12" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="-1000.000000,-5000.000000,5666.875122,1000.000000" CanMove="1" IsLock="0" X="0.000000" Y="0.000000" Z="0.000000" Well="" Flag="-842150451" Precision="2" OffsetX="4000.000000" OffsetY="-5000.000000">
+		<Group DrawBorder="0" LockChild="0">
+			<Shapes Count="2">
+				<jgAnchor TypeID="1" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="符号" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="-1000.000000,-1000.000000,1000.000000,1000.000000" CanMove="1" IsLock="0">
+					<Anchor Anchor="0.000000,0.000000,0.000000" Wdith="4.000000" Height="4.000000" Index="5110003" ClrBeg="0" ClrEnd="9342520" ClrFill="12615680" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000" SymbolName=""/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgAnchor>
+				<jgText TypeID="6" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="散点" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="2333.124878,-5000.000000,5666.875122,-3374.796753" CanMove="1" IsLock="0" Text="散点">
+					<Anchor Anchor="4000.000000,-5000.000000,0.000000" Wdith="6.667500" Height="3.250407" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="6" PenScale="1.000000" SymbolName="散点"/>
+					<GMFONT Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.150000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgText>
+			</Shapes>
+		</Group>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="8.000000,-10.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgIsoScatter>
+	<jgPolyline TypeID="2" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" IsClosed="0" IsShowCtrlPt="1" IsReverse="0">
+		<Segments SegmentCount="0"/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgPolyline>
+	<jgIsoLine TypeID="17" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" IsClosed="0" IsShowCtrlPt="1" IsReverse="0" Z="0" ShowLabel="1" LabelColor="0" LabelNumber="1" DecimalPlaces="-1">
+		<Segments SegmentCount="0"/>
+		<LabelFont Height="-13" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.180000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgIsoLine>
+	<jgIsoFault TypeID="20" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" IsClosed="0" IsShowCtrlPt="1" IsReverse="0" Z="0" ShowLabel="1" LabelColor="0" LabelNumber="0" DecimalPlaces="-1" DrawType="1" Fault="0" DirectWidth="0.100000" DirectHeight="2.000000" DirectSite="0.000000" DirectUp="1" FaultBegin="0" FaultNum="1" FaultWidth="0.300000" FaultColor="4294901760" FaultDirection="0" FaultStyle="-1" FaultLenScale="1.000000" FaultLineName="">
+		<Segments SegmentCount="0"/>
+		<LabelFont Height="-30" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.180000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgIsoFault>
+	<jgSeisLine TypeID="16" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" Type="0" Style="3" Width="3" Angle="0" Name="" txtColor="0" lColor="0" nStart="0" nEnd="4294967295" nRadius="3" nSP="20" nDist="0">
+		<Group DrawBorder="0" LockChild="0">
+			<Shapes Count="0"/>
+		</Group>
+		<txtFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+		<spFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+		<SPS sps_count="0"/>
+		<LAB lab_count="0"/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgSeisLine>
+	<jgPolygon TypeID="3" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" IsClosed="1" IsShowCtrlPt="1" IsReverse="0" FeClrOfName="0" BkClrOfName="16777215" IsFillBk="1">
+		<Segments SegmentCount="0"/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+		<FntOfName Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+	</jgPolygon>
+	<jgOilWater TypeID="29" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="-4995.000000,0.000000,5005.000000,1650.681274" CanMove="1" IsLock="0" GasColor="4294967040" OilColor="4294901760" WaterColor="4278190335">
+		<OilWaterGroup DrawEdge="1" GasOutput="0.200000" OilOutput="0.200000" WaterOutput="0.200000" PillarHig="0.333333" CutGas="1.000000" CutOil="1.000000" CutWater="1.000000" DecimalPlaces="2" RelationWellName=" " RectPillar="-4995.000000,0.000000,5005.000000,10.000000" TextRect="-3360.500000,10.000000,3370.500000,1650.681274">
+			<TextFont Height="0" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="2" tfWidth="0.000000" tfHeight="3.000000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+		</OilWaterGroup>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="20.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgOilWater>
+	<jgCross TypeID="10" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,100.000000,100.000000" CanMove="1" IsLock="0" LineWidth="0.100000" LineColor="4278190080">
+		<Group DrawBorder="0" LockChild="0">
+			<Shapes Count="6">
+				<jgPolyline TypeID="2" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,50.000000,100.000000,50.000000" CanMove="1" IsLock="0" IsClosed="0" IsShowCtrlPt="1" IsReverse="0">
+					<Segments SegmentCount="1">
+						<Segment IsLine="1" SoothType="0" P1="0.000000,50.000000,0.000000" P2="100.000000,50.000000,0.000000"/>
+					</Segments>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgPolyline>
+				<jgPolyline TypeID="2" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="50.000000,0.000000,50.000000,100.000000" CanMove="1" IsLock="0" IsClosed="0" IsShowCtrlPt="1" IsReverse="0">
+					<Segments SegmentCount="1">
+						<Segment IsLine="1" SoothType="0" P1="50.000000,0.000000,0.000000" P2="50.000000,100.000000,0.000000"/>
+					</Segments>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgPolyline>
+				<jgText TypeID="6" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="7.361109,66.401041,42.638891,83.598959" CanMove="1" IsLock="0" Text="左上">
+					<Anchor Anchor="25.000000,75.000000,0.000000" Wdith="35.277782" Height="17.197918" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000" SymbolName="左上"/>
+					<GMFONT Height="0" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="6.000000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgText>
+				<jgText TypeID="6" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="7.361109,16.401041,42.638891,33.598959" CanMove="1" IsLock="0" Text="左下">
+					<Anchor Anchor="25.000000,25.000000,0.000000" Wdith="35.277782" Height="17.197918" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000" SymbolName="左下"/>
+					<GMFONT Height="0" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="6.000000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgText>
+				<jgText TypeID="6" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="57.361109,66.401041,92.638891,83.598959" CanMove="1" IsLock="0" Text="右上">
+					<Anchor Anchor="75.000000,75.000000,0.000000" Wdith="35.277782" Height="17.197918" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000" SymbolName="右上"/>
+					<GMFONT Height="0" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="6.000000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgText>
+				<jgText TypeID="6" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="57.361109,16.401041,92.638891,33.598959" CanMove="1" IsLock="0" Text="右下">
+					<Anchor Anchor="75.000000,25.000000,0.000000" Wdith="35.277782" Height="17.197918" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="4" PenScale="1.000000" SymbolName="右下"/>
+					<GMFONT Height="0" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="6.000000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgText>
+			</Shapes>
+		</Group>
+		<CrossGroup DrawLine="1"/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgCross>
+	<jgTextRange TypeID="42" ShowNum="1" ShowStyle="0" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" IsClosed="0" IsShowCtrlPt="0" IsReverse="0" Z="山脉文字" ShowLabel="1" LabelColor="0" LabelNumber="4" DecimalPlaces="-1">
+		<Segments SegmentCount="0"/>
+		<LabelFont Height="-20" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.180000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="0" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgTextRange>
+	<jgLithoCurve TypeID="47" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" Start="0.000000" End="1000.000000" xMin="0.000000" xMax="1.000000" Type="0" IsDrawBox="1" CurveWidth="0.100000" CurveColor="0">
+		<Points Count="0"/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgLithoCurve>
+	<jgLegend TypeID="23" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,-8140.681274,3750.000000,-1250.000000" CanMove="1" IsLock="0" Flag="0">
+		<Group DrawBorder="0" LockChild="0">
+			<Shapes Count="3">
+				<jgRectangle TypeID="4" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,-5000.000000,10.000000,-4990.000000" CanMove="1" IsLock="0" RoundScale="0">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgRectangle>
+				<jgAnchor TypeID="1" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="0" ReadOnly="0" Angle="0.000000" BoundingBox="1250.000000,-3750.000000,3750.000000,-1250.000000" CanMove="1" IsLock="0">
+					<Anchor Anchor="1250.000000,-1250.000000,0.000000" Wdith="5.000000" Height="5.000000" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="0" PenScale="1.000000" SymbolName=""/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgAnchor>
+				<jgText TypeID="6" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,-8140.681274,3365.500000,-6500.000000" CanMove="1" IsLock="0" Text="图例">
+					<Anchor Anchor="0.000000,-6500.000000,0.000000" Wdith="6.731000" Height="3.281363" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="0" PenScale="1.000000" SymbolName="图例"/>
+					<GMFONT Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体" tAlign="0" tItalic="1" tFormat="0" tSpecial="0" tSClr="255" tSX="-1.000000" tSY="-1.000000" tDeviceSize="0" tfWidth="0.000000" tfHeight="3.180000" tfColSpace="0.000000" tfRowSpace="0.000000" tFeColor="0" tBkColor="16777215" tBkFill="1"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="20,20" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</jgText>
+			</Shapes>
+		</Group>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,-13.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgLegend>
+	<jgRectangle TypeID="4" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" RoundScale="0">
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgRectangle>
+	<jgEllipse TypeID="5" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" StartAngle="0.000000" EndAngle="0.000000" nType="1">
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgEllipse>
+	<jgAnnulus TypeID="36" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0">
+		<Group DrawBorder="0" LockChild="0">
+			<Shapes Count="0"/>
+		</Group>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgAnnulus>
+	<jgNotifyText TypeID="14" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" Text="标注" Location="0.000000,0.000000" RctTL="0.000000,0.000000" RctBR="0.000000,0.000000" Round="0" Edge="1" TextColor="0">
+		<Anchor Anchor="0.000000,0.000000,0.000000" Wdith="-431602080.000000" Height="-431602080.000000" Index="2520025" ClrBeg="0" ClrEnd="9342520" ClrFill="16711935" PointType="2" Transparent="1" FillTransparent="0" AnchorType="0" PenScale="1.000000" SymbolName=""/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+		<TextFont Height="-14" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+	</jgNotifyText>
+	<jgArrow TypeID="27" ShapeID="-1" ShapeName="" ShapeFeatureID="-1" ShapeFeatureName="" Visible="1" ReadOnly="0" Angle="0.000000" BoundingBox="0.000000,0.000000,0.000000,0.000000" CanMove="1" IsLock="0" IsClosed="0" IsShowCtrlPt="1" IsReverse="0" ArrowType="2" ArrowStyle="0" TipLength="8.000000" BaseAngle="45.000000" TipAngle="25.000000">
+		<Segments SegmentCount="0"/>
+		<Attribute>
+			<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" PenStyleName="" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0.000000,0.000000,0.000000,0.000000" sz="10000,10000" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+		</Attribute>
+	</jgArrow>
+</Map>

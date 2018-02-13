@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Translation  Type="相类型">
+  <Magnafacies ID="1" Name="旱地扇" Color="argb(255,255,204,153)" SymbolName="旱地扇">
+    <Intrafacies ID="2" Name="扇根" Color="argb(255,255,204,153)" SymbolName="扇根" />
+    <Intrafacies ID="3" Name="扇中" Color="argb(255,255,228,201)" SymbolName="旱地:扇中" />
+    <Intrafacies ID="4" Name="扇端" Color="argb(255,255,238,221)" SymbolName="扇端" />
+  </Magnafacies>
+  <Magnafacies ID="5" Name="湿地扇" Color="argb(255,219,214,0)" SymbolName="湿地扇">
+    <Intrafacies ID="6" Name="扇根" Color="argb(255,194,190,16)" SymbolName="扇根" />
+    <Intrafacies ID="7" Name="扇中" Color="argb(255,230,225,0)" SymbolName="湿地:扇中" />
+    <Intrafacies ID="8" Name="扇端" Color="argb(255,212,229,113)" SymbolName="扇端" />
+    <Intrafacies ID="9" Name="扇间沼泽" Color="argb(255,224,255,163)" SymbolName="扇间沼泽" />
+  </Magnafacies>
+  <Magnafacies ID="10" Name="河流相" Color="argb(255,204,204,0)" SymbolName="河流相">
+    <Intrafacies ID="11" Name="河道" Color="argb(255,51,204,255)" SymbolName="河道" />
+    <Intrafacies ID="12" Name="河道间" Color="argb(255,222,255,155)" SymbolName="河道间" />
+    <Intrafacies ID="13" Name="洪泛洼地" Color="argb(255,204,255,51)" SymbolName="洪泛洼地" />
+  </Magnafacies>
+  <Magnafacies ID="14" Name="扇三角洲" Color="argb(255,255,255,128)" SymbolName="旱地:扇中">
+    <Intrafacies ID="15" Name="扇三角洲平原" Color="argb(255,255,255,102)" SymbolName="河流相">
+      <Microfacies ID="16" Name="分支河道" Color="argb(255,255,255,102)" SymbolName="分支河道" />
+      <Microfacies ID="17" Name="分支河道间" Color="argb(255,204,255,102)" SymbolName="分支河道间" />
+      <Microfacies ID="18" Name="平原沼泽" Color="argb(255,204,255,102)" SymbolName="扇间沼泽" />
+      <Microfacies ID="19" Name="平原洼地" Color="argb(255,153,255,255)" SymbolName="平原洼地" />
+    </Intrafacies>
+    <Intrafacies ID="20" Name="扇三角洲前缘" Color="argb(255,255,255,153)" SymbolName="三角洲前缘">
+      <Microfacies ID="21" Name="前缘水下分流河道" Color="argb(255,255,255,153)" SymbolName="三角洲前缘" />
+      <Microfacies ID="22" Name="前缘水下分流间湾" Color="argb(255,204,255,153)" SymbolName="平原洼地" />
+      <Microfacies ID="23" Name="河口砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘" />
+      <Microfacies ID="24" Name="远砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘" />
+    </Intrafacies>
+    <Intrafacies ID="25" Name="扇前三角洲" Color="argb(255,204,255,51)" SymbolName="前三角洲">
+      <Microfacies ID="26" Name="席状砂" Color="argb(255,204,236,153)" SymbolName="席状砂" />
+      <Microfacies ID="20110810" Name="前三角洲泥" Color="argb(255,204,255,102)" SymbolName="平原洼地" /> 
+    </Intrafacies>
+  </Magnafacies>
+  <Magnafacies ID="27" Name="辫状河三角洲" Color="argb(255,255,255,128)" SymbolName="旱地:扇中">
+    <Intrafacies ID="28" Name="辫状河三角洲平原" Color="argb(255,255,255,102)" SymbolName="河流相">
+      <Microfacies ID="29" Name="分支河道" Color="argb(255,255,255,102)" SymbolName="分支河道" />
+      <Microfacies ID="30" Name="分支河道间" Color="argb(255,204,255,102)" SymbolName="分支河道间" />
+      <Microfacies ID="31" Name="平原沼泽" Color="argb(255,204,255,102)" SymbolName="扇间沼泽" />
+      <Microfacies ID="32" Name="平原洼地" Color="argb(255,153,255,255)" SymbolName="平原洼地" />
+    </Intrafacies>
+    <Intrafacies ID="33" Name="辫状河三角洲前缘" Color="argb(255,255,255,153)" SymbolName="三角洲前缘">
+      <Microfacies ID="34" Name="前缘水下分流河道" Color="argb(255,255,255,153)" SymbolName="三角洲前缘" />
+      <Microfacies ID="35" Name="前缘水下分流间湾" Color="argb(255,204,255,153)" SymbolName="平原洼地" />
+      <Microfacies ID="36" Name="河口砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘" />
+      <Microfacies ID="37" Name="远砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘" />
+    </Intrafacies>
+    <Intrafacies ID="38" Name="辫状河前三角洲" Color="argb(255,204,255,51)" SymbolName="前三角洲">
+      <Microfacies ID="39" Name="席状砂" Color="argb(255,204,236,153)" SymbolName="席状砂" />
+      <Microfacies ID="40" Name="前三角洲泥" Color="argb(255,204,255,102)" SymbolName="平原洼地" />
+    </Intrafacies>
+  </Magnafacies>
+  <Magnafacies ID="41" Name="河流三角洲" Color="argb(255,255,255,102)" SymbolName="扇端">
+    <Intrafacies ID="42" Name="三角洲平原" Color="argb(255,255,255,102)" SymbolName="三角洲平原">
+      <Microfacies ID="43" Name="分支河道" Color="argb(255,255,255,102)" SymbolName="旱地:扇中" />
+      <Microfacies ID="44" Name="分支河道间" Color="argb(255,204,255,102)" SymbolName="分支河道间" />
+      <Microfacies ID="45" Name="平原沼泽" Color="argb(255,204,255,102)" SymbolName="扇间沼泽" />
+      <Microfacies ID="46" Name="平原洼地" Color="argb(255,153,255,255)" SymbolName="平原洼地" />
+    </Intrafacies>
+    <Intrafacies ID="47" Name="三角洲前缘" Color="argb(255,255,255,153)" SymbolName="三角洲前缘">
+      <Microfacies ID="48" Name="前缘水下分流河道" Color="argb(255,255,255,153)" SymbolName="三角洲前缘" />
+      <Microfacies ID="49" Name="前缘水下分流间湾" Color="argb(255,204,255,153)" SymbolName="平原洼地" />
+      <Microfacies ID="50" Name="河口砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘" />
+      <Microfacies ID="51" Name="远砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘" />
+    </Intrafacies>
+    <Intrafacies ID="52" Name="前三角洲" Color="argb(255,204,255,51)" SymbolName="前三角洲">
+      <Microfacies ID="53" Name="席状砂" Color="argb(255,204,236,153)" SymbolName="席状砂" />
+      <Microfacies ID="54" Name="前三角洲泥" Color="argb(255,204,255,102)" SymbolName="平原洼地" />
+    </Intrafacies>
+  </Magnafacies>
+  <Magnafacies ID="55" Name="淡水湖泊" Color="argb(255,102,255,255)" SymbolName="平原洼地">
+    <Intrafacies ID="56" Name="滨湖" Color="argb(255,143,255,143)" SymbolName="前三角洲">
+      <Microfacies ID="57" Name="滨湖滩砂" Color="argb(255,255,255,153)" SymbolName="三角洲前缘" />
+      <Microfacies ID="58" Name="滨湖沼泽" Color="argb(255,143,255,143)" SymbolName="扇间沼泽" />
+      <Microfacies ID="59" Name="滨湖泥滩" Color="argb(255,200,255,209)" SymbolName="平原洼地" />
+    </Intrafacies>
+    <Intrafacies ID="60" Name="浅湖" Color="argb(255,209,255,255)" SymbolName="平原洼地">
+      <Microfacies ID="61" Name="浅湖砂坝" Color="argb(255,255,255,175)" SymbolName="三角洲前缘" />
+      <Microfacies ID="62" Name="浅湖泥" Color="argb(255,209,255,255)" SymbolName="平原洼地" />
+    </Intrafacies>
+    <Intrafacies ID="63" Name="半深湖" Color="argb(255,102,255,255)" SymbolName="平原洼地">
+      <Microfacies ID="64" Name="浊积扇" Color="argb(255,204,255,102)" SymbolName="三角洲前缘" />
+      <Microfacies ID="65" Name="半深湖泥" Color="argb(255,102,255,255)" SymbolName="平原洼地" />
+    </Intrafacies>
+    <Intrafacies ID="66" Name="深湖" Color="argb(255,51,204,255)" SymbolName="平原洼地">
+      <Microfacies ID="67" Name="席状砂" Color="argb(255,204,255,102)" SymbolName="席状砂" />
+      <Microfacies ID="68" Name="深湖泥" Color="argb(255,51,204,255)" SymbolName="平原洼地" />
+    </Intrafacies>
+  </Magnafacies>
+  <Magnafacies ID="69" Name="半咸水湖泊" Color="argb(255,102,255,255)" SymbolName="半咸水湖泊">
+    <Intrafacies ID="70" Name="滨湖泥滩" Color="argb(255,209,255,209)" SymbolName="半咸水湖泊" />
+    <Intrafacies ID="71" Name="浅湖" Color="argb(255,209,255,255)" SymbolName="半咸水湖泊">
+      <Microfacies ID="72" Name="浅湖碳酸盐" Color="argb(255,153,255,153)" SymbolName="浅湖碳酸盐" />
+      <Microfacies ID="73" Name="浅湖泥" Color="argb(255,209,255,255)" SymbolName="半咸水湖泊" />
+    </Intrafacies>
+    <Intrafacies ID="74" Name="半深湖" Color="argb(255,102,255,255)" SymbolName="半咸水湖泊">
+      <Microfacies ID="75" Name="半深湖泥" Color="argb(255,102,255,255)" SymbolName="半咸水湖泊" />
+    </Intrafacies>
+    <Intrafacies ID="76" Name="深湖" Color="argb(255,51,204,255)" SymbolName="半咸水湖泊">
+      <Microfacies ID="77" Name="深湖泥" Color="argb(255,51,204,255)" SymbolName="半咸水湖泊" />
+    </Intrafacies>
+  </Magnafacies>
+  <Magnafacies ID="78" Name="咸水湖泊" Color="argb(255,102,255,255)" SymbolName="咸水湖泊">
+    <Intrafacies ID="79" Name="滨湖盐泥滩" Color="argb(255,209,255,209)" SymbolName="滨湖盐泥滩" />
+    <Intrafacies ID="80" Name="滨岸蒸发盐" Color="argb(255,204,255,102)" SymbolName="滨岸蒸发盐" />
+    <Intrafacies ID="81" Name="浅湖" Color="argb(255,209,255,255)" SymbolName="咸水湖泊">
+      <Microfacies ID="82" Name="浅湖盐泥坪" Color="argb(255,159,255,255)" SymbolName="浅湖盐泥坪" />
+    </Intrafacies>
+    <Intrafacies ID="83" Name="半深湖" Color="argb(255,102,255,255)" SymbolName="半深湖" />
+    <Intrafacies ID="84" Name="深湖" Color="argb(255,51,204,255)" SymbolName="深湖" />
+  </Magnafacies>
+  <Magnafacies ID="85" Name="陆源海岸(滨海)" Color="argb(255,255,255,102)" SymbolName="三角洲前缘">
+    <Intrafacies ID="86" Name="滨岸沙丘" Color="argb(255,255,255,204)" SymbolName="三角洲前缘" />
+    <Intrafacies ID="87" Name="后滨滩沙" Color="argb(255,255,255,102)" SymbolName="后滨滩沙" />
+    <Intrafacies ID="88" Name="近滨沙坝" Color="argb(255,255,255,102)" SymbolName="三角洲前缘" />
+    <Intrafacies ID="89" Name="前滨滩沙" Color="argb(255,255,255,153)" SymbolName="席状砂" />
+    <Intrafacies ID="90" Name="临滨" Color="argb(255,217,239,107)" SymbolName="席状砂" />
+  </Magnafacies>
+  <Magnafacies ID="91" Name="碳酸盐岩海岸(滨海)" Color="argb(255,204,255,51)" SymbolName="碳酸盐岩海岸(滨海)">
+    <Intrafacies ID="92" Name="滨岸混积礁屑滩" Color="argb(255,255,255,153)" SymbolName="滨岸混积礁屑滩" />
+    <Intrafacies ID="93" Name="前滨碳酸盐岩滩坝" Color="argb(255,255,255,102)" SymbolName="前滨碳酸盐滩坝" />
+  </Magnafacies>
+  <Magnafacies ID="94" Name="陆源障壁海岸(滨海)" Color="argb(255,204,255,102)" SymbolName="扇端">
+    <Intrafacies ID="95" Name="潮坪" Color="argb(255,204,255,153)" SymbolName="陆源障壁海岸(滨海):潮坪" />
+    <Intrafacies ID="96" Name="泻湖" Color="argb(255,187,224,227)" SymbolName="深湖" />
+    <Intrafacies ID="97" Name="潮道" Color="argb(255,255,255,153)" SymbolName="潮道" />
+    <Intrafacies ID="98" Name="沙滩" Color="argb(255,255,255,204)" SymbolName="三角洲前缘" />
+    <Intrafacies ID="99" Name="沙坝" Color="argb(255,255,255,204)" SymbolName="后滨滩沙" />
+    <Intrafacies ID="100" Name="萨勃哈盐碱滩" Color="argb(255,255,170,255)" SymbolName="萨勃哈盐碱滩" />
+  </Magnafacies>
+  <Magnafacies ID="101" Name="滨外陆棚" Color="argb(255,203,248,253)" SymbolName="滨外陆棚" />
+  <Magnafacies ID="102" Name="碳酸盐岩障壁海岸(滨海)" Color="argb(255,121,193,154)" SymbolName="碳酸盐岩海岸(滨海)">
+    <Intrafacies ID="103" Name="潮坪" Color="argb(255,217,239,109)" SymbolName="碳酸盐岩海岸(滨海)" />
+    <Intrafacies ID="104" Name="泻湖" Color="argb(255,255,255,204)" SymbolName="泻湖" />
+    <Intrafacies ID="105" Name="潮道" Color="argb(255,204,255,103)" SymbolName="潮道" />
+    <Intrafacies ID="106" Name="鲕滩" Color="argb(255,255,255,102)" SymbolName="鲕滩" />
+    <Intrafacies ID="107" Name="沙坝" Color="argb(255,255,255,153)" SymbolName="后滨滩沙" />
+    <Intrafacies ID="108" Name="萨勃哈盐碱滩" Color="argb(255,255,255,204)" SymbolName="萨勃哈盐碱滩" />
+  </Magnafacies>
+  <Magnafacies ID="109" Name="碳酸盐岩台地(浅海)" Color="argb(255,233,233,233)" SymbolName="碳酸盐岩海岸(滨海)">
+    <Intrafacies ID="110" Name="局限台地" Color="argb(255,239,238,237)" SymbolName="碳酸盐岩海岸(滨海)" />
+    <Intrafacies ID="111" Name="开阔台地" Color="argb(255,217,215,213)" SymbolName="开阔台地" />
+    <Intrafacies ID="112" Name="台内洼地" Color="argb(255,204,255,204)" SymbolName="滨外陆棚" />
+    <Intrafacies ID="113" Name="蒸发台地" Color="argb(255,255,204,255)" SymbolName="蒸发台地" />
+    <Intrafacies ID="114" Name="台内浅滩" Color="argb(255,204,255,51)" SymbolName="后滨滩沙" />
+  </Magnafacies>
+  <Magnafacies ID="115" Name="碳酸盐岩台地边缘(浅海)" Color="argb(255,128,255,255)" SymbolName="滨岸混积礁屑滩">
+    <Intrafacies ID="116" Name="边缘鲕滩" Color="argb(255,255,255,102)" SymbolName="边缘鲕滩" />
+    <Intrafacies ID="117" Name="边缘生物礁" Color="argb(255,204,255,51)" SymbolName="滨岸混积礁屑滩" />
+  </Magnafacies>
+  <Magnafacies ID="118" Name="浅海陆棚" Color="argb(255,203,248,253)" SymbolName="浅海陆棚" />
+  <Magnafacies ID="119" Name="陆源斜坡(次深海)" Color="argb(255,153,255,204)" SymbolName="滨外陆棚">
+    <Intrafacies ID="120" Name="斜坡扇" Color="argb(255,204,255,102)" SymbolName="斜坡扇" />
+    <Intrafacies ID="121" Name="盆底扇" Color="argb(255,204,255,51)" SymbolName="席状砂" />
+    <Intrafacies ID="122" Name="斜坡泥" Color="argb(255,153,255,204)" SymbolName="滨外陆棚" />
+  </Magnafacies>
+  <Magnafacies ID="123" Name="碳酸盐岩台地边缘斜坡(次深海)" Color="argb(255,153,255,204)" SymbolName="碳酸盐岩台地边缘斜坡(次深海)">
+    <Intrafacies ID="124" Name="斜坡扇" Color="argb(255,204,255,102)" SymbolName="碳酸盐岩台地边缘斜坡:斜坡扇" />
+    <Intrafacies ID="125" Name="盆底扇" Color="argb(255,204,255,51)" SymbolName="席状砂" />
+    <Intrafacies ID="126" Name="斜坡泥丘" Color="argb(255,204,236,153)" SymbolName="滨外陆棚" />
+    <Intrafacies ID="127" Name="垮塌角砾" Color="argb(255,204,255,102)" SymbolName="垮塌角砾" />
+  </Magnafacies>
+  <Magnafacies ID="128" Name="深海盆地" Color="argb(255,204,236,255)" SymbolName="滨外陆棚">
+    <Intrafacies ID="129" Name="深海泥" Color="argb(255,51,204,255)" SymbolName="滨外陆棚" />
+    <Intrafacies ID="130" Name="盆地扇" Color="argb(255,204,255,51)" SymbolName="席状砂" />
+    <Intrafacies ID="131" Name="深海灰泥" Color="argb(255,204,236,255)" SymbolName="碳酸盐岩海岸(滨海)" />
+  </Magnafacies>
+  <Magnafacies ID="1466913602" Name="未知" Color="argb(255,255,255,255)" SymbolName="" />
+</Translation>

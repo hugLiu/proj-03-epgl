@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<StyleSheet name="MultiWellMap" type="0" scale="10000.00" parm="">
+	<Style>
+		<Well TypeID="101" FeatureID="-1" ShowLeftLine="1" ShowRightLine="1">
+			<Track TypeID="105" FeatureID="5110100" Name="石英含量%:WELL_CORE_SAMPLE_ANAL.UWI,QUARTZ,TOP_DEPTH" TrackWidth="500.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5110200" Name="长石含量%:WELL_CORE_SAMPLE_ANAL.UWI,FELDSPAR,TOP_DEPTH" TrackWidth="500.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5110300" Name="岩屑含量%:WELL_CORE_SAMPLE_ANAL.UWI,ROCK_FRAGMENT,TOP_DEPTH" TrackWidth="500.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5110400" Name="碎屑总含量%:WELL_CORE_SAMPLE_ANAL.UWI,CLAST_CONTENT,TOP_DEPTH" TrackWidth="500.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5110500" Name="填隙物含量:WELL_CORE_SAMPLE_ANAL.UWI,INTERSTITIAL_MATERIAL_CONTENT,TOP_DEPTH" TrackWidth="500.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5120100" Name="孔隙度%:WELL_CORE_ANAL.UWI,POROSITY,DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5120200" Name="渗透率×103μm2:WELL_CORE_ANAL.UWI,K,DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5120300" Name="含油饱和度%:WELL_CORE_ANAL.UWI,OIL_SAT,DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5120400" Name="含水饱和度%:WELL_CORE_ANAL.UWI,WATER_SAT,DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5120500" Name="含气饱和度%:WELL_CORE_ANAL.UWI,GAS_SAT_VOL,DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5120600" Name="碳酸盐含量%:WELL_CORE_ANAL.UWI,CARBONATE_CONTENT,DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5130100" Name="S0:WELL_GEOCHEMICAL.UWI,S0,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5130200" Name="S1:WELL_GEOCHEMICAL.UWI,S1,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5130300" Name="S2:WELL_GEOCHEMICAL.UWI,S2,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5130400" Name="S3:WELL_GEOCHEMICAL.UWI,S3,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5130500" Name="S4:WELL_GEOCHEMICAL.UWI,S4,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5130600" Name="最高裂解峰温:WELL_GEOCHEMICAL.UWI,TMAX,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5130700" Name="生烃潜力:WELL_GEOCHEMICAL.UWI,Pg,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5130800" Name="总有机碳:WELL_GEOCHEMICAL.UWI,TOC,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5140100" Name="全烃含量%:WELL_COMPOUND_LAG.UWI,GAS,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5140200" Name="二氧化碳%:WELL_COMPOUND_LAG.UWI,CO2,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5140300" Name="氢气%:WELL_COMPOUND_LAG.UWI,H2,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5140400" Name="硫化氢%:WELL_COMPOUND_LAG.UWI,H2S,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5140500" Name="丙烷%:WELL_COMPOUND_LAG.UWI,C3H8,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5140600" Name="甲烷%:WELL_COMPOUND_LAG.UWI,CH4,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5140700" Name="乙烷%:WELL_COMPOUND_LAG.UWI,C2H6,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5140800" Name="异丁烷%:WELL_COMPOUND_LAG.UWI,IC4H10,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5140900" Name="正丁烷%:WELL_COMPOUND_LAG.UWI,NC4H10,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5141000" Name="异戊烷%:WELL_COMPOUND_LAG.UWI,IC5H12,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5141100" Name="正戊烷%:WELL_COMPOUND_LAG.UWI,NC5H12,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5141200" Name="氮气%:WELL_COMPOUND_LAG.UWI,N2,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5141300" Name="氧气%:WELL_COMPOUND_LAG.UWI,O2,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="105" FeatureID="5141400" Name="一氧化碳%:WELL_COMPOUND_LAG.UWI,CO,TOP_DEPTH" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+			</Track>
+			<Track TypeID="104" FeatureID="4010100" Name="地层.界" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="112" FeatureName="" bDrawSymbol="0" bDrawBack="0" bShowFmtCode="1" ColorLabel="0" LabelAlign="1">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="2" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4010200" Name="地层.系" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="112" FeatureName="" bDrawSymbol="0" bDrawBack="0" bShowFmtCode="1" ColorLabel="0" LabelAlign="1">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="2" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4010300" Name="地层.统" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="112" FeatureName="" bDrawSymbol="0" bDrawBack="0" bShowFmtCode="1" ColorLabel="0" LabelAlign="1">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="2" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4010400" Name="地层.组" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="112" FeatureName="" bDrawSymbol="0" bDrawBack="0" bShowFmtCode="1" ColorLabel="0" LabelAlign="1">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="2" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4010500" Name="地层.段" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="112" FeatureName="" bDrawSymbol="0" bDrawBack="0" bShowFmtCode="1" ColorLabel="0" LabelAlign="1">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="2" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4010600" Name="地层.亚段" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="112" FeatureName="" bDrawSymbol="0" bDrawBack="0" bShowFmtCode="1" ColorLabel="0" LabelAlign="1">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="2" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4010700" Name="地层.油层组" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="112" FeatureName="" bDrawSymbol="0" bDrawBack="0" bShowFmtCode="1" ColorLabel="0" LabelAlign="1">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="2" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4010800" Name="地层.砂层组" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="112" FeatureName="" bDrawSymbol="0" bDrawBack="0" bShowFmtCode="1" ColorLabel="0" LabelAlign="1">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="2" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4010900" Name="地层.小层" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="112" FeatureName="" bDrawSymbol="0" bDrawBack="0" bShowFmtCode="1" ColorLabel="0" LabelAlign="1">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="2" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4030100" Name="沉积相.微相" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="113" FeatureName="" bDrawSymbol="0" bDrawBack="1" ColorLabel="0" LabelAlign="3">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4030200" Name="沉积相.亚相" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="113" FeatureName="" bDrawSymbol="0" bDrawBack="1" ColorLabel="0" LabelAlign="3">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4030300" Name="沉积相.相" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="113" FeatureName="" bDrawSymbol="0" bDrawBack="1" ColorLabel="0" LabelAlign="3">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4050100" Name="层序旋回.短期旋回" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="114" FeatureName="" ColorLabel="0" LabelAlign="0">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.000000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4050200" Name="层序旋回.中期旋回" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="114" FeatureName="" ColorLabel="0" LabelAlign="0">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.000000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4050300" Name="层序旋回.长期旋回" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="114" FeatureName="" ColorLabel="0" LabelAlign="0">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.000000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4020100" Name="年代地层" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4040100" Name="断层" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="115" FeatureName="" ColorLabel="0" LabelAlign="0">
+					<FntLabel Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4060100" Name="取心次数、心长、进尺、收获率%" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="118" FeatureName="" IsShowTopBottom="1" IsShowCoreCount="1" IsShowCoreLengthAndTopBase="1" IsShowHarvest="1" TextColor="4278190080">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="160" FeatureID="4060200" Name="岩性剖面.岩心剖面" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="121" FeatureName="" isShowLithologyColor="1" isLithologyControlWidth="0" isShowOilGasSymbol="1" isSingleSymbolFill="0" isHeightAdaptive="0" OilGasSymbolWidth="50.000000" LithologySymbolHeight="50.000000">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4060300" Name="岩心剖面.颜色" TrackWidth="80.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4060400" Name="挤压长度" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4060500" Name="裂缝描述" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4060600" Name="孔洞描述" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4060700" Name="岩性描述.岩心描述" TrackWidth="300.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4060800" Name="岩石相" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4060900" Name="岩心符号.沉积层理、构造" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="110" FeatureName="">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4061000" Name="岩心符号.含有物" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="110" FeatureName="">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4061100" Name="图片.岩心照片" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="116" FeatureName="" ShowImageMark="1" ImageFillMode="0">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4061200" Name="井壁取心" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="117" FeatureName="" ColorFnt="4278190080" ClrBegOil="4278190335" ClrEndOil="4294967295" m_nPointTypeOil="2" ClrBegLith="4278190335" ClrEndLith="4294967295" m_nPointTypeLith="2">
+					<Font Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4061300" Name="钻井取心" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="110" FeatureName="">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4061400" Name="磨损面位置" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="110" FeatureName="">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="160" FeatureID="4070100" Name="岩性剖面.岩性剖面" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="121" FeatureName="" isShowLithologyColor="1" isLithologyControlWidth="0" isShowOilGasSymbol="1" isSingleSymbolFill="0" isHeightAdaptive="0" OilGasSymbolWidth="50.000000" LithologySymbolHeight="50.000000">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4070200" Name="岩性剖面.颜色" TrackWidth="80.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4080100" Name="油气解释.砂层解释" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="122" FeatureName="" IsShowText="1" TextColor="4278190080" Align="0" ShowType="0">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="5" nClrBeg="969215" nClrEnd="16744448" nBlend="9440001" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="1" nSymFillBk="4294967040" nPointType="2" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4080200" Name="油气解释.测井油气解释" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="122" FeatureName="" IsShowText="1" TextColor="4278190080" Align="1" ShowType="0">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="5" nClrBeg="969215" nClrEnd="16744448" nBlend="4294967295" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="4294967040" nPointType="8" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4080300" Name="油气解释.荧光油气解释" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="122" FeatureName="" IsShowText="1" TextColor="4278190080" Align="1" ShowType="0">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="5" nClrBeg="969215" nClrEnd="16744448" nBlend="4294967295" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="4294967040" nPointType="8" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4080400" Name="油气解释.地化油气解释" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="122" FeatureName="" IsShowText="1" TextColor="4278190080" Align="1" ShowType="0">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="5" nClrBeg="969215" nClrEnd="16744448" nBlend="4294967295" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="4294967040" nPointType="8" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4080500" Name="油气解释.油气综合解释" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="122" FeatureName="" IsShowText="1" TextColor="4278190080" Align="1" ShowType="0">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="5" nClrBeg="969215" nClrEnd="16744448" nBlend="4294967295" nStyle="0.000000" rc="0,0,0,0" sz="50,50" nSymBk="0" nSymFillBk="4294967040" nPointType="8" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4080600" Name="油气解释.有效厚度" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="123" FeatureName="" TextColor="4278190080">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="5" nClrBeg="969215" nClrEnd="16744448" nBlend="9200009" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="8" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4080700" Name="油气水显示" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="110" FeatureName="">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4090100" Name="储层评价.储层空间类型" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4090200" Name="储层评价.胶结类型" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4090300" Name="储层评价.成岩阶段划分" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4090400" Name="储层评价.储层分类评价" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="160" FeatureID="4100100" Name="岩性剖面.岩屑岩性剖面" TrackWidth="200.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="121" FeatureName="" isShowLithologyColor="1" isLithologyControlWidth="0" isShowOilGasSymbol="1" isSingleSymbolFill="0" isHeightAdaptive="0" OilGasSymbolWidth="50.000000" LithologySymbolHeight="50.000000">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4100200" Name="岩屑岩性剖面.颜色" TrackWidth="80.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4100300" Name="岩性描述.岩屑描述" TrackWidth="300.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4100400" Name="岩屑符号.沉积层理、构造" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="110" FeatureName="">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4100500" Name="岩屑符号.含有物" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="110" FeatureName="">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4110600" Name="铸体薄片.孔隙组合类型" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4110700" Name="铸体薄片.胶结类型" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="111" FeatureName="" TextFormat="0" TextColor="0" IsDrawLine="1" IsDispersion="0" Align="1">
+					<TextFont Height="-12" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4110800" Name="图片.薄片照片" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="116" FeatureName="" ShowImageMark="1" ImageFillMode="0">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4150100" Name="样品位置.常规取心" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="119" FeatureName="">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4160100" Name="图片.扫描电镜照片" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="116" FeatureName="" ShowImageMark="1" ImageFillMode="0">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4170100" Name="试油结论" TrackWidth="150.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="124" FeatureName="" IsShowNote="1" IsShowWaterNote="1" IsShowOilNote="1" IsShowGasNote="1" IsShowCode="1" IsShowInterpret="1" IsShowMethod="1" IsShowDeep="1" ClrBegOil="4278190335" ClrEndOil="4294967295" PointTypeOil="8" ClrTOText="0">
+					<FntTOText Height="-9" Width="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="1" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FaceName="新宋体"/>
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+			<Track TypeID="104" FeatureID="4180100" Name="射孔" TrackWidth="100.000000" ShowLeftLine="1" ShowRightLine="1" HaveDefaultShape="1">
+				<Attribute>
+					<FillInfo PenWidth="0.100000" PenColor="4278190080" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="0" nClrBeg="4294953230" nClrEnd="4278223103" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="4278255360" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+				</Attribute>
+				<DefaultShapeStyle TypeID="110" FeatureName="">
+					<Attribute>
+						<FillInfo PenWidth="0.100000" PenColor="0" PenDashStyle="0" PenStyleID="-1" bDefaultColor="0" nType="1" nClrBeg="969215" nClrEnd="16744448" nBlend="2110001" nStyle="0.000000" rc="0,0,0,0" sz="200,200" nSymBk="0" nSymFillBk="65280" nPointType="1" ImgRotate="0" x="0.000000" y="0.000000" ImgFile="0"/>
+					</Attribute>
+				</DefaultShapeStyle>
+			</Track>
+		</Well>
+        <Sections>
+        </Sections>
+	</Style>
+	<SpecificationData>
+		<Specification name="STLitho">
+			<ColorItem>
+				<ColorName>白色</ColorName>
+				<Index>0</Index>
+				<Value>rgb(255,255,255)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>浅灰黄色</ColorName>
+				<Index>-7.4</Index>
+				<Value>rgb(200,200,170)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>红色</ColorName>
+				<Index>1</Index>
+				<Value>rgb(255,0,0)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>浅红色</ColorName>
+				<Index>-1</Index>
+				<Value>rgb(255,135,135)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>灰白色</ColorName>
+				<Index>7.0</Index>
+				<Value>rgb(195,195,195)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>褐色</ColorName>
+				<Index>3</Index>
+				<Value>rgb(152,87,48)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>棕红色</ColorName>
+				<Index>9.1</Index>
+				<Value>rgb(210,105,30)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>棕黄色</ColorName>
+				<Index>9.4</Index>
+				<Value>rgb(145,100,0)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>浅棕红色</ColorName>
+				<Index>-9.1</Index>
+				<Value>rgb(232,145,85)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>紫红色</ColorName>
+				<Index>2.1</Index>
+				<Value>rgb(255,0,255)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>浅紫红色</ColorName>
+				<Index>-2.1</Index>
+				<Value>rgb(255,150,255)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>浅棕黄色</ColorName>
+				<Index>-9.4</Index>
+				<Value>rgb(255,210,106)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>黄色</ColorName>
+				<Index>4</Index>
+				<Value>rgb(255,255,0)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>灰黄色</ColorName>
+				<Index>7.4</Index>
+				<Value>rgb(150,150,100)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>蓝色</ColorName>
+				<Index>6</Index>
+				<Value>rgb(0,0,255)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>灰蓝色</ColorName>
+				<Index>7.6</Index>
+				<Value>rgb(116,116,140)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>棕灰色</ColorName>
+				<Index>9.7</Index>
+				<Value>rgb(115,92,92)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>绿色</ColorName>
+				<Index>5</Index>
+				<Value>rgb(0,255,0)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>灰绿色</ColorName>
+				<Index>7.5</Index>
+				<Value>rgb(87,159,149)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>褐灰色</ColorName>
+				<Index>3.7</Index>
+				<Value>rgb(169,150,120)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>黄绿色</ColorName>
+				<Index>4.5</Index>
+				<Value>rgb(150,255,0)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>灰黑色</ColorName>
+				<Index>7.8</Index>
+				<Value>rgb(55,55,55)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>深灰色</ColorName>
+				<Index>+7</Index>
+				<Value>rgb(169,169,169)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>浅褐色</ColorName>
+				<Index>-3</Index>
+				<Value>rgb(200,124,79)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>灰褐色</ColorName>
+				<Index>7.3</Index>
+				<Value>rgb(130,91,70)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>黄褐色</ColorName>
+				<Index>4.3</Index>
+				<Value>rgb(155,126,47)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>紫褐色</ColorName>
+				<Index>2.3</Index>
+				<Value>rgb(153,102,132)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>棕褐色</ColorName>
+				<Index>9.3</Index>
+				<Value>rgb(160,82,45)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>黑褐色</ColorName>
+				<Index>8.3</Index>
+				<Value>rgb(67,34,18)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>浅紫色</ColorName>
+				<Index>-2</Index>
+				<Value>rgb(255,150,255)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>棕色</ColorName>
+				<Index>9</Index>
+				<Value>rgb(165,42,42)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>浅棕色</ColorName>
+				<Index>-9</Index>
+				<Value>rgb(227,145,145)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>灰棕色</ColorName>
+				<Index>7.9</Index>
+				<Value>rgb(245,245,220)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>褐棕色</ColorName>
+				<Index>3.9</Index>
+				<Value>rgb(166,80,40)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>灰紫色</ColorName>
+				<Index>7.2</Index>
+				<Value>rgb(82,50,82)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>紫色</ColorName>
+				<Index>2</Index>
+				<Value>rgb(128,0,128)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>黑色</ColorName>
+				<Index>8</Index>
+				<Value>rgb(40,40,40)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>褐黑色</ColorName>
+				<Index>3.8</Index>
+				<Value>rgb(50,50,35)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>浅灰色</ColorName>
+				<Index>-7</Index>
+				<Value>rgb(211,211,211)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>黑灰色</ColorName>
+				<Index>8.7</Index>
+				<Value>rgb(57,57,57)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>灰色</ColorName>
+				<Index>7</Index>
+				<Value>rgb(128,128,128)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>绿灰色</ColorName>
+				<Index>5.7</Index>
+				<Value>rgb(97,158,97)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>蓝灰色</ColorName>
+				<Index>6.7</Index>
+				<Value>rgb(176,176,196)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>紫灰色</ColorName>
+				<Index>2.7</Index>
+				<Value>rgb(172,160,172)</Value>
+			</ColorItem>
+			<ColorItem>
+				<ColorName>杂色</ColorName>
+				<Index>10</Index>
+				<Value>rgb(128,128,0)</Value>
+			</ColorItem>
+		</Specification>
+		<Specification name="STSediment">
+			<Magnafacies ID="1" Name="旱地扇" Color="argb(255,255,204,153)" SymbolName="旱地扇">
+				<Intrafacies ID="2" Name="扇根" Color="argb(255,255,204,153)" SymbolName="扇根"/>
+				<Intrafacies ID="3" Name="扇中" Color="argb(255,255,228,201)" SymbolName="旱地:扇中"/>
+				<Intrafacies ID="4" Name="扇端" Color="argb(255,255,238,221)" SymbolName="扇端"/>
+			</Magnafacies>
+			<Magnafacies ID="5" Name="湿地扇" Color="argb(255,219,214,0)" SymbolName="湿地扇">
+				<Intrafacies ID="6" Name="扇根" Color="argb(255,194,190,16)" SymbolName="扇根"/>
+				<Intrafacies ID="7" Name="扇中" Color="argb(255,230,225,0)" SymbolName="湿地:扇中"/>
+				<Intrafacies ID="8" Name="扇端" Color="argb(255,212,229,113)" SymbolName="扇端"/>
+				<Intrafacies ID="9" Name="扇间沼泽" Color="argb(255,224,255,163)" SymbolName="扇间沼泽"/>
+			</Magnafacies>
+			<Magnafacies ID="10" Name="河流相" Color="argb(255,204,204,0)" SymbolName="河流相">
+				<Intrafacies ID="11" Name="河道" Color="argb(255,51,204,255)" SymbolName="河道"/>
+				<Intrafacies ID="12" Name="河道间" Color="argb(255,222,255,155)" SymbolName="河道间"/>
+				<Intrafacies ID="13" Name="洪泛洼地" Color="argb(255,204,255,51)" SymbolName="洪泛洼地"/>
+			</Magnafacies>
+			<Magnafacies ID="14" Name="扇三角洲" Color="argb(255,255,255,128)" SymbolName="旱地:扇中">
+				<Intrafacies ID="15" Name="扇三角洲平原" Color="argb(255,255,255,102)" SymbolName="河流相">
+					<Microfacies ID="16" Name="分支河道" Color="argb(255,255,255,102)" SymbolName="分支河道"/>
+					<Microfacies ID="17" Name="分支河道间" Color="argb(255,204,255,102)" SymbolName="分支河道间"/>
+					<Microfacies ID="18" Name="平原沼泽" Color="argb(255,204,255,102)" SymbolName="扇间沼泽"/>
+					<Microfacies ID="19" Name="平原洼地" Color="argb(255,153,255,255)" SymbolName="平原洼地"/>
+				</Intrafacies>
+				<Intrafacies ID="20" Name="扇三角洲前缘" Color="argb(255,255,255,153)" SymbolName="三角洲前缘">
+					<Microfacies ID="21" Name="前缘水下分流河道" Color="argb(255,255,255,153)" SymbolName="三角洲前缘"/>
+					<Microfacies ID="22" Name="前缘水下分流间湾" Color="argb(255,204,255,153)" SymbolName="平原洼地"/>
+					<Microfacies ID="23" Name="河口砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘"/>
+					<Microfacies ID="24" Name="远砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘"/>
+				</Intrafacies>
+				<Intrafacies ID="25" Name="扇前三角洲" Color="argb(255,204,255,51)" SymbolName="前三角洲">
+					<Microfacies ID="26" Name="席状砂" Color="argb(255,204,236,153)" SymbolName="席状砂"/>
+					<Microfacies ID="20110810" Name="前三角洲泥" Color="argb(255,204,255,102)" SymbolName="平原洼地"/>
+				</Intrafacies>
+			</Magnafacies>
+			<Magnafacies ID="27" Name="辫状河三角洲" Color="argb(255,255,255,128)" SymbolName="旱地:扇中">
+				<Intrafacies ID="28" Name="辫状河三角洲平原" Color="argb(255,255,255,102)" SymbolName="河流相">
+					<Microfacies ID="29" Name="分支河道" Color="argb(255,255,255,102)" SymbolName="分支河道"/>
+					<Microfacies ID="30" Name="分支河道间" Color="argb(255,204,255,102)" SymbolName="分支河道间"/>
+					<Microfacies ID="31" Name="平原沼泽" Color="argb(255,204,255,102)" SymbolName="扇间沼泽"/>
+					<Microfacies ID="32" Name="平原洼地" Color="argb(255,153,255,255)" SymbolName="平原洼地"/>
+				</Intrafacies>
+				<Intrafacies ID="33" Name="辫状河三角洲前缘" Color="argb(255,255,255,153)" SymbolName="三角洲前缘">
+					<Microfacies ID="34" Name="前缘水下分流河道" Color="argb(255,255,255,153)" SymbolName="三角洲前缘"/>
+					<Microfacies ID="35" Name="前缘水下分流间湾" Color="argb(255,204,255,153)" SymbolName="平原洼地"/>
+					<Microfacies ID="36" Name="河口砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘"/>
+					<Microfacies ID="37" Name="远砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘"/>
+				</Intrafacies>
+				<Intrafacies ID="38" Name="辫状河前三角洲" Color="argb(255,204,255,51)" SymbolName="前三角洲">
+					<Microfacies ID="39" Name="席状砂" Color="argb(255,204,236,153)" SymbolName="席状砂"/>
+					<Microfacies ID="40" Name="前三角洲泥" Color="argb(255,204,255,102)" SymbolName="平原洼地"/>
+				</Intrafacies>
+			</Magnafacies>
+			<Magnafacies ID="41" Name="河流三角洲" Color="argb(255,255,255,102)" SymbolName="扇端">
+				<Intrafacies ID="42" Name="三角洲平原" Color="argb(255,255,255,102)" SymbolName="三角洲平原">
+					<Microfacies ID="43" Name="分支河道" Color="argb(255,255,255,102)" SymbolName="旱地:扇中"/>
+					<Microfacies ID="44" Name="分支河道间" Color="argb(255,204,255,102)" SymbolName="分支河道间"/>
+					<Microfacies ID="45" Name="平原沼泽" Color="argb(255,204,255,102)" SymbolName="扇间沼泽"/>
+					<Microfacies ID="46" Name="平原洼地" Color="argb(255,153,255,255)" SymbolName="平原洼地"/>
+				</Intrafacies>
+				<Intrafacies ID="47" Name="三角洲前缘" Color="argb(255,255,255,153)" SymbolName="三角洲前缘">
+					<Microfacies ID="48" Name="前缘水下分流河道" Color="argb(255,255,255,153)" SymbolName="三角洲前缘"/>
+					<Microfacies ID="49" Name="前缘水下分流间湾" Color="argb(255,204,255,153)" SymbolName="平原洼地"/>
+					<Microfacies ID="50" Name="河口砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘"/>
+					<Microfacies ID="51" Name="远砂坝" Color="argb(255,255,255,153)" SymbolName="三角洲前缘"/>
+				</Intrafacies>
+				<Intrafacies ID="52" Name="前三角洲" Color="argb(255,204,255,51)" SymbolName="前三角洲">
+					<Microfacies ID="53" Name="席状砂" Color="argb(255,204,236,153)" SymbolName="席状砂"/>
+					<Microfacies ID="54" Name="前三角洲泥" Color="argb(255,204,255,102)" SymbolName="平原洼地"/>
+				</Intrafacies>
+			</Magnafacies>
+			<Magnafacies ID="55" Name="淡水湖泊" Color="argb(255,102,255,255)" SymbolName="平原洼地">
+				<Intrafacies ID="56" Name="滨湖" Color="argb(255,143,255,143)" SymbolName="前三角洲">
+					<Microfacies ID="57" Name="滨湖滩砂" Color="argb(255,255,255,153)" SymbolName="三角洲前缘"/>
+					<Microfacies ID="58" Name="滨湖沼泽" Color="argb(255,143,255,143)" SymbolName="扇间沼泽"/>
+					<Microfacies ID="59" Name="滨湖泥滩" Color="argb(255,200,255,209)" SymbolName="平原洼地"/>
+				</Intrafacies>
+				<Intrafacies ID="60" Name="浅湖" Color="argb(255,209,255,255)" SymbolName="平原洼地">
+					<Microfacies ID="61" Name="浅湖砂坝" Color="argb(255,255,255,175)" SymbolName="三角洲前缘"/>
+					<Microfacies ID="62" Name="浅湖泥" Color="argb(255,209,255,255)" SymbolName="平原洼地"/>
+				</Intrafacies>
+				<Intrafacies ID="63" Name="半深湖" Color="argb(255,102,255,255)" SymbolName="平原洼地">
+					<Microfacies ID="64" Name="浊积扇" Color="argb(255,204,255,102)" SymbolName="三角洲前缘"/>
+					<Microfacies ID="65" Name="半深湖泥" Color="argb(255,102,255,255)" SymbolName="平原洼地"/>
+				</Intrafacies>
+				<Intrafacies ID="66" Name="深湖" Color="argb(255,51,204,255)" SymbolName="平原洼地">
+					<Microfacies ID="67" Name="席状砂" Color="argb(255,204,255,102)" SymbolName="席状砂"/>
+					<Microfacies ID="68" Name="深湖泥" Color="argb(255,51,204,255)" SymbolName="平原洼地"/>
+				</Intrafacies>
+			</Magnafacies>
+			<Magnafacies ID="69" Name="半咸水湖泊" Color="argb(255,102,255,255)" SymbolName="半咸水湖泊">
+				<Intrafacies ID="70" Name="滨湖泥滩" Color="argb(255,209,255,209)" SymbolName="半咸水湖泊"/>
+				<Intrafacies ID="71" Name="浅湖" Color="argb(255,209,255,255)" SymbolName="半咸水湖泊">
+					<Microfacies ID="72" Name="浅湖碳酸盐" Color="argb(255,153,255,153)" SymbolName="浅湖碳酸盐"/>
+					<Microfacies ID="73" Name="浅湖泥" Color="argb(255,209,255,255)" SymbolName="半咸水湖泊"/>
+				</Intrafacies>
+				<Intrafacies ID="74" Name="半深湖" Color="argb(255,102,255,255)" SymbolName="半咸水湖泊">
+					<Microfacies ID="75" Name="半深湖泥" Color="argb(255,102,255,255)" SymbolName="半咸水湖泊"/>
+				</Intrafacies>
+				<Intrafacies ID="76" Name="深湖" Color="argb(255,51,204,255)" SymbolName="半咸水湖泊">
+					<Microfacies ID="77" Name="深湖泥" Color="argb(255,51,204,255)" SymbolName="半咸水湖泊"/>
+				</Intrafacies>
+			</Magnafacies>
+			<Magnafacies ID="78" Name="咸水湖泊" Color="argb(255,102,255,255)" SymbolName="咸水湖泊">
+				<Intrafacies ID="79" Name="滨湖盐泥滩" Color="argb(255,209,255,209)" SymbolName="滨湖盐泥滩"/>
+				<Intrafacies ID="80" Name="滨岸蒸发盐" Color="argb(255,204,255,102)" SymbolName="滨岸蒸发盐"/>
+				<Intrafacies ID="81" Name="浅湖" Color="argb(255,209,255,255)" SymbolName="咸水湖泊">
+					<Microfacies ID="82" Name="浅湖盐泥坪" Color="argb(255,159,255,255)" SymbolName="浅湖盐泥坪"/>
+				</Intrafacies>
+				<Intrafacies ID="83" Name="半深湖" Color="argb(255,102,255,255)" SymbolName="半深湖"/>
+				<Intrafacies ID="84" Name="深湖" Color="argb(255,51,204,255)" SymbolName="深湖"/>
+			</Magnafacies>
+			<Magnafacies ID="85" Name="陆源海岸(滨海)" Color="argb(255,255,255,102)" SymbolName="三角洲前缘">
+				<Intrafacies ID="86" Name="滨岸沙丘" Color="argb(255,255,255,204)" SymbolName="三角洲前缘"/>
+				<Intrafacies ID="87" Name="后滨滩沙" Color="argb(255,255,255,102)" SymbolName="后滨滩沙"/>
+				<Intrafacies ID="88" Name="近滨沙坝" Color="argb(255,255,255,102)" SymbolName="三角洲前缘"/>
+				<Intrafacies ID="89" Name="前滨滩沙" Color="argb(255,255,255,153)" SymbolName="席状砂"/>
+				<Intrafacies ID="90" Name="临滨" Color="argb(255,217,239,107)" SymbolName="席状砂"/>
+			</Magnafacies>
+			<Magnafacies ID="91" Name="碳酸盐岩海岸(滨海)" Color="argb(255,204,255,51)" SymbolName="碳酸盐岩海岸(滨海)">
+				<Intrafacies ID="92" Name="滨岸混积礁屑滩" Color="argb(255,255,255,153)" SymbolName="滨岸混积礁屑滩"/>
+				<Intrafacies ID="93" Name="前滨碳酸盐岩滩坝" Color="argb(255,255,255,102)" SymbolName="前滨碳酸盐滩坝"/>
+			</Magnafacies>
+			<Magnafacies ID="94" Name="陆源障壁海岸(滨海)" Color="argb(255,204,255,102)" SymbolName="扇端">
+				<Intrafacies ID="95" Name="潮坪" Color="argb(255,204,255,153)" SymbolName="陆源障壁海岸(滨海):潮坪"/>
+				<Intrafacies ID="96" Name="泻湖" Color="argb(255,187,224,227)" SymbolName="深湖"/>
+				<Intrafacies ID="97" Name="潮道" Color="argb(255,255,255,153)" SymbolName="潮道"/>
+				<Intrafacies ID="98" Name="沙滩" Color="argb(255,255,255,204)" SymbolName="三角洲前缘"/>
+				<Intrafacies ID="99" Name="沙坝" Color="argb(255,255,255,204)" SymbolName="后滨滩沙"/>
+				<Intrafacies ID="100" Name="萨勃哈盐碱滩" Color="argb(255,255,170,255)" SymbolName="萨勃哈盐碱滩"/>
+			</Magnafacies>
+			<Magnafacies ID="101" Name="滨外陆棚" Color="argb(255,203,248,253)" SymbolName="滨外陆棚"/>
+			<Magnafacies ID="102" Name="碳酸盐岩障壁海岸(滨海)" Color="argb(255,121,193,154)" SymbolName="碳酸盐岩海岸(滨海)">
+				<Intrafacies ID="103" Name="潮坪" Color="argb(255,217,239,109)" SymbolName="碳酸盐岩海岸(滨海)"/>
+				<Intrafacies ID="104" Name="泻湖" Color="argb(255,255,255,204)" SymbolName="泻湖"/>
+				<Intrafacies ID="105" Name="潮道" Color="argb(255,204,255,103)" SymbolName="潮道"/>
+				<Intrafacies ID="106" Name="鲕滩" Color="argb(255,255,255,102)" SymbolName="鲕滩"/>
+				<Intrafacies ID="107" Name="沙坝" Color="argb(255,255,255,153)" SymbolName="后滨滩沙"/>
+				<Intrafacies ID="108" Name="萨勃哈盐碱滩" Color="argb(255,255,255,204)" SymbolName="萨勃哈盐碱滩"/>
+			</Magnafacies>
+			<Magnafacies ID="109" Name="碳酸盐岩台地(浅海)" Color="argb(255,233,233,233)" SymbolName="碳酸盐岩海岸(滨海)">
+				<Intrafacies ID="110" Name="局限台地" Color="argb(255,239,238,237)" SymbolName="碳酸盐岩海岸(滨海)"/>
+				<Intrafacies ID="111" Name="开阔台地" Color="argb(255,217,215,213)" SymbolName="开阔台地"/>
+				<Intrafacies ID="112" Name="台内洼地" Color="argb(255,204,255,204)" SymbolName="滨外陆棚"/>
+				<Intrafacies ID="113" Name="蒸发台地" Color="argb(255,255,204,255)" SymbolName="蒸发台地"/>
+				<Intrafacies ID="114" Name="台内浅滩" Color="argb(255,204,255,51)" SymbolName="后滨滩沙"/>
+			</Magnafacies>
+			<Magnafacies ID="115" Name="碳酸盐岩台地边缘(浅海)" Color="argb(255,128,255,255)" SymbolName="滨岸混积礁屑滩">
+				<Intrafacies ID="116" Name="边缘鲕滩" Color="argb(255,255,255,102)" SymbolName="边缘鲕滩"/>
+				<Intrafacies ID="117" Name="边缘生物礁" Color="argb(255,204,255,51)" SymbolName="滨岸混积礁屑滩"/>
+			</Magnafacies>
+			<Magnafacies ID="118" Name="浅海陆棚" Color="argb(255,203,248,253)" SymbolName="浅海陆棚"/>
+			<Magnafacies ID="119" Name="陆源斜坡(次深海)" Color="argb(255,153,255,204)" SymbolName="滨外陆棚">
+				<Intrafacies ID="120" Name="斜坡扇" Color="argb(255,204,255,102)" SymbolName="斜坡扇"/>
+				<Intrafacies ID="121" Name="盆底扇" Color="argb(255,204,255,51)" SymbolName="席状砂"/>
+				<Intrafacies ID="122" Name="斜坡泥" Color="argb(255,153,255,204)" SymbolName="滨外陆棚"/>
+			</Magnafacies>
+			<Magnafacies ID="123" Name="碳酸盐岩台地边缘斜坡(次深海)" Color="argb(255,153,255,204)" SymbolName="碳酸盐岩台地边缘斜坡(次深海)">
+				<Intrafacies ID="124" Name="斜坡扇" Color="argb(255,204,255,102)" SymbolName="碳酸盐岩台地边缘斜坡:斜坡扇"/>
+				<Intrafacies ID="125" Name="盆底扇" Color="argb(255,204,255,51)" SymbolName="席状砂"/>
+				<Intrafacies ID="126" Name="斜坡泥丘" Color="argb(255,204,236,153)" SymbolName="滨外陆棚"/>
+				<Intrafacies ID="127" Name="垮塌角砾" Color="argb(255,204,255,102)" SymbolName="垮塌角砾"/>
+			</Magnafacies>
+			<Magnafacies ID="128" Name="深海盆地" Color="argb(255,204,236,255)" SymbolName="滨外陆棚">
+				<Intrafacies ID="129" Name="深海泥" Color="argb(255,51,204,255)" SymbolName="滨外陆棚"/>
+				<Intrafacies ID="130" Name="盆地扇" Color="argb(255,204,255,51)" SymbolName="席状砂"/>
+				<Intrafacies ID="131" Name="深海灰泥" Color="argb(255,204,236,255)" SymbolName="碳酸盐岩海岸(滨海)"/>
+			</Magnafacies>
+			<Magnafacies ID="1466913602" Name="未知" Color="argb(255,255,255,255)" SymbolName=""/>
+		</Specification>
+		<Specification name="STOGColor">
+			<Item ID="3000006" Name="气水层" Color="argb(255,173,216,230)"/>
+			<Item ID="3000010" Name="干层" Color="argb(255,165,42,42)"/>
+			<Item ID="9500004" Name="气层" Color="argb(255,255,255,0)"/>
+			<Item ID="3000001" Name="油水同层" Color="argb(255,255,105,180)"/>
+			<Item ID="9500002" Name="差油层" Color="argb(255,128,0,128)"/>
+			<Item ID="9500005" Name="水层" Color="argb(255,0,255,255)"/>
+			<Item ID="9500001" Name="油层" Color="argb(255,255,0,0)"/>
+		</Specification>
+		<Specification name="STFormation">
+			<FormationAgeSet>
+				<Item Code="界" Index="0"/>
+				<Item Code="系" Index="1"/>
+				<Item Code="统" Index="2"/>
+				<Item Code="组" Index="3"/>
+				<Item Code="段" Index="4"/>
+				<Item Code="亚段" Index="5"/>
+				<Item Code="油层组" Index="6"/>
+				<Item Code="砂层组" Index="7"/>
+				<Item Code="小层" Index="8"/>
+			</FormationAgeSet>
+			<FormationInfoSet>
+				<Item Code="Kz" Name="新生界" Index="-1" Parent="" FormationYears="" DomainLitho="" Color="16777215" FormationAge="界"/>
+				<Item Code="Qh" Name="全新统" Index="-1" Parent="Q" FormationYears="0.012" DomainLitho="" Color="16777215" FormationAge="统"/>
+				<Item Code="H1B1" Name="H1B1" Index="-1" Parent="HX" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="Qp" Name="更新统" Index="-1" Parent="Q" FormationYears="2.48" DomainLitho="" Color="16777215" FormationAge="统"/>
+				<Item Code="HS" Name="HS" Index="-1" Parent="韩江组" FormationYears="" DomainLitho="" Color="64250" FormationAge="段"/>
+				<Item Code="N1" Name="中新统" Index="-1" Parent="N" FormationYears="23.3" DomainLitho="" Color="16777215" FormationAge="统"/>
+				<Item Code="Q" Name="第四系" Index="-1" Parent="Kz" FormationYears="" DomainLitho="" Color="16777215" FormationAge="系"/>
+				<Item Code="H2D" Name="H2D" Index="-1" Parent="ZS" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="N" Name="晚第三系" Index="-1" Parent="Kz" FormationYears="" DomainLitho="" Color="16777215" FormationAge="系"/>
+				<Item Code="Mz" Name="中生界" Index="-1" Parent="" FormationYears="" DomainLitho="" Color="16777215" FormationAge="界"/>
+				<Item Code="N2" Name="上新统" Index="-1" Parent="N" FormationYears="5.3" DomainLitho="" Color="16777215" FormationAge="统"/>
+				<Item Code="韩江组" Name="韩江组" Index="-1" Parent="N1" FormationYears="" DomainLitho="" Color="16448000" FormationAge="组"/>
+				<Item Code="HA" Name="HA" Index="-1" Parent="HS" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="HB" Name="HB" Index="-1" Parent="HS" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H4B" Name="H4B" Index="-1" Parent="ZX" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="HX" Name="HX" Index="-1" Parent="韩江组" FormationYears="" DomainLitho="" Color="64250" FormationAge="段"/>
+				<Item Code="H1" Name="H1" Index="-1" Parent="HX" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="E1" Name="古新统" Index="-1" Parent="E" FormationYears="65" DomainLitho="" Color="16777215" FormationAge="统"/>
+				<Item Code="H1B2" Name="H1B2" Index="-1" Parent="HX" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H1C" Name="H1C" Index="-1" Parent="HX" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="珠江组" Name="珠江组" Index="-1" Parent="N1" FormationYears="" DomainLitho="" Color="16777215" FormationAge="组"/>
+				<Item Code="ZS" Name="ZS" Index="-1" Parent="珠江组" FormationYears="" DomainLitho="" Color="16777215" FormationAge="段"/>
+				<Item Code="H2" Name="H2" Index="-1" Parent="ZS" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H2A" Name="H2A" Index="-1" Parent="ZS" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H4C" Name="H4C" Index="-1" Parent="ZX" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H2B" Name="H2B" Index="-1" Parent="ZS" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H2C" Name="H2C" Index="-1" Parent="ZS" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H4A" Name="H4A" Index="-1" Parent="ZX" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="ZZ" Name="ZZ" Index="-1" Parent="珠江组" FormationYears="" DomainLitho="" Color="6617840" FormationAge="段"/>
+				<Item Code="H3A" Name="H3A" Index="-1" Parent="ZZ" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H3A1" Name="H3A1" Index="-1" Parent="ZZ" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H3B" Name="H3B" Index="-1" Parent="ZZ" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H3C" Name="H3C" Index="-1" Parent="ZZ" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H3D" Name="H3D" Index="-1" Parent="ZZ" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H3D1" Name="H3D1" Index="-1" Parent="ZZ" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H3E" Name="H3E" Index="-1" Parent="ZZ" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H3F" Name="H3F" Index="-1" Parent="ZZ" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="H3G" Name="H3G" Index="-1" Parent="ZZ" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="古生界" Name="古生界" Index="-1" Parent="" FormationYears="" DomainLitho="" Color="16777215" FormationAge="界"/>
+				<Item Code="H3H" Name="H3H" Index="-1" Parent="ZZ" FormationYears="" DomainLitho="" Color="16777215" FormationAge="亚段"/>
+				<Item Code="ZX" Name="ZX" Index="-1" Parent="珠江组" FormationYears="" DomainLitho="" Color="6617840" FormationAge="段"/>
+				<Item Code="E" Name="早第三系" Index="-1" Parent="Kz" FormationYears="" DomainLitho="" Color="16777215" FormationAge="系"/>
+				<Item Code="E3" Name="渐新统" Index="-1" Parent="E" FormationYears="36.5" DomainLitho="" Color="16777215" FormationAge="统"/>
+				<Item Code="E2" Name="始新统" Index="-1" Parent="E" FormationYears="53" DomainLitho="" Color="16777215" FormationAge="统"/>
+			</FormationInfoSet>
+		</Specification>
+	</SpecificationData>
+</StyleSheet>

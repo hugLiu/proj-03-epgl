@@ -1,0 +1,39 @@
+﻿<table class="table table-stripped toggle-arrow-tiny">
+    <thead>
+        <tr>
+            <th style="width:40px">编号</th>
+            <th>名称</th>
+            <th style="width:85px">制图人</th>
+            <th style="width:85px">图件分类</th>
+            <th style="width:100px">入库日期</th>
+            <th style="width:160px">操作</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach:resultAlbum">
+        <tr>
+            <td><span class="ibx-hotTop-rank current" data-bind="text:$index() + 1"></span></td>
+            <td style="width:200px;"><span data-bind="text: name"></span></td>
+            <td data-bind="text: author"></td>
+            <td data-bind="text:productType"></td>
+            <td data-bind="text:indexedDateShow"></td>
+            <td>
+                <a class="btn btn-success btn-sm" data-bind="click:$parent.openDetailPage">
+                    <i class="fa fa-file-o"></i>打开
+                </a>
+                <!--ko if:favoriteFlag()==0-->
+                <a class="btn btn-danger btn-line btn-sm" style="margin-left: 5px;" data-toggle="modal" data-target="#favCatalog_modal" data-bind="attr:{'data-iiid':iiid}">
+                    <i class="fa fa-heart-o"></i>收藏
+                </a>
+                <!--/ko-->
+                <!--ko if:favoriteFlag()==1-->
+                <a class="btn btn-danger btn-sm" style="margin-left: 5px;" data-bind="click:$parent.cancleFavorite">
+                    <i class="fa fa-heart"></i>取消收藏
+                </a>
+                <!--/ko-->
+                <a class="cbp-l-caption-buttonRight btn btn-primary btn-sm" data-bind="click:$parent.downloadMap">
+                    <i class="fa fa-download"></i>下载
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>

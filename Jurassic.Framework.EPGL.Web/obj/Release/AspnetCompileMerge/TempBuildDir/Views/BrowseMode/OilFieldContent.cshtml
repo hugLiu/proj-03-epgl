@@ -1,0 +1,423 @@
+﻿@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台-油田图册";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- content type -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+
+    <!-- add css -->
+    <link href="~/Content/EPGL/css/pages/browsemode/style.css" rel="stylesheet" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: auto !important;
+        }
+        img {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">
+<div data-bind="visible: shouldShow1">
+    <img data-bind="attr:{src:imgUrl1}" style="float:right; width:400px;margin:10px" />
+    <h1>(一)地理位置</h1>
+    <p data-bind="text:paragraph1">
+    </p>
+    <h1>(二)地层特征</h1>
+    <p data-bind="text:paragraph2"></p>
+    <h1>(三)构造、断层特征</h1>
+    <p data-bind="text:paragraph3"></p>
+</div>
+    
+<div data-bind="visible: shouldShow2">
+    <h1>(四)储层特征</h1>
+    <p data-bind="text:paragraph4"></p>
+    <h1>(五)油气储量</h1>
+    <p data-bind="text:paragraph5"></p>
+    <h1>(六)开发历程</h1>
+    <p data-bind="text:paragraph6">
+        <br />
+        <ul data-bind="foreach: stages">
+            <li data-bind="text:name">
+                <p data-bind="text:content"></p></li>
+        </ul>
+    </p>
+    <h1>(七)开采现状</h1>
+    <p data-bind="text:paragraph7"></p>
+</div>
+    
+<div data-bind="visible: shouldShow3">
+    <div style="width:48%; float:left; margin:5px;">
+        <img data-bind="attr:{src:imgUrl2}" style="float:left; width:200px;height:320px;margin:5px" />
+        <p data-bind="text:content1"></p>
+    </div>
+
+    <div style="width:48%; float:right; margin:5px;">
+        <img data-bind="attr:{src:imgUrl3}" style="float:left; width:200px;height:320px;margin:5px" />
+        <p data-bind="text:content2">
+
+        </p>
+    </div>
+
+    <div style="clear:both"></div>
+
+    <div style="width:100%; margin:5px;">
+        <img data-bind="attr:{src:imgUrl4}" style="float:left; width:400px;margin:5px" />
+        <p data-bind="html:content_head">
+            @*<h3 data-bind="text:head1"></h3>*@
+        </p>
+    </div>
+</div>
+    
+<div data-bind="visible: shouldShow4">
+    <div style="width:100%;text-align:center">
+        <h2 style="margin-top:0px;margin-bottom:0px;" data-bind="text:head2"></h2>
+        <canvas id="canvas1" width="600" height="300" style="float:left; width:600px;margin:5px"></canvas>
+        @*<img data-bind="attr:{src:imgUrl5}" style="float:left; width:600px;margin:5px" />*@
+        <p style="text-align:left" data-bind="text:content4">
+
+        </p>
+    </div>
+
+    <div style="clear:both"></div>
+
+    <div style="width:100%; text-align:center">
+        @*<img data-bind="attr:{src:imgUrl6}" style="float:right; height:260px;margin-top:-10px; margin-left:25px" />*@
+        @*<canvas id="canvas2" height="260" width="300" style="float:right; height:260px;margin-top:-10px; margin-left:25px"></canvas>*@
+        <div id="canvas2" style="float:right; width:300px;height:260px;margin-top:-10px; margin-left:25px"></div>
+        <h2 style="margin-top:0px;margin-bottom:0px;" data-bind="text:head3"></h2>
+        <p style="text-align:left" data-bind="text:content5">
+        </p>
+    </div>
+</div>
+
+
+    <script src="~/Content/EPGL/js/core/jquery-2.1.4.min.js"></script>
+<script src="~/Content/EPGL/js/core/knockout-3.0.0.js"></script>
+    @*<script src="~/Content/EPGL/js/plugins/echarts-3.6.0/echarts.min.js"></script>*@
+    <script src="~/Content/EPGL/js/plugins/echarts-3.6.0/echarts.js"></script>
+<script src="~/DemoData/bookdata/bookdata.js"></script>
+    <script src="~/DemoData/bookdata/chartdata.js"></script>
+<script type="text/javascript">
+    var imgUrl = "/Content/EPGL/img/pages/browsemode/oilfield/";
+
+    var ContentOneModel = function (contentPage) {
+        var self = this;
+        self.shouldShow1 = ko.observable(true);
+        self.shouldShow2 = ko.observable(false);
+        self.shouldShow3 = ko.observable(false);
+        self.shouldShow4 = ko.observable(false);
+
+
+        self.imgUrl1 = ko.observable(imgUrl+contentPage.imgUrl1);
+        self.paragraph1 = ko.observable(contentPage.paragraph1);
+        self.paragraph2 = ko.observable(contentPage.paragraph2);
+        self.paragraph3 = ko.observable(contentPage.paragraph3);
+
+
+        self.paragraph4 = ko.observable(contentPage.paragraph4);
+        self.paragraph5 = ko.observable(contentPage.paragraph5);
+        self.paragraph6 = ko.observable(contentPage.paragraph6);
+        self.stages = ko.observableArray(contentPage.stages);
+        self.paragraph7 = ko.observable(contentPage.paragraph7);
+
+
+        self.imgUrl2 = ko.observable(imgUrl + contentPage.imgUrl2);
+        self.imgUrl3 = ko.observable(imgUrl + contentPage.imgUrl3);
+        self.imgUrl4 = ko.observable(imgUrl + contentPage.imgUrl4);
+        self.content1 = ko.observable(contentPage.content1);
+        self.content2 = ko.observable(contentPage.content2);
+        self.head1 = ko.observable(contentPage.head1);
+        self.content3 = ko.observable(contentPage.content3);
+        self.content_head = ko.computed(function () {
+            return "<h3>" + self.head1() + "</h3>" + self.content3();
+        });
+
+        self.head2 = ko.observable(contentPage.head2);
+        self.imgUrl5 = ko.observable(imgUrl + contentPage.imgUrl5);
+        self.content4 = ko.observable(contentPage.content4);
+        self.imgUrl6 = ko.observable(imgUrl + contentPage.imgUrl6);
+        self.head3 = ko.observable(contentPage.head3);
+        self.content5 = ko.observable(contentPage.content5);
+
+        self.changePage = function() {
+            var index = '@ViewBag.Index';
+            switch (index) {
+            case "1":
+                self.shouldShow1(true);
+                self.shouldShow2(false);
+                self.shouldShow3(false);
+                self.shouldShow4(false);
+                break;
+            case "2":
+                self.shouldShow1(false);
+                self.shouldShow2(true);
+                self.shouldShow3(false);
+                self.shouldShow4(false);
+                break;
+            case "3":
+                self.shouldShow1(false);
+                self.shouldShow2(false);
+                self.shouldShow3(true);
+                self.shouldShow4(false);
+                break;
+            case "4":
+                self.shouldShow1(false);
+                self.shouldShow2(false);
+                self.shouldShow3(false);
+                self.shouldShow4(true);
+                drawOmbinedCurve();
+                drawWaterContent();
+                break;
+            default:
+            }
+        };
+    };
+    $(document).ready(function () {
+
+        var oilFieldName = '@Html.Raw(ViewBag.OilFieldName)';
+        var content = bookData[oilFieldName].contentPage;
+
+
+        var currentModel = new ContentOneModel(content);
+        ko.applyBindings(currentModel);
+        currentModel.changePage();
+
+        $('img').on('click', function () {
+            var src = $(this).attr('src');
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', src);
+                $(window.parent.document).find('.hidden-Bigimg').show(200);
+        });
+    });
+
+    var drawOmbinedCurve = function () {
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('canvas1'));
+
+        var option = {               
+            grid: [
+                { x: '7%', y: '2%', width: '100%', height: '5.75%' },
+                { x: '7%', y: '13.75%', width: '100%', height: '5.75%' },
+                { x: '7%', y: '25.5%', width: '100%', height: '12.5%' },
+                { x: '7%', y: '44%', width: '100%', height: '12.5%' },
+                { x: '7%', y: '62.5%', width: '100%', height: '12.5%' },
+                { x: '7%', y: '81%', width: '100%', height: '12.5%' }
+            ],
+            tooltip: {
+                formatter: '{a} {b}: ({c})'
+            },
+            xAxis: [
+                { gridIndex: 0,data: combinedCurveData.yearData},
+                { gridIndex: 1,data: combinedCurveData.yearData },
+                { gridIndex: 2,data: combinedCurveData.yearData},
+                { gridIndex: 3,data: combinedCurveData.yearData}, 
+                { gridIndex: 4,data: combinedCurveData.yearData },
+                { gridIndex: 5,data: combinedCurveData.yearData }
+            ],
+            yAxis: [
+                { gridIndex: 0, name: '油井开井数', nameLocation: 'middle',nameGap:30, nameRotate: 90, nameTextStyle: {
+                    fontSize:8
+                } },
+                {
+                    gridIndex: 1, name: '注水井开井数', nameLocation: 'middle', nameGap: 30, nameRotate: 90, nameTextStyle: {
+                        fontSize: 8
+                    }
+                },
+                {
+                    gridIndex: 2, name: '日产液/日产油', nameLocation: 'middle', nameGap: 30, nameRotate: 90, nameTextStyle: {
+                        fontSize: 8
+                    }
+                },
+                {
+                    gridIndex: 3, name: '含水', nameLocation: 'middle', nameGap: 30, nameRotate: 90, nameTextStyle: {
+                        fontSize: 8
+                    }
+                },
+                {
+                    gridIndex: 4, name: '平均单井日产油', nameLocation: 'middle', nameGap: 30, nameRotate: 90, nameTextStyle: {
+                        fontSize: 8
+                    }
+                },
+                {
+                    gridIndex: 5, name: '日注水量', nameLocation: 'middle', nameGap: 30, nameRotate: 90, nameTextStyle: {
+                        fontSize: 8
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: '油井开井数',
+                    type: 'bar',
+                    xAxisIndex: 0,
+                    yAxisIndex: 0,
+                    data: combinedCurveData.oilWellCount
+                },
+                {
+                    name: '注水井开井数',
+                    type: 'bar',
+                    xAxisIndex: 1,
+                    yAxisIndex: 1,
+                    data: combinedCurveData.waterWellCount 
+                },
+                {
+                    name: '日产液',
+                    type: 'line',
+                    xAxisIndex: 2,
+                    yAxisIndex: 2,
+                    data: combinedCurveData.dailyFluidOutput 
+                },
+                {
+                    name: '日产油',
+                    type: 'line',
+                    xAxisIndex: 2,
+                    yAxisIndex: 2,
+                    data: combinedCurveData.dailyOilOutput
+                },
+                {
+                    name: '含水',
+                    type: 'line',
+                    xAxisIndex: 3,
+                    yAxisIndex: 3,
+                    data: combinedCurveData.waterContent
+                },
+                {
+                    name: '平均单井日产油',
+                    type: 'line',
+                    xAxisIndex: 4,
+                    yAxisIndex: 4,
+                    data: combinedCurveData.dailyOilOutputOneWell
+                },
+                {
+                    name: '日注水量',
+                    type: 'line',
+                    xAxisIndex: 5,
+                    yAxisIndex: 5,
+                    data: combinedCurveData.dailyWaterInjection
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+
+    };
+    var drawWaterContent = function() {
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('canvas2'));
+
+        var curveFunc = function (r) {
+            var data = [];
+            for (var i = 0; i < 1000; i++) {
+                var f = Math.random(0, 1);
+                var x = (Math.log(f / (1 - f)) - 1.69) / 7.5 + r;
+                var y = f;
+
+                if (x>0) {
+                    data.push([100 * x, 100 * y]);
+                }
+                    
+            }
+            return data.sort(function(a,b) {
+                return a[0]-b[0];
+            });
+        }
+
+            
+
+        var option = {
+            legend: {
+                data: ['采收率=0.10', '采收率=0.20', '采收率=0.30', '采收率=0.40', '采收率=0.50', '采收率=0.60', '采收率=0.70', '拟合曲线：采收率=0.58', '采出程度']
+            },
+            xAxis: {
+                name:'采出程度%',
+                min:0,
+                max:100
+            },
+            yAxis: {
+                name:'含水率%',
+                min: 0,
+                max:100
+            },
+            series: [
+                {
+                    name: '采收率=0.10',
+                    type: 'line',
+                    symbol: 'circle',
+                    symbolSize: 2,
+                    data: curveFunc(0.10)
+                },
+                {
+                    name: '采收率=0.20',
+                    type: 'line',
+                    symbol: 'circle',
+                    symbolSize: 2,
+                    data: curveFunc(0.20)
+                },
+                {
+                    name: '采收率=0.30',
+                    type: 'line',
+                    symbol: 'circle',
+                    symbolSize: 2,
+                    data: curveFunc(0.30)
+                },
+                {
+                    name: '采收率=0.40',
+                    type: 'line',
+                    symbol: 'circle',
+                    symbolSize: 2,
+                    data: curveFunc(0.40)
+                },
+                {
+                    name: '采收率=0.50',
+                    type: 'line',
+                    symbol: 'circle',
+                    symbolSize: 2,
+                    data: curveFunc(0.50)
+                },
+                {
+                    name: '采收率=0.60',
+                    type: 'line',
+                    symbol: 'circle',
+                    symbolSize: 2,
+                    data: curveFunc(0.60)
+                },
+                {
+                    name: '采收率=0.70',
+                    type: 'line',
+                    symbol: 'circle',
+                    symbolSize: 2,
+                    data: curveFunc(0.70)
+                },
+                {
+                    name: '拟合曲线：采收率=0.58',
+                    type: 'line',
+                    symbol: 'circle',
+                    symbolSize: 3,
+                    data: curveFunc(0.58)
+                },
+                {
+                    name: '采出程度',
+                    type: 'scatter',
+                    symbolSize: 5,
+                    data: combinedCurveData.recoveryDegree
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    };
+</script>
+</body>
+</html>

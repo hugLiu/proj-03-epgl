@@ -1,0 +1,29 @@
+LegendName:°×-ºÚÉ«½×
+VertexCount:2
+0	255	255	255
+1	0	0	0
+LegendName:ºì-»Æ-ÂÌ-À¶É«½×
+VertexCount:4
+0	255	0	0
+0.33	255	255	0
+0.66	0	255	0
+1	0	0	255
+LegendName:À¶-°×-ºìÉ«½×
+VertexCount:3
+0	0	0	255
+0.5	255	255	255
+1	255	0	0
+LegendName:ºì-À¶É«½×
+VertexCount:2
+0	255	0	0
+1	0	0	255
+LegendName:ºì-°×-ºÚÉ«½×
+VertexCount:3
+0	255	0	0
+0.5	255	255	255
+1	0	0	0
+LegendName:À¶-°×-×ØÉ«½×
+VertexCount:3
+0	0	0	255
+0.5	255	255	255
+1	128	64	0

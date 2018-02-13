@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+<div>
+    <img src="" style="width: 100%;height: 575px;" alt="" />
+</div>
+<script src="~/Content/EPGL/js/core/jquery-2.1.4.min.js"></script>
+    <script src="~/DemoData/bookdata/guidancedata.js"></script>
+<script type="text/javascript">
+    
+    $(function () {
+        var imgUrl = "/Content/EPGL/img/pages/browsemode/guidance/";
+
+        var index = Number(@ViewBag.TableIndex);
+        var imgIndex = Number(@ViewBag.ImageIndex);
+
+        var src = imgUrl + tableParamData[index]["imgSrc"][imgIndex];
+        $("img").attr("src", src);
+
+        $('img').on('click',
+            function () {
+                $(window.parent.document).find('.hidden-Bigimg img').attr('src', src);
+                $(window.parent.document).find('.hidden-Bigimg').show(200);
+
+            });
+
+    });
+</script>
+</body>
+</html>

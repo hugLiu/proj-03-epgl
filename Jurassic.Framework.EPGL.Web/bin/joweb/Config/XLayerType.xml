@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeoMapLayerType>
+  <LayerType id="1000000" name="地理信息">  
+<LayerType id="1010000" name="地名"/>
+<LayerType id="1020000" name="境界"/>
+<LayerType id="1030000" name="交通线"/>
+<LayerType id="1040000" name="桥梁"/>
+<LayerType id="1050000" name="隧道"/>
+<LayerType id="1060000" name="交通站点"/>
+<LayerType id="1070000" name="线状水系"/>
+<LayerType id="1080000" name="面状水系"/>
+<LayerType id="1090000" name="海岸线"/>
+<LayerType id="1100000" name="点状水系"/>
+<LayerType id="1110000" name="点状地物"/>
+<LayerType id="1120000" name="线状地物"/>
+<LayerType id="1130000" name="面状地物"/>
+  </LayerType>
+  <LayerType id="2000000" name="矿权信息">
+<LayerType id="2010000" name="矿权区"/>
+  </LayerType>
+  <LayerType id="3000000" name="勘探工程信息">
+   <LayerType id="3010000" name="野外地层剖面点"/>
+<LayerType id="3020000" name="野外典型构造点"/>
+<LayerType id="3030000" name="地质露头"/>
+<LayerType id="3040000" name="实测地层剖面"/>
+<LayerType id="3050000" name="油气标志"/>
+<LayerType id="3060000" name="地震工区"/>
+<LayerType id="3070000" name="地震测线"/>
+<LayerType id="3080000" name="地震相"/>
+<LayerType id="3090000" name="地震资料品质区"/>
+<LayerType id="3100000" name="地震属性"/>
+<LayerType id="3110000" name="反射层时间"/>
+<LayerType id="3120000" name="非地震工区"/>
+<LayerType id="3130000" name="非地震物化探测线"/>
+<LayerType id="3140000" name="井位">
+<LayerType id="3140100" name="探井"/>
+<LayerType id="3140200" name="开发井"/>
+<LayerType id="3140300" name="废弃井"/>
+<LayerType id="3140400" name="井况"/>
+<LayerType id="3140500" name="未完井"/>
+<LayerType id="3140600" name="石油井"/>
+<LayerType id="3140700" name="天然气井"/>
+</LayerType>
+<LayerType id="3150000" name="勘探目标（项目工区）"/>
+
+  </LayerType>
+  <LayerType id="4000000" name="地质信息">
+   <LayerType id="4010000" name="构造分区"/>
+   <LayerType id="4020000" name="断层"/>
+<LayerType id="4030000" name="裂缝预测"/>
+<LayerType id="4040000" name="裂缝线"/>
+<LayerType id="4050000" name="裂缝发育带"/>
+<LayerType id="4060000" name="构造深度"/>
+<LayerType id="4070000" name="高低点"/>
+<LayerType id="4080000" name="地层界线"/>
+<LayerType id="4090000" name="埋深等值线"/>
+<LayerType id="4100000" name="地层接触关系"/>
+<LayerType id="4110000" name="地层年代">
+<LayerType id="4110100" name="界"/>
+<LayerType id="4110200" name="系"/>
+<LayerType id="4110300" name="统"/>
+<LayerType id="4110400" name="组"/>
+</LayerType>
+<LayerType id="4140000" name="地层分布"/>
+<LayerType id="4150000" name="剖面位置线"/>
+<LayerType id="4160000" name="物源方向"/>
+<LayerType id="4170000" name="矿物分区线"/>
+<LayerType id="4180000" name="岩相古地理"/>
+<LayerType id="419000" name="砂体边界线"/>
+<LayerType id="420000" name="砂岩含量"/>
+<LayerType id="4210000" name="鲕滩分布带"/>
+<LayerType id="4220000" name="沉积相">
+<LayerType id="4220100" name="相"/>
+<LayerType id="4220200" name="亚相"/>
+<LayerType id="4220300" name="微相"/>
+</LayerType>
+<LayerType id="4230000" name="岩性分布"/>
+<LayerType id="4240000" name="成岩相带"/>
+<LayerType id="4250000" name="岩体边界线"/>
+<LayerType id="4260000" name="圈闭"/>
+<LayerType id="4270000" name="地层产状"/>
+  </LayerType>
+  <LayerType id="5000000" name="油气信息">
+   <LayerType id="5010000" name="烃源岩等值线"/>
+<LayerType id="5020000" name="有机质丰度"/>
+<LayerType id="5030000" name="温差特征"/>
+<LayerType id="5040000" name="储层物性"/>
+<LayerType id="5050000" name="储层非均质性"/>
+<LayerType id="5060000" name="储层分类"/>
+<LayerType id="5070000" name="流体势力"/>
+<LayerType id="5080000" name="储量类型"/>
+<LayerType id="5090000" name="储量级别"/>
+<LayerType id="5100000" name="储量分类"/>
+<LayerType id="5110000" name="流动单元"/>
+<LayerType id="5120000" name="盖层厚度"/>
+<LayerType id="5130000" name="过剩压力"/>
+<LayerType id="5140000" name="油气资源量"/>
+<LayerType id="5150000" name="油气藏类型"/>
+<LayerType id="5160000" name="含油气面积"/>
+<LayerType id="5170000" name="油气水边界"/>
+  </LayerType>
+  <LayerType id="6000000" name="开发生产信息">
+    <LayerType id="6010000" name="地层系数等值线"/>
+<LayerType id="6020000" name="试采初期产能等值线"/>
+<LayerType id="6030000" name="井网"/>
+<LayerType id="6040000" name="油井含水分布线"/>
+<LayerType id="6050000" name="油井含水等值线"/>
+<LayerType id="6060000" name="油层压力等值线"/>
+<LayerType id="6070000" name="面状开发动态信息"/>
+  </LayerType>
+  <LayerType id="7000000" name="地面工程信息">
+    <LayerType id="7010000" name="集输站">
+    <LayerType id="7010100" name="气站"/>
+    <LayerType id="7010200" name="油站"/>
+    <LayerType id="7010300" name="水站"/>
+      <LayerType id="7010400" name="其他站"/>
+    </LayerType>
+<LayerType id="7020000" name="集输管线">
+    <LayerType id="7020100" name="气管线"/>
+    <LayerType id="7020200" name="汽管线"/>
+    <LayerType id="7020300" name="高压气管线"/>
+      <LayerType id="7020400" name="油管线"/>
+      <LayerType id="7020500" name="水管线"/>
+</LayerType>
+<LayerType id="7030000" name="井场"/>
+  </LayerType>
+  <LayerType id="8000000" name="修饰信息">
+    <LayerType id="8010000" name="图名"/>
+    <LayerType id="8020000" name="比例尺"/>
+    <LayerType id="8030000" name="方向标"/>
+    <LayerType id="8040000" name="图框"/>
+    <LayerType id="8050000" name="图例"/>
+    <LayerType id="8060000" name="责任表"/>
+  </LayerType>
+  <LayerType id="9000000" name="附图信息">
+    <LayerType id="9010000" name="综合柱状图"/>
+    <LayerType id="9020000" name="地层柱状剖面图"/>
+    <LayerType id="9030000" name="地质构造剖面图"/>
+    <LayerType id="9040000" name="地震地质综合解释剖面图"/>
+    <LayerType id="9050000" name="地震测线构造剖面图"/>
+    <LayerType id="9060000" name="连井油气藏剖面图"/>
+  </LayerType>
+  <LayerType id="10000000" name="其他信息">
+    <LayerType id="10010000" name="拼图线"/>
+  </LayerType>
+</GeoMapLayerType>

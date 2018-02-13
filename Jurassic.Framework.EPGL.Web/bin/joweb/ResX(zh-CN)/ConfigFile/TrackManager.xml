@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 用于保存道的结构及基本信息 -->
+<TracksSettings>
+  <TrackCommon>
+    <Track  TrackId="102" Title="容器道" FeatureId="0" GeoName="容器道" Class="" Width="20"/>
+     <Track  TrackId="105" Title="曲线道" FeatureId="0" GeoName="曲线道" Class="" QueryerClass="Jrsc.Well.GeoDataSource.jgCurveQueryer" Width="20"/>
+      <Track  TrackId="103" Title="深度道" FeatureId="0" GeoName="深度道" Class="" Width="8"/>
+    <Track   Title="文本道">
+      <Track  Title="点文本道">
+      <!-- 非数据库版本不支持
+      <Track  TrackId="104" Title="数据库表格" FeatureId="4000100" GeoName="数据库表格" Class="Jrsc.Well.Visual.jgWLText" Width="20"/>
+      -->
+      <Track  TrackId="104" Title="自定义点文本" FeatureId="4000200"  GeoName="自定义点文本道" Class="Jrsc.Well.Visual.jgWLText" Width="20"/>
+       </Track>
+      <Track  TrackId="104" Title="自定义段文本道" FeatureId="4000300" GeoName="自定义段文本道" Class="Jrsc.Well.Visual.jgWLText" Width="20"/>
+      <Track  TrackId="104" Title="自定义多行文本道" FeatureId="4000400" GeoName="自定义多行文本道" Class="Jrsc.Well.Visual.jgWLMultilineText" Width="20"/>
+    </Track>
+   <Track  TrackId="104" Title="标记道" FeatureId="4000500"  GeoName="标记道" Class="Jrsc.Well.Visual.jgWLMarker" Width="10"/>
+  <Track  TrackId="104" Title="图片道" FeatureId="4000600" GeoName="图片道" Class="Jrsc.Well.Visual.jgWellImage" Width="10"/>
+      <!-- 非数据库版本不支持
+      <Track  TrackId="104" Title="离散数据道" FeatureId="4000700" GeoName="数据库表格" Class="" Width="20"/>
+      -->
+    <Track  Title="符号道">
+      <Track  TrackId="104" Title="自定义点符号道" FeatureId="4000800" GeoName="自定义点符号道" Class="Jrsc.Well.Visual.jgWLSymbol" Width="10"/>
+      <!-- 非数据库版本不支持
+      <Track  TrackId="104" Title="数据符号道" FeatureId="4000900" GeoName="数据库表格" Class="Jrsc.Well.Visual.jgWLSymbol" Width="10"/>
+      -->
+      <Track  TrackId="104" Title="自定义段符号道" FeatureId="4001000" GeoName="自定义段符号道" Class="Jrsc.Well.Visual.jgWLSymbol" Width="10"/>
+    </Track>
+    <Track  TrackId="104" Title="符号注释道" FeatureId="4001100" GeoName="符号注释道" Class="" QueryerClass="Jrsc.Well.Visual.jgWLTestOil" Width="20"/>
+  </TrackCommon>
+  <TrackProfession>
+    <Track  Title="地层道" >
+      <Track  TrackId="104" Title="界" FeatureId="4010100" GeoName="地层.界" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgFormationToShape" ToDBClass="Jrsc.Well.AppModules.jgFormationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgStratumQueryer" Width="10"  EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="系" FeatureId="4010200" GeoName="地层.系" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgFormationToShape" ToDBClass="Jrsc.Well.AppModules.jgFormationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgStratumQueryer" Width="10" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="统" FeatureId="4010300" GeoName="地层.统" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgFormationToShape" ToDBClass="Jrsc.Well.AppModules.jgFormationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgStratumQueryer" Width="10" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="组" FeatureId="4010400" GeoName="地层.组" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgFormationToShape" ToDBClass="Jrsc.Well.AppModules.jgFormationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgStratumQueryer" Width="10" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="段" FeatureId="4010500" GeoName="地层.段" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgFormationToShape" ToDBClass="Jrsc.Well.AppModules.jgFormationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgStratumQueryer" Width="10" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="亚段" FeatureId="4010600" GeoName="地层.亚段" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgFormationToShape" ToDBClass="Jrsc.Well.AppModules.jgFormationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgStratumQueryer" Width="10" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="油层组" FeatureId="4010700" GeoName="地层.油层组" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgFormationToShape" ToDBClass="Jrsc.Well.AppModules.jgFormationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgStratumQueryer" Width="10" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="砂层组" FeatureId="4010800" GeoName="地层.砂层组" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgFormationToShape" ToDBClass="Jrsc.Well.AppModules.jgFormationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgStratumQueryer" Width="10" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="小层" FeatureId="4010900" GeoName="地层.小层" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgFormationToShape" ToDBClass="Jrsc.Well.AppModules.jgFormationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgStratumQueryer" Width="10" EnableCorrConnect="1"/>
+
+	</Track>
+	<Track  TrackId="104" Title="年代地层（百万年）" FeatureId="4020100" GeoName="年代地层" Class="Jrsc.Well.Visual.jgWLText" ToShapeClass="Jrsc.Well.AppModules.jgFormAgeToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgStratumQueryer" Width="10"/>
+    <Track  Title="沉积相" >
+  <Track  TrackId="104" Title="微相" FeatureId="4030100" GeoName="沉积相.微相" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgSedimentaryFaciesToShape" ToDBClass="Jrsc.Well.AppModules.jgSedimentaryFaciesToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellNewSedimentaryFaciesQueryer" Width="15" EnableCorrConnect="1"/>
+  <Track  TrackId="104" Title="亚相" FeatureId="4030200" GeoName="沉积相.亚相" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgSedimentaryFaciesToShape" ToDBClass="Jrsc.Well.AppModules.jgSedimentaryFaciesToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellNewSedimentaryFaciesQueryer" Width="10" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="相" FeatureId="4030300" GeoName="沉积相.相" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgSedimentaryFaciesToShape" ToDBClass="Jrsc.Well.AppModules.jgSedimentaryFaciesToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellNewSedimentaryFaciesQueryer" Width="10" EnableCorrConnect="1"/>
+    
+    
+    </Track>
+    <Track  TrackId="104" Title="断层道" FeatureId="4040100" GeoName="断层" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgFaultToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgWellFaultQueryer" Width="10"/>
+
+
+    <Track  Title="层序旋回" >
+      <Track  TrackId="104" Title="短期" FeatureId="4050100" GeoName="层序旋回.短期旋回" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgCycleToShape" ToDBClass="Jrsc.Well.AppModules.jgCycleToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellLayerCycleQueryer" Width="10" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="中期" FeatureId="4050200" GeoName="层序旋回.中期旋回" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgCycleToShape" ToDBClass="Jrsc.Well.AppModules.jgCycleToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellLayerCycleQueryer" Width="10" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="长期" FeatureId="4050300" GeoName="层序旋回.长期旋回" Class="Jrsc.Well.Visual.jgWLMarker" ToShapeClass="Jrsc.Well.AppModules.jgCycleToShape" ToDBClass="Jrsc.Well.AppModules.jgCycleToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellLayerCycleQueryer" Width="10" EnableCorrConnect="1"/>
+ 
+    </Track>
+
+    <Track   Title="岩心数据" >
+      <Track  TrackId="104" Title="取心信息" FeatureId="4060100" GeoName="取心次数、心长、进尺、收获率%" Class="Jrsc.Well.Visual.jgWLCoreSegment" ToShapeClass="Jrsc.Well.AppModules.jgRockSegmentToShape" ToDBClass="Jrsc.Well.AppModules.jgRockSegmentToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellRockQueryer" Width="20"/>
+      <Track  TrackId="160" Title="岩心剖面" FeatureId="4060200" GeoName="岩性剖面.岩心剖面" Class="Jrsc.Well.Visual.jgWLLithology" ToShapeClass="Jrsc.Well.AppModules.jgLithologyToShape" ToDBClass="Jrsc.Well.AppModules.jgLithologyToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgLithologyQueryer" Width="20"/>
+      <Track  TrackId="104" Title="颜色" FeatureId="4060300" GeoName="岩心剖面.颜色" Class="Jrsc.Well.Visual.jgWLRelatedText" Width="8"/>
+      <Track  TrackId="104" Title="挤压长度" FeatureId="4060400" GeoName="挤压长度" Class="Jrsc.Well.Visual.jgWLRelatedText" Width="10"/>
+      <Track  TrackId="104" Title="裂缝描述" FeatureId="4060500" GeoName="裂缝描述" Class="Jrsc.Well.Visual.jgWLRelatedText" Width="20"/>
+      <Track  TrackId="104" Title="孔洞描述" FeatureId="4060600" GeoName="孔洞描述" Class="Jrsc.Well.Visual.jgWLRelatedText" Width="20"/>
+      <Track  TrackId="104" Title="岩心描述" FeatureId="4060700" GeoName="岩性描述.岩心描述" Class="Jrsc.Well.Visual.jgWLMultilineText" ToShapeClass="Jrsc.Well.AppModules.jgCoreDescriptionToShape" ToDBClass="Jrsc.Well.AppModules.jgCoreDescriptionToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellCoreDescriptionQueryer" Width="30"/>
+
+      <Track  TrackId="104" Title="岩石相" FeatureId="4060800" GeoName="岩石相" Class="Jrsc.Well.Visual.jgWLMultilineText" ToShapeClass="Jrsc.Well.AppModules.jgLithologyFaciesToShape" ToDBClass="Jrsc.Well.AppModules.jgLithologyFaciesToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellLithologyFaciesQueryer" Width="20"/>
+      <Track  TrackId="104" Title="沉积层理、构造" FeatureId="4060900" GeoName="岩心符号.沉积层理、构造" Class="Jrsc.Well.Visual.jgWLSymbol" ToShapeClass="Jrsc.Well.AppModules.jgBeddingContainerToShape" ToDBClass="Jrsc.Well.AppModules.jgBeddingContainerToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellBeddingContainerQueryer" Width="10"  SymbolPath="石油地质/岩性/沉积岩/层理、构造/层理、构造"/>
+      <Track  TrackId="104" Title="含有物" FeatureId="4061000" GeoName="岩心符号.含有物" Class="Jrsc.Well.Visual.jgWLSymbol" ToShapeClass="Jrsc.Well.AppModules.jgBeddingContainerToShape" ToDBClass="Jrsc.Well.AppModules.jgBeddingContainerToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellBeddingContainerQueryer" Width="10"  SymbolPath="石油地质/岩性/沉积岩/化石/化石/"/>
+      <Track  TrackId="104" Title="岩心照片" FeatureId="4061100" GeoName="图片.岩心照片" Class="Jrsc.Well.Visual.jgWellImage" ToShapeClass="Jrsc.Well.AppModules.jgImageToShape" ToDBClass="Jrsc.Well.AppModules.jgImageToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellImageQueryer" Width="10"/>
+      <Track  TrackId="104" Title="井壁取心" FeatureId="4061200" GeoName="井壁取心" Class="Jrsc.Well.Visual.jgWLSideWallCore" ToShapeClass="Jrsc.Well.AppModules.jgSideRockToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgWellSideRockQueryer" Width="15"/>                                                 
+      <Track  TrackId="104" Title="钻井取心" FeatureId="4061300" GeoName="钻井取心" Class="Jrsc.Well.Visual.jgWLSymbol" ToShapeClass="Jrsc.Well.AppModules.jgDrillingCoringToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgWellDrillingCoringQueryer" Width="10"/>     
+     <Track  TrackId="104" Title="磨损面位置" FeatureId="4061400" GeoName="磨损面位置" Class="Jrsc.Well.Visual.jgWLSymbol" ToShapeClass="Jrsc.Well.AppModules.jgAbrasionToShape" ToDBClass="Jrsc.Well.AppModules.jgAbrasionToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellPointSymbolQueryer" Width="10"/>
+
+   </Track>
+  
+      <Track  Title="岩性数据" >
+  <Track  TrackId="160" Title="岩性剖面" FeatureId="4070100" GeoName="岩性剖面.岩性剖面" Class="Jrsc.Well.Visual.jgWLLithology" ToShapeClass="Jrsc.Well.AppModules.jgLithologyToShape" ToDBClass="Jrsc.Well.AppModules.jgLithologyToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgLithologyQueryer" Width="20"/>
+      <Track  TrackId="104" Title="颜色" FeatureId="4070200" GeoName="岩性剖面.颜色" Class="Jrsc.Well.Visual.jgWLRelatedText" Width="8"/>
+  </Track>
+    <Track  Title="解释数据">
+      <Track  TrackId="104" Title="砂层解释" FeatureId="4080100" GeoName="油气解释.砂层解释" Class="Jrsc.Well.Visual.jgOilGasInterpretation" ToShapeClass="Jrsc.Well.AppModules.jgOilGasInterpretationToShape" ToDBClass="Jrsc.Well.AppModules.jgOilGasInterpretationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgOilGasInterpretationQueryer" Width="15" SymbolPath="石油地质" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="测井油气解释" FeatureId="4080200" GeoName="油气解释.测井油气解释" Class="Jrsc.Well.Visual.jgOilGasInterpretation" ToShapeClass="Jrsc.Well.AppModules.jgOilGasInterpretationToShape" ToDBClass="Jrsc.Well.AppModules.jgOilGasInterpretationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgOilGasInterpretationQueryer" Width="15" SymbolPath="石油地质/油气解释" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="荧光油气解释" FeatureId="4080300" GeoName="油气解释.荧光油气解释" Class="Jrsc.Well.Visual.jgOilGasInterpretation" ToShapeClass="Jrsc.Well.AppModules.jgOilGasInterpretationToShape" ToDBClass="Jrsc.Well.AppModules.jgOilGasInterpretationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgOilGasInterpretationQueryer" Width="15" SymbolPath="石油地质/油气解释" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="地化油气解释" FeatureId="4080400" GeoName="油气解释.地化油气解释" Class="Jrsc.Well.Visual.jgOilGasInterpretation" ToShapeClass="Jrsc.Well.AppModules.jgOilGasInterpretationToShape" ToDBClass="Jrsc.Well.AppModules.jgOilGasInterpretationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgOilGasInterpretationQueryer" Width="15" SymbolPath="石油地质/油气解释" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="油气综合解释" FeatureId="4080500" GeoName="油气解释.油气综合解释" Class="Jrsc.Well.Visual.jgOilGasInterpretation" ToShapeClass="Jrsc.Well.AppModules.jgOilGasInterpretationToShape" ToDBClass="Jrsc.Well.AppModules.jgOilGasInterpretationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgOilGasInterpretationQueryer" Width="15" SymbolPath="石油地质/油气解释" EnableCorrConnect="1"/>
+      <Track  TrackId="104" Title="有效厚度" FeatureId="4080600" GeoName="油气解释.有效厚度" Class="Jrsc.Well.Visual.jgAvailableThickNessShape" ToShapeClass="" ToDBClass="" QueryerClass="" Width="15"/>
+      <Track  TrackId="104" Title="油气水显示" FeatureId="4080700" GeoName="油气水显示" Class="Jrsc.Well.Visual.jgWLSymbol" ToShapeClass="Jrsc.Well.AppModules.jgDrillOSWToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgWellDrillOSWQueryer" Width="10" SymbolPath="石油地质/井位和油气显示/钻井油气显示"/>
+
+    </Track>
+    <Track  Title="储层评价" >
+      <Track  TrackId="104" Title="储层空间类型" FeatureId="4090100" GeoName="储层评价.储层空间类型" Class="Jrsc.Well.Visual.jgWLText" ToShapeClass="Jrsc.Well.AppModules.jgReservoirToShape" ToDBClass="Jrsc.Well.AppModules.jgReservoirToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellReservoirQueryer" Width="15"/>
+      <Track  TrackId="104" Title="胶结类型" FeatureId="4090200" GeoName="储层评价.胶结类型" Class="Jrsc.Well.Visual.jgWLText" ToShapeClass="Jrsc.Well.AppModules.jgReservoirToShape" ToDBClass="Jrsc.Well.AppModules.jgReservoirToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellReservoirQueryer" Width="15"/>
+      <Track  TrackId="104" Title="成岩阶段划分" FeatureId="4090300" GeoName="储层评价.成岩阶段划分" Class="Jrsc.Well.Visual.jgWLText" ToShapeClass="Jrsc.Well.AppModules.jgReservoirToShape" ToDBClass="Jrsc.Well.AppModules.jgReservoirToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellReservoirQueryer" Width="15"/>
+      <Track  TrackId="104" Title="储层分类评价" FeatureId="4090400" GeoName="储层评价.储层分类评价" Class="Jrsc.Well.Visual.jgWLText" ToShapeClass="Jrsc.Well.AppModules.jgReservoirToShape" ToDBClass="Jrsc.Well.AppModules.jgReservoirToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellReservoirQueryer" Width="15"/>
+    </Track>
+    <Track  Title="岩屑录井" >
+      <Track  TrackId="160" Title="岩屑岩性剖面" FeatureId="4100100" GeoName="岩性剖面.岩屑岩性剖面" Class="Jrsc.Well.Visual.jgWLLithology" ToShapeClass="Jrsc.Well.AppModules.jgLithologyToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgLithologyQueryer" Width="20"/>
+    <Track  TrackId="104" Title="颜色" FeatureId="4100200" GeoName="岩屑岩性剖面.颜色" Class="Jrsc.Well.Visual.jgWLRelatedText" Width="8"/>
+      <Track  TrackId="104" Title="岩屑岩性描述" FeatureId="4100300" GeoName="岩性描述.岩屑描述" Class="Jrsc.Well.Visual.jgWLMultilineText" ToShapeClass="Jrsc.Well.AppModules.jgCoreDescriptionToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgWellCoreDescriptionQueryer" Width="30"/>
+      <Track  TrackId="104" Title="沉积层理、构造" FeatureId="4100400" GeoName="岩屑符号.沉积层理、构造" Class="Jrsc.Well.Visual.jgWLSymbol" ToShapeClass="Jrsc.Well.AppModules.jgBeddingContainerToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgWellBeddingContainerQueryer" Width="10" SymbolPath="石油地质/岩性/沉积岩/层理、构造/层理、构造/"/>
+      <Track  TrackId="104" Title="含有物" FeatureId="4100500" GeoName="岩屑符号.含有物" Class="Jrsc.Well.Visual.jgWLSymbol" ToShapeClass="Jrsc.Well.AppModules.jgBeddingContainerToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgWellBeddingContainerQueryer" Width="10" SymbolPath="石油地质/岩性/沉积岩/化石/化石/"/>
+    </Track>
+    <Track  Title="铸体薄片道" >
+      <Track  TrackId="105" Title="石英含量%" FeatureId="5110100" GeoName="石英含量%:WELL_CORE_SAMPLE_ANAL.UWI,QUARTZ,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="50"/>
+      <Track  TrackId="105" Title="长石含量%" FeatureId="5110200" GeoName="长石含量%:WELL_CORE_SAMPLE_ANAL.UWI,FELDSPAR,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="50"/>
+      <Track  TrackId="105" Title="岩屑含量%" FeatureId="5110300" GeoName="岩屑含量%:WELL_CORE_SAMPLE_ANAL.UWI,ROCK_FRAGMENT,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="50"/>
+      <Track  TrackId="105" Title="碎屑总含量%" FeatureId="5110400" GeoName="碎屑总含量%:WELL_CORE_SAMPLE_ANAL.UWI,CLAST_CONTENT,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="50"/>
+      <Track  TrackId="105" Title="填隙物含量" FeatureId="5110500" GeoName="填隙物含量:WELL_CORE_SAMPLE_ANAL.UWI,INTERSTITIAL_MATERIAL_CONTENT,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="50"/>
+      <Track  TrackId="104" Title="孔隙组合类型" FeatureId="4110600" GeoName="铸体薄片.孔隙组合类型" Class="Jrsc.Well.Visual.jgWLText" ToShapeClass="Jrsc.Well.AppModules.jgWetSenToShape" ToDBClass="Jrsc.Well.AppModules.jgWetSenToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellWetSenQueryer" Width="15"/>
+      <Track  TrackId="104" Title="胶结类型" FeatureId="4110700" GeoName="铸体薄片.胶结类型" Class="Jrsc.Well.Visual.jgWLText" Width="15"/>
+      <Track  TrackId="104" Title="薄片照片" FeatureId="4110800" GeoName="图片.薄片照片" Class="Jrsc.Well.Visual.jgWellImage" ToShapeClass="Jrsc.Well.AppModules.jgImageToShape" ToDBClass="Jrsc.Well.AppModules.jgImageToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellImageQueryer" Width="10"/>
+
+    </Track>
+    <Track  Title="岩心物性分析数据" >
+      <Track  TrackId="105" Title="孔隙度%" FeatureId="5120100" GeoName="孔隙度%:WELL_CORE_ANAL.UWI,POROSITY,DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="渗透率×103μm2" FeatureId="5120200" GeoName="渗透率×103μm2:WELL_CORE_ANAL.UWI,K,DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="含油饱和度%" FeatureId="5120300" GeoName="含油饱和度%:WELL_CORE_ANAL.UWI,OIL_SAT,DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="含水饱和度%" FeatureId="5120400" GeoName="含水饱和度%:WELL_CORE_ANAL.UWI,WATER_SAT,DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="含气饱和度%" FeatureId="5120500" GeoName="含气饱和度%:WELL_CORE_ANAL.UWI,GAS_SAT_VOL,DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="碳酸盐含量%" FeatureId="5120600" GeoName="碳酸盐含量%:WELL_CORE_ANAL.UWI,CARBONATE_CONTENT,DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+    </Track>
+    <Track  Title="地化录井数据" >
+      <Track  TrackId="105" Title="S0" FeatureId="5130100" GeoName="S0:WELL_GEOCHEMICAL.UWI,S0,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="S1" FeatureId="5130200" GeoName="S1:WELL_GEOCHEMICAL.UWI,S1,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="S2" FeatureId="5130300" GeoName="S2:WELL_GEOCHEMICAL.UWI,S2,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="S3" FeatureId="5130400" GeoName="S3:WELL_GEOCHEMICAL.UWI,S3,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="S4" FeatureId="5130500" GeoName="S4:WELL_GEOCHEMICAL.UWI,S4,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="最高裂解峰温" FeatureId="5130600" GeoName="最高裂解峰温:WELL_GEOCHEMICAL.UWI,TMAX,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="生烃潜力" FeatureId="5130700" GeoName="生烃潜力:WELL_GEOCHEMICAL.UWI,Pg,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="总有机碳" FeatureId="5130800" GeoName="总有机碳:WELL_GEOCHEMICAL.UWI,TOC,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+    </Track>
+    <Track  Title="气测录井数据" >
+      <Track  TrackId="105" Title="全烃含量%" FeatureId="5140100" GeoName="全烃含量%:WELL_COMPOUND_LAG.UWI,GAS,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="二氧化碳%" FeatureId="5140200" GeoName="二氧化碳%:WELL_COMPOUND_LAG.UWI,CO2,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="氢气%" FeatureId="5140300" GeoName="氢气%:WELL_COMPOUND_LAG.UWI,H2,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="硫化氢%" FeatureId="5140400" GeoName="硫化氢%:WELL_COMPOUND_LAG.UWI,H2S,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="丙烷%" FeatureId="5140500" GeoName="丙烷%:WELL_COMPOUND_LAG.UWI,C3H8,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="甲烷%" FeatureId="5140600" GeoName="甲烷%:WELL_COMPOUND_LAG.UWI,CH4,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="乙烷%" FeatureId="5140700" GeoName="乙烷%:WELL_COMPOUND_LAG.UWI,C2H6,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="异丁烷%" FeatureId="5140800" GeoName="异丁烷%:WELL_COMPOUND_LAG.UWI,IC4H10,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="正丁烷%" FeatureId="5140900" GeoName="正丁烷%:WELL_COMPOUND_LAG.UWI,NC4H10,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="异戊烷%" FeatureId="5141000" GeoName="异戊烷%:WELL_COMPOUND_LAG.UWI,IC5H12,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="正戊烷%" FeatureId="5141100" GeoName="正戊烷%:WELL_COMPOUND_LAG.UWI,NC5H12,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="氮气%" FeatureId="5141200" GeoName="氮气%:WELL_COMPOUND_LAG.UWI,N2,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="氧气%" FeatureId="5141300" GeoName="氧气%:WELL_COMPOUND_LAG.UWI,O2,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>
+      <Track  TrackId="105" Title="一氧化碳%" FeatureId="5141400" GeoName="一氧化碳%:WELL_COMPOUND_LAG.UWI,CO,TOP_DEPTH" Class="Jrsc.Well.Visual.jgWLReflectivity" Width="20"/>      
+    </Track>
+    <Track  TrackId="104" Title="样品位置" FeatureId="4150100" GeoName="样品位置.常规取心" Class="Jrsc.Well.Visual.jgWLCoreSample" ToShapeClass="Jrsc.Well.AppModules.jgRockSpecimenToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgWellRockSpecimenQueryer" Width="10"/>
+    <Track  TrackId="104" Title="扫描电镜照片" FeatureId="4160100" GeoName="图片.扫描电镜照片" Class="Jrsc.Well.Visual.jgWellImage" ToShapeClass="Jrsc.Well.AppModules.jgImageToShape" ToDBClass="Jrsc.Well.AppModules.jgImageToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellImageQueryer" Width="10"/>
+    <Track  TrackId="104" Title="试油道" FeatureId="4170100" GeoName="试油结论" Class="Jrsc.Well.Visual.jgWLTestOil" ToShapeClass="Jrsc.Well.AppModules.jgTestOilToShape" ToDBClass="" QueryerClass="Jrsc.Well.GeoDataSource.jgWellTestOilQueryer" Width="15"/>
+    <Track  TrackId="104" Title="射孔道" FeatureId="4180100" GeoName="射孔" Class="Jrsc.Well.Visual.jgWLSymbol" ToShapeClass="Jrsc.Well.AppModules.jgPerforationToShape" ToDBClass="Jrsc.Well.AppModules.jgPerforationToDB" QueryerClass="Jrsc.Well.GeoDataSource.jgWellFireHoleQueryer" Width="10"/>
+  </TrackProfession>
+  <TrackDepthScale>
+	 <DepthScale>50</DepthScale>
+	 <DepthScale>100</DepthScale>
+	 <DepthScale>200</DepthScale>
+	 <DepthScale>400</DepthScale>
+	 <DepthScale>500</DepthScale>
+	 <DepthScale>1000</DepthScale>
+  </TrackDepthScale>
+</TracksSettings>

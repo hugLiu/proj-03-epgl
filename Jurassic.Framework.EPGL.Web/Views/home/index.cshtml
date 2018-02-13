@@ -1,0 +1,249 @@
+﻿@model Jurassic.WebFrame.Models.UserConfig
+
+@{
+    var par=Request.QueryString["app"];
+    if(par!="admin"){
+        Response.Redirect("/EPGL/Index");
+    }
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = Html.Str("System_Name", "北京侏罗纪软件股份有限公司应用管理系统");
+
+    //排除按钮的菜单
+    List<AppFunction> UserMenus = AppManager.Instance.GetUserMenus(User.Identity.Name)
+        .Where(func => (func.Visible & VisibleType.Button) != VisibleType.Button)
+        .ToList();
+
+    var baseController = this.ViewContext.Controller as BaseController;
+
+    //导航栏顶部
+    var topFuncs = UserMenus.Where(f => f.ParentId.IsEmpty()
+                     && (f.Visible & VisibleType.Container) == VisibleType.Container && !f.Location.IsEmpty());
+    int grpIndex = 0;
+}
+<style>
+    .mini-tabs-table {
+        width: 100%;
+    }
+</style>
+
+<div id="layout1" class="mini-layout" style="width:100%;height:100%;" splitsize="-1">
+    <div class="header" region="north" height="56" showsplit="false" showheader="false">
+        <h1>@Html.Str("System_Name")</h1>
+        <div class="shortcut_menu">
+            @* 首页跳转入口 *@
+            @Html.JAuthLink(Html.Str("首页"),"Index","EPGL",null,new{@class="mini-button mini-button-iconTop",iconcls="icon-new-homepage",plain="true"});
+            @*引用分部视图显示用户配置入口*@
+            @Html.Partial("UserAvatar")
+            @Html.Partial("_MessageAlert")
+            @Html.JAuthLink(Html.Str("修改密码"), "changepassword", "account", null, new { @class = "mini-button mini-button-iconTop", target = "_top", iconcls = "icon-new-changepassword", plain = "true" })
+            @Html.JAuthLink(Html.Str("注销"), "Logout", "Account", null, new { @class = "mini-button mini-button-iconTop", iconcls = "icon-new-exit", plain = "true" })
+        </div>
+    </div>
+
+    @*底部*@
+    <div title="south" region="south" showsplit="false" showheader="false" bodystyle="overflow:hidden" height="30">
+        <div style="clear:both"></div>
+        <div style="line-height: 28px; text-align: center; cursor: default;">@Html.RawStr("System_Copyright") </div>
+    </div>
+
+    @*内容部分*@
+    <div title="center" region="center" bodystyle="overflow:hidden;" style="border: 0px solid">
+        <div class="mini-splitter" style="width:100%;height:100%;" borderstyle="border:0;">
+            @*左边菜单*@
+            <div size="180" maxsize="250" minsize="100" showcollapsebutton="true" style="border:0;" id="nav_left">
+                @if (!topFuncs.IsEmpty())
+                {
+                    <div id="nav_leftTop">
+                        @foreach (var func in topFuncs)
+                        {
+                            @Html.Partial(func.Location, func)
+                        }
+                    </div>
+                }
+                <!--OutlookMenu-->
+                <div class="mini-outlookbar  drawer-tree" id="nav_leftMenuBar" activeindex="0" style="width:100%;height:100%" autocollapse="true">
+                    @foreach (var func in UserMenus.Where(f => f.ParentId.IsEmpty()
+                    && (f.Visible & VisibleType.Container) == 0))
+                    {
+                        <div title="@ResHelper.GetStr(func.Name)" name="@func.Id">
+                            <a name="grp_@func.Id" id="grp_@grpIndex"></a>@*用于标记当前outlookbar的Group序号*@
+                            @{
+                        bool partial = false;
+                        foreach (var f in func.GetChildren())
+                        {
+                            if ((f.Visible & VisibleType.Container) == VisibleType.Container && !f.Location.IsEmpty())
+                            {
+                                partial = true;
+                                @Html.Partial(f.Location)
+                            }
+                        }
+                        if (!partial)
+                        {
+                            <div id="leftTree_@func.Id" class="mini-tree" @*左边菜单树*@
+                                 idfield="Id" parentfield="ParentId" textfield="Name" iconfield="IconClass"
+                                 onnodeclick="onNodeClick" expandonnodeclick="true"
+                                 showtreelines="false" showexpandbuttons="false"
+                                 borderstyle="border:0" expandonload="true">
+                            </div>
+                        }
+                            }
+                        </div>
+                        grpIndex++;
+                    }
+                </div>
+            </div>
+            @*主子框架*@
+            <div showcollapsebutton="false" style="border:0;">
+                @if (Model.ShowTab)
+                {
+                    <div id="mainTabs" class="mini-tabs" activeindex="0" style="width:100%;height:100%;"
+                         plain="false" onactivechanged="onTabsActiveChanged">
+                    </div>
+                }
+                else
+                {
+                    <iframe id="mainframe" frameborder="0" name="main" style="width:100%;height:100%;" border="0"></iframe>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    if (this != top) {
+        top.location = this.location;
+    }
+    _userMenus = $.getSync(_userMenusUrl);
+    mini.parse();
+
+    function bindTreeMenu(id) {
+        var tree = mini.get("#leftTree_" + id);
+        if (tree == null) return;
+        tree.loadList(FilterMenu(id), "Id", "ParentId");
+    }
+
+    function FilterMenu(id) {
+        var arr = [];
+        for (var i = 0; i < _userMenus.UserMenu.length; i++) {
+            if ((_userMenus.UserMenu[i].Visible & 16) == 0 && _userMenus.UserMenu[i].ParentId == id) {
+                arr.push(_userMenus.UserMenu[i]);
+                arr = arr.concat(FilterMenu(_userMenus.UserMenu[i].Id));
+            }
+        }
+        return arr;
+    }
+
+    @foreach (var func in UserMenus.Where(f => f.ParentId.IsEmpty()))
+    {
+        @Html.Raw("bindTreeMenu('" + func.Id + "');\r\n")
+    }
+    try {
+        var startPage = $.parseJSON(getCookie("startPage" + location.port));
+    } catch (e) {
+    }
+    startPage = startPage || {
+        Id: "shortcut_startpage",
+        Name: "起始页",
+        Location: '@Url.Action("StartPage")'
+    };
+    if ($('#nav_leftTop').length > 0) {
+        $(function () {
+            var h = $('#nav_leftMenuBar').height();
+            $('#nav_leftMenuBar').height(h - $('#south').height() - $('#nav_leftTop').height() + 18);
+        });
+    }
+</script>
+
+@if (Model.ShowTab)
+{
+    <script type="text/javascript">
+        var tree = mini.get("leftTree");
+        var iframe;
+        function showTab(node) {
+            var tabs = mini.get("mainTabs");
+
+            var id = "tab$" + node.Id;
+            var tab = tabs.getTab(id);
+            if (!tab) {
+                tab = {};
+                tab._nodeid = node.Id;
+                tab.name = id;
+                tab.title = node.Name;
+                tab.showCloseButton = true;
+
+                tab.url = node.Location;
+                setCookie("startPage" + location.port, '{"Id":"' + node.Id + '","Name":"' + node.Name + '","Location":"' + node.Location + '"}');
+                tabs.addTab(tab);
+            }
+            tabs.activeTab(tab);
+        }
+
+        function onNodeClick(e) {
+            var node = e.node;
+            var isLeaf = e.isLeaf;
+
+            if (isLeaf) {
+                showTab(node);
+            }
+        }
+        showTab(startPage);
+
+        function onTabsActiveChanged(e) {
+            var tabs = e.sender;
+            var tab = tabs.getActiveTab();
+            setTimeout(function () {
+                iframe = tabs.getTabIFrameEl(tab);
+            }, 0);
+
+            //TODO:根据Tab的切换动态选择对应的树结点
+            //if (tab && tab._nodeid) {
+            //    var node = tree.getNode(tab._nodeid);
+            //    if (node && !tree.isSelectedNode(node)) {
+            //        tree.selectNode(node);
+            //    }
+            //}
+        }
+
+        $('.shortcut_menu a').click(function (e) {
+            if (this.target != "main") return;
+            e.preventDefault();
+            var txt = $(this).text().trim();
+            showTab({
+                Id: "shortcut_" + (this.id || txt),
+                Name: txt,
+                Location: this.href
+            });
+        });
+
+    </script>
+}
+else
+{
+    <script type="text/javascript">
+        var iframe = document.getElementById("mainframe");
+        function onNodeClick(e) {
+            var node = e.node;
+            if (!node.Location) return;
+            iframe.src = node.Location;
+            setCookie("startPage" + location.port, '{"Id":"' + node.Id + '","Name":"' + node.Name + '","Location":"' + node.Location + '"}');
+        }
+
+        $('.shortcut_menu a').click(function (e) {
+            if (this.target != "main") return;
+            e.preventDefault();
+            var txt = $(this).text().trim();
+            onNodeClick({
+                node: {
+                    Id: "shortcut_" + (this.id || txt),
+                    Name: txt,
+                    Location: this.href
+                }
+            });
+        });
+
+        onNodeClick({ node: startPage });
+    </script>
+}
+
+
+

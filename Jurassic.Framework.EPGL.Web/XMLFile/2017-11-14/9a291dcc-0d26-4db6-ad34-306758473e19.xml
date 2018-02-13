@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FeatureCollection id="2d56f607-d2a0-4be1-9239-d5ebe1102b10" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name=" " schemaLocation="http://www.jurassic.com.cn/3gx 3GX.Data.Feature.GeoMap.xsd" xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.jurassic.com.cn/3gx">
+  <CRS codeSpace="china">地理坐标(经纬度)</CRS>
+  <GF class="" id="1048" bot="" type="井位">
+    <Name>1048</Name>
+    <Title>1048</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">8</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">3.60738255033557046979865771812080536913</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0.081</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.912006 85.487917</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1269" bot="" type="井位">
+    <Name>1269</Name>
+    <Title>1269</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">9.90581357583631049041896719714192919779</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">9.90701001430615164520743919885550786838</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0.2749285714285714285714285714285714285714</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.920958 85.472039</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+  <GF class="" id="1031" bot="" type="井位">
+    <Name>1031</Name>
+    <Title>1031</Title>
+    <PropertySets>
+      <PropertySet name="专题数据">
+        <P n="AMOUNT_OIL" t="decimal" r="eq">7.31914893617021276595744680851063829787</P>
+        <P n="AMOUNT_GAS" t="decimal" r="eq">7.88794692222631772945079248064872834501</P>
+        <P n="AMOUNT_WATER" t="decimal" r="eq">0.0953</P>
+      </PropertySet>
+    </PropertySets>
+    <SubFeatures />
+    <Shapes>
+      <Shape name="井口">
+        <gml:Point xmlns:gml="http://www.jurassic.com.cn/3gx">
+          <gml:pos>45.897794 85.477106</gml:pos>
+        </gml:Point>
+      </Shape>
+    </Shapes>
+  </GF>
+</FeatureCollection>

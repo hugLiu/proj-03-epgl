@@ -1,0 +1,108 @@
+﻿{
+  "iiid": "id1",
+  "indexeddate": "2012-11-02T07:58:51.718Z",
+  "thumbnail": "<base64string>",
+  "source": {
+    "url": "ADP: //adapter/scope/naturekey",
+    "type": "GeoBank",
+    "name": "科研成果库",
+    "format": "<MIMEType>"    
+  },
+  "dc": {
+    "title": [
+      {
+        "type": "Formal",
+        "text": "研究报告"
+      }
+    ],
+    "contributor": [
+      {
+        "type": "Author",
+        "name": "张三"
+      },
+      {
+        "type": "Auditor",
+        "name": "李四"
+      },
+      {
+        "type": "Submitter",
+        "name": "李四"
+      }
+    ],
+      "subject":[ "keyword1", "keyword2", "…." ],
+      "description":
+      [
+        {
+          "type": "Abstract",
+          "text": "xxxxxxxxxxx"
+        }
+      ],
+      "date":
+      [
+        {
+          "type": "Created",
+          "value": "<isodate>"
+        },
+        {
+          "type": "Submitted",
+          "value": "<iso date>"
+        }
+      ],
+      "status":"已审核"
+  },
+  "ep": {
+    "bo": [
+      {
+        "type": "Workarea",
+        "value": "地震工区"
+      },
+      {
+        "type": "CalUnit",
+        "value": "计算单元"
+      },
+      {
+        "type": "WellBlock",
+        "value": "井区"
+      },
+      {
+        "type": "Trap",
+        "value": "xx圈闭"
+      },
+      {
+        "type": "Pool",
+        "value": "xx油气藏"
+      },
+      {
+        "type": "Stratum",
+        "value": "xx层位"
+      },
+      {
+        "type": "Well",
+        "value": "xx井"
+      },     
+      {
+        "type": "Organization",
+        "value": "辖区"
+      }
+    ],
+    "producttype": "xx成果类型",
+    "theme": [
+      {
+        "type": "BD",
+        "value": "xx业务域"
+      },
+      {
+        "type": "BT",
+        "value": "xx业务类型"
+      },
+      {
+        "type": "BP",
+        "value": "xx业务程序"
+      },
+      {
+        "type": "BA",
+        "value": "xx业务活动"
+      }
+    ]
+  }
+}

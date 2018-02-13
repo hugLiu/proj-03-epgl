@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="LegendStyle">
+		<xs:annotation>
+			<xs:documentation>图例类型描述</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="FontStyle">
+				<xs:attribute name="RectWidth" type="xs:double" use="optional" default="10">
+					<xs:annotation>
+						<xs:documentation>偏移量，向右为正</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="RectHeight" type="xs:double" use="optional" default="6">
+					<xs:annotation>
+						<xs:documentation>偏移量，向上为正</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="RectSpaceH" type="xs:double" use="optional" default="5"/>
+				<xs:attribute name="LabelFromRect" type="xs:double" use="optional" default="5"/>
+				<xs:attribute name="LabelAlign" use="optional" default="laCenter">
+					<xs:annotation>
+						<xs:documentation>标注位置</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKENS">
+							<xs:enumeration value="laLeft"/>
+							<xs:enumeration value="laCenter"/>
+							<xs:enumeration value="laRight"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="FromRB_X" type="xs:double" use="optional" default="5">
+					<xs:annotation>
+						<xs:documentation>标注水平偏移</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="FromRB_Y" type="xs:double" use="optional" default="5">
+					<xs:annotation>
+						<xs:documentation>标注垂直偏移</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="LegendPosition" default="lpRightBottom">
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKEN">
+							<xs:enumeration value="lpLeftTop"/>
+							<xs:enumeration value="lpLeftBottom"/>
+							<xs:enumeration value="lpRightTop"/>
+							<xs:enumeration value="lpRightBottom"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="ThemeDataSets">
+		<xs:annotation>
+			<xs:documentation>专题图样式集合</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="TargetLayer">
+					<xs:complexType>
+						<xs:sequence minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="ThemeLayer">
+								<xs:complexType>
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="Legend">
+											<xs:annotation>
+												<xs:documentation>图例</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="LegendStyle"/>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Histograms">
+											<xs:annotation>
+												<xs:documentation>柱状专题</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="ThemeBase">
+														<xs:choice maxOccurs="unbounded">
+															<xs:element name="Histogram">
+																<xs:annotation>
+																	<xs:documentation>数据</xs:documentation>
+																</xs:annotation>
+																<xs:complexType>
+																	<xs:choice maxOccurs="unbounded">
+																		<xs:element name="CoordX" type="xs:double" default="100"/>
+																		<xs:element name="CoordY" type="xs:double" default="100"/>
+																		<xs:element name="Name" type="xs:string" default="WellName"/>
+																		<xs:element name="Value">
+																			<xs:simpleType>
+																				<xs:list itemType="xs:double"/>
+																			</xs:simpleType>
+																		</xs:element>
+																	</xs:choice>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="HistogramStyle" type="HistogramType">
+																<xs:annotation>
+																	<xs:documentation>样式</xs:documentation>
+																</xs:annotation>
+															</xs:element>
+														</xs:choice>
+													</xs:extension>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="PieCharts">
+											<xs:annotation>
+												<xs:documentation>饼状专题</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="ThemeBase">
+														<xs:choice maxOccurs="unbounded">
+															<xs:element name="PieChart">
+																<xs:annotation>
+																	<xs:documentation>数据</xs:documentation>
+																</xs:annotation>
+																<xs:complexType>
+																	<xs:choice maxOccurs="unbounded">
+																		<xs:element name="CoordX" type="xs:double" default="100"/>
+																		<xs:element name="CoordY" type="xs:double" default="100"/>
+																		<xs:element name="Name" type="xs:string" default="WellName"/>
+																		<xs:element name="Value">
+																			<xs:simpleType>
+																				<xs:list itemType="xs:double"/>
+																			</xs:simpleType>
+																		</xs:element>
+																	</xs:choice>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="PieChartStyle" type="PieChartType">
+																<xs:annotation>
+																	<xs:documentation>样式</xs:documentation>
+																</xs:annotation>
+															</xs:element>
+														</xs:choice>
+													</xs:extension>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="DataCrosses">
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="ThemeBase">
+														<xs:choice maxOccurs="unbounded">
+															<xs:element name="DataCross">
+																<xs:complexType>
+																	<xs:choice maxOccurs="unbounded">
+																		<xs:element name="CoordX" type="xs:double" default="100"/>
+																		<xs:element name="CoordY" type="xs:double" default="100"/>
+																		<xs:element name="Name" type="xs:string" default="WellName"/>
+																		<xs:element name="Value">
+																			<xs:simpleType>
+																				<xs:list itemType="xs:string"/>
+																			</xs:simpleType>
+																		</xs:element>
+																	</xs:choice>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="DataCrossStyle"/>
+														</xs:choice>
+													</xs:extension>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="WellStyle" type="WellStyle"/>
+									</xs:choice>
+									<xs:attribute name="LayerName" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation>专题图图层名称</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="ThemeName" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation>专题图模版名称(包括编目路径)</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="ThemeClass" type="xs:short" use="required">
+										<xs:annotation>
+											<xs:documentation>专题类别：0-通用专题；1-专业专题</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="LayerName" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ThemeBaseStyle" type="ThemeBaseStyleType">
+		<xs:annotation>
+			<xs:documentation>GeoMap专题图基本样式</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="ThemeBaseStyleType">
+		<xs:annotation>
+			<xs:documentation>基本专题图类型描述</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="FontStyle">
+				<xs:attribute name="Name" type="xs:string" use="optional"/>
+				<xs:attribute name="OffsetX" type="xs:double" use="optional" default="0">
+					<xs:annotation>
+						<xs:documentation>偏移量，向右为正</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="OffsetY" type="xs:double" use="optional" default="0">
+					<xs:annotation>
+						<xs:documentation>偏移量，向上为正</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="IsShowLabel" type="xs:boolean" default="true">
+					<xs:annotation>
+						<xs:documentation>是否显示标注</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="LabelPos" default="lblPosRightCenter">
+					<xs:annotation>
+						<xs:documentation>标注位置</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKENS">
+							<xs:enumeration value="lblPosTopCenter"/>
+							<xs:enumeration value="lblPosCenter"/>
+							<xs:enumeration value="lblPosRightCenter"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="LabelOffsetX" type="xs:double" default="0">
+					<xs:annotation>
+						<xs:documentation>标注水平偏移</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="LabelOffsetY" type="xs:double" default="0">
+					<xs:annotation>
+						<xs:documentation>标注垂直偏移</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="IsBottomOffset" type="xs:boolean" default="true"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="HistogramType">
+		<xs:annotation>
+			<xs:documentation>柱装图类型</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ThemeBaseStyleType">
+				<xs:attribute name="Width" type="xs:double" use="optional" default="20"/>
+				<xs:attribute name="HeightType" default="ctCalc">
+					<xs:annotation>
+						<xs:documentation>高度类型，有两种，一种为固定高度类型，一种为由ProductPerMM计算类型</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKEN">
+							<xs:enumeration value="ctFixed"/>
+							<xs:enumeration value="ctCalc"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="ProductPerMM" type="xs:double" use="optional" default="1">
+					<xs:annotation>
+						<xs:documentation>每毫米表示多少用户单位</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="GraduateSizeType" use="optional" default="gtFixed">
+					<xs:annotation>
+						<xs:documentation>缺省的长度变换方式为常量,即线型，以后有可能需要考虑：均方根（square root），对数(log)</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKEN">
+							<xs:enumeration value="gtFixed"/>
+							<xs:enumeration value="gtLog"/>
+							<xs:enumeration value="gtSqrt"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="HeightValue" type="xs:double" default="10"/>
+				<xs:attribute name="HisType" default="htStack">
+					<xs:annotation>
+						<xs:documentation>直方图类型: 堆积、横排</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKEN">
+							<xs:enumeration value="htStack"/>
+							<xs:enumeration value="htMultiBar"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PieChartType">
+		<xs:annotation>
+			<xs:documentation>饼装图类型描述</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ThemeBaseStyleType">
+				<xs:attribute name="RadiusType" default="ctCalc">
+					<xs:annotation>
+						<xs:documentation>半径类型，有两种，一种为固定半径类型，一种为由ProductPerMM计算类型</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKEN">
+							<xs:enumeration value="ctFixed"/>
+							<xs:enumeration value="ctCalc"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="GraduateSizeType" use="optional" default="gtFixed">
+					<xs:annotation>
+						<xs:documentation>缺省的长度变换方式为常量,即线型，以后有可能需要考虑：均方根（square root），对数(log)</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKEN">
+							<xs:enumeration value="gtFixed"/>
+							<xs:enumeration value="gtLog"/>
+							<xs:enumeration value="gtSqrt"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="ProductPerMM" type="xs:double" use="optional" default="1">
+					<xs:annotation>
+						<xs:documentation>每毫米表示多少用户单位</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="RadiusValue" type="xs:double" default="10">
+					<xs:annotation>
+						<xs:documentation>固定半径时半径的值</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="PieChartType" default="ptFullPie">
+					<xs:annotation>
+						<xs:documentation>饼图类型: 全饼图，上半饼图，下半饼图</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKEN">
+							<xs:enumeration value="ptFullPie"/>
+							<xs:enumeration value="ptUpPie"/>
+							<xs:enumeration value="ptDownPie"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="StartAngle" type="xs:int" default="0"/>
+				<xs:attribute name="ClockWise" type="xs:boolean" default="true"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ThemeBase">
+		<xs:annotation>
+			<xs:documentation>基本专题（样式+数据）</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="StyleName" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>专题样式子项标识（同一模版不允许重复）</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="TitleLsts" use="optional" default="油;气;水">
+			<xs:simpleType>
+				<xs:list itemType="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="LabelLsts" use="optional" default="油;气;水">
+			<xs:simpleType>
+				<xs:list itemType="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ColorLsts" use="optional" default="rgb(255,0,0);rgb(0,255,0);rgb(0,0,255)">
+			<xs:simpleType>
+				<xs:list itemType="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DispParLsts" use="optional" default="1.0;1.0;1.0">
+			<xs:annotation>
+				<xs:documentation>显示系数：由于数据项差别可能比较大（比如A：10000，B：5），导致绘制效果差别比较大，因此需要增加处理，使绘制的数据项乘某个系数</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:list itemType="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SetRangeLsts" use="optional" default="false;false;false">
+			<xs:annotation>
+				<xs:documentation>显示系数：由于数据项差别可能比较大（比如A：10000，B：5），导致绘制效果差别比较大，因此需要增加处理，使绘制的数据项乘某个系数</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:list itemType="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="MaxValueLsts" use="optional" default="1.0;1.0;1.0">
+			<xs:annotation>
+				<xs:documentation>显示系数：由于数据项差别可能比较大（比如A：10000，B：5），导致绘制效果差别比较大，因此需要增加处理，使绘制的数据项乘某个系数</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:list itemType="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="MinValueLsts" use="optional" default="1.0;1.0;1.0">
+			<xs:annotation>
+				<xs:documentation>显示系数：由于数据项差别可能比较大（比如A：10000，B：5），导致绘制效果差别比较大，因此需要增加处理，使绘制的数据项乘某个系数</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:list itemType="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ZeroLabelLsts" use="optional" default="0;0;0">
+			<xs:annotation>
+				<xs:documentation>显示系数：由于数据项差别可能比较大（比如A：10000，B：5），导致绘制效果差别比较大，因此需要增加处理，使绘制的数据项乘某个系数</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:list itemType="xs:string"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="PrimKeyType" type="xs:string" use="optional" default="Coords">
+			<xs:annotation>
+				<xs:documentation>对应的主键类型，有以下两种：Name,Coords</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ItemCount" type="xs:long" use="optional" default="0"/>
+	</xs:complexType>
+	<xs:complexType name="WellStyle">
+		<xs:annotation>
+			<xs:documentation>井位样式</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="FontStyle">
+				<xs:attribute name="TopSymbolSize" type="xs:double" use="optional" default="10">
+					<xs:annotation>
+						<xs:documentation>井口符号大小（mm）</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="BottomSymbolSize" type="xs:double" use="optional" default="10">
+					<xs:annotation>
+						<xs:documentation>井底符号大小（mm）</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="TopSymbolColor" type="xs:string" use="optional" default="rgb(0,0,0)">
+					<xs:annotation>
+						<xs:documentation>井口符号颜色</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="BottomSymbolColor" type="xs:string" use="optional" default="rgb(0,0,0)">
+					<xs:annotation>
+						<xs:documentation>井底符号颜色</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="OffsetX" type="xs:double" use="optional" default="10">
+					<xs:annotation>
+						<xs:documentation>井名水平偏移（mm）,向右为正</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="OffsetY" type="xs:double" use="optional" default="-3">
+					<xs:annotation>
+						<xs:documentation>井名垂直偏移（mm）,向上为正</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="FontStyle">
+		<xs:annotation>
+			<xs:documentation>字体样式</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="FontHeight" type="xs:long" use="optional" default="10"/>
+		<xs:attribute name="FontWidth" type="xs:long" use="optional" default="10"/>
+		<xs:attribute name="Escapement" type="xs:long" use="optional" default="0"/>
+		<xs:attribute name="Orientation" type="xs:long" use="optional" default="0"/>
+		<xs:attribute name="Weight" type="xs:long" use="optional" default="0"/>
+		<xs:attribute name="Italic" type="xs:unsignedByte" use="optional" default="0"/>
+		<xs:attribute name="Underline" type="xs:unsignedByte" use="optional" default="0"/>
+		<xs:attribute name="StrikeOut" type="xs:unsignedByte" use="optional" default="0"/>
+		<xs:attribute name="CharSet" type="xs:unsignedByte" use="optional" default="0"/>
+		<xs:attribute name="OutPrecision" type="xs:unsignedByte" use="optional" default="0"/>
+		<xs:attribute name="ClipPrecision" type="xs:unsignedByte" use="optional" default="0"/>
+		<xs:attribute name="Quality" type="xs:unsignedByte" use="optional" default="0"/>
+		<xs:attribute name="PitchAndFamily" type="xs:unsignedByte" use="optional" default="0"/>
+		<xs:attribute name="FontName" type="xs:string" use="optional" default="0"/>
+		<xs:attribute name="FontColor" type="xs:unsignedLong"/>
+	</xs:complexType>
+</xs:schema>

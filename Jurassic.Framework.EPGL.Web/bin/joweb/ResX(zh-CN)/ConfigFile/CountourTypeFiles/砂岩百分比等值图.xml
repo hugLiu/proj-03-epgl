@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColorLevel><ColorBand><ColorItem pos="0.000000e+000" color="255,210,210"/><ColorItem pos="1.000000e+000" color="255,87,6"/></ColorBand><ContorLines><StartValue step="5.000000e-002" round="2"/><Label step="3"/><Line minor_width="1.000000e-001" major_width="2.000000e-001"  minor_color="0,0,0" major_color="0,0,0"/></ContorLines></ColorLevel>

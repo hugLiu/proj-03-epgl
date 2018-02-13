@@ -1,0 +1,5 @@
+﻿@*首页上的用户头像的显示，为了满足头像自定义的更改需要，将这部分写在分部视图中*@
+<a class="mini-button mini-button-iconTop  mini-button-plain" href="@Url.Action("SelfServiceIndex")" target="main">
+    <div id="picture" style="margin-top:-2px"><img id="mainAvatar" src="@Url.Action("GetUserAvatar", "Files", new { username = User.Identity.Name })" style="width:24px;height:24px" /></div>
+    <span style="display:block; ">@User.Identity.Name</span>
+</a>

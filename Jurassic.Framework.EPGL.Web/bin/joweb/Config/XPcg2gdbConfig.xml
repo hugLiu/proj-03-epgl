@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--本文件是软件配置应用程序。-->
+<PcgToGdb>
+	<!--加密许可-->
+	<EncrptLicense ProductName="PCG2GDB" Version="1.000" LicensePath="2156@10.65.64.45"/>
+	<PlaneMap10>
+		<LineStyleSet>
+		<!--LayerName用来进行层名匹配，nIndex用来和GeoMap的线型索引对应，LineName是注释，标志geomap的线型名称,Width--表示线宽，LengthScale--表示线缩放比例。 -->
+			<LineStyle LayerName="铁路"  Width = "3" LengthScale ="1" LineName="普通铁路" Index="6"/>
+			<LineStyle LayerName="二级构造带" Width = "3" LengthScale ="1" LineName="二级构造分区线" Index="46"/>
+			<LineStyle LayerName="一级构造带" Width = "3" LengthScale ="1" LineName="一级构造分区线" Index="3"/>
+		</LineStyleSet>
+	</PlaneMap10>
+</PcgToGdb>

@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    @*<meta charset="utf-8" />*@
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta name="renderer" content="webkit" />
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="~/Content/EPGL/css/core/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/core/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/core/font-awesome-ie7.min.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/core/animate.css" rel="stylesheet" />
+
+    <link href="~/Content/EPGL/css/plugins/toastr/toastr.min.css" rel="stylesheet" />
+
+    <link href="~/Content/EPGL/css/shared/style.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/shared/layout.css" rel="stylesheet" />
+    <style type="text/css">
+        .body-content {
+            height: 100%;
+            width: 100%;
+        }
+
+        .submenu_li {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+    @RenderSection("css", false)
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/Content/EPGL/js/shared/html5shiv/3.7/html5shiv.min.js"></script>
+      <script src="/Content/EPGL/js/shared/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!--导航选中高亮-->
+@helper  GetCssClass(string item)
+{
+if (ViewBag.ActiveTab == item)
+{
+        @:class="active"
+    }
+else if (ViewBag.ActiveTab == "")
+{
+        @:class="active"
+}
+}
+<body class="gray-bg top-navigation pace-done">
+    <div class="body-content">
+        <div class="border-bottom white-bg">
+            <nav class="navbar navbar-static-top" role="navigation" style="background: #f3f3f4;">
+                <div class="navbar-header" style="width:300px;">
+                    <img src="~/Content/EPGL/img/shared/logo-small.png" class="navbar-brand" style="padding: 10px 5px; background-color:#f3f3f4" />
+                    <h5>中石油新疆油田公司</h5>
+                    <h3 style="color:#003366">油气田开发规划图库管理平台</h3>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li @GetCssClass("EPGL")>
+                            <a aria-expanded="false" role="button" href="/EPGL/Index">首页</a>
+                        </li>
+                        <li @GetCssClass("TargetNav")>
+                            <a aria-expanded="false" role="button" href="/TargetNav/Index" class="dropdown-toggle">图形导航</a>
+                        </li>
+                        <li @GetCssClass("Search")>
+                            <a aria-expanded="false" role="button" href="/Search/Index">图件搜索</a>
+                        </li>
+                        <li @GetCssClass("BookData")>
+                            <a data-toggle="dropdown" aria-expanded="false" role="button" class="dropdown-toggle">
+                                场景浏览
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel" id="bookdata">
+                                <li class="submenu_li">
+                                    <a data-url="/YT_Single(201612)/default.html" href="" target="_blank">油田开发图册</a>
+                                </li>
+                                <li class="submenu_li">
+                                    <a data-url="/ZD(2017)/default.html" href="" target="_blank">指导意见图册</a>
+                                </li>
+                                <li class="submenu_li">
+                                    <a data-url="/CG(2016)/default.html" href="" target="_blank">实施成果图册</a>
+                                </li>
+                                <iframe scrolling=no allowTransparency="true" style="background-color: transparent; position: absolute; z-index: 0; width: 100%; height: 100%; top: 0; left: 0; border: none; "></iframe>
+                            </ul>
+                        </li>
+                        <li @GetCssClass("FlexDraw")>
+                            <a data-toggle="dropdown" aria-expanded="false" role="button" class="dropdown-toggle">
+                                成图
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                <li class="submenu_li">
+                                    <a href="/FlexDraw/QuickDraw">一键成图</a>
+                                </li>
+                                <li class="submenu_li">
+                                    <a href="/FlexDraw/DynamicDraw">动态图形</a>
+                                </li>
+                                <iframe scrolling=no allowTransparency="true" style="background-color: transparent; position: absolute; z-index: 0; width: 100%; height: 100%; top: 0; left: 0; border: none; "></iframe>
+                            </ul>
+                        </li>
+                        <li @GetCssClass("MySpace")>
+                            <a aria-expanded="false" role="button" href="/MySpace/Index" class="dropdown-toggle"> 个人中心 </a>
+                        </li>
+                        <li @GetCssClass("Home")>
+                            <a aria-expanded="false" role="button" href="/Home/Index?app=admin" class="dropdown-toggle"> 管理中心 </a>
+                        </li>
+                        <li>
+                            <a href="/Account/Logout">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        @RenderBody()
+    </div>
+
+
+
+    <!-- 全局js -->
+    <!--[if lt IE 9]>
+    <script src="/Content/EPGL/js/core/jquery-1.12.4.min.js"></script>
+    <script src="/Content/EPGL/js/plugins/json/json2.js"></script>
+    <script src="/Content/EPGL/js/core/XDomainRequest/jquery.xdomainrequest.min.js"></script>
+    <script src="/Content/EPGL/js/shared/ieBetter/ieBetter.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script src="~/Content/EPGL/js/core/jquery-2.1.4.min.js"></script>
+    <!--<![endif]-->
+
+    <script src="~/Content/EPGL/js/core/knockout-3.4.2.js"></script>
+    <script src="~/Content/EPGL/js/core/bootstrap.js"></script>
+    <!--toastr-->
+    <script src="~/Content/EPGL/js/plugins/toastr/toastr.min.js"></script>
+
+    <!-- 自定义js -->
+    <script src="~/Content/EPGL/js/shared/app.js"></script>
+    <script src="~/Content/EPGL/js/shared/content.js"></script>
+    <script src="~/Content/EPGL/js/shared/jsTools.js"></script>
+    <script src="~/Content/EPGL/js/shared/jsDatetime.js"></script>
+    <script src="~/Content/EPGL/js/shared/global.js"></script>
+    <script src="~/Content/EPGL/js/shared/GUID.js"></script>
+
+    <script type="text/javascript">
+        jQuery.support.cors = true;//对CORS协议的一种实现跨域
+
+        $(function () {
+            var href = null;
+            $("#bookdata li a").each(function () {
+                href = gloabal_bookdata_url+$(this).data("url");
+                $(this).attr("href", href);
+            });
+
+            var userName = "";
+            $.ajax({
+                url: "/Default/GetUserName",
+                type: "post",
+                async: false,
+                success: function (data) {
+                    userName = data;
+                }
+            });
+        });
+
+    </script>
+
+    <!--页面级脚本-->
+    @RenderSection("script", false)
+</body>
+</html>

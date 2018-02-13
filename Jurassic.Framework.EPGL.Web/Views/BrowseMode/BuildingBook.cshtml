@@ -1,0 +1,442 @@
+﻿
+@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = "~/Views/Shared/_EPGLLayout.cshtml";
+}
+@section css{
+
+    <link href="~/Content/EPGL/css/pages/browsemode/style.css" rel="stylesheet" />
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: auto !important;
+        }
+
+        #fb7-ajax {
+            height: 100%;
+        }
+
+    </style>
+}
+<!-- BEGIN FLIPBOOK STRUCTURE -->
+<div data-template="true" data-cat="book7" id="fb7-ajax">
+
+
+    <!-- BEGIN HTML BOOK -->
+    <div data-current="book7" class="fb7" id="fb7">
+
+        <!-- preloader -->
+        <div class="fb7-preloader">
+            <div id="wBall_1" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_2" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_3" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_4" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_5" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+        </div>
+
+        <!-- background for book -->
+        <div class="fb7-bcg-book"></div>
+
+        <!-- BEGIN CONTAINER BOOK -->
+        <div id="fb7-container-book">
+
+            <!-- BEGIN deep linking -->
+            <section id="fb7-deeplinking">
+                <ul data-bind="foreach:pages">
+                    <li data-bind="attr:{'data-address':$index>0?'page'+$data+'-page'+($data+1):'page'+$data,'data-page':$data}"></li>
+                </ul>
+            </section>
+            <!-- END deep linking -->
+
+            <!-- BEGIN ABOUT -->
+            <section id="fb7-about">
+                <h1> <strong>前言</strong></h1>
+                <h1>新疆油田新区<strong>产能建设图册</strong></h1>
+
+                <div style="text-align: center;margin-top: 30%;">
+                    <img src="~/Content/EPGL/img/shared/logo-small.png" />
+                    <h1 style="text-align: center; margin-top:15px"><strong>新疆油田分公司勘探开发研究院规划所</strong></h1>
+                    <h3 style="text-align: center">2016年12月</h3>
+                </div>
+            </section>
+            <!-- END ABOUT -->
+
+            <!-- BEGIN PAGES -->
+            <div id="fb7-book">
+
+
+                <div style="background-image:url('')" class="fb7-noshadow">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-1-content" width="100%" height="100%" src="/BrowseMode/BuildingCover" frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- BEGIN PAGE 目录 -->
+                <div>
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-2-content" width="100%" height="100%" frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+                        <!-- begin number page -->
+                        <div class="fb7-meta">
+                            <span class="fb7-num">2</span>
+                        </div>
+                        <!-- end number page -->
+                    </div>
+                    <!-- end container page book -->
+                </div>
+                <!-- END PAGE  -->
+                <div>
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <img src="~/Content/EPGL/img/pages/browseMode/building/page3.JPG" alt="" height="100%" width="100%" />
+                        </div>
+                        <!-- begin number page -->
+                        <div class="fb7-meta">
+                            <span class="fb7-num">3</span>
+                        </div>
+                        <!-- end number page -->
+                    </div>
+                    <!-- end container page book -->
+                </div>
+                <div>
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <img src="~/Content/EPGL/img/pages/browsemode/building/table.png" alt="" height="100%" width="100%" />
+                        </div>
+                        <!-- begin number page -->
+                        <div class="fb7-meta">
+                            <span class="fb7-num">3</span>
+                        </div>
+                        <!-- end number page -->
+                    </div>
+                    <!-- end container page book -->
+                </div>               
+                
+                <!--ko foreach:{data:buildingData,as:'building',afterRender: changeCurrentPageIndex}-->
+                <div data-bind="attr:{'data-info':building.title+'_'+(currentPageIndex+1)+'_cover'}">
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe data-bind="attr:{id:'page-'+(currentPageIndex+1)+'-content',src:'/BrowseMode/BuildingData?type=text&index='+$index()}" class="content-frame" width="100%" height="100%" frameborder="0" seamless style="display: inline;"></iframe>
+                        </div>
+                        <!-- begin number page -->
+                        <div class="fb7-meta">
+                            <span class="fb7-num" data-bind="text:(currentPageIndex+1)"></span>
+                        </div>
+                        <!-- end number page -->
+                    </div>
+                    <!-- end container page book -->
+                </div>
+                <!--ko foreach:{data:building.imgDes,afterRender:changeCurrentPageIndex}-->
+                <div>
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe data-bind="attr:{id:'page-'+(currentPageIndex+2)+'-content',src:'/BrowseMode/BuildingData?type=image&index='+$parentContext.$index()+'&imgIndex='+$index()}" class="content-frame" width="100%" height="100%" frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+                        <!-- begin number page -->
+                        <div class="fb7-meta">
+                            <span class="fb7-num" data-bind="text:(currentPageIndex+2)"></span>
+                        </div>
+                        <!-- end number page -->
+                    </div>
+                    <!-- end container page book -->
+                </div>
+                <!-- /ko -->
+                <!-- /ko -->
+                <!-- BEGIN PAGE 末页 -->
+                <div>
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page-->
+                        <div class="fb7-page-book">
+                            <div style="text-align: center">
+                                <img src="~/Content/EPGL/img/shared/end.jpg" style="width: 700px" />
+                                <p></p>
+                                <h5 style="float: right; padding-right: 50px;">&nbsp;制作单位：新疆油田分公司勘探开发研究院规划所 & 侏罗纪软件新疆分公司</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE  -->
+
+
+
+            </div>
+            <!-- END PAGES -->
+            <!-- arrows -->
+            <a class="fb7-nav-arrow prev"></a>
+            <a class="fb7-nav-arrow next"></a>
+
+            <!-- shadow -->
+            <div class="fb7-shadow"></div>
+
+        </div>
+        <!-- END CONTAINER BOOK -->
+        <!-- BEGIN FOOTER -->
+        <div id="fb7-footer">
+
+            <div class="fb7-bcg-tools"></div>
+
+            <div class="fb7-menu" id="fb7-logo"></div>
+
+            <div class="fb7-menu" id="fb7-center">
+                <ul>
+
+                    <!-- margin left -->
+                    <li></li>
+
+                    <!-- icon download -->
+                    <!--<li>
+                        <a title="Pdf File Or Zip" class="fb7-download" href="img/file.pdf"></a>
+                    </li>-->
+                    <!-- icon_zoom_in -->
+                    <li>
+                        <a title="放大" class="fb7-zoom-in"></a>
+                    </li>
+
+
+                    <!-- icon_zoom_out -->
+                    <li>
+                        <a title="缩小" class="fb7-zoom-out"></a>
+                    </li>
+
+
+                    <!-- icon_zoom_auto -->
+                    <li>
+                        <a title="适应屏幕" class="fb7-zoom-auto"></a>
+                    </li>
+
+
+                    <!-- icon_zoom_original -->
+                    <li>
+                        <a title="实际尺寸" class="fb7-zoom-original"></a>
+                    </li>
+
+
+                    <!-- icon_allpages -->
+                    <li>
+                        <a title="图册缩略" class="fb7-show-all"></a>
+                    </li>
+
+
+                    <!-- icon_home -->
+                    <li>
+                        <a title="回到封面" class="fb7-home"></a>
+                    </li>
+
+                    <!-- icon fullscreen -->
+                    <li>
+                        <a title="全屏切换" class="fb7-fullscreen"></a>
+                    </li>
+
+                    <!-- margin right -->
+                    <li></li>
+
+                </ul>
+            </div>
+
+            <div class="fb7-menu" id="fb7-right">
+                <ul>
+                    <!-- icon page manager -->
+                    <li class="fb7-goto">
+                        <label for="fb7-page-number" id="fb7-label-page-number"></label>
+                        <input type="text" id="fb7-page-number">
+                        <button type="button">转到</button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- END FOOTER -->
+        <!-- BEGIN THUMBS -->
+        <div id="fb7-all-pages" class="fb7-overlay">
+
+            <section class="fb7-container-pages">
+
+                <div id="fb7-menu-holder">
+
+                    <ul id="fb7-slider">
+
+                        <!-- PAGE 1 - THUMB -->
+                        <li class="1">
+                            <img alt="" src="images/1_.jpg">
+                        </li>
+
+                        <!-- PAGE 2 - THUMB -->
+                        <li class="2">
+                            <img alt="" src="images/2_.jpg">
+                        </li>
+
+                        <!-- PAGE 3 - THUMB -->
+                        <li class="3">
+                            <img alt="" src="images/3_.jpg">
+                        </li>
+
+                        <!-- PAGE 4-5 - THUMB -->
+                        <li class="5">
+                            <img alt="" src="images/4_5_.jpg">
+                        </li>
+
+                        <!-- PAGE 6 - THUMB -->
+                        <li class="6">
+                            <img alt="" src="images/6_.jpg">
+                        </li>
+
+                        <!-- PAGE 7 - THUMB -->
+                        <li class="7">
+                            <img alt="" src="images/7_.jpg">
+                        </li>
+
+                        <!-- PAGE 8 - THUMB -->
+                        <li class="8">
+                            <img alt="" src="images/8_.jpg">
+                        </li>
+
+                        <!-- PAGE 9 - THUMB -->
+                        <li class="9">
+                            <img alt="" src="images/9_.jpg">
+                        </li>
+
+                        <!-- PAGE 10S - THUMB -->
+                        <li class="10">
+                            <img alt="" src="images/end_.jpg">
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+        </div>
+        <!-- END THUMBS -->
+    </div>
+    <!-- END HTML BOOK -->
+
+
+</div>
+<!-- END FLIPBOOK STRUCTURE -->
+<!--//隐藏大图片-->
+<div class="hidden-Bigimg">
+    <img src="" alt="" />
+</div>
+@section script{
+
+    <script src="~/Content/EPGL/js/plugins/turn/turn.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jquery-fullscreen/jquery.fullscreen.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jquery-address/jquery.address-1.6.min.js"></script>
+    <script src="~/Content/EPGL/js/pages/browsemode/onload.js"></script>
+
+<script src="~/DemoData/bookdata/buildingdata.js"></script>
+
+    <script>
+        $('#fb7-ajax').data('config',
+        {
+            "page_width": "1000",
+            "page_height": "700",
+            "go_to_page": "Page",
+            "gotopage_width": "45",
+            "zoom_double_click": "1",
+            "zoom_step": "0.06",
+            "tooltip_visible": "true",
+            "toolbar_visible": "true",
+            "deeplinking_enabled": "true",
+            "double_click_enabled": "true",
+            "rtl": "false"
+        });
+
+
+        var currentPageIndex = 4;
+
+        var changeCurrentPageIndex = function(data) {
+            currentPageIndex += 1;
+        };
+
+        var BookViewModel = function() {
+            var self = this;
+
+            self.buildingData = ko.observableArray(buildingData);
+
+            self.pages = ko.observableArray();
+        };
+
+        $(document).ready(function() {
+
+            var currentModel = new BookViewModel();
+
+            ko.applyBindings(currentModel);
+
+            //这里当前页数加1，因为最后一页没有更新currentPageIndex的值
+            for (var i = 1; i < currentPageIndex + 1; i++) {
+                currentModel.pages.push(i);
+            }
+
+            //添加目录页面
+            var covers = $("div[data-info$='_cover']");
+            var catalogue = { dataLeft: [], dataRight:[]};
+            for (var j = 0; j < covers.length; j++) {
+                var data = $(covers[j]).data("info").split("_");
+                if (j % 2 === 0) {
+                    catalogue.dataLeft.push({ name: data[0], index: data[1] });
+                } else {
+                    catalogue.dataRight.push({ name: data[0], index: data[1] });
+                }
+            }
+
+            $("#page-2-content").attr("src", "/BrowseMode/BuildingCatalogue?data=" + JSON.stringify(catalogue));
+
+
+            //点击放大图消失
+            $('.hidden-Bigimg').on('click',
+                function() {
+                    $('.hidden-Bigimg').css('display', 'none');
+                });
+        });
+    </script>
+}
+
+
+
+

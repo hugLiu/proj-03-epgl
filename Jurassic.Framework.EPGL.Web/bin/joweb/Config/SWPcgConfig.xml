@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SWPCG>
+	<!--
+	卡奔转换到PCG所对应曲线充填的填充背景，采用卡本2.2的参考颜色
+	SymName：曲线填充符号名称
+	SymBkColor：曲线填充符号背景色
+	符号大小暂未考虑
+	-->
+	<PcgCurveFills>
+		<CurveFill SymName="空白" 		SymBkColor="#FFFFFF"/>
+		<CurveFill SymName="泥岩" 		SymBkColor="#669ACD"/>
+		<CurveFill SymName="砂质泥岩" 	SymBkColor="#669ACD"/>
+		<CurveFill SymName="砂岩" 		SymBkColor="#9BF4F9"/>
+		<CurveFill SymName="石灰岩" 	    SymBkColor="#9ACD99"/>
+		<CurveFill SymName="泥质灰岩" 	SymBkColor="#9ACD99"/>
+		<CurveFill SymName="云灰岩" 		SymBkColor="#9ACD99"/>
+		<CurveFill SymName="白云岩" 		SymBkColor="#EBC99F"/>
+		<CurveFill SymName="泥质云岩" 	SymBkColor="#EBC99F"/>
+		<CurveFill SymName="可动油" 		SymBkColor="#241FED"/>
+		<CurveFill SymName="气层" 		SymBkColor="#19ECF3"/>
+		<CurveFill SymName="水层" 		SymBkColor="#CD9047"/>
+		<CurveFill SymName="煤层" 		SymBkColor="#797878"/>
+		<CurveFill SymName="残余油" 		SymBkColor="#345AA6"/>
+		<CurveFill SymName="粘土水" 		SymBkColor="#FFFFFF"/>
+		<CurveFill SymName="干粘土" 		SymBkColor="#FFFFFF"/>
+		<CurveFill SymName="细砂岩" 		SymBkColor="#FFFFFF"/>
+		<CurveFill SymName="石膏岩" 		SymBkColor="#FFFFFF"/>
+	</PcgCurveFills> 
+	<PcgOilLevels>
+		<!--PCG格式文件中描述的含有级别集合-->
+		<Type>饱含油</Type>
+		<Type>富含油</Type>
+		<Type>油浸</Type>
+		<Type>油迹</Type>
+		<Type>荧光</Type>
+		<Type>含气</Type>
+		<Type>气砂</Type>
+		<Type>含水</Type>
+		<Type>水砂</Type>
+	</PcgOilLevels>
+	<PCGColorTable>
+		<!--carbon软件中岩性颜色配置信息-->
+		<ColorItem Name="白色" Code="0" R="230" G="230" B="230"/>
+		<ColorItem Name="红色" Code="1" R="192" G="0" B="0"/>
+		<ColorItem Name="紫色" Code="2" R="127" G="64" B="127"/>
+		<ColorItem Name="褐色" Code="3" R="120" G="40" B="30"/>
+		<ColorItem Name="黄色" Code="4" R="220" G="220" B="100"/>
+		<ColorItem Name="绿色" Code="5" R="94" G="142" B="110"/>
+		<ColorItem Name="蓝色" Code="6" R="128" G="128" B="255"/>
+		<ColorItem Name="灰色" Code="7" R="160" G="160" B="160"/>
+		<ColorItem Name="黑色" Code="8" R="64" G="64" B="64"/>
+		<ColorItem Name="棕色" Code="9" R="160" G="100" B="0"/>
+		<ColorItem Name="杂色" Code="10" R="190" G="177" B="152"/>
+		<ColorItem Name="肉红色" Code="11" R="255" G="200" B="160"/>
+		<ColorItem Name="蛋青色" Code="12" R="192" G="220" B="220"/>
+		<ColorItem Name="土黄色" Code="13" R="160" G="160" B="100"/>
+		<ColorItem Name="白红色" Code="0.1" R="210" G="192" B="192"/>
+		<ColorItem Name="白紫色" Code="0.2" R="210" G="127" B="127"/>
+		<ColorItem Name="白褐色" Code="0.3" R="120" G="40" B="30"/>
+		<ColorItem Name="白黄色" Code="0.4" R="210" G="220" B="30"/>
+		<ColorItem Name="白绿色" Code="0.5" R="94" G="210" B="120"/>
+		<ColorItem Name="白蓝色" Code="0.6" R="128" G="210" B="255"/>
+		<ColorItem Name="白灰色" Code="0.7" R="160" G="160" B="210"/>
+		<ColorItem Name="白黑色" Code="0.8" R="64" G="64" B="100"/>
+		<ColorItem Name="白棕色" Code="0.9" R="255" G="235" B="200"/>
+		<ColorItem Name="红白色" Code="1.0" R="210" G="192" B="210"/>
+		<ColorItem Name="红紫色" Code="1.2" R="127" G="64" B="127"/>
+		<ColorItem Name="红褐色" Code="1.3" R="127" G="40" B="130"/>
+		<ColorItem Name="红黄色" Code="1.4" R="192" G="210" B="40"/>
+		<ColorItem Name="红绿色" Code="1.5" R="100" G="210" B="100"/>
+		<ColorItem Name="红蓝色" Code="1.6" R="140" G="128" B="255"/>
+		<ColorItem Name="红灰色" Code="1.7" R="192" G="160" B="160"/>
+		<ColorItem Name="红黑色" Code="1.8" R="120" G="64" B="64"/>
+		<ColorItem Name="红棕色" Code="1.9" R="255" G="171" B="30"/>
+		<ColorItem Name="紫白色" Code="2.0" R="172" G="210" B="210"/>
+		<ColorItem Name="紫红色" Code="2.1" R="172" G="152" B="210"/>
+		<ColorItem Name="紫褐色" Code="2.3" R="152" G="40" B="30"/>
+		<ColorItem Name="紫黄色" Code="2.4" R="172" G="220" B="150"/>
+		<ColorItem Name="紫绿色" Code="2.5" R="120" G="142" B="110"/>
+		<ColorItem Name="紫蓝色" Code="2.6" R="128" G="155" B="255"/>
+		<ColorItem Name="紫灰色" Code="2.7" R="128" G="155" B="160"/>
+		<ColorItem Name="紫黑色" Code="2.8" R="100" G="64" B="64"/>
+		<ColorItem Name="紫棕色" Code="2.9" R="210" G="74" B="115"/>
+		<ColorItem Name="褐白色" Code="3.0" R="150" G="210" B="210"/>
+		<ColorItem Name="褐红色" Code="3.1" R="192" G="120" B="210"/>
+		<ColorItem Name="褐紫色" Code="3.2" R="192" G="172" B="210"/>
+		<ColorItem Name="褐黄色" Code="3.4" R="225" G="175" B="40"/>
+		<ColorItem Name="褐绿色" Code="3.5" R="140" G="192" B="165"/>
+		<ColorItem Name="褐蓝色" Code="3.6" R="128" G="200" B="200"/>
+		<ColorItem Name="褐灰色" Code="3.7" R="170" G="170" B="160"/>
+		<ColorItem Name="褐黑色" Code="3.8" R="150" G="150" B="160"/>
+		<ColorItem Name="褐棕色" Code="3.9" R="184" G="109" B="101"/>
+		<ColorItem Name="黄白色" Code="4.0" R="230" G="230" B="150"/>
+		<ColorItem Name="黄红色" Code="4.1" R="230" G="170" B="155"/>
+		<ColorItem Name="黄紫色" Code="4.2" R="210" G="210" B="210"/>
+		<ColorItem Name="黄褐色" Code="4.3" R="175" G="165" B="65"/>
+		<ColorItem Name="黄绿色" Code="4.5" R="200" G="185" B="145"/>
+		<ColorItem Name="黄蓝色" Code="4.6" R="175" G="245" B="95"/>
+		<ColorItem Name="黄灰色" Code="4.7" R="200" G="190" B="130"/>
+		<ColorItem Name="黄黑色" Code="4.8" R="115" G="125" B="35"/>
+		<ColorItem Name="黄棕色" Code="4.9" R="189" G="140" B="96"/>
+		<ColorItem Name="绿白色" Code="5.0" R="200" G="230" B="200"/>
+		<ColorItem Name="绿红色" Code="5.1" R="195" G="200" B="20"/>
+		<ColorItem Name="绿紫色" Code="5.2" R="135" G="135" B="80"/>
+		<ColorItem Name="绿褐色" Code="5.3" R="115" G="120" B="100"/>
+		<ColorItem Name="绿黄色" Code="5.4" R="135" G="150" B="70"/>
+		<ColorItem Name="绿蓝色" Code="5.6" R="65" G="150" B="100"/>
+		<ColorItem Name="绿灰色" Code="5.7" R="90" G="128" B="100"/>
+		<ColorItem Name="绿黑色" Code="5.8" R="25" G="85" B="25"/>
+		<ColorItem Name="绿棕色" Code="5.9" R="153" G="137" B="87"/>
+		<ColorItem Name="蓝白色" Code="6.0" R="185" G="185" B="255"/>
+		<ColorItem Name="蓝红色" Code="6.1" R="200" G="155" B="255"/>
+		<ColorItem Name="蓝紫色" Code="6.2" R="165" G="150" B="225"/>
+		<ColorItem Name="蓝褐色" Code="6.3" R="170" G="185" B="200"/>
+		<ColorItem Name="蓝黄色" Code="6.4" R="200" G="210" B="60"/>
+		<ColorItem Name="蓝绿色" Code="6.5" R="55" G="215" B="165"/>
+		<ColorItem Name="蓝灰色" Code="6.7" R="125" G="145" B="145"/>
+		<ColorItem Name="蓝黑色" Code="6.8" R="85" G="105" B="155"/>
+		<ColorItem Name="蓝棕色" Code="6.9" R="129" G="124" B="112"/>
+		<ColorItem Name="灰白色" Code="7.0" R="205" G="205" B="205"/>
+		<ColorItem Name="灰红色" Code="7.1" R="250" G="170" B="170"/>
+		<ColorItem Name="灰紫色" Code="7.2" R="165" G="155" B="155"/>
+		<ColorItem Name="灰褐色" Code="7.3" R="155" G="165" B="150"/>
+		<ColorItem Name="灰黄色" Code="7.4" R="182" G="182" B="135"/>
+		<ColorItem Name="灰绿色" Code="7.5" R="160" G="180" B="135"/>
+		<ColorItem Name="灰蓝色" Code="7.6" R="130" G="160" B="185"/>
+		<ColorItem Name="灰黑色" Code="7.8" R="120" G="125" B="125"/>
+		<ColorItem Name="灰棕色" Code="7.9" R="130" G="118" B="111"/>
+		<ColorItem Name="黑白色" Code="8.0" R="185" G="185" B="185"/>
+		<ColorItem Name="黑红色" Code="8.1" R="100" G="25" B="5"/>
+		<ColorItem Name="黑紫色" Code="8.2" R="50" G="60" B="50"/>
+		<ColorItem Name="黑褐色" Code="8.3" R="50" G="50" B="50"/>
+		<ColorItem Name="黑黄色" Code="8.4" R="85" G="85" B="15"/>
+		<ColorItem Name="黑绿色" Code="8.5" R="55" G="85" B="20"/>
+		<ColorItem Name="黑蓝色" Code="8.6" R="30" G="70" B="100"/>
+		<ColorItem Name="黑灰色" Code="8.7" R="65" G="65" B="65"/>
+		<ColorItem Name="黑棕色" Code="8.9" R="100" G="105" B="100"/>
+		<ColorItem Name="棕白色" Code="9.0" R="185" G="185" B="185"/>
+		<ColorItem Name="棕红色" Code="9.1" R="202" G="180" B="170"/>
+		<ColorItem Name="棕紫色" Code="9.2" R="125" G="100" B="80"/>
+		<ColorItem Name="棕褐色" Code="9.3" R="100" G="115" B="90"/>
+		<ColorItem Name="棕黄色" Code="9.4" R="130" G="115" B="75"/>
+		<ColorItem Name="棕绿色" Code="9.5" R="100" G="125" B="80"/>
+		<ColorItem Name="棕蓝色" Code="9.6" R="80" G="115" B="125"/>
+		<ColorItem Name="棕灰色" Code="9.7" R="90" G="115" B="105"/>
+		<ColorItem Name="棕黑色" Code="9.8" R="100" G="105" B="100"/>
+		<ColorItem Name="浅白色" Code="-0" R="230" G="230" B="230"/>
+		<ColorItem Name="浅红色" Code="-1" R="192" G="0" B="0"/>
+		<ColorItem Name="浅紫色" Code="-2" R="127" G="64" B="127"/>
+		<ColorItem Name="浅褐色" Code="-3" R="120" G="40" B="30"/>
+		<ColorItem Name="浅黄色" Code="-4" R="220" G="220" B="100"/>
+		<ColorItem Name="浅绿色" Code="-5" R="94" G="142" B="110"/>
+		<ColorItem Name="浅蓝色" Code="-6" R="128" G="128" B="255"/>
+		<ColorItem Name="浅灰色" Code="-7" R="160" G="160" B="160"/>
+		<ColorItem Name="浅黑色" Code="-8" R="64" G="64" B="64"/>
+		<ColorItem Name="浅棕色" Code="-9" R="160" G="100" B="0"/>
+		<ColorItem Name="浅杂色" Code="-10" R="190" G="177" B="152"/>
+		<ColorItem Name="浅肉红色" Code="-11" R="255" G="200" B="160"/>
+		<ColorItem Name="浅蛋青色" Code="-12" R="192" G="220" B="220"/>
+		<ColorItem Name="浅土黄色" Code="-13" R="160" G="160" B="100"/>
+		<ColorItem Name="浅白红色" Code="-0.1" R="210" G="192" B="192"/>
+		<ColorItem Name="浅白紫色" Code="-0.2" R="210" G="127" B="127"/>
+		<ColorItem Name="浅白褐色" Code="-0.3" R="120" G="40" B="30"/>
+		<ColorItem Name="浅白黄色" Code="-0.4" R="210" G="220" B="30"/>
+		<ColorItem Name="浅白绿色" Code="-0.5" R="94" G="210" B="120"/>
+		<ColorItem Name="浅白蓝色" Code="-0.6" R="128" G="210" B="255"/>
+		<ColorItem Name="浅白灰色" Code="-0.7" R="160" G="160" B="210"/>
+		<ColorItem Name="浅白黑色" Code="-0.8" R="64" G="64" B="100"/>
+		<ColorItem Name="浅白棕色" Code="-0.9" R="255" G="235" B="200"/>
+		<ColorItem Name="浅红白色" Code="-1.0" R="210" G="192" B="210"/>
+		<ColorItem Name="浅红紫色" Code="-1.2" R="127" G="64" B="127"/>
+		<ColorItem Name="浅红褐色" Code="-1.3" R="127" G="40" B="130"/>
+		<ColorItem Name="浅红黄色" Code="-1.4" R="192" G="210" B="40"/>
+		<ColorItem Name="浅红绿色" Code="-1.5" R="100" G="210" B="100"/>
+		<ColorItem Name="浅红蓝色" Code="-1.6" R="140" G="128" B="255"/>
+		<ColorItem Name="浅红灰色" Code="-1.7" R="192" G="160" B="160"/>
+		<ColorItem Name="浅红黑色" Code="-1.8" R="120" G="64" B="64"/>
+		<ColorItem Name="浅红棕色" Code="-1.9" R="255" G="171" B="30"/>
+		<ColorItem Name="浅紫白色" Code="-2.0" R="172" G="210" B="210"/>
+		<ColorItem Name="浅紫红色" Code="-2.1" R="172" G="152" B="210"/>
+		<ColorItem Name="浅紫褐色" Code="-2.3" R="152" G="40" B="30"/>
+		<ColorItem Name="浅紫黄色" Code="-2.4" R="172" G="220" B="150"/>
+		<ColorItem Name="浅紫绿色" Code="-2.5" R="120" G="142" B="110"/>
+		<ColorItem Name="浅紫蓝色" Code="-2.6" R="128" G="155" B="255"/>
+		<ColorItem Name="浅紫灰色" Code="-2.7" R="128" G="155" B="160"/>
+		<ColorItem Name="浅紫黑色" Code="-2.8" R="100" G="64" B="64"/>
+		<ColorItem Name="浅紫棕色" Code="-2.9" R="210" G="74" B="115"/>
+		<ColorItem Name="浅褐白色" Code="-3.0" R="150" G="210" B="210"/>
+		<ColorItem Name="浅褐红色" Code="-3.1" R="192" G="120" B="210"/>
+		<ColorItem Name="浅褐紫色" Code="-3.2" R="192" G="172" B="210"/>
+		<ColorItem Name="浅褐黄色" Code="-3.4" R="225" G="175" B="40"/>
+		<ColorItem Name="浅褐绿色" Code="-3.5" R="140" G="192" B="165"/>
+		<ColorItem Name="浅褐蓝色" Code="-3.6" R="128" G="200" B="200"/>
+		<ColorItem Name="浅褐灰色" Code="-3.7" R="170" G="170" B="160"/>
+		<ColorItem Name="浅褐黑色" Code="-3.8" R="150" G="150" B="160"/>
+		<ColorItem Name="浅褐棕色" Code="-3.9" R="184" G="109" B="101"/>
+		<ColorItem Name="浅黄白色" Code="-4.0" R="230" G="230" B="150"/>
+		<ColorItem Name="浅黄红色" Code="-4.1" R="230" G="170" B="155"/>
+		<ColorItem Name="浅黄紫色" Code="-4.2" R="210" G="210" B="210"/>
+		<ColorItem Name="浅黄褐色" Code="-4.3" R="175" G="165" B="65"/>
+		<ColorItem Name="浅黄绿色" Code="-4.5" R="200" G="185" B="145"/>
+		<ColorItem Name="浅黄蓝色" Code="-4.6" R="175" G="245" B="95"/>
+		<ColorItem Name="浅黄灰色" Code="-4.7" R="200" G="190" B="130"/>
+		<ColorItem Name="浅黄黑色" Code="-4.8" R="115" G="125" B="35"/>
+		<ColorItem Name="浅黄棕色" Code="-4.9" R="189" G="140" B="96"/>
+		<ColorItem Name="浅绿白色" Code="-5.0" R="200" G="230" B="200"/>
+		<ColorItem Name="浅绿红色" Code="-5.1" R="195" G="200" B="20"/>
+		<ColorItem Name="浅绿紫色" Code="-5.2" R="135" G="135" B="80"/>
+		<ColorItem Name="浅绿褐色" Code="-5.3" R="115" G="120" B="100"/>
+		<ColorItem Name="浅绿黄色" Code="-5.4" R="135" G="150" B="70"/>
+		<ColorItem Name="浅绿蓝色" Code="-5.6" R="65" G="150" B="100"/>
+		<ColorItem Name="浅绿灰色" Code="-5.7" R="90" G="128" B="100"/>
+		<ColorItem Name="浅绿黑色" Code="-5.8" R="25" G="85" B="25"/>
+		<ColorItem Name="浅绿棕色" Code="-5.9" R="153" G="137" B="87"/>
+		<ColorItem Name="浅蓝白色" Code="-6.0" R="185" G="185" B="255"/>
+		<ColorItem Name="浅蓝红色" Code="-6.1" R="200" G="155" B="255"/>
+		<ColorItem Name="浅蓝紫色" Code="-6.2" R="165" G="150" B="225"/>
+		<ColorItem Name="浅蓝褐色" Code="-6.3" R="170" G="185" B="200"/>
+		<ColorItem Name="浅蓝黄色" Code="-6.4" R="200" G="210" B="60"/>
+		<ColorItem Name="浅蓝绿色" Code="-6.5" R="55" G="215" B="165"/>
+		<ColorItem Name="浅蓝灰色" Code="-6.7" R="125" G="145" B="145"/>
+		<ColorItem Name="浅蓝黑色" Code="-6.8" R="85" G="105" B="155"/>
+		<ColorItem Name="浅蓝棕色" Code="-6.9" R="129" G="124" B="112"/>
+		<ColorItem Name="浅灰白色" Code="-7.0" R="205" G="205" B="205"/>
+		<ColorItem Name="浅灰红色" Code="-7.1" R="250" G="170" B="170"/>
+		<ColorItem Name="浅灰紫色" Code="-7.2" R="165" G="155" B="155"/>
+		<ColorItem Name="浅灰褐色" Code="-7.3" R="155" G="165" B="150"/>
+		<ColorItem Name="浅灰黄色" Code="-7.4" R="182" G="182" B="135"/>
+		<ColorItem Name="浅灰绿色" Code="-7.5" R="160" G="180" B="135"/>
+		<ColorItem Name="浅灰蓝色" Code="-7.6" R="130" G="160" B="185"/>
+		<ColorItem Name="浅灰黑色" Code="-7.8" R="120" G="125" B="125"/>
+		<ColorItem Name="浅灰棕色" Code="-7.9" R="130" G="118" B="111"/>
+		<ColorItem Name="浅黑白色" Code="-8.0" R="185" G="185" B="185"/>
+		<ColorItem Name="浅黑红色" Code="-8.1" R="100" G="25" B="5"/>
+		<ColorItem Name="浅黑紫色" Code="-8.2" R="50" G="60" B="50"/>
+		<ColorItem Name="浅黑褐色" Code="-8.3" R="50" G="50" B="50"/>
+		<ColorItem Name="浅黑黄色" Code="-8.4" R="85" G="85" B="15"/>
+		<ColorItem Name="浅黑绿色" Code="-8.5" R="55" G="85" B="20"/>
+		<ColorItem Name="浅黑蓝色" Code="-8.6" R="30" G="70" B="100"/>
+		<ColorItem Name="浅黑灰色" Code="-8.7" R="65" G="65" B="65"/>
+		<ColorItem Name="浅黑棕色" Code="-8.9" R="100" G="105" B="100"/>
+		<ColorItem Name="浅棕白色" Code="-9.0" R="185" G="185" B="185"/>
+		<ColorItem Name="浅棕红色" Code="-9.1" R="202" G="180" B="170"/>
+		<ColorItem Name="浅棕紫色" Code="-9.2" R="125" G="100" B="80"/>
+		<ColorItem Name="浅棕褐色" Code="-9.3" R="100" G="115" B="90"/>
+		<ColorItem Name="浅棕黄色" Code="-9.4" R="130" G="115" B="75"/>
+		<ColorItem Name="浅棕绿色" Code="-9.5" R="100" G="125" B="80"/>
+		<ColorItem Name="浅棕蓝色" Code="-9.6" R="80" G="115" B="125"/>
+		<ColorItem Name="浅棕灰色" Code="-9.7" R="90" G="115" B="105"/>
+		<ColorItem Name="浅棕黑色" Code="-9.8" R="100" G="105" B="100"/>
+		<ColorItem Name="深白色" Code="+0" R="230" G="230" B="230"/>
+		<ColorItem Name="深红色" Code="+1" R="192" G="0" B="0"/>
+		<ColorItem Name="深紫色" Code="+2" R="127" G="64" B="127"/>
+		<ColorItem Name="深褐色" Code="+3" R="120" G="40" B="30"/>
+		<ColorItem Name="深黄色" Code="+4" R="220" G="220" B="100"/>
+		<ColorItem Name="深绿色" Code="+5" R="94" G="142" B="110"/>
+		<ColorItem Name="深蓝色" Code="+6" R="128" G="128" B="255"/>
+		<ColorItem Name="深灰色" Code="+7" R="160" G="160" B="160"/>
+		<ColorItem Name="深黑色" Code="+8" R="64" G="64" B="64"/>
+		<ColorItem Name="深棕色" Code="+9" R="160" G="100" B="0"/>
+		<ColorItem Name="深杂色" Code="+10" R="190" G="177" B="152"/>
+		<ColorItem Name="深肉红色" Code="+11" R="255" G="200" B="160"/>
+		<ColorItem Name="深蛋青色" Code="+12" R="192" G="220" B="220"/>
+		<ColorItem Name="深土黄色" Code="+13" R="160" G="160" B="100"/>
+		<ColorItem Name="深白红色" Code="+0.1" R="210" G="192" B="192"/>
+		<ColorItem Name="深白紫色" Code="+0.2" R="210" G="127" B="127"/>
+		<ColorItem Name="深白褐色" Code="+0.3" R="120" G="40" B="30"/>
+		<ColorItem Name="深白黄色" Code="+0.4" R="210" G="220" B="30"/>
+		<ColorItem Name="深白绿色" Code="+0.5" R="94" G="210" B="120"/>
+		<ColorItem Name="深白蓝色" Code="+0.6" R="128" G="210" B="255"/>
+		<ColorItem Name="深白灰色" Code="+0.7" R="160" G="160" B="210"/>
+		<ColorItem Name="深白黑色" Code="+0.8" R="64" G="64" B="100"/>
+		<ColorItem Name="深白棕色" Code="+0.9" R="255" G="235" B="200"/>
+		<ColorItem Name="深红白色" Code="+1.0" R="210" G="192" B="210"/>
+		<ColorItem Name="深红紫色" Code="+1.2" R="127" G="64" B="127"/>
+		<ColorItem Name="深红褐色" Code="+1.3" R="127" G="40" B="130"/>
+		<ColorItem Name="深红黄色" Code="+1.4" R="192" G="210" B="40"/>
+		<ColorItem Name="深红绿色" Code="+1.5" R="100" G="210" B="100"/>
+		<ColorItem Name="深红蓝色" Code="+1.6" R="140" G="128" B="255"/>
+		<ColorItem Name="深红灰色" Code="+1.7" R="192" G="160" B="160"/>
+		<ColorItem Name="深红黑色" Code="+1.8" R="120" G="64" B="64"/>
+		<ColorItem Name="深红棕色" Code="+1.9" R="255" G="171" B="30"/>
+		<ColorItem Name="深紫白色" Code="+2.0" R="172" G="210" B="210"/>
+		<ColorItem Name="深紫红色" Code="+2.1" R="172" G="152" B="210"/>
+		<ColorItem Name="深紫褐色" Code="+2.3" R="152" G="40" B="30"/>
+		<ColorItem Name="深紫黄色" Code="+2.4" R="172" G="220" B="150"/>
+		<ColorItem Name="深紫绿色" Code="+2.5" R="120" G="142" B="110"/>
+		<ColorItem Name="深紫蓝色" Code="+2.6" R="128" G="155" B="255"/>
+		<ColorItem Name="深紫灰色" Code="+2.7" R="128" G="155" B="160"/>
+		<ColorItem Name="深紫黑色" Code="+2.8" R="100" G="64" B="64"/>
+		<ColorItem Name="深紫棕色" Code="+2.9" R="210" G="74" B="115"/>
+		<ColorItem Name="深褐白色" Code="+3.0" R="150" G="210" B="210"/>
+		<ColorItem Name="深褐红色" Code="+3.1" R="192" G="120" B="210"/>
+		<ColorItem Name="深褐紫色" Code="+3.2" R="192" G="172" B="210"/>
+		<ColorItem Name="深褐黄色" Code="+3.4" R="225" G="175" B="40"/>
+		<ColorItem Name="深褐绿色" Code="+3.5" R="140" G="192" B="165"/>
+		<ColorItem Name="深褐蓝色" Code="+3.6" R="128" G="200" B="200"/>
+		<ColorItem Name="深褐灰色" Code="+3.7" R="170" G="170" B="160"/>
+		<ColorItem Name="深褐黑色" Code="+3.8" R="150" G="150" B="160"/>
+		<ColorItem Name="深褐棕色" Code="+3.9" R="184" G="109" B="101"/>
+		<ColorItem Name="深黄白色" Code="+4.0" R="230" G="230" B="150"/>
+		<ColorItem Name="深黄红色" Code="+4.1" R="230" G="170" B="155"/>
+		<ColorItem Name="深黄紫色" Code="+4.2" R="210" G="210" B="210"/>
+		<ColorItem Name="深黄褐色" Code="+4.3" R="175" G="165" B="65"/>
+		<ColorItem Name="深黄绿色" Code="+4.5" R="200" G="185" B="145"/>
+		<ColorItem Name="深黄蓝色" Code="+4.6" R="175" G="245" B="95"/>
+		<ColorItem Name="深黄灰色" Code="+4.7" R="200" G="190" B="130"/>
+		<ColorItem Name="深黄黑色" Code="+4.8" R="115" G="125" B="35"/>
+		<ColorItem Name="深黄棕色" Code="+4.9" R="189" G="140" B="96"/>
+		<ColorItem Name="深绿白色" Code="+5.0" R="200" G="230" B="200"/>
+		<ColorItem Name="深绿红色" Code="+5.1" R="195" G="200" B="20"/>
+		<ColorItem Name="深绿紫色" Code="+5.2" R="135" G="135" B="80"/>
+		<ColorItem Name="深绿褐色" Code="+5.3" R="115" G="120" B="100"/>
+		<ColorItem Name="深绿黄色" Code="+5.4" R="135" G="150" B="70"/>
+		<ColorItem Name="深绿蓝色" Code="+5.6" R="65" G="150" B="100"/>
+		<ColorItem Name="深绿灰色" Code="+5.7" R="90" G="128" B="100"/>
+		<ColorItem Name="深绿黑色" Code="+5.8" R="25" G="85" B="25"/>
+		<ColorItem Name="深棕色" Code="+5.9" R="153" G="137" B="87"/>
+		<ColorItem Name="深蓝白色" Code="+6.0" R="185" G="185" B="255"/>
+		<ColorItem Name="深蓝红色" Code="+6.1" R="200" G="155" B="255"/>
+		<ColorItem Name="深蓝紫色" Code="+6.2" R="165" G="150" B="225"/>
+		<ColorItem Name="深蓝褐色" Code="+6.3" R="170" G="185" B="200"/>
+		<ColorItem Name="深蓝黄色" Code="+6.4" R="200" G="210" B="60"/>
+		<ColorItem Name="深蓝绿色" Code="+6.5" R="55" G="215" B="165"/>
+		<ColorItem Name="深蓝灰色" Code="+6.7" R="125" G="145" B="145"/>
+		<ColorItem Name="深蓝黑色" Code="+6.8" R="85" G="105" B="155"/>
+		<ColorItem Name="深蓝棕色" Code="+6.9" R="129" G="124" B="112"/>
+		<ColorItem Name="深灰白色" Code="+7.0" R="205" G="205" B="205"/>
+		<ColorItem Name="深灰红色" Code="+7.1" R="250" G="170" B="170"/>
+		<ColorItem Name="深灰紫色" Code="+7.2" R="165" G="155" B="155"/>
+		<ColorItem Name="深灰褐色" Code="+7.3" R="155" G="165" B="150"/>
+		<ColorItem Name="深灰黄色" Code="+7.4" R="182" G="182" B="135"/>
+		<ColorItem Name="深灰绿色" Code="+7.5" R="160" G="180" B="135"/>
+		<ColorItem Name="深灰蓝色" Code="+7.6" R="130" G="160" B="185"/>
+		<ColorItem Name="深灰黑色" Code="+7.8" R="120" G="125" B="125"/>
+		<ColorItem Name="深灰棕色" Code="+7.9" R="130" G="118" B="111"/>
+		<ColorItem Name="深黑白色" Code="+8.0" R="185" G="185" B="185"/>
+		<ColorItem Name="深黑红色" Code="+8.1" R="100" G="25" B="5"/>
+		<ColorItem Name="深黑紫色" Code="+8.2" R="50" G="60" B="50"/>
+		<ColorItem Name="深黑褐色" Code="+8.3" R="50" G="50" B="50"/>
+		<ColorItem Name="深黑黄色" Code="+8.4" R="85" G="85" B="15"/>
+		<ColorItem Name="深黑绿色" Code="+8.5" R="55" G="85" B="20"/>
+		<ColorItem Name="深黑蓝色" Code="+8.6" R="30" G="70" B="100"/>
+		<ColorItem Name="深黑灰色" Code="+8.7" R="65" G="65" B="65"/>
+		<ColorItem Name="深黑棕色" Code="+8.9" R="100" G="105" B="100"/>
+		<ColorItem Name="深棕白色" Code="+9.0" R="185" G="185" B="185"/>
+		<ColorItem Name="深棕红色" Code="+9.1" R="202" G="180" B="170"/>
+		<ColorItem Name="深棕紫色" Code="+9.2" R="125" G="100" B="80"/>
+		<ColorItem Name="深棕褐色" Code="+9.3" R="100" G="115" B="90"/>
+		<ColorItem Name="深棕黄色" Code="+9.4" R="130" G="115" B="75"/>
+		<ColorItem Name="深棕绿色" Code="+9.5" R="100" G="125" B="80"/>
+		<ColorItem Name="深棕蓝色" Code="+9.6" R="80" G="115" B="125"/>
+		<ColorItem Name="深棕灰色" Code="+9.7" R="90" G="115" B="105"/>
+		<ColorItem Name="深棕黑色" Code="+9.8" R="100" G="105" B="100"/>
+	</PCGColorTable>
+	<PCGOilGasColor>
+		<!--carbon软件中层颜色和符号中的颜色配置信息-->
+		<ColorItem Name="未定" R="255" G="255" B="255"/>
+		<ColorItem Name="油层" R="255" G="0" B="0"/>
+		<ColorItem Name="气层" R="255" G="195" B="0"/>
+		<ColorItem Name="水层" R="153" G="255" B="255"/>
+		<ColorItem Name="干层" R="255" G="255" B="160"/>
+		<ColorItem Name="油水同层" OtherName="油水层" R="211" G="64" B="255"/>
+		<ColorItem Name="含油水层" R="127" G="127" B="255"/>
+		<ColorItem Name="气水同层" OtherName="气水层" R="192" G="192" B="64"/>
+		<ColorItem Name="含气水层" R="192" G="192" B="255"/>
+		<ColorItem Name="煤层" R="0" G="0" B="0"/>
+		<ColorItem Name="差油层" R="245" G="0" B="0"/>
+		<ColorItem Name="可疑气层" R="255" G="255" B="224"/>
+		<ColorItem Name="油气同层" OtherName="油气层" R="255" G="192" B="64"/>
+		<ColorItem Name="可疑油层" R="255" G="224" B="224"/>
+		<ColorItem Name="含水油层" R="192" G="64" B="127"/>
+		<ColorItem Name="含水气层" R="192" G="192" B="127"/>
+	</PCGOilGasColor>	
+	<PCGGeoDiffName>
+		<!--pcg与Geomap中描述符号差异名称对照表-->
+		<OilLevel>
+			<Item PcgName="油水层" GeoName="油水同层"/>
+			<Item PcgName="油气层" GeoName="油气同层"/>
+		</OilLevel>
+		<Litho>
+			<Item PcgName="未定名"    GeoName="缺失"/>
+			<Item PcgName="煤"        GeoName="煤层或煤夹层"/>
+			<Item PcgName="灰岩"      GeoName="石灰岩"/>
+			<Item PcgName="云灰岩"    GeoName="白云质灰岩"/>
+			<Item PcgName="含泥砂岩"  GeoName="泥质砂岩"/>
+			<Item PcgName="流纹质岩"  GeoName="流纹岩"/>
+			<Item PcgName="流纹质安山质火山角砾岩"   GeoName="安山岩"/>
+			<Item PcgName="含角砾含凝灰质粉砂质泥岩" GeoName="粉砂质泥岩"/>
+			<Item PcgName="流纹质含凝灰质粉砂质泥岩" GeoName="粉砂质泥岩"/>
+			<Item PcgName="含凝灰质粉砂质泥岩" 		GeoName="粉砂质泥岩"/>
+			<Item PcgName="流纹质含凝灰质粉砂质泥岩" GeoName="粉砂质泥岩"/>
+			<Item PcgName="流纹质含凝灰质熔结角砾岩" GeoName="凝灰质角砾岩"/>
+			<Item PcgName="含凝灰质熔结角砾岩"       GeoName="凝灰质角砾岩"/>
+		</Litho>
+	</PCGGeoDiffName>
+</SWPCG>

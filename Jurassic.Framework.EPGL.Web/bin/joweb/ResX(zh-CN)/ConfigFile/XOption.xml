@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+-->
+<!--本文件是自定义配置信息，请勿随便更改，可能会导致程序加载或运行错误。
+-->
+<!--以下的级别定为三级，不够的或超过的，均不予解释。
+-->
+<!--Combox	下拉选择（多个以#分割，最终解释按照索引取值，逻辑不要搞得太复杂）例如：
+-->
+<!--1. 经纬度坐标#图纸坐标#用户坐标#设备坐标 直接对应 0#1#2#3 
+-->
+<!--2. 否#是 直接对应 0#1 即 False#True
+-->
+<!--Edit		文本输入框（只接收文本，数字自己转换）
+-->
+<Option>
+	<GeoMap>
+		<Root Text="其他选项">
+			<SmoothAnti TypeName="Combox" Text="是否反走样绘制模式" Info="否#是" Val="1"/>
+			<ShowWelcomeWnd TypeName="Combox" Text="是否启动时显示欢迎界面" Info="否#是" Val="1"/>
+			<CustomSymbol TypeName="Combox" Text="是否优先绘制自定义符号" Info="否#是" Val="0"/>
+			<EncryptMode TypeName="Combox" Text="许可注册模式" Info="单机许可注册#网络许可注册" Val="0"/>
+		</Root>
+	</GeoMap>
+	<PlanMap>
+		<Root Text="基本选项">
+			<CoordSys TypeName="Combox" Text="显示坐标" Info="经纬度坐标#图纸坐标#用户坐标#设备坐标#经纬度坐标(小数)" Val="1"/>
+			<Backup TypeName="Combox" Text="启动自动备份" Info="否#是" Val="1"/>
+			<BackupTime TypeName="Edit" Text="自动备份时间(分钟)" Info="" Val="20"/>
+			<LineZip TypeName="Edit" Text="曲线抽稀因子(倍数)" Info="" Val="-1"/>
+			<Tolerance TypeName="Edit" Text="线构面阀值(毫米)" Info="" Val="2.000000"/>
+		</Root>
+		<Root Text="操作选项">
+			<MoveLine TypeName="Combox" Text="允许移动曲线/面" Info="否#是" Val="0"/>
+			<ContinueOP TypeName="Combox" Text="允许连续操作" Info="否#是" Val="0"/>
+			<LineMode TypeName="Combox" Text="曲线宽度不随比例变化" Info="否#是" Val="0"/>
+			<OperCurLayer TypeName="Combox" Text="同属性修改只对当前层有效" Info="否#是" Val="0"/>
+			<SysZoom TypeName="Combox" Text="视野控制" Info="否#是" Val="0"/>
+			<PaperDisplay TypeName="Combox" Text="显示图纸效果" Info="否#是" Val="1"/>
+			<LineCtrlPt TypeName="Combox" Text="显示曲线控制点" Info="否#是" Val="1"/>
+			<ShowFast TypeName="Combox" Text="快速显示" Info="否#是" Val="0"/>
+			<ShowAreaName TypeName="Combox" Text="显示面名称" Info="否#是" Val="0"/>
+			<ShowOutShape TypeName="Combox" Text="显示图幅外图元" Info="否#是" Val="0"/>
+			<ShowInputDlg TypeName="Combox" Text="显示输入文字对话框" Info="否#是" Val="0"/>
+			<ShowFaultArrow TypeName="Combox" Text="显示断层线箭头" Info="否#是" Val="1"/>
+		</Root>
+		<Root Text="自动避让设置">
+			<WellOffset TypeName="Edit" Text="井名偏移距离(毫米)" Info="" ValCur="" Val="1.000000"/>
+			<TownOffset TypeName="Edit" Text="地名偏移距离(毫米)" Info="" ValCur="" Val="1.000000"/>
+		</Root>
+	</PlanMap>
+	<WellMap>
+		<Root Text="基本选项">
+			<Backup TypeName="Combox" Text="启动自动备份" Info="否#是" Val="1"/>
+			<BackupTime TypeName="Edit" Text="自动备份时间(分钟)" Info="" Val="20"/>
+		</Root>
+		<Root Text="操作选项">
+			<ShowCreateDlg TypeName="Combox" Text="创建图元时显示属性设置对话框" Info="否#是" Val="1"/>
+			<PaperDisplay TypeName="Combox" Text="显示图纸效果" Info="否#是" Val="1"/>
+		</Root>
+	</WellMap>
+	<AutoLink>
+		<Root Text="基本设置">
+			<ProvenanceDirection TypeName="Combox" Text="物源方向" Info="垂直#平行" Val="0"/>
+		</Root>
+		<Root Text="沉积相解释">
+			<AnalysisType TypeName="Combox" Text="分析类型" Info="自定义#砂#泥" Val="1"/>
+			<CustomAnalysis TypeName="Dialog" Text="自定义分析类型(沉积相ID)" Info="0" ValCur="" Val=""/>
+		</Root>
+		<Root Text="砂层解释">
+			<DepthTH_4080100 TypeName="Edit" Text="深度±(%)" Info="" ValCur="" Val="5.000000"/>
+			<ThicknessTH_4080100 TypeName="Edit" Text="厚度±(%)" Info="" ValCur="" Val="20.000000"/>
+		</Root>
+		<Root Text="油气解释">
+			<DepthTH_408 TypeName="Edit" Text="深度±(%)" Info="" ValCur="" Val="5.000000"/>
+			<ThicknessTH_408 TypeName="Edit" Text="厚度±(%)" Info="" ValCur="" Val="20.000000"/>
+			<InterpretationCheck TypeName="Combox" Text="匹配解释类型" Info="否#是" Val="0"/>
+		</Root>
+	</AutoLink>
+</Option>

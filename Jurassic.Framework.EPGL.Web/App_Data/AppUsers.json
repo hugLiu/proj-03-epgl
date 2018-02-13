@@ -1,0 +1,162 @@
+[
+  {
+    "Id": "12105",
+    "Name": "zjf",
+    "RoleNames": "admin, , ",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "4",
+      "282",
+      "283"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "295",
+    "Name": "xiayangym",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "294",
+    "Name": "sangjm",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "293",
+    "Name": "sunlk",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "292",
+    "Name": "yangpp",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "291",
+    "Name": "hanz",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "290",
+    "Name": "lij",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "289",
+    "Name": "xiexy",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "288",
+    "Name": "sijt",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "287",
+    "Name": "zhaozm",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "286",
+    "Name": "sunq",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "285",
+    "Name": "chenl",
+    "RoleNames": "",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "282"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "284",
+    "Name": "admin",
+    "RoleNames": "admin, , ",
+    "IsDefaultRole": false,
+    "IsOnline": false,
+    "RoleIds": [
+      "4",
+      "282",
+      "283"
+    ],
+    "FunctionIds": []
+  },
+  {
+    "Id": "2",
+    "Name": "pmis",
+    "RoleNames": "admin, , ",
+    "IsDefaultRole": false,
+    "IsOnline": true,
+    "RoleIds": [
+      "4",
+      "282",
+      "283"
+    ],
+    "FunctionIds": []
+  }
+]

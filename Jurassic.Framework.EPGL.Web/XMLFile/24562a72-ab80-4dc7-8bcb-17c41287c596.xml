@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FeatureCollection xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="GGGX数据 " schemaLocation="http://www.jurassic.com.cn/3gx 3GX.Data.Feature.GeoMap.xsd" xmlns="http://www.jurassic.com.cn/3gx">
+  <CRS codeSpace="china">地理坐标(经纬度)</CRS>
+  <GF class="" id="d7e7dd71-5332-49b6-bf3d-e6f78f110487" bot="" type="">
+    <Title>S1</Title>
+    <PropertySets />
+    <Shapes />
+  </GF>
+  <GF class="" id="686d1617-8079-44a3-a1fd-9b01c539f563" bot="" type="">
+    <Title>S2</Title>
+    <PropertySets />
+    <Shapes />
+  </GF>
+  <GF class="" id="aa148192-a0a1-4688-9025-234faf0faf49" bot="" type="">
+    <Title>S3</Title>
+    <PropertySets />
+    <Shapes />
+  </GF>
+  <GF class="" id="491c23c6-1b40-47f4-a7b8-661dcfe723be" bot="" type="">
+    <Title>S1</Title>
+    <PropertySets />
+    <Shapes />
+  </GF>
+  <GF class="" id="859f430e-796b-453b-9d9a-7cb194babedc" bot="" type="">
+    <Title>S3</Title>
+    <PropertySets />
+    <Shapes />
+  </GF>
+  <GF class="" id="e530dc45-187d-4dfd-a5ff-90c256260a9e" bot="" type="">
+    <Title>S2</Title>
+    <PropertySets />
+    <Shapes />
+  </GF>
+</FeatureCollection>

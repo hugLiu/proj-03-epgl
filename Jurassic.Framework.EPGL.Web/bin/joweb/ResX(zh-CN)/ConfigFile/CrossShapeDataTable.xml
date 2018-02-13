@@ -1,0 +1,159 @@
+﻿<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<DataTables>
+	<DataTable ShapeTypeID="310" Name="交会图" Columns="2">
+		<Column ColumnName="DATA_X">
+			<ColumnCaption>数据X</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>150</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+      </Column>
+		  <Column ColumnName="DATA_Y">
+		  <ColumnCaption>数据Y</ColumnCaption>
+		  <ColumnDataType>System.Double</ColumnDataType>
+		  <ColumnType>Text</ColumnType>
+		  <ColumnAllowDBNull>N</ColumnAllowDBNull>
+		  <ColumnWidth>150</ColumnWidth>
+		  <ColumnPK>N</ColumnPK>
+		  <ColumnVisible>Y</ColumnVisible>
+		  <ColumnIsReadOnly>N</ColumnIsReadOnly>
+      </Column>
+  </DataTable>
+  <DataTable ShapeTypeID="311" Name="直方图" Columns="1">
+		<Column ColumnName="DATA_X">
+			<ColumnCaption>数据</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>150</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+			<ColumnIsReadOnly>N</ColumnIsReadOnly>
+        </Column>
+  </DataTable>
+   <DataTable ShapeTypeID="314" Name="粒度图" Columns="2">
+		<Column ColumnName="DATA_X">
+			<ColumnCaption>粒径(MM)</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>150</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+			<ColumnIsReadOnly>N</ColumnIsReadOnly>
+        </Column>
+        <Column ColumnName="DATA_Y">
+			<ColumnCaption>百分含量(%)</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>150</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+			<ColumnIsReadOnly>N</ColumnIsReadOnly>
+        </Column>
+  </DataTable>
+  <DataTable ShapeTypeID="313" Name="压汞图" Columns="4">
+		<Column ColumnName="DATA_X">
+			<ColumnCaption>进汞饱和度</ColumnCaption>
+                        <ColumnCaption_AVG>平均进汞饱和度</ColumnCaption_AVG>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+			<ColumnIsReadOnly>N</ColumnIsReadOnly>
+                </Column>
+                <Column ColumnName="DATA_Y">
+			<ColumnCaption>进汞压力</ColumnCaption>
+			<ColumnCaption_AVG>平均进汞压力</ColumnCaption_AVG>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+			<ColumnIsReadOnly>N</ColumnIsReadOnly>
+                </Column>
+                <Column ColumnName="DATA_OX">
+			<ColumnCaption>退汞饱和度</ColumnCaption>
+			<ColumnCaption_AVG>平均退汞饱和度</ColumnCaption_AVG>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+			<ColumnIsReadOnly>N</ColumnIsReadOnly>
+                </Column>
+                <Column ColumnName="DATA_OY">
+			<ColumnCaption>退汞压力</ColumnCaption>
+			<ColumnCaption_AVG>平均退汞压力</ColumnCaption_AVG>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+			<ColumnIsReadOnly>N</ColumnIsReadOnly>
+                </Column>
+  </DataTable>
+  <DataTable ShapeTypeID="312" Name="交会直方图" Columns="2">
+		<Column ColumnName="DATA_X">
+			<ColumnCaption>数据X</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>150</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+      <ColumnIsReadOnly>N</ColumnIsReadOnly>
+      </Column>
+		  <Column ColumnName="DATA_Y">
+		  <ColumnCaption>数据Y</ColumnCaption>
+		  <ColumnDataType>System.Double</ColumnDataType>
+		  <ColumnType>Text</ColumnType>
+		  <ColumnAllowDBNull>N</ColumnAllowDBNull>
+		  <ColumnWidth>150</ColumnWidth>
+		  <ColumnPK>N</ColumnPK>
+		  <ColumnVisible>Y</ColumnVisible>
+		  <ColumnIsReadOnly>N</ColumnIsReadOnly>
+      </Column>
+  </DataTable>
+  <DataTable ShapeTypeID="33" Name="三角图" Columns="3">
+		<Column ColumnName="DATA_X">
+			<ColumnCaption>数据X</ColumnCaption>
+			<ColumnDataType>System.Double</ColumnDataType>
+			<ColumnType>Text</ColumnType>
+			<ColumnAllowDBNull>N</ColumnAllowDBNull>
+			<ColumnWidth>100</ColumnWidth>
+			<ColumnPK>N</ColumnPK>
+			<ColumnVisible>Y</ColumnVisible>
+                        <ColumnIsReadOnly>N</ColumnIsReadOnly>
+                </Column>
+		<Column ColumnName="DATA_Y">
+		  <ColumnCaption>数据Y</ColumnCaption>
+		  <ColumnDataType>System.Double</ColumnDataType>
+		  <ColumnType>Text</ColumnType>
+		  <ColumnAllowDBNull>N</ColumnAllowDBNull>
+		  <ColumnWidth>100</ColumnWidth>
+		  <ColumnPK>N</ColumnPK>
+		  <ColumnVisible>Y</ColumnVisible>
+		  <ColumnIsReadOnly>N</ColumnIsReadOnly>
+                </Column>
+                <Column ColumnName="DATA_Z">
+		  <ColumnCaption>数据Z</ColumnCaption>
+		  <ColumnDataType>System.Double</ColumnDataType>
+		  <ColumnType>Text</ColumnType>
+		  <ColumnAllowDBNull>N</ColumnAllowDBNull>
+		  <ColumnWidth>100</ColumnWidth>
+		  <ColumnPK>N</ColumnPK>
+		  <ColumnVisible>Y</ColumnVisible>
+		  <ColumnIsReadOnly>N</ColumnIsReadOnly>
+                </Column>
+  </DataTable>
+</DataTables>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+此文件为试油道相关参数信息，目前包括饼图直径的参数信息和地层水型类型。
+饼图直径中，bound范围表示油气水总产量范围，油水不区分单位为方或者吨，气按1255方折算为1t油计算，diamiter表示相应产量范围内饼图的直径大小，单位为cm。
+LowerBound、UpperBound结点必须有，MiddleBound结点可以定义零到多个。以下定义的区间为左闭右开区间，下面的定义表述：
+总产量以total表示
+total属于[0,5)   diamiter = 2.0cm
+total属于[5,20)  diamiter = 3.0cm
+total属于[20,+∞) diamiter = 4.0cm
+-->
+<TestOilParam>
+	<PieDiamiter>
+		<LowerBound bound="5.0" diamiter="2.0" />
+		<MiddleBound bound="20.0" diamiter="3.0" />
+		<UpperBound bound="20.0" diamiter="4.0" />
+	</PieDiamiter>
+	<WaterType>
+		<Item name="NaCl"/>
+		<Item name="NaHCO3"/>
+		<Item name="Na2CO3"/>
+		<Item name="Na2SO4"/>
+		<Item name="CaCl2"/>
+		<Item name="CaCO3"/>
+		<Item name="CaSO4"/>
+		<Item name="MgCl2"/>
+		<Item name="MgCO3"/>
+		<Item name="MgSO4"/>
+	</WaterType>
+</TestOilParam>

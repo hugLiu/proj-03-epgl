@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ThemeTemplet Name="饼图" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ThemeTemplet.xsd">
+  <ThemeStyle Name="全饼图" Type="PieChartStyle" OffsetX="0.000000" OffsetY="0.000000" FontHeight="-12" FontWidth="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="134" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FontName="SimSun" FontColor="0" IsShowLabel="1" LabelPos="lblPosCenter" LabelOffsetX="0.000000" LabelOffsetY="0.000000" IsBottomOffset="1" RadiusType="ctCalc" RadiusValue="10.000000" PieChartType="PtFullPie" StartAngle="180" ClockWise="0" GraduateSizeType="gtFixed" ProductPerMM="10.000000" />
+  <Legend RectWidth="10.000000" RectHeight="6.000000" RectSpaceH="0.000000" LabelFromRect="2.000000" FontHeight="-12" FontWidth="0" Escapement="0" Orientation="0" Weight="400" Italic="0" Underline="0" StrikeOut="0" CharSet="134" OutPrecision="0" ClipPrecision="0" Quality="0" PitchAndFamily="0" FontName="SimSun" FontColor="0" LabelAlign="laCenter" FromRB_X="2.000000" FromRB_Y="2.000000" LegendPosition="lpRightBottom" />
+  <ItemInfo Title="油" Label="AMOUNT_OIL" Color="rgb(255,0,0)" DispPar="2" SetRange="1" MaxValue="1000" MinValue="0" ZeroLabel="0" />
+  <ItemInfo Title="气" Label="AMOUNT_GAS" Color="rgb(255,255,0)" DispPar="2" SetRange="1" MaxValue="1000" MinValue="0" ZeroLabel="0" />
+  <ItemInfo Title="水" Label="AMOUNT_WATER" Color="rgb(0,0,255)" DispPar="2" SetRange="1" MaxValue="1000" MinValue="0" ZeroLabel="0" />
+</ThemeTemplet>

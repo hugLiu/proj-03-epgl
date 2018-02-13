@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jurassic.So.Search.Mongo</name>
+    </assembly>
+    <members>
+        <member name="T:Jurassic.So.Search.Mongo.AutoMapperProfile">
+            <summary>AutoMapper映射配置</summary>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.AutoMapperProfile.#ctor">
+            <summary>构造函数</summary>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.AutoMapperProfile.MatchJsonResolver">
+            <summary>Match方法 请求参数filter和表达式的转化</summary>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.AutoMapperProfile.SearchJsonResolver">
+            <summary>Search方法 请求参数filter和表达式的转化</summary>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.IFieldSupportWildCard`1">
+            <summary>
+            查询字段支持通配符
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.IFieldSupportWildCard`1.SupportWildCard(`0)">
+            <summary>
+            转化对象T使之包含通配字段，并返回新的对象T
+            </summary>
+            <param name="obj">包含查询字段的对象</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.ListSupport">
+            <summary>
+            列表对象支持字段通配
+            </summary>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.DicSupport">
+            <summary>
+            字典对象支持字段通配
+            </summary>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.GroupRuleSupport">
+            <summary>
+            聚合规则支持字段通配
+            </summary>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.SortRuleSupport">
+            <summary>
+            排序规则支持字段通配
+            </summary>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.ProjectsSupport">
+            <summary>
+            投影支持字段通配
+            </summary>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.FilterSupport">
+            <summary>
+            过滤条件支持字段通配
+            </summary>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.MatchConditionSupport">
+            <summary>
+            查询条件支持字段通配
+            </summary>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.MongoSearch">
+            <summary>
+            Mongo查询
+            </summary>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.MongoSearch.MatchAsync(Jurassic.PKS.Service.Search.MatchCondition)">
+            <summary>
+            信息搜索
+            </summary>
+            <param name="request">请求的查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.MongoSearch.Match(Jurassic.PKS.Service.Search.MatchCondition)">
+            <summary>
+            信息搜索
+            </summary>
+            <param name="request">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.MongoSearch.GetMetadataDefinitionAsync(System.String[])">
+            <summary>
+            根据给定的标签，返回所有包含该标签的标签
+            </summary>
+            <param name="tagnames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.MongoSearch.GetMetadataDefinition(System.String[])">
+            <summary>
+            根据给定的标签，返回所有包含该标签的标签
+            </summary>
+            <param name="tagnames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.MongoSearch.StatisticsAsync">
+            <summary>
+            获取元数据的统计信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.MongoSearch.Statistics">
+            <summary>
+            获取元数据的统计信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.QueryProvider">
+            <summary>
+            Mongo查询provider
+            </summary>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetAggsAsync(System.String,System.Int32,System.String)">
+            <summary>
+            获得单个字段的聚合结果
+            </summary>
+            <param name="filter"></param>
+            <param name="limit"></param>
+            <param name="field"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetAggsAsync(Jurassic.PKS.Service.IConditionalExpression,System.Int32,System.String)">
+            <summary>
+            获得单个字段的聚合结果
+            </summary>
+            <param name="filter"></param>
+            <param name="limit"></param>
+            <param name="field"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetAggs(Jurassic.PKS.Service.IConditionalExpression,System.Int32,System.String)">
+            <summary>
+            获得单个字段的聚合结果
+            </summary>
+            <param name="filter"></param>
+            <param name="limit"></param>
+            <param name="field"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetAggs(System.String,System.Int32,System.String)">
+            <summary>
+            获得mongo聚合结果
+            </summary>
+            <param name="filter">查询过滤</param>
+            <param name="limit">返回条数限制</param>
+            <param name="field">聚合字段</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.ToMetaDataDef(MongoDB.Bson.BsonDocument)">
+            <summary>
+            BsonDocument转化为对象类型(适合扁平结构)
+            </summary>
+            <param name="doc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetProjects(System.Collections.Generic.Dictionary{System.String,System.Int32})">
+            <summary>
+            构建投影
+            </summary>
+            <param name="fields">字段名称及是否返回标志</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetDefaultProjects">
+            <summary>
+            默认的字段投影，不返回mongodb自动生成的_id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetFilters(Jurassic.PKS.Service.IConditionalExpression)">
+            <summary>
+            构建过滤
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetFilters(System.String)">
+            <summary>
+            构建过滤
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetRegexFilters(System.String,System.String[])">
+            <summary>
+            构建过滤（正则过滤）
+            </summary>
+            <param name="field">匹配字段</param>
+            <param name="values">匹配值（或的关系）</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetSorts(System.Collections.Generic.Dictionary{System.String,System.Int32})">
+            <summary>
+            构建排序
+            </summary>
+            <param name="sortCollection">
+            排序条件（字段，方向（true:asc，false:desc）</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.QueryProvider.GetPipeLine(System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            构建聚合管道
+            </summary>
+            <param name="filterJson">过滤条件</param>
+            <param name="limit">限制返回条数</param>
+            <param name="field">聚合字段名称</param>
+            <param name="isArray"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Jurassic.So.Search.Mongo.WildCardExtension">
+            <summary>
+            通配符扩展
+            </summary>
+        </member>
+        <member name="F:Jurassic.So.Search.Mongo.WildCardExtension.Mongo">
+            <summary>
+            Mongodb接口服务
+            </summary>
+        </member>
+        <member name="P:Jurassic.So.Search.Mongo.WildCardExtension.Mappers">
+            <summary>
+            自定义map
+            </summary>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.WildCardExtension.AddSupport``1(Jurassic.So.Search.Mongo.IFieldSupportWildCard{``0})">
+            <summary>
+            添加一个新的通配符支持器
+            </summary>
+            <typeparam name="T">包含field的对象</typeparam>
+            <param name="support">指定对象的通配支持器</param>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.WildCardExtension.WildCardFields(System.String)">
+            <summary>
+            控制字段支持通配*，
+            从metadatadefinition中查询获得匹配字段名称
+            </summary>
+            <param name="fieldName">带通配符的字段名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jurassic.So.Search.Mongo.WildCardExtension.SupportWildCard``1(``0)">
+            <summary>
+            转化对象中的field，使之支持通配
+            </summary>
+            <typeparam name="T">包含filed的对象</typeparam>
+            <param name="obj">对象实例</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

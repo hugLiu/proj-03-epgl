@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+本文件是自定义配置信息，请勿随便更改，可能会导致程序加载或运行错误。
+以下的级别定为四级，不够的或超过的，均不予解释。
+Combox	下拉选择（多个以#分割，最终解释按照索引取值，逻辑不要搞得太复杂）例如：
+1. 经纬度坐标#图纸坐标#用户坐标#设备坐标 直接对应 0#1#2#3 
+2. 否#是 直接对应 0#1 即 False#True
+Edit		文本输入框（只接收文本，数字自己转换）
+-->
+<GeoMap>
+	<Option OpSys="0" TypeName="系统参数" Text="系统参数">
+		<Root Text="系统">
+			<Root TypeName="Combox" Text="允许移动图元" Info="否#是" Val="1"/>
+		</Root>
+		<Root Text="井位">
+			<Root TypeName="Edit" Text="井口大小(毫米)" Info="" ValCur="" Val="2.00"/>
+			<Root TypeName="Edit" Text="井底大小(毫米)" Info="" ValCur="" Val="2.00"/>
+			<Root TypeName="Edit" Text="字体大小(毫米)" Info="" ValCur="" Val="1.50"/>
+		</Root>
+		<Root Text="水平井">
+			<Root TypeName="Edit" Text="水平线宽度(毫米)" Info="" ValCur="" Val="0.10"/>
+			<Root TypeName="Combox" Text="绘制水平段" Info="否#是" Val="1"/>
+			<Root TypeName="Edit" Text="靶点井圈大小(毫米)" Info="" ValCur="" Val="2.00"/>
+			<Root TypeName="Edit" Text="靶点字体大小(毫米)" Info="" ValCur="" Val="1.50"/>
+			<Root TypeName="Combox" Text="绘制靶点序号" Info="否#是" Val="0"/>
+			<Root TypeName="Edit" Text="裂缝线宽(毫米)" Info="" ValCur="" Val="0.10"/>
+			<Root TypeName="Combox" Text="显示裂缝" Info="否#是" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="0,1" TypeName="水平井" Text="五点井网">
+		<Root Text="五点井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="A"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="列号" Info="" ValCur="" Val="1"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="注水井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="注水井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="0,2" TypeName="水平井" Text="正对七点井网">
+		<Root Text="正对七点井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="列号" Info="" ValCur="" Val="1"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="注水井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="注水井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="0,3" TypeName="水平井" Text="交错七点井网">
+		<Root Text="交错七点井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="井距2" Info="" ValCur="" Val="800.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="列号" Info="" ValCur="" Val="1"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="注水井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="注水井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="0,4" TypeName="水平井" Text="九点井网">
+		<Root Text="九点井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="列号" Info="" ValCur="" Val="1"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="注水井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="注水井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="0,5" TypeName="水平井" Text="十一点井网">
+		<Root Text="十一点井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="列号" Info="" ValCur="" Val="1"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="注水井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="注水井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="0,6" TypeName="水平井" Text="全面水驱井网">
+		<Root Text="全面水驱井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+			<Root TypeName="Edit" Text="裂缝长度" Info="" ValCur="" Val="400.00"/>
+			<Root TypeName="Edit" Text="裂缝间距" Info="" ValCur="" Val="240.00"/>
+			<Root TypeName="Edit" Text="裂缝到首靶点距离" Info="" ValCur="" Val="60.00"/>
+			<Root TypeName="Edit" Text="水平段距离" Info="" ValCur="" Val="120.00"/>
+			<Root TypeName="Combox" Text="注水井井组" Info="左#右#左右" Val="2"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="列号" Info="" ValCur="" Val="1"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="注水井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="注水井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="0,7" TypeName="水平井" Text="自然能量开发井网">
+		<Root Text="自然能量开发">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="0,9" TypeName="水平井" Text="交错自然能量开发井网">
+		<Root Text="交错自然能量开发">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="0,8" TypeName="水平井" Text="混合井网">
+		<Root Text="混合井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+			<Root TypeName="Edit" Text="直井排距" Info="" ValCur="" Val="100.00"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="列号" Info="" ValCur="" Val="1"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="注水井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="注水井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="1,1" TypeName="直井" Text="三角形井网">
+		<Root Text="三角形井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="700.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="75.00"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="井"/>
+			<Root TypeName="Combox" Text="井类型" Info="油井#水井" Val="0"/>
+			<Root TypeName="Edit" Text="横坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="纵坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="2"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="1,2" TypeName="直井" Text="正方形井网">
+		<Root Text="正方形井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="400.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="75.00"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="井"/>
+			<Root TypeName="Combox" Text="井类型" Info="油井#水井" Val="0"/>
+			<Root TypeName="Edit" Text="横坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="纵坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="1,3" TypeName="直井" Text="菱形井网">
+		<Root Text="菱形井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="400.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="150.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="75.00"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="井"/>
+			<Root TypeName="Combox" Text="井类型" Info="油井#水井" Val="0"/>
+			<Root TypeName="Edit" Text="横坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="纵坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="1,4" TypeName="直井" Text="矩形井网">
+		<Root Text="矩形井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="400.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="150.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="75.00"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="井"/>
+			<Root TypeName="Combox" Text="井类型" Info="油井#水井" Val="0"/>
+			<Root TypeName="Edit" Text="横坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="纵坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="1,5" TypeName="直井" Text="排状井网">
+		<Root Text="排状井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="400.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="150.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="75.00"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="井"/>
+			<Root TypeName="Combox" Text="井类型" Info="油井#水井" Val="0"/>
+			<Root TypeName="Edit" Text="横坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="纵坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="1,6" TypeName="直井" Text="五点井网">
+		<Root Text="五点井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="400.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="150.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="75.00"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="井"/>
+			<Root TypeName="Combox" Text="井类型" Info="油井#水井" Val="0"/>
+			<Root TypeName="Edit" Text="横坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="纵坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="1,7" TypeName="直井" Text="反七点井网">
+		<Root Text="反七点井网">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="400.00"/>
+			<Root TypeName="Edit" Text="井距2" Info="" ValCur="" Val="800.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="400.00"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="75.00"/>
+		</Root>
+		<Root Text="基准点">
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="井"/>
+			<Root TypeName="Combox" Text="井类型" Info="油井#水井" Val="0"/>
+			<Root TypeName="Edit" Text="横坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="纵坐标" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="2,1" TypeName="井场" Text="五点井网">
+		<Root Text="五点井网">
+			<Root TypeName="Edit" Text="井场横坐标" Info="" ValCur="" Val="440713.35"/>
+			<Root TypeName="Edit" Text="井场纵坐标" Info="" ValCur="" Val="5207897.69"/>
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶前距" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="偏移距离" Info="" ValCur="" Val="800.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="井网参数">
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="2,2" TypeName="井场" Text="正对七点井网">
+		<Root Text="正对七点井网">
+			<Root TypeName="Edit" Text="井场横坐标" Info="" ValCur="" Val="36476144.00"/>
+			<Root TypeName="Edit" Text="井场纵坐标" Info="" ValCur="" Val="4063185.25"/>
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶前距" Info="" ValCur="" Val="120.00"/>
+			<Root TypeName="Edit" Text="偏移距离" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="井网参数">
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="2,3" TypeName="井场" Text="交错七点井网">
+		<Root Text="交错七点井网">
+			<Root TypeName="Edit" Text="井场横坐标" Info="" ValCur="" Val="36476144.00"/>
+			<Root TypeName="Edit" Text="井场纵坐标" Info="" ValCur="" Val="4063185.25"/>
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶前距" Info="" ValCur="" Val="120.00"/>
+			<Root TypeName="Edit" Text="偏移距离" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="井网参数">
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="井距2" Info="" ValCur="" Val="800.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="2,4" TypeName="井场" Text="九点井网">
+		<Root Text="九点井网">
+			<Root TypeName="Edit" Text="井场横坐标" Info="" ValCur="" Val="36476144.00"/>
+			<Root TypeName="Edit" Text="井场纵坐标" Info="" ValCur="" Val="4063185.25"/>
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶前距" Info="" ValCur="" Val="120.00"/>
+			<Root TypeName="Edit" Text="偏移距离" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="井网参数">
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="2,5" TypeName="井场" Text="十一点井网">
+		<Root Text="十一点井网">
+			<Root TypeName="Edit" Text="井场横坐标" Info="" ValCur="" Val="36476144.00"/>
+			<Root TypeName="Edit" Text="井场纵坐标" Info="" ValCur="" Val="4063185.25"/>
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶前距" Info="" ValCur="" Val="120.00"/>
+			<Root TypeName="Edit" Text="偏移距离" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+		<Root Text="井网参数">
+			<Root TypeName="Edit" Text="井距" Info="" ValCur="" Val="600.00"/>
+			<Root TypeName="Edit" Text="排距" Info="" ValCur="" Val="100.00"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="2,6" TypeName="井场" Text="全面水驱井网">
+		<Root Text="全面水驱井网">
+			<Root TypeName="Edit" Text="井场横坐标" Info="" ValCur="" Val="36476144.00"/>
+			<Root TypeName="Edit" Text="井场纵坐标" Info="" ValCur="" Val="4063185.25"/>
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="800.00"/>
+			<Root TypeName="Edit" Text="靶前距" Info="" ValCur="" Val="120.00"/>
+			<Root TypeName="Edit" Text="偏移距离" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+			<Root TypeName="Edit" Text="裂缝长度" Info="" ValCur="" Val="400.00"/>
+			<Root TypeName="Edit" Text="裂缝间距" Info="" ValCur="" Val="240.00"/>
+			<Root TypeName="Edit" Text="裂缝到首靶点距离" Info="" ValCur="" Val="60.00"/>
+			<Root TypeName="Edit" Text="到水平段距离" Info="" ValCur="" Val="120.00"/>
+			<Root TypeName="Combox" Text="注水井井组" Info="左#右#左右" Val="0"/>
+		</Root>
+		<Root Text="注水井">
+			<Root TypeName="Edit" Text="索引名" Info="" ValCur="" Val="W"/>
+			<Root TypeName="Edit" Text="基准井排号" Info="" ValCur="" Val="1"/>
+			<Root TypeName="Edit" Text="基准井列号" Info="" ValCur="" Val="1"/>
+		</Root>
+	</Option>
+	<Option OpWell="2,7" TypeName="井场" Text="自然能量开发井网">
+		<Root Text="自然能量开发">
+			<Root TypeName="Edit" Text="井场横坐标" Info="" ValCur="" Val="36476144.00"/>
+			<Root TypeName="Edit" Text="井场纵坐标" Info="" ValCur="" Val="4063185.25"/>
+			<Root TypeName="Edit" Text="井名" Info="" ValCur="" Val="N"/>
+			<Root TypeName="Edit" Text="方位角" Info="" ValCur="" Val="-15.00"/>
+			<Root TypeName="Edit" Text="水平段长度" Info="" ValCur="" Val="500.00"/>
+			<Root TypeName="Edit" Text="靶前距" Info="" ValCur="" Val="120.00"/>
+			<Root TypeName="Edit" Text="偏移距离" Info="" ValCur="" Val="0.00"/>
+			<Root TypeName="Edit" Text="靶点个数" Info="" ValCur="" Val="4"/>
+		</Root>
+	</Option>
+</GeoMap>

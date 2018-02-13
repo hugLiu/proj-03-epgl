@@ -1,0 +1,312 @@
+﻿@{
+    ViewBag.Title = "新疆油气田开发规划图库管理平台";
+    Layout = "~/Views/Shared/_EPGLLayout.cshtml";
+}
+
+@section css{
+<link href="~/Content/EPGL/css/plugins/jsTree/style.min.css" rel="stylesheet" />
+<link href="~/Content/EPGL/css/plugins/jqGrid-master/ui.jqgrid.min.css" rel="stylesheet" />
+<link href="~/Content/EPGL/css/plugins/ol3.20.1/ol.css" rel="stylesheet" />
+    <link href="~/Content/EPGL/css/shared/ogis/ogis.css" rel="stylesheet" />
+
+<link href="~/Content/EPGL/css/plugins/fileinput/fileinput.css" rel="stylesheet" />
+
+<style type="text/css">
+    #maps {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    #mapType-wrapper {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .expand #mapType-wrapper {
+        width: 298px;
+    }
+    #mapType {
+        height: 80px;
+        cursor: pointer;
+
+        transition-property: width, background-color;
+        -moz-transition-property: width, background-color; /* Firefox 4 */
+        -webkit-transition-property: width, background-color; /* Safari 和 Chrome */
+        -o-transition-property: width, background-color; /* Opera */
+
+
+        transition-duration: .4s;
+        -moz-transition-duration: .4s; /* Firefox 4 */
+        -webkit-transition-duration: .4s; /* Safari 和 Chrome */
+        -o-transition-duration: .4s; /* Opera */
+
+        width: 110px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .expand #mapType {
+        width: 298px;
+        background-color: #fff;
+        background-color: rgba(255, 255, 255, .8);
+    }
+        .expand #mapType .mapTypeCard {
+            border: 1px solid rgba(255, 255, 255, 0);
+            background-image: url('../../Content/EPGL/img/shared/maptype.jpg');
+        }
+    .expand #mapType .mapTypeCard.active {
+        border: 1px solid #3385FF;
+    }
+
+    .expand #mapType .satellite {
+        right: 202px;
+    }
+
+    .expand #mapType .terrain{
+        right: 106px;
+    }
+
+    #mapType .mapTypeCard {
+        height: 60px;
+        width: 86px;
+        position: absolute;
+        border-radius: 2px;
+        top: 10px;
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        border: 1px solid rgba(153, 153, 153, .42);
+        background: url('../../Content/EPGL/img/shared/shadow_6bf0ecd.png') no-repeat 0 0;
+        background-size: 86px 240px;
+        -webkit-transition-property: right, background-image;
+        transition-property: right, background-image;
+        -webkit-transition-duration: .4s;
+        transition-duration: .4s;
+    }
+    #mapType .mapTypeCard span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: inline-block;
+        padding: 3px 3px 2px 4px;
+        font-size: 12px;
+        height: 17px;
+        line-height: 17px;
+        color: #FFF;
+        border-top-left-radius: 2px;
+    }
+    #mapType .mapTypeCard.active span, #mapType .mapTypeCard:hover span {
+        background-color: #3385FF;
+    }
+    #mapType .mapTypeCard:hover {
+        border: 1px solid #3385FF;
+    }
+
+    #mapType .satellite {
+        z-index: 1;
+        background-position: 0 -60px;
+        right: 20px;
+    }
+
+    #mapType .terrain {
+        right: 15px;
+        z-index: 2;
+        background-position: 0 0;
+    }
+
+    #mapType .geoMap {
+        z-index: 3;
+        right: 10px;
+        background-image: url('../../Content/EPGL/img/shared/maptype.jpg');
+        background-position: 0 -121px;
+        border-left: 1px solid rgba(153, 153, 153, .6);
+    }
+
+
+    /*#rightMapTool-wrapper {
+        position: absolute;
+        bottom: 100px;
+        right: 10px;
+    }*/
+
+             a:hover,
+         a:focus {
+             text-decoration: underline;
+         }
+
+        iframe > body {
+            background-color: transparent;
+        }
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        
+      
+      .ui-jqgrid-view {
+          z-index: 3;
+      }
+      .ui-jqgrid .ui-jqgrid-bdiv {
+          max-height: 480px;
+          overflow-y: auto;
+      }
+
+      .rightMenu{
+          float:right;
+      }
+
+      .mouse-position-wrapper{
+		width:300px; 
+		height:29px; 
+		color:#000000; 
+		position:absolute; 
+		left:130px; 
+		bottom:9px; 
+        text-align:center;
+        line-height:29px;
+		z-index:9999;
+	}
+</style>
+
+}
+<form id="navigateForm" name="navigateForm" action="/EPGL/Index" method="post" target="_blank" style="display: none;">
+    <input type="hidden" id="currentTarget" name="currentTarget">
+    <input type="hidden" id="currentElementName" name="currentElementName">
+</form>
+<form id="resultForm" name="resultform" action="/Viewer/Detail" method="post" target="_blank" style="display: none;">
+    <input type="hidden" id="mapId" name="iiid" size="25">
+    <input type="hidden" id="mapData" name="data" size="25">
+</form> 
+<div id="maps">
+    <div id="mapIframe" style="height: 100%; width: 100%;">
+        @Html.Partial("GeoMapPartial")
+    </div>
+    <div id="mapType-wrapper">
+        <div id="mapType">
+            <div class="mapTypeCard geoMap active" data-name="geomap">
+                <span>地质图</span>
+            </div>
+            <div class="mapTypeCard terrain" data-name="terrain">
+                <span>地面图</span>
+            </div>
+            <div class="mapTypeCard satellite" data-name="satellite">
+                <span>卫星图</span>
+            </div>
+        </div>
+        <iframe scrolling=no allowTransparency="true" style='background-color: transparent; position: absolute; z-index: 0; width: 100%; height: 100%; top: 0; left: 0; border: none;'></iframe>
+    </div>
+
+</div>
+
+
+
+@section script{
+
+    @* ol不能跟echart一起引用 *@
+     <script src="~/Content/EPGL/js/plugins/ol3.20.1/ol.js"></script>
+    <script src="~/Content/EPGL/js/plugins/linq.js_ver2.2.0.2/linq.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/proj4/proj4.js"></script>
+
+	<script src="~/Content/EPGL/js/plugins/filesaver/FileSaver.min.js"></script>
+
+	<script src="~/Content/EPGL/js/plugins/fileinput/fileinput.js"></script>
+	<script src="~/Content/EPGL/js/plugins/fileinput/locales/zh.js"></script>
+
+    <script src="~/Content/EPGL/js/plugins/jsTree/jstree.min.js"></script>
+    <script src="~/Content/EPGL/js/plugins/jqGrid-master/jquery.jqgrid.min.js"></script>
+
+    <script language="vbscript" src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-vbfunction.vbs" type="text/vbscript"></script>
+    <script src="~/Content/EPGL/js/shared/jogis.js_v4.0/jogis-frame.js"></script>
+
+
+
+    <script src="~/Content/EPGL/js/shared/ogis/ogis.js"></script>
+
+    <script src="~/Content/EPGL/js/pages/epgl/load-geomap1.js"></script>
+
+    <!--图元描述-->
+    <script src="~/DemoData/json/data-basin.js"></script>
+
+    <script src="~/Content/EPGL/js/pages/epgl/load-map1.js"></script>
+
+
+    <script type="text/javascript"> 
+        $.jgrid.defaults.responsive = true;
+        $.jgrid.defaults.styleUI = 'Bootstrap';
+        $.jgrid.no_legacy_api = true;
+
+        $.fn.fileinputLocales['zh'].browseLabel = "投影";
+
+        var node = '@Html.Raw(ViewBag.CurrentTargetNode)';
+        var eleName = '@Html.Raw(ViewBag.currentElementName)';
+        //当前选中目标节点
+        var currentTargetNode =(node&&node!='')?node: null;
+        //当前导航级别{1:盆地级,2:区带级,3:油田级,4:油藏级，5:井}
+        var currentNavLevel = 0;
+        //在geoMap里赋值,ol里使用，装载地图范围坐标点，实现三种地图的联动  
+        var currentMapRange = null;
+        //当前选中的图元，保证依然选中{elementID: "", elementType: "", elementName: "", elementPolyCoords: [] };
+        var currentMapElement = (eleName && eleName != '') ? eleName : null;
+        
+
+        $(document).ready(function() {
+                
+            try {
+                configGeoMap();
+            }
+            catch (e) {
+                var url = "/Local/Tool/JoGIS4组件安装包1.51.exe";
+                window.open(url);
+            }
+            var mapTypewrapper = $("#mapType-wrapper");
+            var mapType = $("#mapType");
+            //鼠标进入事件
+            mapType.mouseenter(function() {
+                mapTypewrapper.addClass("expand");
+            });
+            //鼠标离开事件
+            mapType.mouseleave(function() {
+                mapTypewrapper.removeClass("expand");
+            });
+
+            //鼠标点击事件
+            $(".mapTypeCard").click(function() {
+                var iframe = $("#mapIframe");
+                var element = $(this);
+                var name = element.data("name");
+
+                var currentMapTypeEl = $("#mapType .active");
+                var currentMapType = currentMapTypeEl.data("name");
+                if (name === currentMapType) {
+                    return;
+                }
+
+                currentMapTypeEl.removeClass("active");
+                element.addClass("active");
+
+
+                $.post("/EPGL/LoadMap",
+                    { mapType: name },
+                    function(data, status) {
+                        if (status === "success") {
+                            $("#mapIframe").html(data);
+                            currentNavLevel = getNavLevel();
+                            switch (name) {
+                            case "geomap":
+                                configGeoMap();
+                                break;
+                            case "terrain":
+                                mapInit("terrain");                                
+                                break;
+                            case "satellite":
+                                mapInit("satellite");
+                                break;
+                            default:
+                                break;
+                            }
+                        }
+                    });
+            });
+        });
+
+
+    </script>
+
+}

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="TraceDataSet">
+		<xs:complexType>
+			<xs:sequence>
+				<!--===============地层============================================================-->
+				<xs:element name="StratiUnitTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="stratum" type="xs:string"/>
+									<xs:attribute name="contact" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============文本============================================================-->
+				<xs:element name="TextTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:sequence minOccurs="0">
+										<xs:element name="Text" type="xs:string"/>
+									</xs:sequence>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============断层============================================================-->
+				<xs:element name="FaultTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="fault" type="xs:string"/>
+									<xs:attribute name="type" type="xs:string"/>
+									<xs:attribute name="throw" type="xs:double"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============试油结论============================================================-->
+				<xs:element name="TestOilTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="method" type="xs:string"/>
+									<xs:attribute name="dailyOil" type="xs:string"/>
+									<xs:attribute name="dailyGas" type="xs:string"/>
+									<xs:attribute name="dailyWater" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============符号================================符号名称？============================-->
+				<xs:element name="SymbolTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:sequence minOccurs="0">
+										<xs:element name="Symbol">
+											<xs:complexType>
+												<xs:attribute name="sID" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============图片=================================？？？？？===========================-->
+				<xs:element name="PictureTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:sequence minOccurs="0">
+										<xs:element name="Image">
+											<xs:complexType>
+												<xs:attribute name="file" type="xs:string"/>
+												<xs:attribute name="format" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============岩性剖面============================================================-->
+				<xs:element name="LithoTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="colorCode" type="xs:string"/>
+									<xs:attribute name="lithology" type="xs:string"/>
+									<xs:attribute name="oilness" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============油气解释============================================================-->
+				<xs:element name="PropLayTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="verdict" type="xs:string"/>
+									<xs:attribute name="thickness" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============沉积相============================================================-->
+				<xs:element name="SediFaciesTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="face" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============层序旋回============================================================-->
+				<xs:element name="SediCycleTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="cycle" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============井壁取心============================================================-->
+				<xs:element name="SideCoringTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="colorCode" type="xs:string"/>
+									<xs:attribute name="lithology" type="xs:string"/>
+									<xs:attribute name="oilness" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============射孔============================================================-->
+				<xs:element name="PerforationTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="count" type="xs:double"/>
+									<xs:attribute name="id" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============取心信息============================================================-->
+				<xs:element name="CoreTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="footage" type="xs:double"/>
+									<xs:attribute name="times" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============样品位置=================================？？===========================-->
+				<xs:element name="SampleTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="barrelType" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============标记道============================================================-->
+				<xs:element name="MarkerLab">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="text" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============油气水显示============================================================-->
+				<xs:element name="OSWData">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="owc" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============测井曲线============================================================-->
+				<xs:element name="CurveTrace">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="name" type="xs:string"/>
+									<xs:attribute name="form" type="xs:string"/>
+									<xs:attribute name="start" type="xs:double"/>
+									<xs:attribute name="end" type="xs:double"/>
+									<xs:attribute name="minvalue" type="xs:double"/>
+									<xs:attribute name="maxvalue" type="xs:double"/>
+									<xs:attribute name="count" type="xs:long"/>
+									<xs:attribute name="nullvalue" type="xs:double"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============分析曲线============================================================-->
+				<xs:element name="CurveTrace1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="name" type="xs:string"/>
+									<xs:attribute name="form" type="xs:string"/>
+									<xs:attribute name="sampleRate" type="xs:double"/>
+									<xs:attribute name="start" type="xs:double"/>
+									<xs:attribute name="end" type="xs:double"/>
+									<xs:attribute name="minvalue" type="xs:double"/>
+									<xs:attribute name="maxvalue" type="xs:double"/>
+									<xs:attribute name="count" type="xs:long"/>
+									<xs:attribute name="nullvalue" type="xs:double"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============曲线点数据============================================================-->
+				<xs:element name="CurvePointValue">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="t" type="xs:double"/>
+									<xs:attribute name="value" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============井斜数据============================================================-->
+				<xs:element name="WellPathData">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="Depth" type="xs:double"/>
+									<xs:attribute name="Inclination" type="xs:string"/>
+									<xs:attribute name="Azimuth" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============地化录井============================================================-->
+				<xs:element name="WellDihua">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="Depth" type="xs:double"/>
+									<xs:attribute name="S0" type="xs:double"/>
+									<xs:attribute name="S1" type="xs:double"/>
+									<xs:attribute name="S2" type="xs:double"/>
+									<xs:attribute name="S3" type="xs:double"/>
+									<xs:attribute name="S4" type="xs:double"/>
+									<xs:attribute name="c" type="xs:double"/>
+									<xs:attribute name="h" type="xs:double"/>
+									<xs:attribute name="t" type="xs:double"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============气测录井============================================================-->
+				<xs:element name="WellQice">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="Depth" type="xs:double"/>
+									<xs:attribute name="v" type="xs:double"/>
+									<xs:attribute name="a" type="xs:double"/>
+									<xs:attribute name="b" type="xs:double"/>
+									<xs:attribute name="c" type="xs:double"/>
+									<xs:attribute name="d" type="xs:double"/>
+									<xs:attribute name="e" type="xs:double"/>
+									<xs:attribute name="f" type="xs:double"/>
+									<xs:attribute name="g" type="xs:double"/>
+									<xs:attribute name="h" type="xs:double"/>
+									<xs:attribute name="co2" type="xs:double"/>
+									<xs:attribute name="n" type="xs:double"/>
+									<xs:attribute name="hs" type="xs:double"/>
+									<xs:attribute name="o2" type="xs:double"/>
+									<xs:attribute name="co" type="xs:double"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============铸体薄片数据============================================================-->
+				<xs:element name="WellCoreSample">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Item">
+								<xs:complexType>
+									<xs:attribute name="Depth" type="xs:double"/>
+									<xs:attribute name="sh" type="xs:double"/>
+									<xs:attribute name="cs" type="xs:double"/>
+									<xs:attribute name="yx" type="xs:double"/>
+									<xs:attribute name="sx" type="xs:double"/>
+									<xs:attribute name="txw" type="xs:double"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!--===============继续...============================================================-->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

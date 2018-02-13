@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tran type="Oil">
+	<Item ID="9500001" Name="油层" ConnectType="11" Density="4"/>
+	<Item ID="3000010" Name="干层" ConnectType="10" Density="11"/>
+	<Item ID="9500004" Name="气层" ConnectType="12" Density="1"/>
+	<Item ID="9500005" Name="水层" ConnectType="13" Density="10"/>
+	<Item ID="9500011" Name="煤层" ConnectType="10" Density="0"/>
+	<Item ID="9500002" Name="差油层" ConnectType="10" Density="5"/>
+	<Item ID="9500012" Name="可疑气层" ConnectType="10" Density="0"/>
+	<Item ID="9500003" Name="可疑油层" ConnectType="10" Density="0"/>
+	<Item ID="3000009" Name="致密层" ConnectType="10" Density="0"/>
+	<Item ID="9200009" Name="夹层" ConnectType="10" Density="0"/>	
+	<Item ID="3000004" Name="油气同层" ConnectType="112" Density="2"/>
+	<Item ID="3000001" Name="油水同层" ConnectType="113" Density="7"/>
+	<Item ID="3000006" Name="气水同层" ConnectType="123" Density="3"/>
+	<Item ID="3000003" Name="含油水层" ConnectType="231" Density="9"/>
+	<Item ID="3000008" Name="含气水层" ConnectType="232" Density="8"/>
+	<Item ID="3000011" Name="含水油层" ConnectType="213" Density="6"/>
+	<Item ID="9500010" Name="含水气层" ConnectType="223" Density="0"/>
+</Tran>
